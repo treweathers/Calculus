@@ -7,10 +7,13 @@
 
 ## Resources
 ### Recommended Channels
-1. The Organic Chemistry Tutor
-2. Professor Dave Explains
-3. Dr. Trefor Bazett
-4. Ms. Shaw's Math Clas
+| Name | Content | Use |
+| :--- | :--- |
+| The Organic Chemistry Tutor | Calculus I+ | Examples |
+| Professor Dave Explains| Calculus II | Lessons | 
+| Dr. Trefor Bazett | Calculus II, Trigonometry | Lessons |
+| Ms. Shaw's Math Class | Calculus II | Homework |
+
 
 ### Recommended Sites
 1. Paul's Online Math Notes
