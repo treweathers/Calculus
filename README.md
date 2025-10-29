@@ -2,8 +2,11 @@
 ##### Study Group Metting time: Sundays time tbd
 
 ## Materials
+### Provided
 1. Recitations
-2. 
+
+### Supplements
+1. 
 
 ## Resources
 ### Recommended Channels
