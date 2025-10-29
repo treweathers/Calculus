@@ -9,7 +9,7 @@
 ### Recommended Channels
 
 | Name: Location | Content | Use | Links |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | The Organic Chemistry Tutor: YouTube | Calculus I+ | Examples |
 | Dr. Trefor Bazett: YouTube | Calculus II, Trigonometry | Lessons 
 | Professor Dave Explains: YouTube| Calculus II | Lessons | |
