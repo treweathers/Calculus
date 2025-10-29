@@ -1,4 +1,4 @@
-# 📐 Trig Cheat Sheet
+# Trig Cheat Sheet
 
 **© Paul Dawkins - [https://tutorial.math.lamar.edu](https://tutorial.math.lamar.edu)**
 
