@@ -1,41 +1,67 @@
-## 📚 Sequences and Series Formula Sheet & Guide
+## 📝 Comprehensive Calculus II Guide: Sequences, Series, & Power Series
 
-### **I. Sequences ($\{a_n\}$)**
+### **I. Sequences ($\{a_n\}$) & Preliminary Tests**
 
 | Concept | Condition/Test | Formula/Notes |
 | :--- | :--- | :--- |
-| **Limit** | Converges if... | $\lim_{n \to \infty} a_n = L$ (a finite number) |
-| **Divergence** | Diverges if... | $\lim_{n \to \infty} a_n = \pm \infty$ or does not exist (DNE) |
-| **Monotonic** | Increasing | $a_{n+1} \geq a_n$ for all $n$ |
-| | Decreasing | $a_{n+1} \leq a_n$ for all $n$ |
-| **Bounded** | Bounded Above | $a_n \leq M$ for some number $M$ |
-| | Bounded Below | $a_n \geq m$ for some number $m$ |
-| **Key Theorem** | Monotonic Sequence Thm. | A bounded, monotonic sequence **must** converge. |
+| **Limit** (Convergence) | Converges if $\lim_{n \to \infty} a_n = L$ (a finite number). |
+| **Monotonic Convergence Thm.** | A bounded, monotonic sequence **must** converge. |
+| **$n^{th}$-Term Test** (Divergence Test) | If $\lim_{n \to \infty} a_n \neq 0$, the series **Diverges**. |
+| **CAUTION** | If $\lim_{n \to \infty} a_n = 0$, the test is **inconclusive**. |
 
-### **II. Series ($\sum_{n=1}^\infty a_n$)**
+---
 
-| Type of Series | Formula/Condition | Notes/Convergence |
+### **II. Fundamental Series Types ($\sum_{n=1}^\infty a_n$)**
+
+| Series Type | General Form | Convergence Condition(s) | Key Test/Sum Formula |
+| :--- | :--- | :--- | :--- |
+| **Geometric Series** | $\sum_{n=0}^{\infty} ar^n$ | Converges if the common ratio $|r| < 1$. | Sum is $S = \frac{a}{1-r}$. |
+| **$p$-Series** | $\sum_{n=1}^{\infty} \frac{1}{n^p}$ | Converges if the exponent **$p > 1$**. | Diverges if $p \le 1$. |
+| **Harmonic Series** | $\sum_{n=1}^{\infty} \frac{1}{n}$ | **Always Diverges.** | Special case of $p$-series where $p=1$. |
+| **Telescoping Series** | $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (after partial fractions) | Converges if $\lim_{N \to \infty} S_N$ exists. | Find $S_N$, then take $\lim_{N \to \infty} S_N$. |
+
+---
+
+### **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
+
+| Test Name | When to Use | Condition for Convergence | Condition for Divergence |
+| :--- | :--- | :--- | :--- |
+| **Integral Test** | $a_n = f(n)$ is positive, continuous, and decreasing. | $\int_1^\infty f(x) \, dx$ converges. | $\int_1^\infty f(x) \, dx$ diverges. |
+| **Limit Comparison Test (LCT)** | $a_n$ and $b_n$ are positive and similar. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L > 0$. If $\sum b_n$ converges, so does $\sum a_n$. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L > 0$. If $\sum b_n$ diverges, so does $\sum a_n$. |
+| **Alternating Series Test (AST)** | Series alternates sign: $\sum (-1)^n b_n$ where $b_n > 0$. | Both must hold: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \le b_n$. | Fails either of the two conditions. |
+| **Ratio Test** | $a_n$ involves factorials ($n!$) or exponents ($r^n$). | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L < 1$. | $L > 1$ or $L = \infty$. |
+| **Root Test** | $a_n$ involves $n$-th power: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = L < 1$. | $L > 1$ or $L = \infty$. |
+
+> **Note:** If $L=1$ in the Ratio or Root Test, the test is **inconclusive**.
+
+---
+
+### **IV. Power Series, Taylor Series, and Maclaurin Series**
+
+#### **A. Power Series and Convergence**
+
+A power series centered at $a$ has the form $\sum_{n=0}^{\infty} c_n (x-a)^n$.
+
+1.  **Radius of Convergence ($R$):** Found by applying the **Ratio Test** to $\sum_{n=0}^{\infty} \left| c_n (x-a)^n \right|$.
+    $$\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L \cdot |x-a|$$
+    Set $L \cdot |x-a| < 1$ and solve for $|x-a| < R$.
+
+2.  **Interval of Convergence (IOC):** The interval $(a-R, a+R)$, plus the two endpoints.
+    * **Crucial Step:** The endpoints $x = a-R$ and $x = a+R$ **must** be tested individually using any of the convergence tests (AST, $p$-Series, etc.) to determine if the series converges at those points.
+
+#### **B. Taylor and Maclaurin Series**
+
+| Series Type | Definition (Formula) | Center |
 | :--- | :--- | :--- |
-| **Geometric Series** | $\sum_{n=0}^\infty ar^n$ | Converges if $|r| < 1$. Sum is $S = \frac{a}{1-r}$ |
-| **Telescoping Series** | Terms cancel out (use partial fractions) | Converges to the limit of the partial sums $\lim_{N \to \infty} S_N$ |
-| **$p$-Series** | $\sum_{n=1}^\infty \frac{1}{n^p}$ | Converges if $p > 1$. Diverges if $p \leq 1$. |
-| **Harmonic Series** | $\sum_{n=1}^\infty \frac{1}{n}$ | A special case of $p$-series ($p=1$). **Always Diverges.** |
+| **Taylor Series** | $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$$ | $x=a$ |
+| **Maclaurin Series** | $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n$$ | $x=0$ |
 
-### **III. Convergence Tests**
+#### **C. Common Maclaurin Series**
 
-| Name of Test | When to Use | Conclusion/Condition |
+| Function $f(x)$ | Maclaurin Series | IOC ($R$) |
 | :--- | :--- | :--- |
-| **$n^{th}$-Term Test** (Divergence Test) | *Always* your first check. | If $\lim_{n \to \infty} a_n \neq 0$, the series **Diverges**. **CAUTION:** If the limit *is* $0$, the test is inconclusive! |
-| **Integral Test** | For $a_n = f(n)$ where $f(x)$ is positive, continuous, and decreasing. | $\sum a_n$ converges if and only if $\int_1^\infty f(x) \, dx$ converges. |
-| **Comparison Test** | For series with all positive terms, similar to a $p$-series or geometric series. | **$0 < a_n \leq b_n$:** If $\sum b_n$ converges, then $\sum a_n$ converges. **$0 < b_n \leq a_n$:** If $\sum b_n$ diverges, then $\sum a_n$ diverges. |
-| **Limit Comparison Test** | For series similar to a known series (LCT is often easier than CT). | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$ where $L$ is a finite, positive number ($L>0$). Then $\sum a_n$ and $\sum b_n$ **both do the same thing** (both converge or both diverge). |
-| **Alternating Series Test (AST)** | For series with alternating signs, e.g., $\sum (-1)^n b_n$ where $b_n > 0$. | Converges if **both** conditions are met: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \leq b_n$ (terms are decreasing). |
-| **Ratio Test** | When $a_n$ involves factorials ($n!$) or powers of $n$ in the exponent ($2^n$). | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L$: If $L < 1$, **Converges Absolutely**. If $L > 1$, **Diverges**. If $L = 1$, **Inconclusive**. |
-| **Root Test** | When $a_n$ involves the entire expression raised to the power of $n$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = L$: If $L < 1$, **Converges Absolutely**. If $L > 1$, **Diverges**. If $L = 1$, **Inconclusive**. |
-
-### **IV. Absolute vs. Conditional Convergence**
-
-| Type of Convergence | Definition |
-| :--- | :--- |
-| **Absolute Convergence** | $\sum a_n$ converges **and** $\sum \left| a_n \right|$ converges. |
-| **Conditional Convergence** | $\sum a_n$ converges (by AST) **but** $\sum \left| a_n \right|$ diverges. |
+| **Geometric** | $\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ | $(-1, 1)$, $R=1$ |
+| **$e^x$** | $e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $(-\infty, \infty)$, $R=\infty$ |
+| **$\sin(x)$** | $\sin(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}$ | $(-\infty, \infty)$, $R=\infty$ |
+| **$\cos(x)$** | $\cos(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!}$ | $(-\infty, \infty)$, $R=\infty$ |
+| **$\arctan(x)$** | $\arctan(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1}$ | $[-1, 1]$, $R=1$ |
