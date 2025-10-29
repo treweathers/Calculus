@@ -1,4 +1,9 @@
 # Calculus II
+##### Metting time: Sundays time tbd
+
+## Materials
+1. Recitations
+2. 
 
 ## Resources
 ### Recommended Channels
