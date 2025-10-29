@@ -181,6 +181,3 @@ $$\frac{a - c}{a + c} = \frac{\tan \frac{1}{2} (\alpha - \gamma)}{\tan \frac{1}{
 
 ### D. Mollweide’s Formula
 $$\frac{a + b}{c} = \frac{\cos \frac{1}{2} (\alpha - \beta)}{\sin \frac{1}{2} \gamma}$$
-
-***
-This sheet covers a great deal of trigonometry! Would you like me to elaborate on any specific section, like the graph properties of the functions or a step-by-step example of using one of these identities?
