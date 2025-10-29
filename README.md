@@ -7,6 +7,7 @@
 
 ## Resources
 ### Recommended Channels
+
 | Name | Content | Use |
 | :--- | :--- |
 | The Organic Chemistry Tutor | Calculus I+ | Examples |
