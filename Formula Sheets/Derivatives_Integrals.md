@@ -1,4 +1,4 @@
-# 🎯 Complete Calculus Cheat Sheet: Derivatives & Antiderivatives
+# Derivatives & Antiderivatives
 
 ## I. Derivatives (Trigonometric & Inverse)
 
