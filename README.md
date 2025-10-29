@@ -11,8 +11,8 @@
 | Name | Content | Use |
 | :--- | :--- | :--- |
 | The Organic Chemistry Tutor | Calculus I+ | Examples |
-| Professor Dave Explains| Calculus II | Lessons | 
-| Dr. Trefor Bazett | Calculus II, Trigonometry | Lessons |
+| Dr. Trefor Bazett | Calculus II, Trigonometry | Lessons 
+| Professor Dave Explains| Calculus II | Lessons | |
 | Ms. Shaw's Math Class | Calculus II | Homework |
 
 
