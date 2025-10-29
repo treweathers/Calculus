@@ -1,4 +1,4 @@
-# Derivatives & Antiderivatives
+# Derivatives & Antiderivatives Formula Sheet
 
 ## I. Derivatives (Trigonometric & Inverse)
 
