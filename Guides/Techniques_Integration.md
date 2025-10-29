@@ -1,4 +1,4 @@
-# 🛠️ Techniques of Integration Guide
+# Techniques of Integration Guide
 
 These techniques are essential for solving integrals that are not direct applications of the basic rules.
 
