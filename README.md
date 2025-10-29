@@ -1,5 +1,5 @@
 # Calculus II
-##### Metting time: Sundays time tbd
+##### Study Group Metting time: Sundays time tbd
 
 ## Materials
 1. Recitations
