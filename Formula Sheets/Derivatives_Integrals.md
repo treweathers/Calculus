@@ -1,9 +1,3 @@
-That's a fantastic request! You are absolutely right to aim for the most complete set of fundamental rules. Many of the frequently encountered forms (like $\int \sec^2(x) \,dx$) come directly from knowing all the basic derivatives.
-
-I have compiled a comprehensive **Calculus Derivative and Antiderivative Cheat Sheet** that includes all six standard and inverse trigonometric functions, and a complete set of Exponential and Logarithmic rules, including the crucial Chain Rule versions.
-
-***
-
 # 🎯 Complete Calculus Cheat Sheet: Derivatives & Antiderivatives
 
 ## I. Derivatives (Trigonometric & Inverse)
