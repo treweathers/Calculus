@@ -1,4 +1,4 @@
-# Part I: Review
+# Additional Practice Problems
 ***
 
 ## Practice Problems and Solutions with Review Notes
@@ -224,5 +224,3 @@ Determine if the following series converge and, if so, find the sum. Use the geo
     * $-N^2 < \ln(0.002) \approx -6.2146$
     * $N^2 > 6.2146 \implies N > 2.4929$
 * The smallest integer $N$ is $\mathbf{3}$.
-
-Part II: Practice
