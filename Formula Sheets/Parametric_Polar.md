@@ -1,4 +1,4 @@
-# 📐 Parametric Curves and Polar Coordinates Formula Sheet
+# Parametric Curves and Polar Coordinates Formula Sheet
 
 ## I. Parametric Curves ($\mathbf{x = f(t), y = g(t)}$)
 
