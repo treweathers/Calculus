@@ -1,4 +1,4 @@
-## 📝 Comprehensive Calculus II Guide: Sequences, Series, & Power Series
+# Sequences and Series Guide
 
 ### **I. Sequences ($\{a_n\}$) & Preliminary Tests**
 
