@@ -9,7 +9,7 @@
 ### Recommended Channels
 
 | Name | Content | Use |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | The Organic Chemistry Tutor | Calculus I+ | Examples |
 | Professor Dave Explains| Calculus II | Lessons | 
 | Dr. Trefor Bazett | Calculus II, Trigonometry | Lessons |
