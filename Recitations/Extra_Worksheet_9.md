@@ -1,5 +1,7 @@
-## 
+# Additional Practice Problems
 ***
+
+## Rec 9 Practice Problems and Solutions with Review Notes
 
 ### 1. Absolute, Conditional, and Divergence Tests
 
