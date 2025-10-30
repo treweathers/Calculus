@@ -1,7 +1,7 @@
 # Additional Practice Problems
 ***
 
-## Practice Problems and Solutions with Review Notes
+## Rec 8 Practice Problems and Solutions with Review Notes
 
 ### 1. Sequences: Terms and Limits
 
