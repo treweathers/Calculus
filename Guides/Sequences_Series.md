@@ -20,7 +20,7 @@
 | **Harmonic Series** | $\sum_{n=1}^{\infty} \frac{1}{n}$ | **Always Diverges.** | Special case of $p$-series where $p=1$. |
 | **Telescoping Series** | $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (after partial fractions) | Converges if $\lim_{N \to \infty} S_N$ exists. | Find $S_N$, then take $\lim_{N \to \infty} S_N$. |
 
-### Algebraic Manipulation Needed (Example)
+#### Algebraic Manipulation Needed (Example)
 The series is:
 $$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
 
