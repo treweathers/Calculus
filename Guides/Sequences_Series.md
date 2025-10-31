@@ -1,5 +1,5 @@
 # Sequences and Series Guide
-## PART I: The Ultimate Guide to Choosing a Convergence Test
+## PART I: Choosing a Convergence Test
 
 The goal is to choose the **most efficient** test based on the **form** of the series term, $a_n$.
 
