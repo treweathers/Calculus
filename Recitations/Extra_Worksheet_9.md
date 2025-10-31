@@ -212,6 +212,3 @@ Use the sum of the first $\mathbf{5}$ terms to estimate $S$ of $\sum_{n=1}^\inft
     $$1.18567 + 0.01389 \le S \le 1.18567 + 0.02$$
     $$\mathbf{1.19956} \le S \le \mathbf{1.20567}$$
 * **Answer:** Estimated sum $s_5 \approx 1.18567$. The total sum $S$ is bounded by $\mathbf{[1.19956, 1.20567]}$.
-
----
-Do you have another question you'd like to work through? Perhaps one of the remaining factorial problems from your original worksheet?
