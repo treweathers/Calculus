@@ -205,8 +205,6 @@ Here is the supplementary practice problem and review notes for using a comparis
 
 ***
 
-**Solution 6(b):**
-
 **(b)** Determine if the series $\sum_{n=1}^\infty \frac{\ln n}{n^{3/2}}$ is convergent.
 
 #### Review Notes on Comparison Tests (for terms involving $\ln n$)
@@ -222,6 +220,38 @@ Here is the supplementary practice problem and review notes for using a comparis
 2.  **Comparison:** Use the inequality $\ln n < n^\epsilon$ for large $n$.
 3.  **Check Comparison Series:** Verify that $\sum \frac{1}{n^{p-\epsilon}}$ is a convergent $p$-series.
 4.  **Conclude:** Use the **Direct Comparison Test**.
+
+You are absolutely right. I failed to provide the solution for the practice problem, making the review incomplete. My apologies! I will immediately provide the full structured solution for the supplementary problem $\sum_{n=1}^\infty \frac{\ln n}{n^{3/2}}$.
+
+---
+
+**(b)** Supplementary Practice Problem
+
+Determine if the series $\sum_{n=1}^\infty \frac{\ln n}{n^{3/2}}$ is convergent.
+
+#### Review Notes on Comparison Tests (for terms involving $\ln n$)
+
+* For any $\epsilon > 0$, $\ln n$ grows slower than $n^{\epsilon}$ (i.e., $\ln n < n^{\epsilon}$ for sufficiently large $n$).
+* **Strategy:** Find a number $q$ such that $1 < q < p$ and use $\frac{\ln n}{n^p} < \frac{n^{\epsilon}}{n^p} = \frac{1}{n^{p-\epsilon}}$.
+* The comparison series $\sum \frac{1}{n^{p-\epsilon}}$ must be a convergent $p$-series ($p-\epsilon > 1$).
+
+**General Steps for Comparison with $\ln n$:**
+
+1.  **Choose $\epsilon$:** Select a small $\epsilon > 0$ such that $p - \epsilon > 1$.
+2.  **Form Comparison Series:** Use the inequality $\ln n < n^\epsilon$ to form the comparison series $\sum b_n$.
+3.  **Check Convergence:** Verify that $\sum b_n$ is a convergent $p$-series.
+4.  **Conclude:** State the convergence of the original series by the Direct Comparison Test.
+
+**Solution 6(b):**
+* The series is $\sum a_n$ where $a_n = \frac{\ln n}{n^{3/2}}$. Here, $p = 3/2 = 1.5$.
+* We need to choose $\epsilon$ such that $1.5 - \epsilon > 1$. Let's choose $\epsilon = 0.25$.
+* Then $p - \epsilon = 1.5 - 0.25 = 1.25$. Since $1.25 > 1$, we can use $b_n = \frac{1}{n^{1.25}}$ as a convergent $p$-series.
+* We use the inequality $\ln n < n^{0.25}$ for sufficiently large $n$.
+* We form the inequality:
+    $$a_n = \frac{\ln n}{n^{1.5}} < \frac{n^{0.25}}{n^{1.5}} = \frac{1}{n^{1.5 - 0.25}} = \frac{1}{n^{1.25}}$$
+* The comparison series $\sum_{n=1}^\infty b_n = \sum_{n=1}^\infty \frac{1}{n^{1.25}}$ is a **convergent $p$-series** since $p=1.25 > 1$.
+* By the Direct Comparison Test, since $0 < a_n < b_n$ for large $n$ and $\sum b_n$ converges, the series $\sum a_n$ also **converges**.
+* **Answer:** The series **converges** by the Direct Comparison Test.
 
 ***
 
