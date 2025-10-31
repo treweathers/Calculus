@@ -20,6 +20,33 @@
 | **Harmonic Series** | $\sum_{n=1}^{\infty} \frac{1}{n}$ | **Always Diverges.** | Special case of $p$-series where $p=1$. |
 | **Telescoping Series** | $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (after partial fractions) | Converges if $\lim_{N \to \infty} S_N$ exists. | Find $S_N$, then take $\lim_{N \to \infty} S_N$. |
 
+### Algebraic Manipulation Needed (Example)
+The series is:
+$$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
+
+Here are the key exponential rules you need to apply, along with the steps to rewrite the term $\left(2^n \cdot 3^{-2n+1}\right)$, without calculating the final result:
+
+### **Step-by-Step Guide to Rewriting the Series Term**
+
+| Rule to Apply  | General Form | Application to $3^{-2n+1}$ |
+| :--- | :--- | :--- |
+| **Product Rule for Exponents** | $b^{x+y} = b^x \cdot b^y$ | Rewrite the term with the sum in the exponent as a product: $3^{-2n+1} = 3^{-2n} \cdot 3^1$. |
+| **Negative Exponent Rule** | $b^{-x} = \frac{1}{b^x}$ | Apply this to the term with the negative exponent: $3^{-2n} = \frac{1}{3^{2n}}$. |
+| **Power of a Power Rule** | $b^{xy} = (b^x)^y$ | Rewrite the term with a multiple of $n$ in the exponent to isolate $n$: $3^{2n} = (3^2)^n$. |
+
+---
+
+### **Action Steps (No Math Completion)**
+
+1.  **Separate the Constant Factor ($3^1$):** Use the **Product Rule** to split the term $3^{-2n+1}$ into a product of a constant and a term involving $n$.
+2.  **Handle the Negative Exponent:** Use the **Negative Exponent Rule** to move the term involving $-2n$ from the numerator to the denominator (or write it as a fraction).
+3.  **Isolate $n$ in the Exponent:** Use the **Power of a Power Rule** on the base of the resulting term so that the exponent becomes *exactly* $n$. (e.g., $b^{kn} = (b^k)^n$).
+4.  **Combine Terms with Exponent $n$:** Once both the $2^n$ term and the rewritten $3^{(\ldots)n}$ term both have the same exponent $n$, combine them using the rule $a^n b^n = (ab)^n$.
+5.  **Identify $a$ and $r$:** The result will be in the form $a \cdot r^n$, allowing you to clearly identify the initial constant ($a$) and the common ratio ($r$).
+
+Try applying these rules now! Once you have the series in the form $\sum a r^n$, you can determine convergence and the sum.
+
+Let me know when you have your rewritten series, and we can check it together!
 ---
 
 ### **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
