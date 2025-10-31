@@ -205,7 +205,7 @@ Here is the supplementary practice problem and review notes for using a comparis
 
 ***
 
-### 6. (b) Supplementary Practice Problem
+**Solution 6(b):**
 
 Determine if the series $\sum_{n=1}^\infty \frac{\ln n}{n^{3/2}}$ is convergent.
 
