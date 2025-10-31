@@ -74,7 +74,6 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 * The first term to cancel is $b_4$ (it cancels the $-b_4$ from $n=1$).
 * Therefore, you need to write enough terms until the first negative term that cancels appears, which often requires $k+1$ terms in the expansion to be certain.
 
-Now, would you like to move on to a problem using the **Ratio Test** or one of the **Comparison Tests**?
 ---
 
 ### **Action Steps (No Math Completion)**
