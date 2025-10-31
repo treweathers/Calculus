@@ -44,9 +44,6 @@ Here are the key exponential rules you need to apply, along with the steps to re
 4.  **Combine Terms with Exponent $n$:** Once both the $2^n$ term and the rewritten $3^{(\ldots)n}$ term both have the same exponent $n$, combine them using the rule $a^n b^n = (ab)^n$.
 5.  **Identify $a$ and $r$:** The result will be in the form $a \cdot r^n$, allowing you to clearly identify the initial constant ($a$) and the common ratio ($r$).
 
-Try applying these rules now! Once you have the series in the form $\sum a r^n$, you can determine convergence and the sum.
-
-Let me know when you have your rewritten series, and we can check it together!
 ---
 
 ### **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
