@@ -1,5 +1,56 @@
 # Sequences and Series Guide
+## PART I: The Ultimate Guide to Choosing a Convergence Test
 
+The goal is to choose the **most efficient** test based on the **form** of the series term, $a_n$.
+
+## 1. Initial Checks (The Must-Do's)
+
+### 🛑 Check 1: The Divergence Test (Always First!)
+
+| Test | Logic | Condition / Conclusion |
+| :--- | :--- | :--- |
+| **Divergence Test** | Are the terms even getting small enough to consider convergence? | Calculate $L = \lim_{n\to\infty} a_n$. If $L \ne 0$ (or $L$ DNE), the series **DIVERGES**. (If $L=0$, the test is inconclusive; proceed to Check 2). |
+
+### 🔍 Check 2: Special Forms (Easiest Tests)
+
+| Series Form | Test | Logic | Condition / Conclusion |
+| :--- | :--- | :--- | :--- |
+| **Simple Power** $\sum \frac{1}{n^p}$ | **$p$-Series Test** | Does it match the form $\sum 1/n^p$? | **Converges** if $p > 1$. **Diverges** if $p \le 1$. |
+| **Exponential** $\sum a r^n$ | **Geometric Series Test** | Does it match the form $\sum ar^n$? | **Converges** if $|r| < 1$. **Diverges** if $|r| \ge 1$. (Can also find the sum). |
+| **Difference** $\sum (b_n - b_{n+1})$ | **Telescoping Test** | Can the term be rewritten as a difference that will cancel? | **Converges** if $\lim_{N\to\infty} s_N$ is finite. |
+
+---
+
+## 2. Main Tests (The Decision Matrix)
+
+If the series doesn't fit a special form, look at the dominant term structure to decide between the major tests. 
+
+| Series Term Structure | Recommended Test | Logic / Why Choose It |
+| :--- | :--- | :--- |
+| **Factorials** ($n!$) **or Mixed Exponentials** ($3^n/n!$) | **Ratio Test** | Factorials and most exponentials simplify beautifully under the ratio $\frac{a_{n+1}}{a_n}$. It cancels factorials entirely. |
+| **Entire term raised to $n$** $\sum (f(n))^n$ | **Root Test** | The $n$-th root immediately eliminates the exponent, leaving a simple limit of $f(n)$. |
+| **Alternating Signs** $\sum (-1)^n b_n$ | **Alternating Series Test (AST)** | If the series is alternating, this is **required** to check for conditional convergence. (Must still check $\sum |a_n|$ first!) |
+| **Polynomials / Roots** $\frac{n^2+1}{n^4-3}$ | **Limit Comparison Test (LCT)** | This is the *safest* and most versatile test for rational/root functions. Choose $b_n$ by looking at the highest power terms. |
+| **Complicated Denominator** $\frac{1}{n (\ln n)^2}$ | **Integral Test** | Use if the function $f(x)$ is easy to integrate but hard to compare (especially involving $\ln x$ or $\arctan x$). |
+| **Bounded Numerator** $\frac{\sin n}{n^2}$ | **Direct Comparison Test** | Use when the numerator is clearly bounded (like $\sin n$ or $\cos n$), making it easy to create a larger, known convergent series (like $\sum 1/n^2$). |
+
+---
+
+## 3. The Alternating Series Protocol (AC vs CC)
+
+If your series is alternating, you must follow this protocol *after* checking the Divergence Test:
+
+| Step | Test / Logic | Conclusion |
+| :--- | :--- | :--- |
+| **Step A** | **Test Absolute Value** $\sum |a_n|$. Use the Ratio, Root, or Comparison Test on the positive series. | If $\sum |a_n|$ **CONVERGES**, the original series is **Absolutely Convergent (AC)**. (STOP) |
+| **Step B** | If $\sum |a_n|$ **DIVERGES**, proceed to **AST** on $b_n$. | The series is not AC, but it might be saved by cancellation. |
+| **Step C** | **Apply AST:** Check $\lim_{n\to\infty} b_n = 0$ AND $b_n$ is decreasing. | If AST passes, the series is **Conditionally Convergent (CC)**. If AST fails (and $\lim a_n = 0$ was $L=0$), the series **DIVERGES**. |
+
+This systematic approach will ensure you never miss a classification and always choose the quickest route to the answer!
+
+What problem would you like to run through this flowchart next?
+
+## PART II: References
 ### **I. Sequences ($\{a_n\}$) & Preliminary Tests**
 
 | Concept | Condition/Test | Formula/Notes |
