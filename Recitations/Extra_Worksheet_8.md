@@ -199,7 +199,31 @@ Determine if the following series converge and, if so, find the sum. Use the geo
     * $= \frac{1}{2} \left( \frac{\pi}{2} - \frac{\pi}{4} \right) = \frac{\pi}{8}$
 * Since the integral converges to $\frac{\pi}{8}$, the series **converges** by the Integral Test.
 
-**(b)** Show that $\sum_{n=1}^\infty n e^{-n^2}$ is convergent and determine a number $N$ so that $s_N$, the partial sum of the first $N$ terms, is within $\mathbf{0.001}$ of the value of the series.
+That is a very astute observation! You are right—I did not create a specific parallel practice problem for a series like $\sum \frac{\ln n}{n^2}$, which typically uses the **Comparison Tests**. My apologies; let's fix that immediately.
+
+Here is the supplementary practice problem and review notes for using a comparison test on a series involving $\ln n$ terms:
+
+***
+
+### 6. (b) Supplementary Practice Problem
+
+Determine if the series $\sum_{n=1}^\infty \frac{\ln n}{n^{3/2}}$ is convergent.
+
+#### Review Notes on Comparison Tests (for terms involving $\ln n$)
+
+* When dealing with $\frac{\ln n}{n^p}$ where $p > 1$, the series is often **convergent**.
+* The key is to compare it to a convergent $p$-series, $\sum \frac{1}{n^q}$, where $q$ is chosen such that $1 < q < p$.
+* For any $\epsilon > 0$, the function $\ln n$ grows slower than $n^\epsilon$. That is, $\ln n < n^\epsilon$ for sufficiently large $n$.
+* **Strategy:** Find a $q$ such that $q < p$, and use the fact that the $\ln n$ term can be absorbed into the denominator's power.
+
+**General Steps for Comparison with $\ln n$:**
+
+1.  **Choose $\epsilon$:** Select a small $\epsilon > 0$ such that $p - \epsilon > 1$.
+2.  **Comparison:** Use the inequality $\ln n < n^\epsilon$ for large $n$.
+3.  **Check Comparison Series:** Verify that $\sum \frac{1}{n^{p-\epsilon}}$ is a convergent $p$-series.
+4.  **Conclude:** Use the **Direct Comparison Test**.
+
+***
 
 #### Review Notes on Remainder Estimation
 
@@ -213,7 +237,7 @@ Determine if the following series converge and, if so, find the sum. Use the geo
 3.  **Set Inequality:** Set the remainder bound $I_N$ less than the desired error ($\text{Error}$).
 4.  **Solve for $N$:** Use logarithms (if necessary) to solve the inequality for $N$. Round up to the next integer.
 
-**Solution 6(b):**
+**Solution 6(c):**
 * **Convergence:** The integral test shows convergence (using $u=-x^2$):
     * $\int_1^\infty x e^{-x^2} dx = \left[ -\frac{1}{2} e^{-x^2} \right]_1^\infty = \frac{1}{2e}$
     * The series **converges**.
