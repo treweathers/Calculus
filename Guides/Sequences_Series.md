@@ -34,7 +34,7 @@ Here are the key exponential rules you need to apply, along with the steps to re
 | **Negative Exponent Rule** | $b^{-x} = \frac{1}{b^x}$ | Apply this to the term with the negative exponent: $3^{-2n} = \frac{1}{3^{2n}}$. |
 | **Power of a Power Rule** | $b^{xy} = (b^x)^y$ | Rewrite the term with a multiple of $n$ in the exponent to isolate $n$: $3^{2n} = (3^2)^n$. |
 
-#### What Determines the Number of Terms Before Cancellation
+#### What Determines the Number of Terms Before Cancellation: Telescoping Series
 The number of terms you calculate is simply the number required to confirm which terms at the beginning *do not* have a corresponding negative term to cancel them. For a difference of $k$, the **first $k$ positive terms** will survive the cancellation. It's all about how far apart the indices are in the difference $b_n - b_{n+k}$.
 
 The number of terms you need to write out before the cancellation pattern is established depends entirely on the **difference in the indices** within the terms of the series.
