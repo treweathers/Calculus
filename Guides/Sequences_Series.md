@@ -37,9 +37,7 @@ Here are the key exponential rules you need to apply, along with the steps to re
 That is an excellent and common question! You've hit upon a key difference between the simple structure we just worked with and more complex telescoping series.
 
 #### What Determines the Number of Terms Before Cancellation
-The number of terms you calculate is simply the number required to confirm which terms at the beginning *do not* have a corresponding negative term to cancel them. For a difference of $k$, the **first $k$ positive terms** will survive the cancellation.
-
-Does that clarify why you sometimes see more terms calculated? It's all about how far apart the indices are in the difference $b_n - b_{n+k}$.
+The number of terms you calculate is simply the number required to confirm which terms at the beginning *do not* have a corresponding negative term to cancel them. For a difference of $k$, the **first $k$ positive terms** will survive the cancellation. It's all about how far apart the indices are in the difference $b_n - b_{n+k}$.
 
 The number of terms you need to write out before the cancellation pattern is established depends entirely on the **difference in the indices** within the terms of the series.
 
