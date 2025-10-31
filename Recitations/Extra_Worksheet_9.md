@@ -1,4 +1,4 @@
-## 🌟 Additional Practice Problems (Strict Format with Generalized Steps)
+## Additional Practice Problems
 ***
 
 ### 1. Absolute, Conditional, and Divergence Tests
