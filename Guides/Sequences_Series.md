@@ -1,4 +1,19 @@
 # Sequences and Series Guide
+## 📚 Core Definitions for Sequences and Series
+
+| Term | Simple Definition | Key Intuition |
+| :--- | :--- | :--- |
+| **Sequence** ($a_n$) | An ordered **list of numbers** defined by a rule: $a_1, a_2, a_3, \ldots$ | The **ingredients** for the sum. |
+| **Series** ($\sum a_n$) | The **sum** of all the terms in a sequence: $a_1 + a_2 + a_3 + \cdots$ | The **recipe** to find the total value. |
+| **Partial Sum** ($s_N$) | The sum of the first $N$ terms: $s_N = a_1 + a_2 + \cdots + a_N$. | The **product so far**; a sequence itself. |
+| **Convergence** (Series) | A series **converges** if the sequence of its partial sums ($s_N$) approaches a single, finite number $S$. | The total sum **settles down** to a fixed value. |
+| **Divergence** (Series) | A series **diverges** if the sequence of its partial sums ($s_N$) does not approach a finite number (it might go to $\pm \infty$ or oscillate). | The total sum **flies off** or never stabilizes. |
+| **Absolute Convergence (AC)** | A series $\sum a_n$ converges even when all terms are made positive (i.e., $\sum |a_n|$ converges). | Convergence is so strong that alternating signs are unnecessary. |
+| **Conditional Convergence (CC)**| A series $\sum a_n$ converges only because of its alternating signs (i.e., $\sum a_n$ converges, but $\sum |a_n|$ diverges). | Convergence is fragile; it relies entirely on cancellation. |
+| **Remainder/Error ($R_N$)** | The difference between the true sum $S$ and the partial sum $s_N$: $R_N = S - s_N$. | The **leftover amount** after adding the first $N$ terms. |
+
+---
+
 ## INTRODUCTION
 Here is the intuitive connection:
 
