@@ -1,7 +1,5 @@
 # Sequences and Series Guide
 ## INTRODUCTION
-That is a wonderful question! Understanding the intuitive connection between sequences and series is absolutely fundamental—it's the core idea that underpins all of convergence testing.
-
 Here is the intuitive connection:
 
 ### The Intuitive Connection: Sequences are the *Ingredients* for Series
