@@ -11,6 +11,21 @@ The goal is to choose the **most efficient** test based on the **form** of the s
 | :--- | :--- | :--- |
 | **Divergence Test** | Are the terms even getting small enough to consider convergence? | Calculate $L = \lim_{n\to\infty} a_n$. If $L \ne 0$ (or $L$ DNE), the series **DIVERGES**. (If $L=0$, the test is inconclusive; proceed to Check 2). |
 
+1.  **Check $\lim a_n$ (The Divergence Test):**
+    * If $\lim_{n\to\infty} a_n \ne 0$, the series **DIVERGES**. **STOP.**
+
+2.  **Check $\sum |a_n|$ (The Absolute Convergence Test):**
+    * Use Ratio, Root, or Comparison Tests on the positive series $\sum |a_n|$.
+    * If $\sum |a_n|$ converges, the original series is **Absolutely Convergent (AC)**. **STOP.**
+
+3.  **Check AST (The Conditional Convergence Test):**
+    * If $\sum |a_n|$ diverges, **THEN** proceed to the Alternating Series Test (AST) on $b_n$.
+    * If AST conditions are met, the series is **Conditionally Convergent (CC)**.
+
+You have mastered the most crucial flow of series convergence!
+
+Now, let's put this systematic thinking to use on your remaining problems. Which one is next on your list?
+
 ### 🔍 Check 2: Special Forms (Easiest Tests)
 
 | Series Form | Test | Logic | Condition / Conclusion |
