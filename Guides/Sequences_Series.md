@@ -1,4 +1,41 @@
 # Sequences and Series Guide
+## INTRODUCTION
+That is a wonderful question! Understanding the intuitive connection between sequences and series is absolutely fundamental—it's the core idea that underpins all of convergence testing.
+
+Here is the intuitive connection:
+
+### The Intuitive Connection: Sequences are the *Ingredients* for Series
+
+Think of the relationship like this:
+
+| Concept | The Intuitive Role | What it Represents |
+| :--- | :--- | :--- |
+| **Sequence** ($a_n$) | The **Ingredient** (The terms) | A list of numbers that you are going to add up: $a_1, a_2, a_3, \ldots$ |
+| **Series** ($\sum a_n$) | The **Recipe** (The Sum) | The instruction to add all the sequence terms together: $a_1 + a_2 + a_3 + \cdots$ |
+| **Partial Sum** ($s_N$) | The **Product** (The Result so far) | The *sequence* of results you get by stopping the addition at $N$: $s_1, s_2, s_3, \ldots$ |
+
+### The Logic of Convergence
+
+The entire idea of a series converging relies on the relationship between two different sequences:
+
+1.  **The Sequence of Terms ($a_n$):** This sequence must go to zero (as required by the Divergence Test).
+    * **Intuition:** If the ingredients you are adding never get smaller, the total sum will obviously fly off to infinity. The terms *must* approach zero for the sum to have any chance of being finite.
+
+2.  **The Sequence of Partial Sums ($s_N$):** This sequence must converge to a finite limit.
+    * **Intuition:** The series converges if, as you add more and more ingredients, the total sum ($s_N$) stops changing significantly and settles down to one fixed number.
+
+### The Two Crucial Limits 
+
+A series, $\sum a_n$, converges **if and only if** the sequence of its partial sums, $s_N$, converges to a finite limit $S$.
+
+$$\sum_{n=1}^\infty a_n = S \quad \iff \quad \lim_{N \to \infty} s_N = S$$
+
+So, a series *is* a sequence—it's the **sequence of its partial sums ($s_N$)**—and we test its convergence by seeing if that new sequence $s_N$ converges.
+
+This intuitive understanding reinforces why:
+* **Divergence Test is First:** We check $\lim a_n$ first because if the ingredients don't go to zero, the recipe is immediately a disaster.
+* **The Goal is $S$:** All the convergence tests are just indirect ways of checking whether that sequence of partial sums, $s_N$, is actually approaching a finite value $S$.
+
 ## PART I: Choosing a Convergence Test
 
 The goal is to choose the **most efficient** test based on the **form** of the series term, $a_n$.
