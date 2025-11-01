@@ -1,5 +1,5 @@
 # Sequences and Series Guide
-## 📚 Core Definitions for Sequences and Series
+## PART I: Core Definitions for Sequences and Series
 
 | Term | Simple Definition | Key Intuition |
 | :--- | :--- | :--- |
@@ -14,7 +14,7 @@
 
 ---
 
-## INTRODUCTION
+## PART II: INTRODUCTION
 ### The Intuitive Connection: Sequences are the *Ingredients* for Series
 
 Think of the relationship like this:
@@ -47,7 +47,7 @@ This intuitive understanding reinforces why:
 * **Divergence Test is First:** We check $\lim a_n$ first because if the ingredients don't go to zero, the recipe is immediately a disaster.
 * **The Goal is $S$:** All the convergence tests are just indirect ways of checking whether that sequence of partial sums, $s_N$, is actually approaching a finite value $S$.
 
-## PART I: Choosing a Convergence Test
+## PART III: Choosing a Convergence Test
 
 The goal is to choose the **most efficient** test based on the **form** of the series term, $a_n$.
 
@@ -109,7 +109,7 @@ This systematic approach will ensure you never miss a classification and always 
 
 What problem would you like to run through this flowchart next?
 
-## PART II: References
+## PART IV: References
 ### **I. Sequences ($\{a_n\}$) & Preliminary Tests**
 
 | Concept | Condition/Test | Formula/Notes |
