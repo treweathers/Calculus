@@ -22,10 +22,6 @@ The goal is to choose the **most efficient** test based on the **form** of the s
     * If $\sum |a_n|$ diverges, **THEN** proceed to the Alternating Series Test (AST) on $b_n$.
     * If AST conditions are met, the series is **Conditionally Convergent (CC)**.
 
-You have mastered the most crucial flow of series convergence!
-
-Now, let's put this systematic thinking to use on your remaining problems. Which one is next on your list?
-
 ### 🔍 Check 2: Special Forms (Easiest Tests)
 
 | Series Form | Test | Logic | Condition / Conclusion |
