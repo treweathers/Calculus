@@ -14,8 +14,7 @@
 
 ---
 
-## PART II: INTRODUCTION
-### The Intuitive Connection: Sequences are the *Ingredients* for Series
+## PART II: The Intuitive Connection: Sequences are the *Ingredients* for Series
 
 Think of the relationship like this:
 
