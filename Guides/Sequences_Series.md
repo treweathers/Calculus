@@ -208,6 +208,23 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
+That's an insightful question! Factorials often look intimidating in convergence tests, but they are actually a big hint that you should use the **Ratio Test**. The key is that factorials have a property that leads to massive simplification when you take the ratio of consecutive terms.
+
+---
+
+### 💡 Factorials: Simplification in the Ratio Test
+
+| Factorial Ratio | Full Expansion | Final Simplification |
+| :--- | :--- | :--- |
+| $\frac{(n+1)!}{n!}$ | $\frac{(n+1) \cdot n!}{n!}$ | $n+1$ |
+| $\frac{n!}{(n+1)!}$ | $\frac{n!}{(n+1) \cdot n!}$ | $\frac{1}{n+1}$ |
+| $\frac{(2n+2)!}{(2n)!}$ | $\frac{(2n+2)(2n+1)(2n)!}{(2n)!}$ | $(2n+2)(2n+1)$ |
+| $\frac{(2n)!}{(2n+2)!}$ | $\frac{(2n)!}{(2n+2)(2n+1)(2n)!}$ | $\frac{1}{(2n+2)(2n+1)}$ |
+
+Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties.
+
+Would you like to walk through a complete Ratio Test example with a series containing a factorial?
+
 ### **IV. Power Series, Taylor Series, and Maclaurin Series**
 
 #### **A. Power Series and Convergence**
