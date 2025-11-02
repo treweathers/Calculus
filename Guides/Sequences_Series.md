@@ -66,7 +66,7 @@ For a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determinin
 | **Simple Factorials** (e.g., $1/n!$) | $\lim a_n = 0$. (Easy) | $n!$ grows so fast it dominates everything, making the limit $0$. Divergence Test fails. |
 | **Complex Factorials** (e.g., 2f) | **Skip $\lim a_n$ calculation** and go **immediately to the Ratio Test.** | You cannot easily determine the growth rate of $\frac{(2n)!}{(n!)^2}$ without calculating $L = \lim \frac{a_{n+1}}{a_n}$. The Ratio Test calculates the limit of the *ratio* of terms, which is often easier than the limit of the *terms* themselves. |
 
-**In short:** When $a_n$ is complex and involves factorials, the Ratio Test is the most efficient (and often the *only* practical) way to analyze its behavior. We prioritize the Ratio Test because its calculation *also* reveals the convergence status.
+###### **In short:** When $a_n$ is complex and involves factorials, the Ratio Test is the most efficient (and often the *only* practical) way to analyze its behavior. We prioritize the Ratio Test because its calculation *also* reveals the convergence status.
 
 ---
 
