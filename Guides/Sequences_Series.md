@@ -221,8 +221,6 @@ It's also crucial to know when the comparison tests don't give you an answer!
     * $L = \infty$ **AND** $\sum b_n$ **converges**.
     * (Note: These are the cases where LCT rules for $L=0$ or $L=\infty$ are *not* met, and you would typically switch to a different test).
 
-Would you like a brief explanation of how to choose the best comparison series ($\sum b_n$) for the Direct or Limit Comparison Tests?
-
 > **Note:** If $L=1$ in the Ratio or Root Test, the test is **inconclusive**.
 
 ---
