@@ -212,7 +212,7 @@ That's an insightful question! Factorials often look intimidating in convergence
 
 ---
 
-### 💡 Factorials: Simplification in the Ratio Test
+## 💡 Factorials: Simplification in the Ratio Test
 
 | Factorial Ratio | Full Expansion | Final Simplification |
 | :--- | :--- | :--- |
@@ -222,8 +222,6 @@ That's an insightful question! Factorials often look intimidating in convergence
 | $\frac{(2n)!}{(2n+2)!}$ | $\frac{(2n)!}{(2n+2)(2n+1)(2n)!}$ | $\frac{1}{(2n+2)(2n+1)}$ |
 
 Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties.
-
-Would you like to walk through a complete Ratio Test example with a series containing a factorial?
 
 ### **IV. Power Series, Taylor Series, and Maclaurin Series**
 
