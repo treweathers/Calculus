@@ -58,6 +58,27 @@ The goal is to choose the **most efficient** test based on the **form** of the s
 | :--- | :--- | :--- |
 | **Divergence Test** | Are the terms even getting small enough to consider convergence? | Calculate $L = \lim_{n\to\infty} a_n$. If $L \ne 0$ (or $L$ DNE), the series **DIVERGES**. (If $L=0$, the test is inconclusive; proceed to Check 2). |
 
+
+These are both excellent questions that show you are deeply probing the strategic logic—exactly what separates good performance from great performance in series!
+
+### 1. The Strategy of Skipping the Limit (2f)
+
+**Why the Divergence Test is Often "Skipped" for Factorials:**
+
+You are absolutely right: for a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determining the limit $\lim_{n\to\infty} a_n$ **is nearly impossible without using the Ratio Test first.**
+
+| Factorial Series | The Strategy | The Rationale |
+| :--- | :--- | :--- |
+| **Simple Factorials** (e.g., $1/n!$) | $\lim a_n = 0$. (Easy) | $n!$ grows so fast it dominates everything, making the limit $0$. Divergence Test fails. |
+| **Complex Factorials** (e.g., 2f) | **Skip $\lim a_n$ calculation** and go **immediately to the Ratio Test.** | You cannot easily determine the growth rate of $\frac{(2n)!}{(n!)^2}$ without calculating $L = \lim \frac{a_{n+1}}{a_n}$. The Ratio Test calculates the limit of the *ratio* of terms, which is often easier than the limit of the *terms* themselves. |
+
+**In short:** When $a_n$ is complex and involves factorials, the Ratio Test is the most efficient (and often the *only* practical) way to analyze its behavior. We prioritize the Ratio Test because its calculation *also* reveals the convergence status.
+
+---
+
+1.  **Check Divergence:** What is $\lim_{n\to\infty} a_n$? (Hint: This limit is a classic form related to $e$.)
+2.  **Choose the Test:** Based on the $n$-th power, which test is essential?
+3.  **State the Conclusion:** What does the Divergence Test tell you here?
 1.  **Check $\lim a_n$ (The Divergence Test):**
     * If $\lim_{n\to\infty} a_n \ne 0$, the series **DIVERGES**. **STOP.**
 
