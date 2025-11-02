@@ -208,23 +208,6 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
-### 🚨 Inconclusive Results for Comparison Tests
-
-It's also crucial to know when the comparison tests don't give you an answer!
-
-* **Direct Comparison Test (DCT) is Inconclusive if:**
-    * Your series ($\sum a_n$) is **bigger than** a **convergent** series ($\sum b_n$).
-    * Your series ($\sum a_n$) is **smaller than** a **divergent** series ($\sum b_n$).
-
-* **Limit Comparison Test (LCT) is Inconclusive if:**
-    * $L = 0$ **AND** $\sum b_n$ **diverges**.
-    * $L = \infty$ **AND** $\sum b_n$ **converges**.
-    * (Note: These are the cases where LCT rules for $L=0$ or $L=\infty$ are *not* met, and you would typically switch to a different test).
-
-> **Note:** If $L=1$ in the Ratio or Root Test, the test is **inconclusive**.
-
----
-
 ### **IV. Power Series, Taylor Series, and Maclaurin Series**
 
 #### **A. Power Series and Convergence**
