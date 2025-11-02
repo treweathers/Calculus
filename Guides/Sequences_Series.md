@@ -129,6 +129,32 @@ What problem would you like to run through this flowchart next?
 | **Harmonic Series** | $\sum_{n=1}^{\infty} \frac{1}{n}$ | **Always Diverges.** | Special case of $p$-series where $p=1$. |
 | **Telescoping Series** | $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (after partial fractions) | Converges if $\lim_{N \to \infty} S_N$ exists. | Find $S_N$, then take $\lim_{N \to \infty} S_N$. |
 
+---
+
+### 🌟 Series Convergence Quick Reference (List Format)
+
+#### 1. Geometric Series
+* **General Form:** $\sum_{n=0}^{\infty} a r^n$
+* **Convergence Condition:** Converges if $\boldsymbol{|r| < 1}$ (i.e., $-1 < r < 1$). Diverges if $|r| \ge 1$.
+* **Key Formula:** When the series converges, the **Sum** is $\boldsymbol{S = \frac{a}{1-r}}$, where $a$ is the first term.
+
+#### 2. $p$-Series
+* **General Form:** $\sum_{n=1}^{\infty} \frac{1}{n^p}$
+* **Convergence Condition:** Converges if $\boldsymbol{p > 1}$. Diverges if $p \le 1$.
+* **Key Test:** Comparison of the exponent $p$ to 1.
+
+#### 3. Harmonic Series
+* **General Form:** $\sum_{n=1}^{\infty} \frac{1}{n}$
+* **Convergence Condition:** **Always Diverges.**
+* **Key Note:** This is the special case of the $p$-series where $p=1$.
+
+#### 4. Telescoping Series
+* **General Form:** $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (or a similar difference after partial fractions)
+* **Convergence Condition:** Converges if the limit of the $(N+1)$-th term, $\lim_{N \to \infty} b_{N+1}$, exists (and is finite).
+* **Key Formula:** The **Sum** is $S = b_1 - \lim_{N \to \infty} b_{N+1}$.
+
+---
+
 #### Algebraic Manipulation Needed (Example): Geometric Series
 The series is:
 $$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
