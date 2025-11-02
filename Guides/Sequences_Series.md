@@ -58,6 +58,11 @@ The goal is to choose the **most efficient** test based on the **form** of the s
 | :--- | :--- | :--- |
 | **Divergence Test** | Are the terms even getting small enough to consider convergence? | Calculate $L = \lim_{n\to\infty} a_n$. If $L \ne 0$ (or $L$ DNE), the series **DIVERGES**. (If $L=0$, the test is inconclusive; proceed to Check 2). |
 
+---
+
+1.  **Check $\lim a_n$ (The Divergence Test):**
+    * If $\lim_{n\to\infty} a_n \ne 0$, the series **DIVERGES**. **STOP.**
+
 ##### EXCEPTION: The Strategy of Skipping the Limit - Why the Divergence Test is Often "Skipped" for Factorials:**
 For a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determining the limit $\lim_{n\to\infty} a_n$ **is nearly impossible without using the Ratio Test first.**
 
@@ -67,11 +72,6 @@ For a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determinin
 | **Complex Factorials** (e.g., 2f) | **Skip $\lim a_n$ calculation** and go **immediately to the Ratio Test.** | You cannot easily determine the growth rate of $\frac{(2n)!}{(n!)^2}$ without calculating $L = \lim \frac{a_{n+1}}{a_n}$. The Ratio Test calculates the limit of the *ratio* of terms, which is often easier than the limit of the *terms* themselves. |
 
 ###### **In short:** When $a_n$ is complex and involves factorials, the Ratio Test is the most efficient (and often the *only* practical) way to analyze its behavior. We prioritize the Ratio Test because its calculation *also* reveals the convergence status.
-
----
-
-1.  **Check $\lim a_n$ (The Divergence Test):**
-    * If $\lim_{n\to\infty} a_n \ne 0$, the series **DIVERGES**. **STOP.**
 
 2.  **Check $\sum |a_n|$ (The Absolute Convergence Test):**
     * Use Ratio, Root, or Comparison Tests on the positive series $\sum |a_n|$.
