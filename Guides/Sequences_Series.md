@@ -58,14 +58,8 @@ The goal is to choose the **most efficient** test based on the **form** of the s
 | :--- | :--- | :--- |
 | **Divergence Test** | Are the terms even getting small enough to consider convergence? | Calculate $L = \lim_{n\to\infty} a_n$. If $L \ne 0$ (or $L$ DNE), the series **DIVERGES**. (If $L=0$, the test is inconclusive; proceed to Check 2). |
 
-
-These are both excellent questions that show you are deeply probing the strategic logic—exactly what separates good performance from great performance in series!
-
-### 1. The Strategy of Skipping the Limit (2f)
-
-**Why the Divergence Test is Often "Skipped" for Factorials:**
-
-You are absolutely right: for a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determining the limit $\lim_{n\to\infty} a_n$ **is nearly impossible without using the Ratio Test first.**
+##### EXCEPTION: The Strategy of Skipping the Limit - Why the Divergence Test is Often "Skipped" for Factorials:**
+For a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determining the limit $\lim_{n\to\infty} a_n$ **is nearly impossible without using the Ratio Test first.**
 
 | Factorial Series | The Strategy | The Rationale |
 | :--- | :--- | :--- |
@@ -99,6 +93,19 @@ You are absolutely right: for a complex factorial series like $2(f) \sum \frac{(
 | **Difference** $\sum (b_n - b_{n+1})$ | **Telescoping Test** | Can the term be rewritten as a difference that will cancel? | **Converges** if $\lim_{N\to\infty} s_N$ is finite. |
 
 ---
+
+##### NOTE: Finding the Sum as a Clue
+When a series problem asks you to **find the sum**, it is a very strong clue that the series belongs to one of the few categories for which an exact sum formula exists. 
+
+| Series Type | Term Form ($a_n$) | Sum Formula ($S$) |
+| :--- | :--- | :--- |
+| **Geometric Series** | $a \cdot r^n$ | $S = \frac{a}{1-r}$ (if $|r| < 1$) |
+| **Telescoping Series** | $f(n) - f(n+k)$ (after PFD) | $S = \lim_{N\to\infty} s_N$ (Found by canceling interior terms) |
+
+If you determine convergence using LCT, Ratio, or Root Test, but the question demands the sum, you must backtrack and check for a Geometric or Telescoping form!
+
+---
+
 
 ## 2. Main Tests (The Decision Matrix)
 
