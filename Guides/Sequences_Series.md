@@ -70,9 +70,6 @@ For a complex factorial series like $2(f) \sum \frac{(2n)!}{(n!)^2}$, determinin
 
 ---
 
-1.  **Check Divergence:** What is $\lim_{n\to\infty} a_n$? (Hint: This limit is a classic form related to $e$.)
-2.  **Choose the Test:** Based on the $n$-th power, which test is essential?
-3.  **State the Conclusion:** What does the Divergence Test tell you here?
 1.  **Check $\lim a_n$ (The Divergence Test):**
     * If $\lim_{n\to\infty} a_n \ne 0$, the series **DIVERGES**. **STOP.**
 
