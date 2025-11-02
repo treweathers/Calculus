@@ -199,11 +199,29 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 | Test Name | When to Use | Condition for Convergence | Condition for Divergence |
 | :--- | :--- | :--- | :--- |
-| **Integral Test** | $a_n = f(n)$ is positive, continuous, and decreasing. | $\int_1^\infty f(x) \, dx$ converges. | $\int_1^\infty f(x) \, dx$ diverges. |
-| **Limit Comparison Test (LCT)** | $a_n$ and $b_n$ are positive and similar. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L > 0$. If $\sum b_n$ converges, so does $\sum a_n$. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L > 0$. If $\sum b_n$ diverges, so does $\sum a_n$. |
-| **Alternating Series Test (AST)** | Series alternates sign: $\sum (-1)^n b_n$ where $b_n > 0$. | Both must hold: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \le b_n$. | Fails either of the two conditions. |
-| **Ratio Test** | $a_n$ involves factorials ($n!$) or exponents ($r^n$). | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L < 1$. | $L > 1$ or $L = \infty$. |
-| **Root Test** | $a_n$ involves $n$-th power: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = L < 1$. | $L > 1$ or $L = \infty$. |
+| **Direct Comparison Test (DCT)** | $a_n$ and $b_n$ are **positive** and a clear **term-by-term inequality** $0 \leq a_n \leq b_n$ or $0 \leq b_n \leq a_n$ can be established (eventually). | **If $0 \leq a_n \leq b_n$** for all $n$ (eventually) **AND $\sum b_n$ converges, then $\sum a_n$ converges.**  | **If $0 \leq b_n \leq a_n$** for all $n$ (eventually) **AND $\sum b_n$ diverges, then $\sum a_n$ diverges.**  |
+| Integral Test | $a_n = f(n)$ is **positive, continuous, and decreasing.** | $\int_{1}^{\infty} f(x) \, dx$ converges. | $\int_{1}^{\infty} f(x) \, dx$ diverges. |
+| Limit Comparison Test (LCT) | $a_n$ and $b_n$ are **positive** and **algebraically similar** (e.g., rational functions or similar dominant terms). | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ converges, so does $\sum a_n$. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ diverges, so does $\sum a_n$. |
+| Alternating Series Test (AST) | Series **alternates sign**: $\sum (-1)^n b_n$ where $b_n > 0$. | Both must hold: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \leq b_n$ (eventually). | Fails either of the two conditions. |
+| Ratio Test | $a_n$ involves **factorials** ($n!$) or **exponents** ($r^n$). | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| < 1$. | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| > 1$ or $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$. |
+| Root Test | $a_n$ involves an **$n$-th power**: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} < 1$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} > 1$ or $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = \infty$. |
+
+---
+
+### 🚨 Inconclusive Results for Comparison Tests
+
+It's also crucial to know when the comparison tests don't give you an answer!
+
+* **Direct Comparison Test (DCT) is Inconclusive if:**
+    * Your series ($\sum a_n$) is **bigger than** a **convergent** series ($\sum b_n$).
+    * Your series ($\sum a_n$) is **smaller than** a **divergent** series ($\sum b_n$).
+
+* **Limit Comparison Test (LCT) is Inconclusive if:**
+    * $L = 0$ **AND** $\sum b_n$ **diverges**.
+    * $L = \infty$ **AND** $\sum b_n$ **converges**.
+    * (Note: These are the cases where LCT rules for $L=0$ or $L=\infty$ are *not* met, and you would typically switch to a different test).
+
+Would you like a brief explanation of how to choose the best comparison series ($\sum b_n$) for the Direct or Limit Comparison Tests?
 
 > **Note:** If $L=1$ in the Ratio or Root Test, the test is **inconclusive**.
 
