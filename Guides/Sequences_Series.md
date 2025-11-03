@@ -259,10 +259,6 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
-That's an insightful question! Factorials often look intimidating in convergence tests, but they are actually a big hint that you should use the **Ratio Test**. The key is that factorials have a property that leads to massive simplification when you take the ratio of consecutive terms.
-
----
-
 ## 💡 Factorials: Simplification in the Ratio Test
 
 | Factorial Ratio | Full Expansion | Final Simplification |
