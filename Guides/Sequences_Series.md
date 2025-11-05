@@ -259,6 +259,63 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
+## 📐 Summary of Convergence Tests for Infinite Series
+
+---
+
+### **1. Direct Comparison Test (DCT)**
+
+* **When to Use:** When the terms $a_n$ and $b_n$ are **positive** and a clear term-by-term inequality ($0 \le a_n \le b_n$ or $0 \le b_n \le a_n$) can be established (eventually).
+* **Condition for Convergence:** If $0 \le a_n \le b_n$ (eventually) AND $\sum b_n$ **converges**, then $\sum a_n$ also **converges**. (The smaller series converges if the larger one does.)
+* **Condition for Divergence:** If $0 \le b_n \le a_n$ (eventually) AND $\sum b_n$ **diverges**, then $\sum a_n$ also **diverges**. (The larger series diverges if the smaller one does.)
+
+---
+
+### **2. Integral Test**
+
+* **When to Use:** When the series term $a_n$ can be represented as a function $f(n)$, where $f(x)$ is **positive, continuous, and decreasing** for $x \ge 1$.
+* **Condition for Convergence:** The series $\sum a_n$ converges if the improper integral $\int_{1}^{\infty} f(x) \, dx$ **converges**.
+* **Condition for Divergence:** The series $\sum a_n$ diverges if the improper integral $\int_{1}^{\infty} f(x) \, dx$ **diverges**.
+
+---
+
+### **3. Limit Comparison Test (LCT)**
+
+* **When to Use:** When the terms $a_n$ and $b_n$ are **positive** and are **algebraically similar** (e.g., rational functions or having similar dominant terms).
+* **Conditions for Convergence/Divergence:**
+    * Calculate the limit: $L = \lim_{n \to \infty} \frac{a_n}{b_n}$.
+    * If **$0 < L < \infty$** (a positive, finite number), then $\sum a_n$ and $\sum b_n$ behave the **same way** (both converge or both diverge). 
+
+---
+
+### **4. Alternating Series Test (AST)**
+
+* **When to Use:** When the series **alternates sign** (e.g., $\sum (-1)^n b_n$ where $b_n > 0$).
+* **Condition for Convergence:** **Both** conditions must hold:
+    1.  $\lim_{n \to \infty} b_n = 0$ AND
+    2.  $b_{n+1} \le b_n$ (The terms are non-increasing, eventually).
+* **Condition for Divergence:** The series **fails to converge** if it fails *either* of the two conditions above. (Note: Failing the AST does *not* necessarily mean divergence, but the $n$-th Term Test for Divergence may apply if the first condition fails.)
+
+---
+
+### **5. Ratio Test**
+
+* **When to Use:** When $a_n$ involves **factorials ($n!$)** or **exponents ($r^n$)**.
+* **Condition for Convergence:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. The series converges **absolutely** if **$L < 1$**.
+* **Condition for Divergence:** The series diverges if **$L > 1$** or if $L = \infty$.
+* **Inconclusive:** The test is inconclusive if $L = 1$.
+
+---
+
+### **6. Root Test**
+
+* **When to Use:** When $a_n$ involves an **$n$-th power** (i.e., $a_n = (...)^n$).
+* **Condition for Convergence:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{\left| a_n \right|}$. The series converges **absolutely** if **$L < 1$**.
+* **Condition for Divergence:** The series diverges if **$L > 1$** or if $L = \infty$.
+* **Inconclusive:** The test is inconclusive if $L = 1$.
+
+---
+
 ## 💡 Factorials: Simplification in the Ratio Test
 
 | Factorial Ratio | Full Expansion | Final Simplification |
