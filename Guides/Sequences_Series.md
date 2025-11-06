@@ -243,7 +243,7 @@ Because the terms $\pm b_k$ are adjacent, only the first positive term ($b_8$) a
 
 
 
-<u> 2. The Complex Case (Difference of $k > 1$) </u>
+<u> <h1> 2. The Complex Case (Difference of $k > 1$) </h1> </u>
 
 
 
