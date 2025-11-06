@@ -325,7 +325,37 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 | $\frac{(2n+2)!}{(2n)!}$ | $\frac{(2n+2)(2n+1)(2n)!}{(2n)!}$ | $(2n+2)(2n+1)$ |
 | $\frac{(2n)!}{(2n+2)!}$ | $\frac{(2n)!}{(2n+2)(2n+1)(2n)!}$ | $\frac{1}{(2n+2)(2n+1)}$ |
 
-Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties.
+Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties. 
+
+---
+
+## 📘 Guide to Series Estimation & Error Bounds
+
+### Part 1: Alternating Series Estimation Theorem (ASET)
+
+The ASET is used **only** for alternating series $\sum (-1)^n b_n$ (where $b_n > 0$) that meet the conditions of the Alternating Series Test (AST). The primary goal is to find how many terms ($N$) are needed to reach a desired accuracy.
+
+| Step | Goal | General Procedure | Formula Used |
+| :--- | :--- | :--- | :--- |
+| **1. Prove Convergence** | Show the series converges. | Verify the two conditions of the AST: **(a)** $\lim_{n \to \infty} b_n = 0$ and **(b)** $b_{n+1} \le b_n$. | $b_n = |a_n|$ |
+| **2. Set up the Error Bound** | Determine the number of terms ($N$) required for the desired accuracy ($\text{Error} < \text{Tolerance}$). | The **error** ($\lvert R_N \rvert$) is less than the **absolute value of the first unused term** ($b_{N+1}$). | $\lvert R_N \rvert \le b_{N+1} < \text{Tolerance}$ |
+| **3. Solve for $N$** | Find the smallest integer $N$. | **Substitute** the formula for $b_{N+1}$ into the inequality and solve for $N$ (usually by **Trial and Error** or by creating a table of values). | $\frac{1}{(N+1) \cdot \dots} < \text{Tolerance}$ |
+| **4. Calculate the Estimate** | Find the sum accurate to the tolerance. | Calculate the $N^{th}$ partial sum ($S_N$) by adding the first $N$ terms of the original alternating series. | $S_N = \sum_{n=1}^N a_n = a_1 + a_2 + \dots + a_N$ |
+
+---
+
+### Part 2: The Integral Test Remainder (Error) Bound
+
+This bound is used for a positive-term series $\sum a_n$ that meets the conditions of the Integral Test (i.e., $f(x)=a_n$ is continuous, positive, and decreasing). The primary goal is to bound the error in the approximation.
+
+| Step | Goal | General Procedure | Formula Used |
+| :--- | :--- | :--- | :--- |
+| **1. Prove Convergence** | Show the series converges. | Verify the **Integral Test conditions** (positive, continuous, decreasing) and show the associated improper integral converges. (Alternatively, use the P-Series Test if applicable). | $\sum a_n \text{ converges if } \int_k^\infty f(x) \, dx \text{ converges}$ |
+| **2. Determine the Remainder ($R_N$) Bounds** | Find the lower and upper bounds for the error when using $S_N$ as the estimate. | The remainder ($R_N$) is bounded by two improper integrals using $N$ and $N+1$.  | $\int_{N+1}^\infty f(x) \, dx \le R_N \le \int_{N}^\infty f(x) \, dx$ |
+| **3. Evaluate the Integrals** | Calculate the numerical values for the lower and upper bounds. | Evaluate the two improper integrals $\int_{N+1}^\infty f(x) \, dx$ and $\int_{N}^\infty f(x) \, dx$. | $\int_a^\infty f(x) \, dx = \lim_{t \to \infty} \left[ F(x) \right]_a^t$ |
+| **4. Formulate the Final Interval** | State the most accurate interval for the true sum $S$. | Add the $N^{th}$ partial sum ($S_N$) to the remainder bounds determined in Step 2. | $S_N + \int_{N+1}^\infty f(x) \, dx \le S \le S_N + \int_{N}^\infty f(x) \, dx$ |
+
+---
 
 ### **IV. Power Series, Taylor Series, and Maclaurin Series**
 
