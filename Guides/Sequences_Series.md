@@ -254,8 +254,8 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 | Integral Test | $a_n = f(n)$ is **positive, continuous, and decreasing.** | $\int_{1}^{\infty} f(x) \, dx$ converges. | $\int_{1}^{\infty} f(x) \, dx$ diverges. |
 | Limit Comparison Test (LCT) | $a_n$ and $b_n$ are **positive** and **algebraically similar** (e.g., rational functions or similar dominant terms). | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ converges, so does $\sum a_n$. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ diverges, so does $\sum a_n$. |
 | Alternating Series Test (AST) | Series **alternates sign**: $\sum (-1)^n b_n$ where $b_n > 0$. | Both must hold: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \leq b_n$ (eventually). | Fails either of the two conditions. |
-| Ratio Test | $a_n$ involves **factorials** ($n!$) or **exponents** ($r^n$). | $\lim_{n \to \infty} \left.| \frac{a_{n+1}}{a_n} \right| < 1$. | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| > 1$ or $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$. |
-| Root Test | $a_n$ involves an **$n$-th power**: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left.| a_n \right|} < 1$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} > 1$ or $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = \infty$. |
+| Ratio Test | $a_n$ involves **factorials** ($n!$) or **exponents** ($r^n$). | $\lim_{n \to \infty} \left. \frac{a_{n+1}}{a_n} \right| < 1$. | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| > 1$ or $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$. |
+| Root Test | $a_n$ involves an **$n$-th power**: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left. a_n \right|} < 1$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} > 1$ or $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = \infty$. |
 
 ---
 
