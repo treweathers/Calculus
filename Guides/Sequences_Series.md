@@ -318,7 +318,7 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 | $\frac{(2n+2)!}{(2n)!}$ | $\frac{(2n+2)(2n+1)(2n)!}{(2n)!}$ | $(2n+2)(2n+1)$ |
 | $\frac{(2n)!}{(2n+2)!}$ | $\frac{(2n)!}{(2n+2)(2n+1)(2n)!}$ | $\frac{1}{(2n+2)(2n+1)}$ |
 
-Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties. 
+###### Whenever you see a factorial in a series, your first instinct should be to reach for the **Ratio Test**, as it is specifically designed to exploit these cancellation properties. 
 
 ---
 
