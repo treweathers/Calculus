@@ -224,7 +224,7 @@ In short, you must expand until the largest negative index term is matched by a 
 
 
 
-<u> 1. The Simple Case (Difference of 1) </u>
+<u><h5> 1. The Simple Case (Difference of 1) </h5></u> 
 
 
 
@@ -243,7 +243,7 @@ Because the terms $\pm b_k$ are adjacent, only the first positive term ($b_8$) a
 
 
 
-<u> <h1> 2. The Complex Case (Difference of $k > 1$) </h1> </u>
+<u><h5> 2. The Complex Case (Difference of $k > 1$) </h5></u>
 
 
 
@@ -308,7 +308,7 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 ---
 
 
-<u> 💡 Factorials: Simplification in the Ratio Test </u>
+<u><h5> 💡 Factorials: Simplification in the Ratio Test </h5></u>
 
 
 | Factorial Ratio | Full Expansion | Final Simplification |
