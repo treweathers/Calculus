@@ -147,8 +147,6 @@ What problem would you like to run through this flowchart next?
 
 ### **II. Fundamental Series Types ($\sum_{n=1}^\infty a_n$)**
 
-### 🧮 II. Fundamental Series Types ($\sum_{n=1}^{\infty} a_n$)
-
 ### **1. Geometric Series**
 
 * **General Form:** $\sum_{n=0}^{\infty} a r^n$
@@ -189,13 +187,13 @@ Would you like a summary of the common mistakes students make when applying thes
 
 ---
 
-#### Algebraic Manipulation Needed (Example): Geometric Series
+##### Algebraic Manipulation Needed (Example): Geometric Series
 The series is:
 $$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
 
 Here are the key exponential rules you need to apply, along with the steps to rewrite the term $\left(2^n \cdot 3^{-2n+1}\right)$, without calculating the final result:
 
-#### **Step-by-Step Guide to Rewriting the Series Term**
+##### **Step-by-Step Guide to Rewriting the Series Term**
 
 | Rule to Apply  | General Form | Application to $3^{-2n+1}$ |
 | :--- | :--- | :--- |
@@ -205,7 +203,7 @@ Here are the key exponential rules you need to apply, along with the steps to re
 
 ---
 
-#### **Action Steps (for example)**
+##### **Action Steps (for example)**
 1.  **Separate the Constant Factor ($3^1$):** Use the **Product Rule** to split the term $3^{-2n+1}$ into a product of a constant and a term involving $n$.
 2.  **Handle the Negative Exponent:** Use the **Negative Exponent Rule** to move the term involving $-2n$ from the numerator to the denominator (or write it as a fraction).
 3.  **Isolate $n$ in the Exponent:** Use the **Power of a Power Rule** on the base of the resulting term so that the exponent becomes *exactly* $n$. (e.g., $b^{kn} = (b^k)^n$).
@@ -213,14 +211,14 @@ Here are the key exponential rules you need to apply, along with the steps to re
 5.  **Identify $a$ and $r$:** The result will be in the form $a \cdot r^n$, allowing you to clearly identify the initial constant ($a$) and the common ratio ($r$).
 
 
-#### What Determines the Number of Terms Before Cancellation: Telescoping Series
+##### What Determines the Number of Terms Before Cancellation: Telescoping Series
 The number of terms you calculate is simply the number required to confirm which terms at the beginning *do not* have a corresponding negative term to cancel them. For a difference of $k$, the **first $k$ positive terms** will survive the cancellation. It's all about how far apart the indices are in the difference $b_n - b_{n+k}$.
 
 The number of terms you need to write out before the cancellation pattern is established depends entirely on the **difference in the indices** within the terms of the series.
 
 In short, you must expand until the largest negative index term is matched by a subsequent positive index term.
 
-#### 1. The Simple Case (Difference of 1)
+##### 1. The Simple Case (Difference of 1)
 
 In the problem we just solved, the term was in the form:
 
@@ -235,7 +233,7 @@ The difference in the index is **$1$**.
 
 Because the terms $\pm b_k$ are adjacent, only the first positive term ($b_8$) and the last negative term ($-b_{N+1}$) remain. You only needed to write out two terms ($n=8$ and $n=9$) to see the pattern.
 
-#### 2. The Complex Case (Difference of $k > 1$)
+##### 2. The Complex Case (Difference of $k > 1$)
 
 If the term were written in the form:
 
