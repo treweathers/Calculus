@@ -183,10 +183,6 @@ What problem would you like to run through this flowchart next?
 
 ---
 
-Would you like a summary of the common mistakes students make when applying these tests and series types?
-
----
-
 ##### Algebraic Manipulation Needed (Example): Geometric Series
 The series is:
 $$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
