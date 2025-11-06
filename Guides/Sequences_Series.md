@@ -246,73 +246,49 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
-### **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
-
-| Test Name | When to Use | Condition for Convergence | Condition for Divergence |
-| :--- | :--- | :--- | :--- |
-| **Direct Comparison Test (DCT)** | $a_n$ and $b_n$ are **positive** and a clear **term-by-term inequality** $0 \leq a_n \leq b_n$ or $0 \leq b_n \leq a_n$ can be established (eventually). | **If $0 \leq a_n \leq b_n$** for all $n$ (eventually) **AND $\sum b_n$ converges, then $\sum a_n$ converges.**  | **If $0 \leq b_n \leq a_n$** for all $n$ (eventually) **AND $\sum b_n$ diverges, then $\sum a_n$ diverges.**  |
-| Integral Test | $a_n = f(n)$ is **positive, continuous, and decreasing.** | $\int_{1}^{\infty} f(x) \, dx$ converges. | $\int_{1}^{\infty} f(x) \, dx$ diverges. |
-| Limit Comparison Test (LCT) | $a_n$ and $b_n$ are **positive** and **algebraically similar** (e.g., rational functions or similar dominant terms). | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ converges, so does $\sum a_n$. | $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ diverges, so does $\sum a_n$. |
-| Alternating Series Test (AST) | Series **alternates sign**: $\sum (-1)^n b_n$ where $b_n > 0$. | Both must hold: 1) $\lim_{n \to \infty} b_n = 0$ **AND** 2) $b_{n+1} \leq b_n$ (eventually). | Fails either of the two conditions. |
-| Ratio Test | $a_n$ involves **factorials** ($n!$) or **exponents** ($r^n$). | $\lim_{n \to \infty} \left. \frac{a_{n+1}}{a_n} \right| < 1$. | $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| > 1$ or $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$. |
-| Root Test | $a_n$ involves an **$n$-th power**: $(\dots)^n$. | $\lim_{n \to \infty} \sqrt[n]{\left. a_n \right|} < 1$. | $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} > 1$ or $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = \infty$. |
+## **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
 
 ---
 
-## 📐 Summary of Convergence Tests for Infinite Series
-
----
+## 📚 Convergence Tests for Infinite Series
 
 ### **1. Direct Comparison Test (DCT)**
 
-* **When to Use:** When the terms $a_n$ and $b_n$ are **positive** and a clear term-by-term inequality ($0 \le a_n \le b_n$ or $0 \le b_n \le a_n$) can be established (eventually).
-* **Condition for Convergence:** If $0 \le a_n \le b_n$ (eventually) AND $\sum b_n$ **converges**, then $\sum a_n$ also **converges**. (The smaller series converges if the larger one does.)
-* **Condition for Divergence:** If $0 \le b_n \le a_n$ (eventually) AND $\sum b_n$ **diverges**, then $\sum a_n$ also **diverges**. (The larger series diverges if the smaller one does.)
-
----
+* **When to Use:** $a_n$ and $b_n$ are **positive** and a clear **term-by-term inequality** $0 \leq a_n \leq b_n$ or $0 \leq b_n \leq a_n$ can be established (eventually).
+* **Condition for Convergence:** **If $0 \leq a_n \leq b_n$** for all $n$ (eventually) **AND $\sum b_n$ converges, then $\sum a_n$ converges.**
+* **Condition for Divergence:** **If $0 \leq b_n \leq a_n$** for all $n$ (eventually) **AND $\sum b_n$ diverges, then $\sum a_n$ diverges.**
 
 ### **2. Integral Test**
 
-* **When to Use:** When the series term $a_n$ can be represented as a function $f(n)$, where $f(x)$ is **positive, continuous, and decreasing** for $x \ge 1$.
-* **Condition for Convergence:** The series $\sum a_n$ converges if the improper integral $\int_{1}^{\infty} f(x) \, dx$ **converges**.
-* **Condition for Divergence:** The series $\sum a_n$ diverges if the improper integral $\int_{1}^{\infty} f(x) \, dx$ **diverges**.
-
----
+* **When to Use:** $a_n = f(n)$ is **positive, continuous, and decreasing.**
+* **Condition for Convergence:** $\int_{1}^{\infty} f(x) \, dx$ converges.
+* **Condition for Divergence:** $\int_{1}^{\infty} f(x) \, dx$ diverges.
 
 ### **3. Limit Comparison Test (LCT)**
 
-* **When to Use:** When the terms $a_n$ and $b_n$ are **positive** and are **algebraically similar** (e.g., rational functions or having similar dominant terms).
-* **Conditions for Convergence/Divergence:**
-    * Calculate the limit: $L = \lim_{n \to \infty} \frac{a_n}{b_n}$.
-    * If **$0 < L < \infty$** (a positive, finite number), then $\sum a_n$ and $\sum b_n$ behave the **same way** (both converge or both diverge). 
-
----
+* **When to Use:** $a_n$ and $b_n$ are **positive** and **algebraically similar** (e.g., rational functions or similar dominant terms).
+* **Condition for Convergence:** $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ converges, so does $\sum a_n$.
+* **Condition for Divergence:** $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$. If $\sum b_n$ diverges, so does $\sum a_n$.
 
 ### **4. Alternating Series Test (AST)**
 
-* **When to Use:** When the series **alternates sign** (e.g., $\sum (-1)^n b_n$ where $b_n > 0$).
-* **Condition for Convergence:** **Both** conditions must hold:
-    1.  $\lim_{n \to \infty} b_n = 0$ AND
-    2.  $b_{n+1} \le b_n$ (The terms are non-increasing, eventually).
-* **Condition for Divergence:** The series **fails to converge** if it fails *either* of the two conditions above. (Note: Failing the AST does *not* necessarily mean divergence, but the $n$-th Term Test for Divergence may apply if the first condition fails.)
-
----
+* **When to Use:** Series **alternates sign**: $\sum (-1)^n b_n$ where $b_n > 0$.
+* **Condition for Convergence:** Both must hold:
+    1.  $\lim_{n \to \infty} b_n = 0$ **AND**
+    2.  $b_{n+1} \leq b_n$ (eventually).
+* **Condition for Divergence:** Fails either of the two conditions.
 
 ### **5. Ratio Test**
 
-* **When to Use:** When $a_n$ involves **factorials ($n!$)** or **exponents ($r^n$)**.
-* **Condition for Convergence:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. The series converges **absolutely** if **$L < 1$**.
-* **Condition for Divergence:** The series diverges if **$L > 1$** or if $L = \infty$.
-* **Inconclusive:** The test is inconclusive if $L = 1$.
-
----
+* **When to Use:** $a_n$ involves **factorials** ($n!$) or **exponents** ($r^n$).
+* **Condition for Convergence:** $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| < 1$.
+* **Condition for Divergence:** $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| > 1$ or $\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$.
 
 ### **6. Root Test**
 
-* **When to Use:** When $a_n$ involves an **$n$-th power** (i.e., $a_n = (...)^n$).
-* **Condition for Convergence:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{\left| a_n \right|}$. The series converges **absolutely** if **$L < 1$**.
-* **Condition for Divergence:** The series diverges if **$L > 1$** or if $L = \infty$.
-* **Inconclusive:** The test is inconclusive if $L = 1$.
+* **When to Use:** $a_n$ involves an **$n$-th power**: $(\dots)^n$.
+* **Condition for Convergence:** $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} < 1$.
+* **Condition for Divergence:** $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} > 1$ or $\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|} = \infty$.
 
 ---
 
