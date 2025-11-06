@@ -308,7 +308,7 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 ---
 
 
-<u><h5> 💡 Factorials: Simplification in the Ratio Test </h5></u>
+<h5><u> 💡 Factorials: Simplification in the Ratio Test </u></h5>
 
 
 | Factorial Ratio | Full Expansion | Final Simplification |
