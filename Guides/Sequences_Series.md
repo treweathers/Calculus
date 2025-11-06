@@ -147,36 +147,45 @@ What problem would you like to run through this flowchart next?
 
 ### **II. Fundamental Series Types ($\sum_{n=1}^\infty a_n$)**
 
-| Series Type | General Form | Convergence Condition(s) | Key Test/Sum Formula |
-| :--- | :--- | :--- | :--- |
-| **Geometric Series** | $\sum_{n=0}^{\infty} ar^n$ | Converges if the common ratio $|r| < 1$. | Sum is $S = \frac{a}{1-r}$. |
-| **$p$-Series** | $\sum_{n=1}^{\infty} \frac{1}{n^p}$ | Converges if the exponent **$p > 1$**. | Diverges if $p \le 1$. |
-| **Harmonic Series** | $\sum_{n=1}^{\infty} \frac{1}{n}$ | **Always Diverges.** | Special case of $p$-series where $p=1$. |
-| **Telescoping Series** | $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (after partial fractions) | Converges if $\lim_{N \to \infty} S_N$ exists. | Find $S_N$, then take $\lim_{N \to \infty} S_N$. |
+### 🧮 II. Fundamental Series Types ($\sum_{n=1}^{\infty} a_n$)
+
+### **1. Geometric Series**
+
+* **General Form:** $\sum_{n=0}^{\infty} a r^n$
+* **Convergence Condition(s):** Converges if the common ratio $|r| < 1$.
+* **Divergence Condition(s):** Diverges if $|r| \ge 1$.
+* **Key Test/Sum Formula (if $|r| < 1$):** The sum is $S = \frac{a}{1 - r}$. 
 
 ---
 
-### 🌟 Series Convergence Quick Reference (List Format)
+### **2. $p$-Series**
 
-#### 1. Geometric Series
-* **General Form:** $\sum_{n=0}^{\infty} a r^n$
-* **Convergence Condition:** Converges if $\boldsymbol{|r| < 1}$ (i.e., $-1 < r < 1$). Diverges if $|r| \ge 1$.
-* **Key Formula:** When the series converges, the **Sum** is $\boldsymbol{S = \frac{a}{1-r}}$, where $a$ is the first term.
-
-#### 2. $p$-Series
 * **General Form:** $\sum_{n=1}^{\infty} \frac{1}{n^p}$
-* **Convergence Condition:** Converges if $\boldsymbol{p > 1}$. Diverges if $p \le 1$.
-* **Key Test:** Comparison of the exponent $p$ to 1.
+* **Convergence Condition(s):** Converges if the exponent $p > 1$.
+* **Divergence Condition(s):** Diverges if $p \le 1$.
+* **Key Test/Sum Formula:** The value of $p$ is the defining factor; often tested with the **Integral Test** for justification.
 
-#### 3. Harmonic Series
+---
+
+### **3. Harmonic Series**
+
 * **General Form:** $\sum_{n=1}^{\infty} \frac{1}{n}$
-* **Convergence Condition:** **Always Diverges.**
-* **Key Note:** This is the special case of the $p$-series where $p=1$.
+* **Convergence Condition(s):** Always **Diverges**.
+* **Key Test/Sum Formula:** Special case of $p$-series where $p=1$.
 
-#### 4. Telescoping Series
-* **General Form:** $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (or a similar difference after partial fractions)
-* **Convergence Condition:** Converges if the limit of the $(N+1)$-th term, $\lim_{N \to \infty} b_{N+1}$, exists (and is finite).
-* **Key Formula:** The **Sum** is $S = b_1 - \lim_{N \to \infty} b_{N+1}$.
+---
+
+### **4. Telescoping Series**
+
+* **General Form:** $\sum_{n=1}^{\infty} (b_n - b_{n+1})$ (often obtained after using partial fractions).
+* **Convergence Condition(s):** Converges if $\lim_{N \to \infty} S_N$ exists.
+* **Key Test/Sum Formula:**
+    1.  Find the $N$-th partial sum $S_N$ by writing out the first few terms (which cancel).
+    2.  The sum is $S = \lim_{N \to \infty} S_N$.
+
+---
+
+Would you like a summary of the common mistakes students make when applying these tests and series types?
 
 ---
 
@@ -246,11 +255,7 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
-## **III. Convergence Tests for $\sum_{n=1}^\infty a_n$**
-
----
-
-## 📚 Convergence Tests for Infinite Series
+### **III. Convergence Tests for $\sum_{n=1}^\infty a_n$** (Infinite Series)
 
 ### **1. Direct Comparison Test (DCT)**
 
