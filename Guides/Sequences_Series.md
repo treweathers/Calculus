@@ -193,7 +193,11 @@ $$\sum_{n=0}^\infty 2^n \cdot 3^{-2n+1}$$
 
 Here are the key exponential rules you need to apply, along with the steps to rewrite the term $\left(2^n \cdot 3^{-2n+1}\right)$, without calculating the final result:
 
-##### **Step-by-Step Guide to Rewriting the Series Term**
+
+
+<u> **Step-by-Step Guide to Rewriting the Series Term** </u>
+
+
 
 | Rule to Apply  | General Form | Application to $3^{-2n+1}$ |
 | :--- | :--- | :--- |
@@ -218,7 +222,11 @@ The number of terms you need to write out before the cancellation pattern is est
 
 In short, you must expand until the largest negative index term is matched by a subsequent positive index term.
 
-##### 1. The Simple Case (Difference of 1)
+
+
+<u> 1. The Simple Case (Difference of 1) </u>
+
+
 
 In the problem we just solved, the term was in the form:
 
@@ -233,7 +241,11 @@ The difference in the index is **$1$**.
 
 Because the terms $\pm b_k$ are adjacent, only the first positive term ($b_8$) and the last negative term ($-b_{N+1}$) remain. You only needed to write out two terms ($n=8$ and $n=9$) to see the pattern.
 
-##### 2. The Complex Case (Difference of $k > 1$)
+
+
+<u> 2. The Complex Case (Difference of $k > 1$) </u>
+
+
 
 If the term were written in the form:
 
@@ -295,7 +307,9 @@ $$s_N = \underbrace{(b_1 - b_4)}_{n=1} + \underbrace{(b_2 - b_5)}_{n=2} + \under
 
 ---
 
-## 💡 Factorials: Simplification in the Ratio Test
+
+<u> 💡 Factorials: Simplification in the Ratio Test </u>
+
 
 | Factorial Ratio | Full Expansion | Final Simplification |
 | :--- | :--- | :--- |
