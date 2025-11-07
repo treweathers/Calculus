@@ -124,16 +124,3 @@ The Radius of Convergence **does not change** when you differentiate or integrat
 9.  **Combine the Series:** Since both series now have the power $x^n$ (or $x^k$) and you can choose the higher starting index (2) for $n$ to avoid having to split out terms, you can combine the coefficients.
 
 ---
-
-**Now that you have this clear map, let's start with Step 3:**
-
-You already correctly stated the first part of the derivative, but let's formalize the **Second Derivative**.
-
-**Your Task (Step 3):**
-
-Given the First Derivative Series $g'(x) = \sum_{n=1}^{\infty} n x^{n-1}$, calculate the **Second Derivative Series**, $g''(x)$.
-
-1.  Write the resulting **general term** of the $g''(x)$ series.
-2.  Write the new **starting index** (where $n$ begins).
-
-Go ahead and state the series for $g''(x)$!
