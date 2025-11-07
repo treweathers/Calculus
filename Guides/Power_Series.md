@@ -1,4 +1,5 @@
-### 📘 Power Series Guide: Finding $R$ and the IOC
+# Power Series Guide
+## 📘 Power Series Guide: Finding $R$ and the IOC
 
 The entire goal is to transform the Ratio Test result $L$ into the final IOC notation, including the correct parentheses ( ) or brackets [ ].
 
@@ -45,7 +46,7 @@ Combine the results from Step 4.
 
 ---
 
-### 📘 Guide: Power Series Representation of Functions
+## 📘 Guide: Power Series Representation of Functions
 
 The entire method for representing a function $f(x)$ as a Power Series relies on manipulating the sum of the standard **Geometric Series** until it matches the form of $f(x)$.
 
