@@ -348,7 +348,7 @@ This bound is used for a positive-term series $\sum a_n$ that meets the conditio
 
 ### **IV. Power Series, Taylor Series, and Maclaurin Series**
 
-#### **A. Power Series and Convergence**
+### **A. Power Series and Convergence**
 
 A power series centered at $a$ has the form $\sum_{n=0}^{\infty} c_n (x-a)^n$.
 
@@ -359,7 +359,60 @@ A power series centered at $a$ has the form $\sum_{n=0}^{\infty} c_n (x-a)^n$.
 2.  **Interval of Convergence (IOC):** The interval $(a-R, a+R)$, plus the two endpoints.
     * **Crucial Step:** The endpoints $x = a-R$ and $x = a+R$ **must** be tested individually using any of the convergence tests (AST, $p$-Series, etc.) to determine if the series converges at those points.
 
-#### **B. Taylor and Maclaurin Series**
+That is an excellent idea! Before we tackle the next problem, a final, clear guide on the notation for the Interval of Convergence (IOC) will make sure you don't miss any final details.
+
+Here is the ultimate guide for approaching Power Series problems, focusing on the steps and the notation.
+
+---
+
+### 📘 Power Series Guide: Finding $R$ and the IOC
+
+The entire goal is to transform the Ratio Test result $L$ into the final IOC notation, including the correct parentheses ( ) or brackets [ ].
+
+### Step 1: Find the Limit $L$ (Ratio/Root Test)
+
+* **Test:** Use the **Ratio Test** ($\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$) or the **Root Test** ($\lim_{n \to \infty} \sqrt[n]{\left| a_n \right|}$).
+* **Result:** The limit will always be in the form: $$L = K \cdot |x - a|$$
+    *Where $K$ is a constant, and $a$ is the center.*
+
+### Step 2: Calculate the Radius of Convergence ($R$)
+
+* **Rule:** Set $L < 1$ and solve for $|x - a|$ to get the standard form $|x - a| < R$.
+* **Formula:** $R = \frac{1}{K}$.
+* **Extreme Cases:**
+    * If $L=0$ (e.g., $K=0$), $R=\infty$ (IOC: $(-\infty, \infty)$).
+    * If $L=\infty$, $R=0$ (IOC: $\{a\}$).
+
+### Step 3: Determine the Initial Open Interval
+
+* **Inequality:** Solve $|x - a| < R$ for $x$:
+    $$a - R < x < a + R$$
+* **Endpoints:** The boundaries are $x = a - R$ and $x = a + R$.
+
+### Step 4: Check the Endpoints (Mandatory!)
+
+This step determines the final notation (parentheses vs. brackets). You must plug each endpoint value back into the *original* series and use a constant series test (AST, p-series, etc.).
+
+| Endpoint Test Result | Notation for that Endpoint | Deciphering ( ) vs. [ ] |
+| :--- | :--- | :--- |
+| **Diverges** | **( )** | The series *only* converges **inside** the interval. |
+| **Converges Conditionally** | **[ ]** | The series converges at that point (only due to alternating signs). |
+| **Converges Absolutely** | **[ ]** | The series converges at that point. |
+
+### Step 5: State the Final Interval of Convergence (IOC)
+
+Combine the results from Step 4.
+
+| Example Scenario | Final IOC |
+| :--- | :--- |
+| Converges at $a-R$, Diverges at $a+R$ | $[a-R, a+R)$ |
+| Diverges at $a-R$, Converges at $a+R$ | $(a-R, a+R]$ |
+| Diverges at both | $(a-R, a+R)$ |
+| Converges at both (like your last problem) | $[a-R, a+R]$ |
+
+---
+
+### **B. Taylor and Maclaurin Series**
 
 | Series Type | Definition (Formula) | Center |
 | :--- | :--- | :--- |
