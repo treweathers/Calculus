@@ -88,6 +88,54 @@ If your function involves a squared denominator, $\ln(\dots)$, or $\arctan(\dots
 
 The Radius of Convergence **does not change** when you differentiate or integrate a power series.
 
+That is a fantastic request for a general reference! You are right—the previous guide was tailored to a function requiring differentiation. A truly general guide must cover both **differentiation** and **integration** scenarios.
+
+Here is a unified, comprehensive guide for finding the Power Series Representation of **any** function that can be derived from the Geometric Series.
+
+---
+
+## 📚 Comprehensive Guide: Power Series Representations
+
+The foundation for nearly all these problems is the **Geometric Series Formula** :
+$$\frac{1}{1 - u} = \sum_{n=0}^{\infty} u^n, \quad \text{for } |u| < 1$$
+
+### Phase 1: Algebraic Setup (Getting to the $\frac{1}{1 - u}$ Form)
+
+1.  **Factor the Denominator:** If the denominator is not $1 - x$ (e.g., it is $a \pm bx$), factor out the constant $a$ so the first term is $1$.
+    $$\frac{C}{a \pm bx} = \frac{C}{a} \cdot \frac{1}{1 \pm (b/a)x}$$
+2.  **Identify the Term $u$:** Rewrite the denominator in the form $1 - u$. This sets the term $u$ that will be raised to the power $n$ in the series.
+    * Example: $\frac{1}{1 + 5x} = \frac{1}{1 - (-5x)}$. Here, $u = -5x$.
+3.  **Establish the Base Series:** Write the initial series $\sum_{n=0}^{\infty} u^n$.
+
+### Phase 2: Calculus Manipulation (Differentiation or Integration)
+
+Based on the function's structure, you must perform one of the following operations on your base series from Phase 1. **(Note: The Radius of Convergence, $R$, is unchanged by these operations.)**
+
+#### Scenario A: Differentiation (Denominator raised to a power)
+
+Use this when your function $f(x)$ contains denominators like $\mathbf{(1-u)^2}$ or $\mathbf{(1-u)^3}$.
+
+1.  **Determine Operations:** Find the derivative that relates your base function to your target form (e.g., $\frac{d}{du} \frac{1}{1-u} = \frac{1}{(1-u)^2}$).
+2.  **Differentiate Term-by-Term:** Apply the derivative $\frac{d}{dx}$ to the **general term** of your series, $\sum_{n=k}^{\infty} c_n u^n$.
+    * **Rule:** $\frac{d}{dx} (\text{Term}) = \frac{d}{dx} (c_n x^n) = c_n \cdot n x^{n-1}$.
+3.  **Adjust Index:** After differentiation, the series **starting index increases by 1** (e.g., $\sum_{n=0} \to \sum_{n=1}$).
+
+#### Scenario B: Integration (Logarithms or Inverse Tangent)
+
+Use this when your function $f(x)$ contains $\mathbf{\ln(\dots)}$ or $\mathbf{\arctan(\dots)}$.
+
+1.  **Prepare for Integration:** Find the function $g(x)$ such that $\int g(x) dx = f(x)$. This means $g(x)$ will be in the simpler $\frac{1}{1 \pm u}$ form.
+2.  **Integrate Term-by-Term:** Apply the integral $\int dx$ to the **general term** of your series, $\sum_{n=k}^{\infty} c_n u^n$.
+    * **Rule:** $\int c_n x^n dx = c_n \cdot \frac{x^{n+1}}{n+1} + C$.
+3.  **Determine $C$:** Solve for the constant of integration ($C$) by plugging the center $x=a$ (usually $x=0$) into both the function $f(x)$ and the integrated series. In most cases, $C=0$.
+
+### Phase 3: Final Simplification and Adjustment
+
+1.  **Multiply/Divide (if needed):** Multiply the resulting series by any constant coefficients or leftover powers of $x$ to exactly match the original function $f(x)$.
+    * Example: If $f(x) = x \cdot (\text{series})$, distribute the $x$ into the summation: $x \cdot x^n = x^{n+1}$.
+2.  **Combine Series (if needed):** If the final result is the sum of two series (like $f(x) = \sum a_n + \sum b_n$), adjust the index of one series so that both have the same power of $x$ (e.g., $x^k$) and then combine the general terms.
+
+---
 
 ## 🛠️ Step-by-Step Guide: Power Series Representation
 
