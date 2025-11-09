@@ -1,4 +1,14 @@
 # Power Series Guide
+
+## 🧩 Components of a Power Series
+
+| Component | General Role in $\sum_{n=0}^{\infty} c_n (x-a)^n$ | Role in Your Series $f(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{6n+5}}{2n+1}$ |
+| :--- | :--- | :--- |
+| **$x$ (Variable)** | This is the **variable** of the function, the value you input. | $\mathbf{x}$ remains the input variable. |
+| **$n$ (Index/Exponent)** | This is the **index** of the summation, starting at $n=0$ and going to $\infty$. It determines the **term number** and is used to calculate the **exponent** of $(x-a)$. | $\mathbf{n}$ is the index. The exponent on $x$ is the expression $\mathbf{6n+5}$. |
+| **$a$ (Center)** | This is the **center** of the expansion, the point around which the function is being approximated. | $\mathbf{a = 0}$. Since $x = x-0$, the function is centered at 0. |
+| **$c_n$ (Coefficient)** | This is the **coefficient** of the $n$-th term. It is a constant value (or expression dependent on $n$) that does not involve $x$. | The coefficient is $\mathbf{c_n = \frac{(-1)^n}{2n+1}}$. |
+
 ## 📘 Power Series Guide: Finding $R$ and the IOC
 
 The entire goal is to transform the Ratio Test result $L$ into the final IOC notation, including the correct parentheses ( ) or brackets [ ].
