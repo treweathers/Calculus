@@ -56,3 +56,77 @@ The power series representation for $f(x) = \frac{x^2}{(1 - 2x)^2}$ is:
 $$f(x) = \sum_{n=1}^\infty n 2^{n-1} x^{n+1}$$
 
 The radius of convergence $\mathbf{R}$ remains the same as the series used in the differentiation step (Step 2), which is $\mathbf{R = \frac{1}{2}}$.
+
+Here is a similar problem that uses a power series to approximate a definite integral, with a step-by-step solution.
+
+## 📝 Problem Statement
+
+Use a power series to approximate the definite integral $\int_{0}^{0.5} \frac{x^3}{1 + x^6} dx$ to four decimal places.
+
+---
+
+## 🛠️ Step-by-Step Solution
+
+### Step 1: Find the Power Series for the Integrand
+
+We start with the base geometric series formula:
+$$\frac{1}{1 - r} = \sum_{n=0}^\infty r^n, \quad |r| < 1$$
+
+The function we need to approximate is $f(x) = \frac{x^3}{1 + x^6}$. We can rewrite the denominator as $1 - (-x^6)$.
+
+Substitute $r = \mathbf{-x^6}$ into the base series:
+$$\frac{1}{1 - (-x^6)} = \frac{1}{1 + x^6} = \sum_{n=0}^\infty (-x^6)^n = \sum_{n=0}^\infty (-1)^n (x^6)^n$$
+$$\frac{1}{1 + x^6} = \sum_{n=0}^\infty (-1)^n x^{6n}$$
+
+Next, multiply the entire series by the numerator, $\mathbf{x^3}$:
+$$f(x) = \frac{x^3}{1 + x^6} = x^3 \sum_{n=0}^\infty (-1)^n x^{6n} = \sum_{n=0}^\infty (-1)^n x^3 x^{6n}$$
+Using the exponent rule $x^a x^b = x^{a+b}$:
+$$\frac{x^3}{1 + x^6} = \sum_{n=0}^\infty (-1)^n x^{6n+3}$$
+
+The radius of convergence for this series is $R=1$, since the original substitution requires $|-x^6| < 1$, which means $|x| < 1$.
+
+---
+
+### Step 2: Integrate the Power Series Term-by-Term
+
+We now integrate the power series from $x=0$ to $x=0.5$:
+$$\int_{0}^{0.5} \frac{x^3}{1 + x^6} dx = \int_{0}^{0.5} \left( \sum_{n=0}^\infty (-1)^n x^{6n+3} \right) dx$$
+
+We can swap the integral and summation and apply the Power Rule for integration, $\int x^k dx = \frac{x^{k+1}}{k+1}$:
+$$\int_{0}^{0.5} \left( \sum_{n=0}^\infty (-1)^n x^{6n+3} \right) dx = \sum_{n=0}^\infty (-1)^n \left[ \frac{x^{6n+4}}{6n+4} \right]_{0}^{0.5}$$
+
+Since the lower limit $x=0$ results in $0$ for every term, the definite integral simplifies to evaluating the expression at the upper limit, $x=0.5$:
+$$\int_{0}^{0.5} \frac{x^3}{1 + x^6} dx = \sum_{n=0}^\infty (-1)^n \frac{(0.5)^{6n+4}}{6n+4}$$
+
+---
+
+### Step 3: Approximate the Sum
+
+The resulting series is an alternating series. By the **Alternating Series Estimation Theorem**, the error in using a partial sum to approximate the total sum is **less than the magnitude of the first unused (next) term**. We need an approximation accurate to **four decimal places**, meaning the error must be less than $0.00005$.
+
+We calculate the terms ($a_n$) until $|a_n| < 0.00005$.
+
+| $n$ | Term $a_n = (-1)^n \frac{(0.5)^{6n+4}}{6n+4}$ | Value (8 decimal places) | $|a_n|$ |
+| :--: | :--- | :---: | :---: |
+| $\mathbf{0}$ | $a_0 = \frac{(0.5)^{4}}{4} = \frac{0.0625}{4}$ | $0.01562500$ | $0.01562500$ |
+| $\mathbf{1}$ | $a_1 = -\frac{(0.5)^{10}}{10} = -\frac{0.0009765625}{10}$ | $-0.00009766$ | $0.00009766$ |
+| $\mathbf{2}$ | $a_2 = \frac{(0.5)^{16}}{16} = \frac{0.0000152588}{16}$ | $0.00000095$ | $\mathbf{0.00000095}$ |
+
+Since $|a_2| \approx 0.00000095$, which is less than the required error tolerance of $0.00005$, we only need to use the terms up to **$n=1$** to achieve the desired accuracy.
+
+### Step 4: Calculate the Final Approximation
+
+The approximation $S$ is the sum of the first two terms ($n=0$ and $n=1$):
+$$S \approx a_0 + a_1$$
+$$S \approx 0.01562500 - 0.00009766$$
+$$S \approx 0.01552734$$
+
+Rounding to **four decimal places**:
+$$S \approx \mathbf{0.0155}$$
+
+---
+
+## ✨ Final Answer
+
+The power series approximation of the definite integral is:
+$$\int_{0}^{0.5} \frac{x^3}{1 + x^6} dx \approx \mathbf{0.0155}$$
