@@ -56,54 +56,6 @@ Combine the results from Step 4.
 
 ---
 
-## 📘 Guide: Power Series Representation of Functions
-
-The entire method for representing a function $f(x)$ as a Power Series relies on manipulating the sum of the standard **Geometric Series** until it matches the form of $f(x)$.
-
-### The Starting Point (The Base Formula)
-
-The foundation of nearly all power series representations is the formula for a convergent Geometric Series:
-
-$$\frac{1}{1 - u} = \sum_{n=0}^{\infty} u^n, \quad \text{for } |u| < 1$$
-
-Your goal is to transform the given function $f(x)$ until one part of it looks like $\frac{1}{1 - u}$.
-
-### Phase 1: Algebraic Manipulation (The Setup)
-
-1.  **Isolate the Geometric Form:** Algebraically manipulate the given function $f(x)$ to isolate a factor or part that is in the form $\frac{1}{1 \pm (\text{something})}$.
-    * *Example:* If $f(x) = \frac{5}{2+x}$, factor out a constant from the denominator to make the first term 1:
-        $$f(x) = \frac{5}{2(1 + x/2)} = \frac{5}{2} \cdot \frac{1}{1 - (-x/2)}$$
-    * *Here, $C = 5/2$ and $u = -x/2$.*
-2.  **Determine the Initial Power Series:** Replace the geometric form with its series equivalent, $\sum u^n$.
-3.  **Find the Radius ($R$):** The series will converge for $|u| < 1$. Use this inequality to find the Radius of Convergence, $R$. (E.g., if $|-x/2| < 1$, then $|x| < 2$, so $R=2$).
-
-### Phase 2: Calculus Manipulation (Differentiation/Integration)
-
-If your function involves a squared denominator, $\ln(\dots)$, or $\arctan(\dots)$, you must use calculus to transform the geometric form.
-
-| Target Function Form | Calculus Step Required | General Pattern |
-| :--- | :--- | :--- |
-| $\frac{1}{(1-u)^2}$ | **Differentiate** the base $\frac{1}{1-u}$ | $\frac{d}{du} \left( \frac{1}{1-u} \right) = \frac{1}{(1-u)^2}$ |
-| $\frac{1}{(1-u)^3}$ | **Differentiate** the result from the line above | $\frac{d}{du} \left( \frac{1}{(1-u)^2} \right) = \frac{2}{(1-u)^3}$ |
-| $\ln(1 \pm u)$ | **Integrate** a manipulated version of the base $\frac{1}{1 \pm u}$ | $\int \frac{1}{1+u} du = \ln|1+u|$ |
-| $\arctan(u)$ | **Integrate** a manipulated version of the base $\frac{1}{1+u^2}$ | $\int \frac{1}{1+u^2} du = \arctan(u)$ |
-
-**General Procedure for Applying Calculus:**
-
-1.  **Write the series:** Start with the series for the simpler form (e.g., $\frac{1}{1-u} = \sum u^n$).
-2.  **Apply the operator:** Apply the required derivative ($\frac{d}{dx}$) or integral ($\int dx$) operator to **both sides** of the equation.
-    * *Note:* Differentiation changes the exponent: $\frac{d}{dx} x^n = n x^{n-1}$.
-    * *Note:* Integration changes the exponent: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$. (Don't forget $+C$, which is usually 0 if the series is centered at 0).
-3.  **Multiply/Divide/Shift:** Finally, multiply or divide the resulting series by any remaining $x$ terms or constants to match the original function $f(x)$.
-
-The Radius of Convergence **does not change** when you differentiate or integrate a power series.
-
-That is a fantastic request for a general reference! You are right—the previous guide was tailored to a function requiring differentiation. A truly general guide must cover both **differentiation** and **integration** scenarios.
-
-Here is a unified, comprehensive guide for finding the Power Series Representation of **any** function that can be derived from the Geometric Series.
-
----
-
 ## 📚 Comprehensive Guide: Power Series Representations
 
 The foundation for nearly all these problems is the **Geometric Series Formula** :
