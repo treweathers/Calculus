@@ -174,3 +174,80 @@ You find the smallest $n$ where the magnitude of the next term, $b_{n+1}$, is le
 | 1 | $\mathbf{2}$ | $b_2 = \frac{(0.3)^{11}}{11}$ | $\approx 0.000000161$ |
 
 Since the magnitude of the term at $n=2$ (the first term you would skip when summing up to $n=1$) is $0.000000161$, which is $\mathbf{< 0.0000005}$, you only need to sum the terms up to $n=1$ to achieve the required six-decimal-place accuracy.
+
+---
+
+## 📚 Taylor and Maclaurin Series Guide
+
+Taylor and Maclaurin series are infinite polynomial representations of a function $f(x)$ centered at a point $a$. They are used to approximate functions, evaluate difficult integrals, and solve differential equations.
+
+---
+
+## 1. 📝 Definitions and Formulas
+
+### Taylor Series
+A **Taylor series** is a power series representation of a function $f(x)$ centered at an arbitrary point $\mathbf{x=a}$.
+
+The formula for the Taylor series of $f(x)$ centered at $a$ is:
+$$f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x-a)^n$$
+$$f(x) = f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \dots$$
+
+### Maclaurin Series
+A **Maclaurin series** is simply a special case of the Taylor series where the center is $\mathbf{a=0}$.
+
+The formula for the Maclaurin series of $f(x)$ is:
+$$f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n$$
+$$f(x) = f(0) + \frac{f'(0)}{1!}x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \dots$$
+
+---
+
+## 2. 🪜 Step-by-Step Construction Guide
+
+This is the standard process for finding the Taylor series for a function $f(x)$ centered at $a$.
+
+### Step 1: Calculate Derivatives
+Find the first few derivatives of the function $f(x)$:
+$$f'(x), f''(x), f'''(x), \dots, f^{(n)}(x)$$
+
+### Step 2: Evaluate at the Center (a)
+Evaluate the function and all derivatives found in Step 1 at the center $\mathbf{x=a}$:
+$$f(a), f'(a), f''(a), f'''(a), \dots, f^{(n)}(a)$$
+The goal is to find a pattern or formula for the general term $f^{(n)}(a)$.
+
+### Step 3: Substitute into the Series Formula
+Substitute the values from Step 2 into the general Taylor series formula:
+$$\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x-a)^n$$
+
+### Step 4: Determine the Radius of Convergence ($R$)
+Use the **Ratio Test** to find the radius of convergence $R$ for the resulting power series:
+$$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$$
+The series converges if $L < 1$. Solve the inequality $L < 1$ for $|x-a|$ to find $R$.
+
+---
+
+## 3. 🧠 Essential Maclaurin Series (Memorization)
+
+Knowing these common series allows you to avoid the lengthy differentiation process and instead use substitution, multiplication, and integration to find new series.
+
+| Function ($f(x)$) | Maclaurin Series $\sum_{n=0}^\infty a_n x^n$ | Radius of Convergence ($R$) |
+| :--- | :--- | :--- |
+| $\frac{1}{1-x}$ | $\sum_{n=0}^\infty x^n = 1 + x + x^2 + x^3 + \dots$ | $R=1$ |
+| $e^x$ | $\sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ | $R=\infty$ |
+| $\sin(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots$ | $R=\infty$ |
+| $\cos(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots$ | $R=\infty$ |
+| $\ln(1+x)$ | $\sum_{n=1}^\infty \frac{(-1)^{n-1} x^{n}}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots$ | $R=1$ |
+| $\arctan(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots$ | $R=1$ |
+
+---
+
+## 4. 🛠️ Key Manipulation Techniques
+
+Once you know the basic series, you can find series for related functions without repeating the steps in Section 2.
+
+| Technique | Example to find series for $f(x) = \frac{1}{1+2x}$ | Result |
+| :--- | :--- | :--- |
+| **Substitution** | Start with $\frac{1}{1-u}$. Substitute $\mathbf{u=-2x}$. | $\sum_{n=0}^\infty (-2x)^n = \sum_{n=0}^\infty (-1)^n 2^n x^n$ |
+| **Differentiation** | Start with $\arctan(x)$ series. $\frac{d}{dx}(\arctan(x)) = \frac{1}{1+x^2}$. | Differentiate $\arctan(x)$ series term-by-term to get the $\frac{1}{1+x^2}$ series. |
+| **Integration** | Start with $\frac{1}{1-x}$ series. $\int \frac{1}{1-x} dx = -\ln|1-x|$. | Integrate $\frac{1}{1-x}$ series term-by-term to get the $\ln(1-x)$ series. |
+| **Multiplication** | To find the series for $x^3 e^x$: | Multiply the $e^x$ series by $\mathbf{x^3}$: $x^3 \sum \frac{x^n}{n!} = \sum \frac{x^{n+3}}{n!}$ |
+
