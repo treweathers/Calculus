@@ -183,3 +183,42 @@ Use this when your function $f(x)$ contains $\mathbf{\ln(\dots)}$ or $\mathbf{\a
 9.  **Combine the Series:** Since both series now have the power $x^n$ (or $x^k$) and you can choose the higher starting index (2) for $n$ to avoid having to split out terms, you can combine the coefficients.
 
 ---
+
+## The Alternating Series Estimation Theorem
+
+The Alternating Series Estimation Theorem provides a very simple and powerful way to estimate the error when approximating the sum of a special type of infinite series.
+
+### Statement of the Theorem
+
+If $S = \sum_{n=1}^\infty (-1)^{n-1} b_n$ (or $S = \sum_{n=1}^\infty (-1)^{n} b_n$) is the sum of a convergent alternating series, where the following two conditions are met:
+
+1.  The terms are **non-increasing** in magnitude: $b_{n+1} \le b_n$ for all $n$.
+2.  The limit of the terms is **zero**: $\lim_{n \to \infty} b_n = 0$.
+
+Then, the remainder (or **error**) $R_n$ obtained by using the partial sum $S_n = b_1 - b_2 + \dots + (-1)^{n-1} b_n$ to approximate the total sum $S$ is bounded by the magnitude of the **first neglected term** $b_{n+1}$:
+
+$$|R_n| = |S - S_n| \le b_{n+1}$$
+
+### 💡 How It Works (Intuition)
+
+The theorem is based on the idea that because the terms are decreasing in magnitude and alternating in sign, the partial sums "zig-zag" toward the final sum $S$, alternating between being too high and too low.
+
+* If you stop at a positive term (say $S_{2n+1}$), the next term you skipped is negative, so your sum is an **overestimate**.
+* If you stop at a negative term (say $S_{2n}$), the next term you skipped is positive, so your sum is an **underestimate**.
+
+The actual sum $S$ must always lie between any two consecutive partial sums, $S_n$ and $S_{n+1}$. The distance between $S_n$ and $S_{n+1}$ is simply the absolute value of the next term, $|a_{n+1}| = b_{n+1}$. Therefore, the maximum error in your approximation $S_n$ cannot be larger than the size of the very next term, $b_{n+1}$.
+
+### Application to Your Problem
+
+In the integral approximation problem:
+$$\int_{0}^{0.3} \frac{x^2}{1 + x^4} dx = \sum_{n=0}^\infty (-1)^n \frac{(0.3)^{4n+3}}{4n+3}$$
+
+To ensure the answer is correct to **six decimal places**, the error $|R_n|$ must be less than $0.5 \times 10^{-6}$ (or $0.0000005$).
+
+You find the smallest $n$ where the magnitude of the next term, $b_{n+1}$, is less than this error tolerance:
+
+| $n$ (Term used) | Next Term Index $(n+1)$ | Next Term $\mathbf{b_{n+1}}$ | Magnitude $|b_{n+1}|$ |
+| :---: | :---: | :---: | :---: |
+| 1 | $\mathbf{2}$ | $b_2 = \frac{(0.3)^{11}}{11}$ | $\approx 0.000000161$ |
+
+Since the magnitude of the term at $n=2$ (the first term you would skip when summing up to $n=1$) is $0.000000161$, which is $\mathbf{< 0.0000005}$, you only need to sum the terms up to $n=1$ to achieve the required six-decimal-place accuracy.
