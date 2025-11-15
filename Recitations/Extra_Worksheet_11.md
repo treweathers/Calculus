@@ -11,11 +11,6 @@
 | **(6) Sum of Series as Function:** Find the sum of the series $\sum_{n=1}^\infty \frac{(-1)^{n-1} 3^n}{n 5^n}$ as the value of a familiar function. | **(6) New Sum of Series as Function:** Find the sum of the series $\sum_{n=1}^\infty \frac{(-1)^{n} \pi^{2n+1}}{(2n+1)!}$ as the value of a familiar function. |
 
 ---
-I'd be happy to! Providing the full solution breakdown for each new problem will make this a complete guide for you.
-
-Here are the six new practice problems with detailed, step-by-step solutions for each, mirroring the format and techniques of your original set.
-
----
 
 ## 🧠 Additional Practice Problems with Full Solutions
 
