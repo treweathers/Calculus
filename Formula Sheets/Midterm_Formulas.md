@@ -1,14 +1,5 @@
 ## 📚 Series Formula Sheet
 
-### I. Fundamental Definitions & Notation
-
-* **Series:** A series is the sum of the terms of a sequence, written as $\sum_{n=1}^\infty a_n = a_1 + a_2 + a_3 + \dots$.
-* **$N$-th Partial Sum ($S_N$):** This is the sum of the first $N$ terms: $S_N = \sum_{n=1}^N a_n = a_1 + a_2 + \dots + a_N$.
-* **Sum of a Series ($S$):** The series converges if the limit of the partial sums exists and is finite: $S = \lim_{N\to\infty} S_N$. If this limit does not exist, the series **diverges**.
-* **Absolute Convergence:** A series $\sum a_n$ converges **absolutely** if the series of absolute values, $\sum_{n=1}^\infty |a_n|$, converges. (Absolute convergence $\implies$ Convergence).
-* **Conditional Convergence:** A series $\sum a_n$ converges, but the series $\sum |a_n|$ diverges. (Applies only to alternating series).
-* **Remainder in Taylor Series ($R_N(x)$):** The error when approximating $f(x)$ with the $N$-th degree Taylor polynomial $P_N(x)$: $R_N(x) = f(x) - P_N(x)$.
-
 ---
 
 ### II. Common Known Series
