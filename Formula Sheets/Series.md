@@ -21,14 +21,19 @@
 #### **2. $p$-Series**
 * **General Form:** $\sum_{n=1}^\infty \frac{1}{n^p} = 1 + \frac{1}{2^p} + \frac{1}{3^p} + \dots$
 * **Condition for Convergence:** $p > 1$.
-* **Harmonic Series:** The case where $p=1$ ($\sum_{n=1}^\infty \frac{1}{n}$) always **Diverges**.
+* **Note:** No simple general formula for the sum $S$.
 
-#### **3. Alternating Harmonic Series**
+#### **3. Standard Harmonic Series**
+* **General Form:** $\sum_{n=1}^\infty \frac{1}{n} = 1 + \frac{1}{2} + \frac{1}{3} + \dots$
+* **Convergence:** Always **Diverges** (This is the $p$-Series case where $p=1$).
+* **Sum ($S$):** N/A.
+
+#### **4. Alternating Harmonic Series**
 * **General Form:** $\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n} = 1 - \frac{1}{2} + \frac{1}{3} - \dots$
 * **Convergence:** Converges (by AST).
 * **Sum ($S$):** $S = \ln(2)$.
 
-#### **4. Telescoping Series**
+#### **5. Telescoping Series**
 * **General Form:** $\sum_{n=1}^\infty (b_n - b_{n+1})$
 * **Condition for Convergence:** Converges if $\lim_{n\to\infty} b_{n+1}$ exists.
 * **Sum ($S$):** $S = b_1 - \lim_{n\to\infty} b_{n+1}$.
