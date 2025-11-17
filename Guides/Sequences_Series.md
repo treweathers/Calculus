@@ -121,17 +121,35 @@ If the series doesn't fit a special form, look at the dominant term structure to
 
 ## 3. The Alternating Series Protocol (AC vs CC)
 
-If your series is alternating, you must follow this protocol *after* checking the Divergence Test:
+Here is the Alternating Series Protocol in a clear list format, designed to avoid LaTeX issues.
 
-| Step | Test / Logic | Conclusion |
-| :--- | :--- | :--- |
-| **Step A** | **Test Absolute Value** $\sum |a_n|$. Use the Ratio, Root, or Comparison Test on the positive series. | If $\sum |a_n|$ **CONVERGES**, the original series is **Absolutely Convergent (AC)**. (STOP) |
-| **Step B** | If $\sum |a_n|$ **DIVERGES**, proceed to **AST** on $b_n$. | The series is not AC, but it might be saved by cancellation. |
-| **Step C** | **Apply AST:** Check $\lim_{n\to\infty} b_n = 0$ AND $b_n$ is decreasing. | If AST passes, the series is **Conditionally Convergent (CC)**. If AST fails (and $\lim a_n = 0$ was $L=0$), the series **DIVERGES**. |
+---
 
-This systematic approach will ensure you never miss a classification and always choose the quickest route to the answer!
+## ⚡ The Alternating Series Protocol (AC vs CC)
 
-What problem would you like to run through this flowchart next?
+If your series is alternating, you must follow this protocol after checking the **Divergence Test** ($\lim_{n\to\infty} a_n \neq 0$ means Divergence):
+
+### Step 1: Test for Absolute Convergence (AC)
+
+* **Test / Logic:** Consider the corresponding series of absolute values, $\sum |a_n| = \sum b_n$.
+* **Conclusion:** Apply any standard convergence test ($p$-Series, Ratio, Root, LCT, Integral, etc.) to $\sum b_n$.
+
+### Step 2: Determine if Absolutely Convergent (AC) or Move to Conditional
+
+* **If $\sum |a_n|$ CONVERGES:** The original alternating series $\sum a_n$ is **Absolutely Convergent (AC)**. You are finished.
+* **If $\sum |a_n|$ DIVERGES:** The series is *not* Absolutely Convergent. Proceed to Step 3 to test for Conditional Convergence.
+
+### Step 3: Test for Conditional Convergence (CC) using the Alternating Series Test (AST)
+
+* **Test / Logic:** The original alternating series $\sum a_n$ is of the form $\sum (-1)^n b_n$ or $\sum (-1)^{n-1} b_n$ where $b_n = |a_n| > 0$.
+    * **Condition 1:** Check if $\lim_{n\to\infty} b_n = 0$.
+    * **Condition 2:** Check if $b_n$ is decreasing (i.e., $b_{n+1} \leq b_n$).
+* **Conclusion:**
+    * If **BOTH** conditions pass, the series is **Conditionally Convergent (CC)**.
+    * If **Condition 1 FAILS** (and you haven't already done the Divergence Test), the series **DIVERGES** (by the Divergence Test).
+    * If **Condition 1 passes but Condition 2 FAILS**, the series might still converge, but it often **DIVERGES** in common examples. However, in most Calculus II contexts, failure of Condition 2 means you cannot rely on AST, and the series is typically considered **Divergent** unless proven otherwise by another test.
+ 
+---
 
 ## PART IV: References
 ### **I. Sequences ($\{a_n\}$) & Preliminary Tests**
