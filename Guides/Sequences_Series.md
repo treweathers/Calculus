@@ -121,12 +121,6 @@ If the series doesn't fit a special form, look at the dominant term structure to
 
 ## 3. The Alternating Series Protocol (AC vs CC)
 
-Here is the Alternating Series Protocol in a clear list format, designed to avoid LaTeX issues.
-
----
-
-## ⚡ The Alternating Series Protocol (AC vs CC)
-
 If your series is alternating, you must follow this protocol after checking the **Divergence Test** ($\lim_{n\to\infty} a_n \neq 0$ means Divergence):
 
 ### Step 1: Test for Absolute Convergence (AC)
