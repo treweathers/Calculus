@@ -48,8 +48,6 @@ This intuitive understanding reinforces why:
 
 ## PART III: Choosing a Convergence Test
 
-Your outline is a perfect mental checklist! Here is the revised and complete guide, starting with the quick summary you requested.
-
 ***
 
 ## Quick Convergence Test Reference
