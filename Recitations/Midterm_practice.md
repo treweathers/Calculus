@@ -101,9 +101,7 @@ Find a power series representation for the function $f(x) = \frac{x^2}{1 - 3x^2}
 
 Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 
-No problem at all! I've removed the hyperbolic function problem and replaced it with a standard Maclaurin series problem.
 
-Here is the final set of six practice problems, all together:
 
 ***
 
