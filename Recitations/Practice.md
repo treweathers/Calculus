@@ -17,7 +17,7 @@ This section focuses on using the **Integral Test Remainder** and **Alternating 
 * **P2.2 (Alternating Series Estimation):** Show that the series $\sum_{n=1}^\infty \frac{(-1)^n}{\sqrt{n^5}}$ is convergent, and determine a partial sum $s_N$ that will estimate the sum of the series with an error of less than $0.0001$.
 * **P2.3 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^4}$ using the sum of the first $N=4$ terms ($s_4$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 * **P2.4 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
-* **P2.5 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
+
 ---
 ## 3. 🔗 Power Series: Representation, Convergence & Applications (4 Problems)
 This section focuses on finding power series representations, determining their radius/interval of convergence, and using them for operations (like integration, limits, or finding function sums).
