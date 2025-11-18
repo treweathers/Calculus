@@ -1,4 +1,4 @@
-Here are three practice problems based on the types you worked through.
+## 1. 🥇 Basics of Series & Convergence Tests (5 Problems) & 2. 🧭 Error Estimation & Remainder Bounds (5 Problems)
 
 ### Problem 1 (Based on Partial Sums)
 
@@ -20,6 +20,7 @@ Use the Integral Test to determine if the series $\sum_{n=1}^\infty n e^{-n}$ is
 Here are four practice problems based on the types of series analysis you've been working on.
 
 ***
+
 
 ### Problem 1 (Absolute/Conditional Convergence)
 
@@ -45,6 +46,7 @@ Show that the series $\sum_{n=1}^\infty \frac{(-1)^n}{\sqrt{n^5}}$ is convergent
 
 Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^4}$ using the sum of the first $N=4$ terms ($s_4$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 
+## 3. 🔗 Power Series: Representation, Convergence & Applications (4 Problems)
 Here are four practice problems based on the concepts you just reviewed.
 
 ***
@@ -73,7 +75,8 @@ Find a power series representation for the function $f(x) = \frac{x^2}{1 - 3x^2}
 
 Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 
-Here are four practice problems based on the concepts you just reviewed.
+
+## 4. 📐 Taylor and Maclaurin Series (6 Problems)
 
 ***
 
