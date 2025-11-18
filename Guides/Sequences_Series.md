@@ -47,14 +47,15 @@ This intuitive understanding reinforces why:
 * **The Goal is $S$:** All the convergence tests are just indirect ways of checking whether that sequence of partial sums, $s_N$, is actually approaching a finite value $S$.
 
 ## PART III: Choosing a Convergence Test
+No apologies necessary! Iterating on the checklist makes it a better reference tool. I've now integrated the detailed explanation of the **Integral Test** and the distinction between the **Comparison Tests** into the final, complete checklist.
 
-***
+---
 
 ## Quick Convergence Test Reference
 
-Start by applying the **Divergence Test** ($\lim a_n$): if the limit isn't zero, the series diverges—stop. If the limit is zero, proceed to test for **Absolute Convergence** by considering $\sum |a_n|$. For this series, use the **Ratio** or **Root Test** (good for factorials/powers), the **Limit Comparison Test** (to compare with $p$-series or geometric), or the **Integral Test** (if $f(x)$ is decreasing and positive). If the absolute series converges, the original series converges. If the absolute series diverges, and the original series is alternating, apply the **Alternating Series Test** to check for **Conditional Convergence**.
+Start by applying the **Divergence Test** ($\lim a_n$): if the limit isn't zero, the series diverges—stop. If the limit is zero, proceed to test for **Absolute Convergence** by considering $\sum |a_n|$. For this series, use the **Ratio** or **Root Test** (good for factorials/powers), the **Comparison Tests** (use **Limit Comparison** for rational functions; **Direct Comparison** only if the inequality is obvious), or the **Integral Test** (if $f(x)$ is decreasing and positive, and $f(x)$ is easily integrable, like $\frac{1}{x \ln x}$). If the absolute series converges, the original series converges. If the absolute series diverges, and the original series is alternating, apply the **Alternating Series Test** to check for **Conditional Convergence**.
 
-***
+---
 
 ## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
 
@@ -64,7 +65,7 @@ Start by applying the **Divergence Test** ($\lim a_n$): if the limit isn't zero,
 * **Check:** Calculate $\lim_{n \to \infty} a_n$.
 * **Result:**
     * If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), then the series **diverges**. Stop here.
-    * If $\lim_{n \to \infty} a_n = 0$, the test is **inconclusive**. Proceed to Step 2.
+    * If $\lim_{n \to \infty} a_n = 0$, the test is **inconclusive**. Proceed to Step 2. (Note: Skip this initial limit calculation and go straight to the **Ratio/Root Test** if $a_n$ contains factorials or exponents of $n$).
 
 ---
 
@@ -87,13 +88,19 @@ Absolute convergence means the series $\sum |a_n|$ converges. If this series con
 #### B. **Comparison Tests** (Useful when $|a_n|$ is similar to a known series)
 
 * **Use when taking the absolute value is helpful:** This is particularly helpful when $|a_n|$ simplifies to a known convergent or divergent series (like a $p$-series or Geometric series).
-* **Direct Comparison Test:** Find a convergent series $\sum b_n$ such that $|a_n| \le b_n$, or a divergent series $\sum d_n$ such that $|a_n| \ge d_n$.
-* **Limit Comparison Test:** Find a known series $\sum b_n$. Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, then $\sum |a_n|$ and $\sum b_n$ have the **same convergence behavior**.
 
-#### C. **Integral Test** (Useful when $|a_n|$ can be written as $f(n)$ where $f(x)$ is continuous, positive, and decreasing)
+* **Direct Comparison Test (DCT):**
+    * **Use:** Only if the required **inequality is simple and obvious** (e.g., $n^2+5 > n^2 \implies \frac{1}{n^2+5} < \frac{1}{n^2}$).
+    * **Requires:** Finding a convergent series $\sum b_n$ such that $|a_n| \le b_n$, or a divergent series $\sum d_n$ such that $|a_n| \ge d_n$.
 
-* **Where it fits in:** The Integral Test is a comparison tool, best used when the term $a_n$ is complicated but easily integrated (e.g., terms involving $\ln n$ or complex rational functions).
-* **Check:** Consider $f(x) = |a_x|$. If the improper integral $\int_1^\infty f(x) dx$ **converges**, then $\sum |a_n|$ **converges**. If the integral **diverges**, the series **diverges**.
+* **Limit Comparison Test (LCT):**
+    * **Use:** **Most commonly** for rational or algebraic functions. It's much easier as it avoids proving inequalities.
+    * **Requires:** Find a known series $\sum b_n$ (usually the simplified dominant terms). Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, then $\sum |a_n|$ and $\sum b_n$ have the **same convergence behavior**.
+
+#### C. **Integral Test** (Used when $f(x)$ is continuous, positive, decreasing, and easily integrable)
+
+* **Where it fits in:** The Integral Test is a comparison tool, best used when the term $a_n$ contains terms like $\ln n$ or complex functions that integrate cleanly using $u$-substitution.
+* **Check:** Consider $f(x) = |a_x|$. The series $\sum |a_n|$ converges if and only if the improper integral $\int_1^\infty f(x) dx$ **converges** (is a finite number). If the integral **diverges**, the series also **diverges**. 
 
 ---
 
