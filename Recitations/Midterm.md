@@ -1,4 +1,4 @@
-Here are three practice problems based on the types you worked through.
+**Here are three practice problems based on the types you worked through.
 
 ### Problem 1 (Based on Partial Sums)
 
@@ -140,3 +140,4 @@ $$\lim_{x\to 0} \frac{e^{x^2} - 1 - x^2}{x^4}$$
 ### Problem 6 (Series Sum as a Familiar Function)
 
 Find the sum of the series $\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n \cdot 2^n}$ as the value of a **familiar function**.
+**
