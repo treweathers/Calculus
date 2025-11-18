@@ -10,7 +10,7 @@ This section includes problems focused on general convergence/divergence using s
 * **P1.3 (Absolute/Conditional Convergence):** Determine whether the series is absolutely convergent, conditionally convergent, or divergent: $$\sum_{n=2}^\infty \frac{(-1)^{n+1}}{\ln(n)}$$
 * **P1.4 (Root Test):** Determine the convergence or divergence of the following series: $$\sum_{n=1}^\infty \left(\frac{3n^2 + 1}{2n^2 + 5}\right)^n$$
 * **P1.5 (Ratio/Root Test):** Determine the convergence or divergence of the following series: $$\sum_{n=1}^\infty \left(1 + \frac{2}{n}\right)^{n^2}$$
-* ---
+---
 ## 2. 🧭 Error Estimation & Remainder Bounds (5 Problems)
 This section focuses on using the **Integral Test Remainder** and **Alternating Series Estimation** to specifically determine an error interval or the minimum required number of terms ($N$).
 * **P2.1 (Integral Test & Remainder $N$):** Use the Integral Test to determine if the series $\sum_{n=1}^\infty n e^{-n}$ is convergent. If it converges, determine a number $N$ so that the remainder $R_N$ is less than $0.001$.
@@ -18,14 +18,14 @@ This section focuses on using the **Integral Test Remainder** and **Alternating 
 * **P2.3 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^4}$ using the sum of the first $N=4$ terms ($s_4$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 * **P2.4 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
 * **P2.5 (Integral Test Remainder):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
-* ---
+---
 ## 3. 🔗 Power Series: Representation, Convergence & Applications (4 Problems)
 This section focuses on finding power series representations, determining their radius/interval of convergence, and using them for operations (like integration, limits, or finding function sums).
 * **P3.1 (Absolute/Conditional Convergence):** Determine whether the series is absolutely convergent, conditionally convergent, or divergent: $$\sum_{n=1}^\infty \frac{(-1)^{n} \cdot 5^n}{(n+1)!}$$
 * **P3.2 (Convergence Tests):** Determine the convergence or divergence of the following series. If it converges and is a geometric or telescoping series, find the sum. $$\sum_{n=1}^\infty \left(1 + \frac{2}{n}\right)^{n^2}$$
 * **P3.3 (Power Series Representation):** Find a power series representation for the function $f(x) = \frac{x^2}{1 - 3x^2}$ and determine the radius of convergence $R$.
 * **P3.4 (Integral Approximation and Error Bound):** Estimate the sum of the series $\sum_{n=1}^\infty \frac{1}{n^5}$ using the sum of the first $N=2$ terms ($s_2$). Then, use the Integral Test remainder formula to provide a closed interval $[S_L, S_U]$ that bounds the true sum $S$.
-* ---
+---
 ## 4. 📐 Taylor and Maclaurin Series (6 Problems)
 This section contains problems focused on finding Taylor/Maclaurin series, finding polynomials, and applications such as approximating integrals and limits using series.
 * **P4.1 (Taylor Polynomial and Accuracy):** Approximate $f(x) = \sqrt{x}$ by its Taylor polynomial of degree 2 centered at $a=4$. Use **Taylor's inequality** to estimate the accuracy of the approximation $f(x) \approx T_2(x)$ when $x$ lies in the interval $[3.9, 4.1]$.
