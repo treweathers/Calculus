@@ -9,7 +9,7 @@ This section includes problems focused on general convergence/divergence using s
 * **P1.2 (Telescoping/Convergence):** Determine if the following series converges or diverges. If it converges, find its sum: $$\sum_{n=3}^\infty \left(\frac{4^{n+1}}{5^{n}} - \frac{4^n}{5^{n-1}}\right)$$
 * **P1.3 (Absolute/Conditional Convergence):** Determine whether the series is absolutely convergent, conditionally convergent, or divergent: $$\sum_{n=2}^\infty \frac{(-1)^{n+1}}{\ln(n)}$$
 * **P1.4 (Root Test):** Determine the convergence or divergence of the following series: $$\sum_{n=1}^\infty \left(\frac{3n^2 + 1}{2n^2 + 5}\right)^n$$
-* **P1.5 (Ratio/Root Test):** Determine the convergence or divergence of the following series: $$\sum_{n=1}^\infty \left(1 + \frac{2}{n}\right)^{n^2}$$
+
 ---
 ## 2. 🧭 Error Estimation & Remainder Bounds (5 Problems)
 This section focuses on using the **Integral Test Remainder** and **Alternating Series Estimation** to specifically determine an error interval or the minimum required number of terms ($N$).
