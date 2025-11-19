@@ -16,6 +16,14 @@
 
 $^\dagger$ **Note on Binomial Series I.O.C.:** The interval of convergence is $(-1, 1)$ for any real number $k$ that is not a non-negative integer. If $k$ is a non-negative integer (like $k=2$), the series becomes a finite polynomial and converges for all $x$ ($-\infty, \infty$).
 
+Function f(x),Maclaurin Series ∑n=0∞​cn​xn,I.O.C.
+1−x1​ (Geometric),∑n=0∞​xn=1+x+x2+x3+…,"(−1,1)"
+ex,∑n=0∞​n!xn​=1+x+2!x2​+3!x3​+…,"(−∞,∞)"
+sin(x),∑n=0∞​(2n+1)!(−1)nx2n+1​=x−3!x3​+5!x5​−…,"(−∞,∞)"
+cos(x),∑n=0∞​(2n)!(−1)nx2n​=1−2!x2​+4!x4​−…,"(−∞,∞)"
+ln(1+x),∑n=1∞​n(−1)n−1xn​=x−2x2​+3x3​−…,"(−1,1]"
+arctan(x),∑n=0∞​2n+1(−1)nx2n+1​=x−3x3​+5x5​−…,"[−1,1]"
+(1+x)k (Binomial),∑n=0∞​(kn​)xn=1+kx+2!k(k−1)​x2+…,"(−1,1)†"
 ---
 
 ### **Generalized Binomial Coefficient**
