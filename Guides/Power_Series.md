@@ -74,6 +74,28 @@ Here is a breakdown of when and how to use differentiation and integration to fi
 | $\ln(1 - x)$ | **Integration** | Start with $f(x) = \frac{1}{1-x}$. | Integrate the series for $f(x)$. |
 | $\arctan(x)$ | **Integration** | Start with $f(x) = \frac{1}{1+x^2}$. | Integrate the series for $f(x)$. |
 
+That's a very concise and effective way to summarize the strategy!
+
+Yes, the core difference between using differentiation and integration to find power series representations is exactly that: **your starting point relative to the base geometric series** .
+
+Here's the breakdown:
+
+---
+
+## 🧭 Starting Point vs. Target Function
+
+| Strategy | When to Apply | The Core Difference |
+| :--- | :--- | :--- |
+| **Differentiation** | When your target function, $f(x)$, has a **denominator power greater than 1** (e.g., $\frac{1}{(1-x)^2}$). | You **start with the simpler base case** $g(x)=\frac{1}{1-x}$ and **differentiate it** to reach the more complex target $f(x)$. The geometric series is **simpler** than the target function. |
+| **Integration** | When your target function, $f(x)$, is an $\mathbf{\ln}$ or $\mathbf{\arctan}$ function. | You **start with the derivative** $g(x)=f'(x)$, which is often the simpler base geometric form (or a close substitution), and **integrate it** to reach the target $f(x)$. The geometric series is the **derivative** of the target function. |
+
+### Summary Analogy
+
+Think of the geometric series $\frac{1}{1-x}$ as the **"main floor"** of a building:
+
+* **Differentiation:** You are on the main floor and want to go to the basement (where the denominators have higher powers). You differentiate to go *down* a level.
+* **Integration:** You are on the main floor (or a substituted version, like $\frac{1}{1+x^2}$) and want to go to the roof ($\ln$ or $\arctan$ functions are "higher" functions because they involve an extra integral). You integrate to go *up* a level.
+
 The foundation for nearly all these problems is the **Geometric Series Formula**:
 
 $$\frac{1}{1-u} = \sum_{n=0}^\infty u^n, \quad \text{for } |u| < 1$$
