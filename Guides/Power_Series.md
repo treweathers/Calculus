@@ -270,3 +270,35 @@ Once you know the basic series, you can find series for related functions withou
 | **Integration** | Start with $\frac{1}{1-x}$ series. $\int \frac{1}{1-x} dx = -\ln|1-x|$. | Integrate $\frac{1}{1-x}$ series term-by-term to get the $\ln(1-x)$ series. |
 | **Multiplication** | To find the series for $x^3 e^x$: | Multiply the $e^x$ series by $\mathbf{x^3}$: $x^3 \sum \frac{x^n}{n!} = \sum \frac{x^{n+3}}{n!}$ |
 
+That's an **excellent and concise summary** of the two primary strategies for finding power series expansions in calculus. You've clearly categorized the methods based on whether you're starting from a known series or generating one from scratch.
+
+Here's a breakdown to confirm your understanding, using your categories:
+
+## 📐 Series Expansion Strategies
+
+---
+
+### **Option A: Manipulation of Known Series (Substitution, etc.)**
+
+* **Applies to:** **Maclaurin Series** (centered at $a=0$) for functions that are closely related to the elementary series (like $\frac{1}{1-x}$, $e^x$, $\sin x$, $\cos x$, $\arctan x$).
+* **Method:** You **avoid taking derivatives**. You use **substitution**, **multiplication/division by $x^k$**, **differentiation**, or **integration** on a known series to obtain the desired expansion. This is generally much faster.
+* **Example:** Finding the Maclaurin series for $f(x) = x \sin(2x)$.
+    * **Known Series:** $\sin u = \sum_{n=0}^{\infty} \frac{(-1)^n u^{2n+1}}{(2n+1)!}$
+    * **Steps:** 1. Substitute $u = 2x$. 2. Multiply the result by $x$.
+
+---
+
+### **Option B: Differentiation and Pattern Detection**
+
+* **Applies to:**
+    1.  **Maclaurin Series (Unknown Forms):** Functions where the derivatives at $x=0$ lead to a clear pattern, but the function isn't a simple algebraic manipulation of the known series (e.g., finding the Maclaurin series for $f(x) = \ln(1+x)$ from scratch, not by integrating $\frac{1}{1+x}$).
+    2.  **Taylor Series (Non-Maclaurin):** **Any Taylor series centered at $a \neq 0$** (e.g., center at $a=2$).
+* **Method:** You use the **fundamental definition of the Taylor series**. This requires:
+    1.  Calculating the first few derivatives ($f'(x), f''(x), f'''(x), \dots$).
+    2.  Evaluating those derivatives at the center $a$ to find the coefficients.
+    3.  Identifying the general formula for the $n$-th coefficient, $\frac{f^{(n)}(a)}{n!}$.
+* **Example:** Finding the Taylor series for $f(x) = \sqrt{x}$ centered at $a=4$.
+    * You **must** take derivatives and evaluate them at $x=4$ because the expansion is not centered at $0$.
+
+**Your summary is an excellent mental flowchart for solving these problems!** The key decision point is always: **Is my function a simple modification of a known $a=0$ series?** If yes, use Option A. If no (either because the center $a \neq 0$ or the function is too complex to manipulate), use Option B.
+
