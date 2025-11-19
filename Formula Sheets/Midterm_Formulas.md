@@ -2,46 +2,6 @@
 
 ---
 
-### III. Convergence Tests for $\sum a_n$
-
-#### **1. Divergence Test ($n$-th Term Test)**
-* **Condition:** If $\lim_{n\to\infty} a_n \neq 0$ (or DNE), then $\sum a_n$ **Diverges**.
-* **Note:** If $\lim_{n\to\infty} a_n = 0$, the test is **inconclusive**.
-
-#### **2. Integral Test**
-* **Condition:** If $f(x)$ is positive, continuous, and decreasing on $[k, \infty)$, then $\sum_{n=k}^\infty a_n$ and $\int_k^\infty f(x) dx$ either **both converge or both diverge**.
-
-#### **3. Comparison Test (Direct)**
-* **Conditions:** Let $0 < a_n \leq b_n$.
-    * If the larger series $\sum b_n$ **converges**, then $\sum a_n$ **converges**.
-    * If the smaller series $\sum a_n$ **diverges**, then $\sum b_n$ **diverges**.
-* **Note:** Requires non-negative terms.
-
-#### **4. Limit Comparison Test (LCT)**
-* **Condition:** Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$. If $L$ is a **finite, positive number ($L>0$)**, then $\sum a_n$ and $\sum b_n$ **either both converge or both diverge**.
-* **Note:** Requires $a_n > 0$ and $b_n > 0$.
-
-#### **5. Ratio Test**
-* **Condition:** Calculate $L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|$.
-    * If $L < 1$, the series **converges absolutely**.
-    * If $L > 1$, the series **diverges**.
-    * If $L=1$, the test is **inconclusive**.
-
-#### **6. Root Test**
-* **Condition:** Calculate $L = \lim_{n\to\infty} \sqrt[n]{|a_n|}$.
-    * If $L < 1$, the series **converges absolutely**.
-    * If $L > 1$, the series **diverges**.
-    * If $L=1$, the test is **inconclusive**.
-
-#### **7. Alternating Series Test (AST)**
-* **Applies to:** $\sum_{n=1}^\infty (-1)^{n}b_n$ or $\sum_{n=1}^\infty (-1)^{n-1}b_n$, where $b_n > 0$.
-* **Conditions for Convergence:** The series converges if **both** conditions are met:
-    1.  $\lim_{n\to\infty} b_n = 0$
-    2.  $b_{n+1} \leq b_n$ (the terms are decreasing in magnitude)
-* **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
-
----
-
 ### IV. Power Series, Taylor, and Maclaurin Series
 
 #### **1. Power Series Formulas**
