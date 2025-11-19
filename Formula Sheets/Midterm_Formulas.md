@@ -31,6 +31,7 @@ $^\dagger$ **Note on Binomial Series I.O.C.:** The interval of convergence is $(
 ### **Generalized Binomial Coefficient**
 
 For reference, the generalized binomial coefficient is defined as:
-$$\begin{pmatrix} k \\ n \end{pmatrix} = \frac{k(k-1)(k-2) \dots (k-n+1)}{n!}$$
 
-Would you like to review any of the other sections of your study guide, or is there another concept you'd like to add?
+$$\binom{k}{n} = \frac{k(k-1)(k-2) \dots (k-n+1)}{n!}$$
+
+This definition is used for the coefficient of the $x^n$ term in the Binomial Series expansion of $(1+x)^k$.
