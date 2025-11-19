@@ -58,6 +58,22 @@ Combine the results from Step 4.
 
 ## 📚 Comprehensive Guide: Power Series Representations (Cont.)
 
+That's an excellent set of questions! You've nailed the starting point, $1/(1-x)$, which is the **base case** for almost all power series representations. The strategies of differentiating and integrating are your primary tools for deriving new series from this base.
+
+Here is a breakdown of when and how to use differentiation and integration to find power series representations:
+
+---
+
+## 🔑 The Power Series Base Case
+## 🗺️ Power Series Strategy Map
+
+| Target Function Type | Strategy | Step 1: Base Case Substitution | Step 2: Operation |
+| :--- | :--- | :--- | :--- |
+| $\frac{1}{1-3x^2}$ | **Substitution Only** | $\frac{1}{1-r}$, where $r = 3x^2$ | Plug $3x^2$ into $\sum r^n$. |
+| $\frac{1}{(1-4x)^3}$ | **Differentiation** | Let $f(x) = \frac{1}{1-4x}$. | Differentiate $f(x)$ **twice** to raise the power to 3. |
+| $\ln(1 - x)$ | **Integration** | Start with $f(x) = \frac{1}{1-x}$. | Integrate the series for $f(x)$. |
+| $\arctan(x)$ | **Integration** | Start with $f(x) = \frac{1}{1+x^2}$. | Integrate the series for $f(x)$. |
+
 The foundation for nearly all these problems is the **Geometric Series Formula**:
 
 $$\frac{1}{1-u} = \sum_{n=0}^\infty u^n, \quad \text{for } |u| < 1$$
