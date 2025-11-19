@@ -65,7 +65,7 @@ Here is a breakdown of when and how to use differentiation and integration to fi
 ---
 
 ## 🔑 The Power Series Base Case
-## 🗺️ Power Series Strategy Map
+### 🗺️ Power Series Strategy Map
 
 | Target Function Type | Strategy | Step 1: Base Case Substitution | Step 2: Operation |
 | :--- | :--- | :--- | :--- |
