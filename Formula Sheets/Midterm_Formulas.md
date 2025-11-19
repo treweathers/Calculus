@@ -23,7 +23,6 @@ Here is the updated chart with the Binomial Series entry, using the detailed for
 $^\dagger$ **Note:** The interval of convergence is $(-1, 1)$ unless $k$ is a non-negative integer, in which case the series is finite and converges for all $x$.
 
 ---
-The corrected $\LaTeX$ for the general term is $\sum_{n=0}^\infty \binom{k}{n} x^n$. This should display correctly now.
 
 $^\dagger$ **Note on Binomial Series I.O.C.:** The interval of convergence is $(-1, 1)$ for any real number $k$ that is not a non-negative integer. If $k$ is a non-negative integer (like $k=2$), the series becomes a finite polynomial and converges for all $x$ ($-\infty, \infty$).
 
