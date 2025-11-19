@@ -1,6 +1,6 @@
 ## Series Formula Sheet
 ---
-### Chart of Common Maclaurin Series**
+### **Chart of Common Maclaurin Series**
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
 | :--- | :--- | :--- |
