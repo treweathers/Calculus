@@ -19,10 +19,6 @@ Here is the updated chart with the Binomial Series entry, using the detailed for
 | $\ln(1+x)$ | $\sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots$ | $(-1, 1]$ |
 | $\arctan(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots$ | $[-1, 1]$ |
 | **$(1+x)^k$ (Binomial)** | **$\sum_{n=0}^\infty \begin{pmatrix} k \\ n \end{pmatrix} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$** | **$(-1, 1)$**$^\dagger$ |
-
-
-| Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
-| :--- | :--- | :--- |
 | **$(1+x)^k$ (Binomial)** | **$\sum_{n=0}^\infty \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$** | **$(-1, 1)$**$^\dagger$ |
 
 $^\dagger$ **Note:** The interval of convergence is $(-1, 1)$ unless $k$ is a non-negative integer, in which case the series is finite and converges for all $x$.
