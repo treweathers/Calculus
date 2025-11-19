@@ -1,14 +1,7 @@
 ## Series Formula Sheet
-
 ---
 
-That's an essential series to include! The **Binomial Series** is a key expansion that allows you to handle fractional and negative exponents.
-
-Here is the updated chart with the Binomial Series entry, using the detailed formula and conventions you provided.
-
----
-
-## 📋 Chart of Common Maclaurin Series
+## Chart of Common Maclaurin Series
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
 | :--- | :--- | :--- |
