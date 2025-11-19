@@ -1,29 +1,6 @@
-## 📚 Series Formula Sheet
-
+## Series Formula Sheet
 ---
-
-### IV. Power Series, Taylor, and Maclaurin Series
-
-#### **1. Power Series Formulas**
-
-A power series centered at $a$ has the form:
-$$\sum_{n=0}^\infty c_n (x-a)^n = c_0 + c_1(x-a) + c_2(x-a)^2 + \dots$$
-
-* **Radius of Convergence ($R$):** Found using the Ratio or Root Test. The series converges for $|x-a| < R$.
-    * If $\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right| = L$, then $R = \frac{1}{L}$.
-    * If the limit is $0$, $R=\infty$. If the limit is $\infty$, $R=0$.
-* **Interval of Convergence (I.O.C.):** The interval $(a-R, a+R)$. **The endpoints $x=a-R$ and $x=a+R$ must be checked separately** using a convergence test.
-* **Differentiation:** You can differentiate a power series term-by-term. The radius $R$ is unchanged, but convergence at the endpoints may change:
-    $$\frac{d}{dx} \left[ \sum_{n=0}^\infty c_n (x-a)^n \right] = \sum_{n=1}^\infty n c_n (x-a)^{n-1}$$
-* **Integration:** You can integrate a power series term-by-term. The radius $R$ is unchanged, but convergence at the endpoints may change:
-    $$\int \left[ \sum_{n=0}^\infty c_n (x-a)^n \right] dx = C + \sum_{n=0}^\infty \frac{c_n}{n+1} (x-a)^{n+1}$$
-
-#### **2. Taylor and Maclaurin Series & Chart of Common Maclaurin Series**
-
-* **Taylor Series** of a function $f(x)$ centered at $a$:
-    $$f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x-a)^n$$
-* **Maclaurin Series:** A Taylor series centered at $a=0$:
-    $$f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n$$
+### Chart of Common Maclaurin Series**
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
 | :--- | :--- | :--- |
