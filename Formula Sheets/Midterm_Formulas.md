@@ -20,6 +20,16 @@ Here is the updated chart with the Binomial Series entry, using the detailed for
 | $\arctan(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots$ | $[-1, 1]$ |
 | **$(1+x)^k$ (Binomial)** | **$\sum_{n=0}^\infty \begin{pmatrix} k \\ n \end{pmatrix} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$** | **$(-1, 1)$**$^\dagger$ |
 
+
+| Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
+| :--- | :--- | :--- |
+| **$(1+x)^k$ (Binomial)** | **$\sum_{n=0}^\infty \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$** | **$(-1, 1)$**$^\dagger$ |
+
+$^\dagger$ **Note:** The interval of convergence is $(-1, 1)$ unless $k$ is a non-negative integer, in which case the series is finite and converges for all $x$.
+
+---
+The corrected $\LaTeX$ for the general term is $\sum_{n=0}^\infty \binom{k}{n} x^n$. This should display correctly now.
+
 $^\dagger$ **Note on Binomial Series I.O.C.:** The interval of convergence is $(-1, 1)$ for any real number $k$ that is not a non-negative integer. If $k$ is a non-negative integer (like $k=2$), the series becomes a finite polynomial and converges for all $x$ ($-\infty, \infty$).
 
 ---
