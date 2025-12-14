@@ -74,40 +74,54 @@ A 2D vector $\mathbf{v} = v_x\mathbf{i} + v_y\mathbf{j}$ can also be written in 
 
 ---
 
-### **Problem 3: Dot Product with Unit Vector**
+## 📐 Problem 3: Dot Product with Unit Vector (Revised)
 
 In the picture below, if $\mathbf{u}$ is a unit vector, find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$.
 
-(The image is missing, but typically shows two vectors $\mathbf{v}$ and $\mathbf{w}$ originating from the same point as the unit vector $\mathbf{u}$, with specific angles between them.)
 
-#### **Goal: Calculate the dot product using magnitudes and the angle between vectors.**
+#### **Goal: Determine vector components from the grid and calculate the dot product using components.**
 
-The **dot product** of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:
-$$\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}| \cos \theta$$
-where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
+When vectors are on a coordinate plane, the dot product can be calculated using the components:
+$$\mathbf{a} \cdot \mathbf{b} = a_x b_x + a_y b_y$$
 
-#### **Step-by-Step Instructions (Assuming a typical diagram setup)**
+#### **Assumed Setup Based on a Square Grid**
 
-1.  **Identify Magnitudes:** Determine the lengths of the vectors. The problem states $\mathbf{u}$ is a **unit vector**, which means $|\mathbf{u}| = 1$. The lengths of $\mathbf{v}$ and $\mathbf{w}$ will be given or implied by the diagram (e.g., $|\mathbf{v}|=4, |\mathbf{w}|=6$).
-2.  **Identify Angles:** Determine the angle $\theta_1$ between $\mathbf{u}$ and $\mathbf{v}$, and the angle $\theta_2$ between $\mathbf{u}$ and $\mathbf{w}$ from the diagram.
-3.  **Calculate Dot Products:** Substitute the magnitudes and angles into the dot product formula for each pair.
+In a typical grid problem involving a unit vector, the vectors are placed such that their components can be easily read. Let's assume the square is defined by the corners $(0,0), (1,0), (0,1), (1,1)$ for simplicity, or that the sides of the square represent $N$ units.
+
+Let's assume the following standard vector components based on the vectors being within a $2 \times 2$ grid or similar configuration:
+* $\mathbf{u}$ is the unit vector: $\mathbf{u} = \langle 1/\sqrt{2}, 1/\sqrt{2} \rangle$ (pointing diagonally, $|\mathbf{u}|=1$).
+* $\mathbf{v}$ points straight along the x-axis: $\mathbf{v} = \langle 4, 0 \rangle$.
+* $\mathbf{w}$ points straight up the y-axis: $\mathbf{w} = \langle 0, 3 \rangle$.
+
+**Note:** The process remains the same regardless of the specific components; you simply read the components off the grid.
+
+#### **Step-by-Step Instructions (Using Component Formula)**
+
+1.  **Determine the Components:** Analyze the diagram (the square grid) to determine the $x$ and $y$ components of each vector ($\mathbf{u}, \mathbf{v}, \mathbf{w}$).
+    * **Crucial Step for $\mathbf{u}$:** Since $\mathbf{u}$ is a unit vector, if you read its base components from the grid (say $\langle u'_x, u'_y \rangle$), you must divide by the magnitude of the base vector to ensure the final vector $\mathbf{u}$ has a length of 1.
+        $$\mathbf{u} = \frac{1}{|\langle u'_x, u'_y \rangle|} \langle u'_x, u'_y \rangle$$
+2.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:** Use the component formula: $u_x v_x + u_y v_y$.
+3.  **Calculate $\mathbf{u} \cdot \mathbf{w}$:** Use the component formula: $u_x w_x + u_y w_y$.
 
 #### **Similar Example**
 
-**Example:** Vector $\mathbf{u}$ is a unit vector. Vector $\mathbf{v}$ has magnitude 5 and the angle between $\mathbf{u}$ and $\mathbf{v}$ is $60^\circ$. Vector $\mathbf{w}$ has magnitude 2 and is perpendicular to $\mathbf{u}$. Find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$.
+**Example:** A square grid has vectors $\mathbf{u}$ (unit vector), $\mathbf{v}$, and $\mathbf{w}$. $\mathbf{u}$ points diagonally along the line $y=x$. $\mathbf{v}$ points along the x-axis for 3 units. $\mathbf{w}$ points along the y-axis for 5 units. Find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$.
 
-1.  **Identify Magnitudes:**
-    $$|\mathbf{u}| = 1$$
-    $$|\mathbf{v}| = 5$$
-    $$|\mathbf{w}| = 2$$
-2.  **Identify Angles:**
-    * Angle between $\mathbf{u}$ and $\mathbf{v}$ is $\theta_1 = 60^\circ$.
-    * $\mathbf{w}$ is perpendicular to $\mathbf{u}$, so the angle between them is $\theta_2 = 90^\circ$.
-3.  **Calculate Dot Products:**
-    * **$\mathbf{u} \cdot \mathbf{v}$:**
-        $$\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}| \cos 60^\circ = (1)(5) \left(\frac{1}{2}\right) = \mathbf{2.5}$$
-    * **$\mathbf{u} \cdot \mathbf{w}$:**
-        $$\mathbf{u} \cdot \mathbf{w} = |\mathbf{u}||\mathbf{w}| \cos 90^\circ = (1)(2) (0) = \mathbf{0}$$
+1.  **Determine the Components:**
+    * **Vector $\mathbf{v}$:** Points 3 units along the x-axis.
+        $$\mathbf{v} = \langle 3, 0 \rangle$$
+    * **Vector $\mathbf{w}$:** Points 5 units along the y-axis.
+        $$\mathbf{w} = \langle 0, 5 \rangle$$
+    * **Vector $\mathbf{u}$ (Unit Vector):** The base vector pointing diagonally is $\langle 1, 1 \rangle$. Its magnitude is $\sqrt{1^2 + 1^2} = \sqrt{2}$. To make it a unit vector:
+        $$\mathbf{u} = \frac{1}{\sqrt{2}} \langle 1, 1 \rangle = \left\langle \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \right\rangle$$
+2.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:**
+    $$\mathbf{u} \cdot \mathbf{v} = \left(\frac{1}{\sqrt{2}}\right) (3) + \left(\frac{1}{\sqrt{2}}\right) (0) = \frac{3}{\sqrt{2}} = \mathbf{\frac{3\sqrt{2}}{2}}$$
+3.  **Calculate $\mathbf{u} \cdot \mathbf{w}$:**
+    $$\mathbf{u} \cdot \mathbf{w} = \left(\frac{1}{\sqrt{2}}\right) (0) + \left(\frac{1}{\sqrt{2}}\right) (5) = \frac{5}{\sqrt{2}} = \mathbf{\frac{5\sqrt{2}}{2}}$$
+
+---
+
+If the image was provided, this two-step process (read components, calculate dot product) is generally the fastest way to solve the problem.
 
 ---
 
