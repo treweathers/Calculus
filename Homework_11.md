@@ -74,54 +74,58 @@ A 2D vector $\mathbf{v} = v_x\mathbf{i} + v_y\mathbf{j}$ can also be written in 
 
 ---
 
-## 📐 Problem 3: Dot Product with Unit Vector (Revised)
+## 📐 Problem 3: Dot Product with Geometric Vectors
 
 In the picture below, if $\mathbf{u}$ is a unit vector, find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$.
 
+**Geometric Setup:** A square where $\mathbf{u}$ is the top line pointing right, $\mathbf{w}$ is the left line pointing down, and $\mathbf{v}$ is the diagonal from the upper left corner to the center. 
 
-#### **Goal: Determine vector components from the grid and calculate the dot product using components.**
+#### **Goal: Use the geometric properties of a square to find the components, magnitudes, and angles for the dot product.**
 
-When vectors are on a coordinate plane, the dot product can be calculated using the components:
-$$\mathbf{a} \cdot \mathbf{b} = a_x b_x + a_y b_y$$
+We will use the definition of the **dot product**: $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}| \cos \theta$.
 
-#### **Assumed Setup Based on a Square Grid**
+#### **Step-by-Step Instructions**
 
-In a typical grid problem involving a unit vector, the vectors are placed such that their components can be easily read. Let's assume the square is defined by the corners $(0,0), (1,0), (0,1), (1,1)$ for simplicity, or that the sides of the square represent $N$ units.
+To solve this, we will assign a side length to the square (let $s$ be the side length). Since the vector $\mathbf{u}$ is defined as a **unit vector** ($|\mathbf{u}| = 1$) but also lies along the top side of the square, we must assume the side length of the square is $s=1$.
 
-Let's assume the following standard vector components based on the vectors being within a $2 \times 2$ grid or similar configuration:
-* $\mathbf{u}$ is the unit vector: $\mathbf{u} = \langle 1/\sqrt{2}, 1/\sqrt{2} \rangle$ (pointing diagonally, $|\mathbf{u}|=1$).
-* $\mathbf{v}$ points straight along the x-axis: $\mathbf{v} = \langle 4, 0 \rangle$.
-* $\mathbf{w}$ points straight up the y-axis: $\mathbf{w} = \langle 0, 3 \rangle$.
+1.  **Determine Magnitudes:** Find the length of each vector based on the unit side length $s=1$.
+    * $|\mathbf{u}|$ is given as 1.
+    * $|\mathbf{w}|$ is the full side length, $s=1$.
+    * $|\mathbf{v}|$ is half the diagonal of the square. The full diagonal length $D$ is $D = \sqrt{s^2 + s^2} = \sqrt{1^2 + 1^2} = \sqrt{2}$. Therefore, $|\mathbf{v}| = D/2$.
 
-**Note:** The process remains the same regardless of the specific components; you simply read the components off the grid.
+2.  **Determine Angles:** Find the angle $\theta$ between the vectors at their common starting point (the upper-left corner of the square).
+    * **Angle between $\mathbf{u}$ and $\mathbf{w}$ ($\theta_{uw}$):** $\mathbf{u}$ is horizontal, $\mathbf{w}$ is vertical. They are perpendicular.
+    * **Angle between $\mathbf{u}$ and $\mathbf{v}$ ($\theta_{uv}$):** The diagonal of a square bisects the corner angle ($90^\circ$), making it $45^\circ$. However, $\mathbf{v}$ only goes halfway. Since $\mathbf{u}$ is pointing right and $\mathbf{v}$ points into the square at $45^\circ$, the angle between them is $45^\circ$.
 
-#### **Step-by-Step Instructions (Using Component Formula)**
-
-1.  **Determine the Components:** Analyze the diagram (the square grid) to determine the $x$ and $y$ components of each vector ($\mathbf{u}, \mathbf{v}, \mathbf{w}$).
-    * **Crucial Step for $\mathbf{u}$:** Since $\mathbf{u}$ is a unit vector, if you read its base components from the grid (say $\langle u'_x, u'_y \rangle$), you must divide by the magnitude of the base vector to ensure the final vector $\mathbf{u}$ has a length of 1.
-        $$\mathbf{u} = \frac{1}{|\langle u'_x, u'_y \rangle|} \langle u'_x, u'_y \rangle$$
-2.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:** Use the component formula: $u_x v_x + u_y v_y$.
-3.  **Calculate $\mathbf{u} \cdot \mathbf{w}$:** Use the component formula: $u_x w_x + u_y w_y$.
-
-#### **Similar Example**
-
-**Example:** A square grid has vectors $\mathbf{u}$ (unit vector), $\mathbf{v}$, and $\mathbf{w}$. $\mathbf{u}$ points diagonally along the line $y=x$. $\mathbf{v}$ points along the x-axis for 3 units. $\mathbf{w}$ points along the y-axis for 5 units. Find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$.
-
-1.  **Determine the Components:**
-    * **Vector $\mathbf{v}$:** Points 3 units along the x-axis.
-        $$\mathbf{v} = \langle 3, 0 \rangle$$
-    * **Vector $\mathbf{w}$:** Points 5 units along the y-axis.
-        $$\mathbf{w} = \langle 0, 5 \rangle$$
-    * **Vector $\mathbf{u}$ (Unit Vector):** The base vector pointing diagonally is $\langle 1, 1 \rangle$. Its magnitude is $\sqrt{1^2 + 1^2} = \sqrt{2}$. To make it a unit vector:
-        $$\mathbf{u} = \frac{1}{\sqrt{2}} \langle 1, 1 \rangle = \left\langle \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \right\rangle$$
-2.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:**
-    $$\mathbf{u} \cdot \mathbf{v} = \left(\frac{1}{\sqrt{2}}\right) (3) + \left(\frac{1}{\sqrt{2}}\right) (0) = \frac{3}{\sqrt{2}} = \mathbf{\frac{3\sqrt{2}}{2}}$$
 3.  **Calculate $\mathbf{u} \cdot \mathbf{w}$:**
-    $$\mathbf{u} \cdot \mathbf{w} = \left(\frac{1}{\sqrt{2}}\right) (0) + \left(\frac{1}{\sqrt{2}}\right) (5) = \frac{5}{\sqrt{2}} = \mathbf{\frac{5\sqrt{2}}{2}}$$
+    $$\mathbf{u} \cdot \mathbf{w} = |\mathbf{u}||\mathbf{w}| \cos \theta_{uw}$$
+    Substitute the values from Steps 1 and 2.
 
----
+4.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:**
+    $$\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}| \cos \theta_{uv}$$
+    Substitute the values from Steps 1 and 2.
 
-If the image was provided, this two-step process (read components, calculate dot product) is generally the fastest way to solve the problem.
+#### **Solution and Similar Example**
+
+**Example (Using the described geometric setup):** Find $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \cdot \mathbf{w}$ for the square with side length $s=1$.
+
+1.  **Determine Magnitudes:**
+    * $|\mathbf{u}| = 1$ (given).
+    * $|\mathbf{w}| = 1$ (side of the square).
+    * $|\mathbf{v}| = \frac{1}{2} \sqrt{1^2 + 1^2} = \frac{\sqrt{2}}{2}$ (half the diagonal).
+
+2.  **Determine Angles:**
+    * $\theta_{uw} = 90^\circ$ (perpendicular sides).
+    * $\theta_{uv} = 45^\circ$ (half the corner angle).
+
+3.  **Calculate $\mathbf{u} \cdot \mathbf{w}$:**
+    $$\mathbf{u} \cdot \mathbf{w} = (1)(1) \cos 90^\circ$$
+    $$\mathbf{u} \cdot \mathbf{w} = 1 \cdot 0 = \mathbf{0}$$
+
+4.  **Calculate $\mathbf{u} \cdot \mathbf{v}$:**
+    $$\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}| \cos 45^\circ$$
+    $$\mathbf{u} \cdot \mathbf{v} = (1)\left(\frac{\sqrt{2}}{2}\right) \left(\frac{\sqrt{2}}{2}\right)$$
+    $$\mathbf{u} \cdot \mathbf{v} = \frac{2}{4} = \mathbf{\frac{1}{2}}$$
 
 ---
 
