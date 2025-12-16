@@ -20,12 +20,36 @@ If you are given the sum formula $s_n$:
 **Rule:** $\sum a_n$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ converges.  
 **Error Bound:** $R_n \leq \int_{n}^{\infty} f(x) \, dx$.
 
-### 4. Comparison, Ratio, and Root Tests (§11.4 – 11.6)
+### 4. Convergence Test Summarized Test Reference Comparison, Ratio, and Root Tests (§11.4 – 11.6)
 * **Comparison:** Compare "messy" series to $p$-series or geometric series.
 * **Ratio Test:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$.
     * $L < 1$ (Abs. Conv), $L > 1$ (Div), $L = 1$ (Inconclusive).
 * **Root Test:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$.
-
+1.  **Divergence Test:** If $\lim_{n \to \infty} a_n \neq 0$, then $\sum a_n$ Diverges.
+2.  **Integral Test:** If $f(x)$ is positive, continuous, and decreasing, then $\sum_{n=k}^{\infty} a_n$ and $\int_{k}^{\infty} f(x) \, dx$ behave the same (**both converge or both diverge**).
+3.  **Direct Comparison Test:** If $0 < a_n \leq b_n$:
+    * $\sum b_n$ (larger series) **converges** $\implies \sum a_n$ **converges**.
+    * $\sum a_n$ (smaller series) **diverges** $\implies \sum b_n$ **diverges**.
+4.  **Limit Comparison Test (LCT):** If $L = \lim_{n \to \infty} \frac{a_n}{b_n}$ is finite and positive ($L > 0$), both behave the same.
+* **Condition:** Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$. If $L$ is a **finite, positive number ($L>0$)**, then $\sum a_n$ and $\sum b_n$ **either both converge or both diverge**.
+* **Note:** Requires $a_n > 0$ and $b_n > 0$.
+6.  **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. Conv if $L < 1$, Div if $L > 1$.
+* **Condition:** Calculate $L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|$.
+    * If $L < 1$, the series **converges absolutely**.
+    * If $L > 1$, the series **diverges**.
+    * If $L=1$, the test is **inconclusive**.
+7.  **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$. Conv if $L < 1$, Div if $L > 1$.
+* **Condition:** Calculate $L = \lim_{n\to\infty} \sqrt[n]{|a_n|}$.
+    * If $L < 1$, the series **converges absolutely**.
+    * If $L > 1$, the series **diverges**.
+    * If $L=1$, the test is **inconclusive**.
+8.  **Alternating Series Test (AST):** For $\sum (-1)^n b_n$, converges if $b_n \to 0$ and $b_n$ is decreasing.
+    * **Remainder:** $|R_N| = |S - S_N| \leq b_{N+1}$.
+* **Applies to:** $\sum_{n=1}^\infty (-1)^{n}b_n$ or $\sum_{n=1}^\infty (-1)^{n-1}b_n$, where $b_n > 0$.
+* **Conditions for Convergence:** The series converges if **both** conditions are met:
+    1.  $\lim_{n\to\infty} b_n = 0$
+    2.  $b_{n+1} \leq b_n$ (the terms are decreasing in magnitude)
+* **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
 ---
 
 ## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
@@ -67,36 +91,6 @@ This applies if $\sum |a_n|$ diverged but the original $\sum a_n$ is an **Altern
     1. $b_n$ is decreasing ($b_{n+1} \leq b_n$).
     2. $\lim_{n \to \infty} b_n = 0$.
 * **Result:** If both met, the series converges **conditionally**. If the test fails, the series **diverges**.
-
----
-
-## Summarized Test Reference
-
-1.  **Divergence Test:** If $\lim_{n \to \infty} a_n \neq 0$, then $\sum a_n$ Diverges.
-2.  **Integral Test:** If $f(x)$ is positive, continuous, and decreasing, then $\sum_{n=k}^{\infty} a_n$ and $\int_{k}^{\infty} f(x) \, dx$ behave the same (**both converge or both diverge**).
-3.  **Direct Comparison Test:** If $0 < a_n \leq b_n$:
-    * $\sum b_n$ (larger series) **converges** $\implies \sum a_n$ **converges**.
-    * $\sum a_n$ (smaller series) **diverges** $\implies \sum b_n$ **diverges**.
-4.  **Limit Comparison Test (LCT):** If $L = \lim_{n \to \infty} \frac{a_n}{b_n}$ is finite and positive ($L > 0$), both behave the same.
-* **Condition:** Let $L = \lim_{n\to\infty} \frac{a_n}{b_n}$. If $L$ is a **finite, positive number ($L>0$)**, then $\sum a_n$ and $\sum b_n$ **either both converge or both diverge**.
-* **Note:** Requires $a_n > 0$ and $b_n > 0$.
-6.  **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. Conv if $L < 1$, Div if $L > 1$.
-* **Condition:** Calculate $L = \lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|$.
-    * If $L < 1$, the series **converges absolutely**.
-    * If $L > 1$, the series **diverges**.
-    * If $L=1$, the test is **inconclusive**.
-7.  **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$. Conv if $L < 1$, Div if $L > 1$.
-* **Condition:** Calculate $L = \lim_{n\to\infty} \sqrt[n]{|a_n|}$.
-    * If $L < 1$, the series **converges absolutely**.
-    * If $L > 1$, the series **diverges**.
-    * If $L=1$, the test is **inconclusive**.
-8.  **Alternating Series Test (AST):** For $\sum (-1)^n b_n$, converges if $b_n \to 0$ and $b_n$ is decreasing.
-    * **Remainder:** $|R_N| = |S - S_N| \leq b_{N+1}$.
-* **Applies to:** $\sum_{n=1}^\infty (-1)^{n}b_n$ or $\sum_{n=1}^\infty (-1)^{n-1}b_n$, where $b_n > 0$.
-* **Conditions for Convergence:** The series converges if **both** conditions are met:
-    1.  $\lim_{n\to\infty} b_n = 0$
-    2.  $b_{n+1} \leq b_n$ (the terms are decreasing in magnitude)
-* **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
 
 ---
 
