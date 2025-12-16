@@ -67,7 +67,8 @@
 
 ---
 
-## 🧊 Section 3: 3D Geometry & Vectors###**Vector Operations*** **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
+## 🧊 Section 3: 3D Geometry & Vectors###
+**Vector Operations*** **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
 * **Unit Vector:** v / |v|
 * **Dot Product:** u₁v₁ + u₂v₂ + u₃v₃
 * **Angle between Vectors:** cos(θ) = (u · v) / (|u||v|)
@@ -76,7 +77,7 @@
 * **Area of Parallelogram:** Magnitude of the cross product: |u × v|
 * **Volume of Parallelepiped:** Absolute value of triple product: |u · (v × w)|
 
-###**Lines and Planes*** **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
+### **Lines and Planes*** **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
 * **Plane Equation:** a(x - x₀) + b(y - y₀) + c(z - z₀) = 0
 * *Note:* ⟨a, b, c⟩ is the Normal Vector.
 
