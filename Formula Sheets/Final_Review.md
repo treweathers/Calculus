@@ -1,10 +1,10 @@
 # 🧮 Calculus II Final Formula Sheet
 ## Section 1: Integration, Parametric, & Polar
 ### **Standard Antiderivatives**
-* ∫ sin(x) dx = -cos(x) + C
-* ∫ cos(x) dx = sin(x) + C
-* ∫ sec²(x) dx = tan(x) + C
-* ∫ csc²(x) dx = -cot(x) + C
+* **∫ sin(x) dx** = -cos(x) + C
+* **∫ cos(x) dx** = sin(x) + C
+* **∫ sec²(x) dx** = tan(x) + C
+* **∫ csc²(x) dx** = -cot(x) + C
 
 
 ### **Inverse Trig Antiderivatives**
