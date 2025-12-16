@@ -68,7 +68,7 @@
 ---
 
 ## 🧊 Section 3: 3D Geometry & Vectors
-### **Vector Operations***
+### **Vector Operations**
 * **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
 * **Unit Vector:** v / |v|
 * **Dot Product:** u₁v₁ + u₂v₂ + u₃v₃
@@ -84,8 +84,10 @@
 * *Note:* ⟨a, b, c⟩ is the Normal Vector.
 
 
-* **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
+* **Distance (Point to Plane):**
+* D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
 
-### **The Parallelogram Law*** **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
+### **The Parallelogram Law*** **
+* Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
 
 ---
