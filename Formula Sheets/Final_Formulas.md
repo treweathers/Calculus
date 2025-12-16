@@ -34,22 +34,10 @@
 * **Arc Length:** ∫ √[r² + (dr/dθ)²] dθ
 * *Operation:* Sum of the square of r and the square of its 1st degree derivative.
 
-### **Parametric & Polar Operations Chart**
-| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
-| --- | --- | --- |
-| **Tangent Slope (dy/dx)** | `(dy/dt) / (dx/dt)` <br>
-
-<br> Divide 1st derivative of y by 1st derivative of x. | `[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]` <br>
-
-<br> Combine 1st derivative of r with original r function. |
-| **Arc Length (S)** | `∫ √[(dx/dt)² + (dy/dt)²] dt` <br>
-
-<br> Square 1st derivatives, sum them, then square root. | `∫ √[r² + (dr/dθ)²] dθ` <br>
-
-<br> Sum of square of r and square of 1st derivative of r. |
-| **Area (A)** | *Varies by boundary* | `∫ 1/2 [r(θ)]² dθ` <br>
-
-<br> Square the function r before integrating. |
+Feature,"Parametric (x=f(t),y=g(t))",Polar (r=f(θ))
+Tangent Slope (dy/dx),(dy/dt) / (dx/dt)  Divide 1st derivative of y by 1st derivative of x.,[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]  Combine 1st derivative of r with original r function.
+Arc Length (S),"∫ √[(dx/dt)² + (dy/dt)²] dt  Square 1st derivatives, sum them, then square root.",∫ √[r² + (dr/dθ)²] dθ  Sum of square of r and square of 1st derivative of r.
+Area (A),Varies by boundary,∫ 1/2 [r(θ)]² dθ  Square the function r before integrating.
 
 ---
 
