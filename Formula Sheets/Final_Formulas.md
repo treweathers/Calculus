@@ -1,122 +1,86 @@
+#🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar
+###**Standard Antiderivatives*** **sin(x):** ∫ sin(x) dx = -cos(x) + C
+* **cos(x):** ∫ cos(x) dx = sin(x) + C
+* **sec^2(x):** ∫ sec²(x) dx = tan(x) + C
+* **csc^2(x):** ∫ csc²(x) dx = -cot(x) + C
+* **sec(x)tan(x):** ∫ sec(x)tan(x) dx = sec(x) + C
+* **csc(x)cot(x):** ∫ csc(x)cot(x) dx = -csc(x) + C
+* **tan(x):** ∫ tan(x) dx = ln|sec(x)| + C
+* **sec(x):** ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
+* **csc(x):** ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
+
+###**Inverse Trig Antiderivatives*** **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
+* **arctan:** ∫ 1/(1+x²) dx = arctan(x) + C
+* **arcsec:** ∫ 1/(|x|√(x²-1)) dx = arcsec(x) + C
 
 ---
 
-##🧮 Section 1: Integration, Parametric, & Polar###**Standard Antiderivatives*** **\int \sin(x) \, dx = -\cos(x) + C**
-* **\int \cos(x) \, dx = \sin(x) + C**
-* **\int \sec^2(x) \, dx = \tan(x) + C**
-* **\int \csc^2(x) \, dx = -\cot(x) + C**
-* **\int \sec(x)\tan(x) \, dx = \sec(x) + C**
-* **\int \csc(x)\cot(x) \, dx = -\csc(x) + C**
-* **\int \tan(x) \, dx = \ln|\sec(x)| + C**
-* **\int \sec(x) \, dx = \ln|\sec(x) + \tan(x)| + C**
-* **\int \csc(x) \, dx = -\ln|\csc(x) + \cot(x)| + C**
+###**Parametric & Polar Operations****Parametric Equations** (x = f(t), y = g(t))
 
-###**Inverse Trig Antiderivatives*** **\int \frac{1}{\sqrt{1-x^2}} \, dx = \arcsin(x) + C**
-* **\int \frac{1}{1+x^2} \, dx = \arctan(x) + C**
-* **\int \frac{1}{|x|\sqrt{x^2-1}} \, dx = \text{arcsec}(x) + C**
-
-###**Parametric Equations**For a curve defined by x = f(t) and y = g(t):
-
-* **Tangent Slope (\frac{dy}{dx}):** \frac{dy/dt}{dx/dt}
-* Numerator: 1st derivative of y with respect to t.
-* Denominator: 1st derivative of x with respect to t.
+* **Tangent Slope:** (dy/dt) / (dx/dt)
+* *Operation:* Divide the 1st degree derivative of y by the 1st degree derivative of x.
 
 
-* **Arc Length (S):** \int_{a}^{b} \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \, dt
-* Inside the root: Sum of the squares of the 1st derivatives of x and y.
+* **Arc Length:** ∫ √[(dx/dt)² + (dy/dt)²] dt
+* *Operation:* Square the 1st degree derivatives, sum them, and take the square root.
 
 
 
-###**Polar Coordinates**For a curve r = f(\theta):
+**Polar Coordinates** (r = f(θ))
 
-* **Tangent Slope (\frac{dy}{dx}):** \frac{(dr/d\theta)\sin\theta + r\cos\theta}{(dr/d\theta)\cos\theta - r\sin\theta}
-* Uses the 1st derivative of the radius function (dr/d\theta).
-
-
-* **Area of a Region (A):** \int_{\alpha}^{\beta} \frac{1}{2} r^2 \, d\theta
-* The function r is squared before integrating.
+* **Tangent Slope:** [(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]
+* *Operation:* Combine the 1st degree derivative of r and the original function r.
 
 
-* **Arc Length (S):** \int_{\alpha}^{\beta} \sqrt{r^2 + (\frac{dr}{d\theta})^2} \, d\theta
-* Inside the root: Square the radius function and add the square of its 1st derivative.
+* **Area of a Region:** ∫ 1/2 [r(θ)]² dθ
+* *Operation:* Square the function r before integrating.
 
 
-
----
-
-##♾️ Section 2: Infinite Series###**Convergence Tests*** **Divergence Test:** If \lim_{n \to \infty} a_n \neq 0, the series diverges.
-* **Geometric Series:** \sum ar^n converges if |r| < 1. Sum = \frac{a}{1-r}.
-* **p-Series:** \sum \frac{1}{n^p} converges if p > 1.
-* **Integral Test:** If f(x) is positive, continuous, and decreasing, \sum a_n and \int f(x)dx behave the same.
-* **Ratio Test:** Let L = \lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|. Converges if L < 1, diverges if L > 1.
-* **Alternating Series Test:** \sum (-1)^n b_n converges if b_{n+1} \leq b_n and \lim_{n \to \infty} b_n = 0.
-
-###**Common Maclaurin Series*** **Geometric:** \frac{1}{1-x} = 1 + x + x^2 + x^3 + \dots
-* ROC: |x| < 1
-
-
-* **Exponential:** e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots
-* ROC: (-\infty, \infty)
-
-
-* **Sine:** \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots
-* ROC: (-\infty, \infty)
-
-
-* **Cosine:** \cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots
-* ROC: (-\infty, \infty)
-
-
-* **Logarithm:** \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \dots
-* ROC: -1 < x \leq 1
-
-
-* **Arctangent:** \arctan(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots
-* ROC: |x| \leq 1
-
-
-* **Binomial:** (1+x)^k = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots
-* ROC: |x| < 1
+* **Arc Length:** ∫ √[r² + (dr/dθ)²] dθ
+* *Operation:* Sum of the square of r and the square of its 1st degree derivative.
 
 
 
 ---
 
-##🧊 Section 3: 3D Geometry & Vectors###**Vector Basics*** **Magnitude:** |\vec{v}| = \sqrt{v_1^2 + v_2^2 + v_3^2}
-* **Unit Vector:** \hat{u} = \frac{\vec{v}}{|\vec{v}|} (Scale each component by the reciprocal of the magnitude).
+##♾️ Section 2: Infinite Series###**Convergence Tests*** **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
+* **p-Series:** Σ 1/nᵖ converges if p > 1, diverges if p ≤ 1.
+* **Geometric Series:** Σ arⁿ converges if |r| < 1. Sum = a/(1-r).
+* **Integral Test:** If f(x) is positive/decreasing, Σ aₙ and ∫ f(x)dx both converge or both diverge.
+* **Ratio Test:** L = lim |aₙ₊₁ / aₙ|. Converges if L < 1, Diverges if L > 1.
+* **Root Test:** L = lim ⁿ√|aₙ|. Converges if L < 1, Diverges if L > 1.
+* **Direct Comparison:** If aₙ ≤ bₙ and Σbₙ converges, then Σaₙ converges.
+* **Limit Comparison:** L = lim (aₙ / bₙ). If L is finite/positive, both series behave the same.
+* **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
 
-###**Products & Projections*** **Dot Product:** \vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
-* Yields a **scalar**. \vec{u} \cdot \vec{v} = 0 means vectors are orthogonal.
-
-
-* **Angle Between Vectors:** \theta = \arccos\left(\frac{\vec{u} \cdot \vec{v}}{|\vec{u}| |\vec{v}|}\right)
-* **Vector Projection:** \text{proj}_{\vec{u}}\vec{v} = (\frac{\vec{u} \cdot \vec{v}}{|\vec{u}|^2})\vec{u}
-* **Cross Product:** \vec{a} \times \vec{b} = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle
-* Yields a **vector** orthogonal to both \vec{a} and \vec{b}.
-
-
-* **Scalar Triple Product:** \vec{u} \cdot (\vec{v} \times \vec{w})
-* Result: **Volume** of a parallelepiped.
-
-
-
-###**Lines & Planes*** **Line Equation:** \vec{r}(t) = \vec{P_0} + t\vec{d}
-* \vec{P_0} is a point on the line; \vec{d} is the direction vector.
-
-
-* **Plane Equation:** a(x-x_0) + b(y-y_0) + c(z-z_0) = 0
-* \langle a, b, c \rangle is the **normal vector** (\vec{n}).
-* (x_0, y_0, z_0) is a point on the plane.
-
-
-* **Distance (Point to Plane):** D = \frac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}
-* Numerator: Plug the point into the plane equation (ax+by+cz+d=0).
-* Denominator: Magnitude of the normal vector.
-
-
-
-###**The Parallelogram Law*** **Formula:** |\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2
-* **Interpretation:** The sum of the squares of the diagonals equals the sum of the squares of the four sides.
+###**Known Maclaurin Series**| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
+| --- | --- | --- | --- |
+| **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
+| **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
+| **sin(x)** | Σ (-1)ⁿ x²ⁿ⁺¹ / (2n+1)! | x - x³/3! + x⁵/5! - ... | R = ∞ |
+| **cos(x)** | Σ (-1)ⁿ x²ⁿ / (2n)! | 1 - x²/2! + x⁴/4! - ... | R = ∞ |
+| **ln(1+x)** | Σ (-1)ⁿ⁻¹ xⁿ / n | x - x²/2 + x³/3 - x⁴/4 + ... | R = 1 |
+| **arctan(x)** | Σ (-1)ⁿ x²ⁿ⁺¹ / (2n+1) | x - x³/3 + x⁵/5 - ... | R = 1 |
+| **(1+x)ᵏ** | Σ (k over n) xⁿ | 1 + kx + [k(k-1)/2!]x² + ... | R = 1 |
 
 ---
 
+##🧊 Section 3: 3D Geometry & Vectors###**Vector Operations*** **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
+* **Unit Vector:** v / |v|
+* **Dot Product:** u₁v₁ + u₂v₂ + u₃v₃
+* **Angle between Vectors:** cos(θ) = (u · v) / (|u||v|)
+* **Vector Projection:** proj_u(v) = [(u · v) / |u|²] * u
+* **Cross Product:** ⟨u₂v₃-u₃v₂, u₃v₁-u₁v₃, u₁v₂-u₂v₁⟩
+* **Area of Parallelogram:** Magnitude of the cross product: |u × v|
+* **Volume of Parallelepiped:** Absolute value of triple product: |u · (v × w)|
+
+###**Lines and Planes*** **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
+* **Plane Equation:** a(x - x₀) + b(y - y₀) + c(z - z₀) = 0
+* *Note:* ⟨a, b, c⟩ is the Normal Vector.
+
+
+* **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
+
+###**The Parallelogram Law*** **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
+
+---
