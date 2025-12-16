@@ -38,14 +38,21 @@ Certainly! Here is the standalone section for Parametric and Polar operations, f
 ---
 
 ### **Parametric & Polar Operations Reference**
-| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(θ)) |
+| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
 | --- | --- | --- |
 | **Tangent Slope** | `(dy/dt) / (dx/dt)` | `[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]` |
-| **Slope Operation** | Divide 1st degree derivative of **y** by 1st degree derivative of **x**. | Combine 1st degree derivative of **r** with original function **r**. |
+|  | **Operation:** Divide 1st degree derivative of **y** by 1st degree derivative of **x**. | **Operation:** Combine 1st degree derivative of **r** and original function **r**. |
 | **Arc Length** | `∫ √[(dx/dt)² + (dy/dt)²] dt` | `∫ √[r² + (dr/dθ)²] dθ` |
-| **Length Operation** | Square 1st degree derivatives, sum them, and square root. | Sum the square of **r** and the square of its 1st degree derivative. |
+|  | **Operation:** Square 1st degree derivatives, sum them, and square root. | **Operation:** Sum the square of **r** and the square of its 1st degree derivative. |
 | **Area (A)** | *Varies by boundary* | `∫ 1/2 [r(θ)]² dθ` |
-| **Area Operation** | *N/A* | Square the function **r** before integrating. |
+|  |  | **Operation:** Square the function **r** before integrating. |
+
+---
+
+###**Quick Execution Guide*** **Parametric:** You are always hunting for **1st degree derivatives** (x' and y'). Once you have those, you are just plugging them into the ratios or the Pythagorean-style arc length formula.
+* **Polar:** You need the **original r** and the **1st degree derivative r'**. Remember that for Area, the function itself gets squared, but for Arc Length, both the function and its derivative get squared.
+
+Would you like me to re-output the **entire** formula sheet one last time with this specific table style integrated into Section 1?
 
 ---
 
