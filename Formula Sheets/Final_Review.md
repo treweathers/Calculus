@@ -158,7 +158,6 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 ### Lines and Planes
 * **Line Equation:** $\mathbf{r}(t) = P_0 + t\langle d_1, d_2, d_3 \rangle$
 * **Plane Equation:** $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$
-    * *Note: $\langle a, b, c \rangle$ is the Normal Vector.*
 * **Distance (Point to Plane):** $D = \frac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}$
 
 ### The Parallelogram Law
