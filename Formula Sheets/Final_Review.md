@@ -17,7 +17,7 @@
 
 ---
 
-##2. Series Fundamentals (§11.2)A series \sum a_n is the sum of a sequence.
+## 2. Series Fundamentals (§11.2)A series \sum a_n is the sum of a sequence.
 
 * **Partial Sums (s_n):** The sum of the first n terms.
 * **To find a_n:** a_n = s_n - s_{n-1}.
@@ -33,7 +33,7 @@
 
 ---
 
-##3. The Integral Test & Estimation (§11.3)Use when a_n = f(n) and f(x) is **positive, continuous, and decreasing**.
+## 3. The Integral Test & Estimation (§11.3)Use when a_n = f(n) and f(x) is **positive, continuous, and decreasing**.
 
 * **The Test:** \sum a_n converges if \int_{1}^{\infty} f(x) dx converges.
 * **Remainder Estimate (R_n):** To bound the error of a partial sum s_n:
@@ -45,7 +45,7 @@
 
 ---
 
-##4. Comparison, Ratio, & Root Tests (§11.4 - 11.6)| Test | Usage | Condition for Convergence |
+## 4. Comparison, Ratio, & Root Tests (§11.4 - 11.6)| Test | Usage | Condition for Convergence |
 | --- | --- | --- |
 | **Comparison** | Compare a_n to p-series or geometric. | a_n \leq b_n and \sum b_n conv. |
 | **Limit Comp.** | Use when a_n "looks like" b_n. | \lim (a_n / b_n) = C > 0. |
@@ -60,7 +60,7 @@
 
 ---
 
-##5. Power Series & Radius (§11.8 - 11.9)A series of the form \sum c_n(x-a)^n.
+## 5. Power Series & Radius (§11.8 - 11.9)A series of the form \sum c_n(x-a)^n.
 
 * **Finding Interval of Convergence (I):** 1.  Perform the **Ratio Test** on the whole term.
 2.  Set L < 1 and solve for |x-a| < R.
@@ -72,13 +72,13 @@
 
 ---
 
-##6. Taylor & Maclaurin Series (§11.10 - 11.11)* **Formula:** f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n. (Maclaurin is just a=0).
+## 6. Taylor & Maclaurin Series (§11.10 - 11.11)* **Formula:** f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n. (Maclaurin is just a=0).
 * **Taylor’s Inequality (Error Bound):** 
 
 
 where M is the maximum value of |f^{(n+1)}(x)| on the given interval.
 
-###Common Maclaurin Series to Memorize:* e^x = \sum \frac{x^n}{n!}
+### Common Maclaurin Series to Memorize:* e^x = \sum \frac{x^n}{n!}
 * \sin(x) = \sum (-1)^n \frac{x^{2n+1}}{(2n+1)!}
 * \cos(x) = \sum (-1)^n \frac{x^{2n}}{(2n)!}
 * \frac{1}{1-x} = \sum x^n
