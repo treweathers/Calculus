@@ -25,12 +25,6 @@
 ---
 
 ## ♾️ Section 2: Infinite Series
-
-### **Known Maclaurin Series**
-# 🧮 Calculus II Final Formula Sheet
-
-## ♾️ Section 2: Infinite Series
-
 ### **Known Maclaurin Series**
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | ROC ($R$) | I.O.C. |
@@ -42,35 +36,6 @@
 | $\ln(1+x)$ | $\sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots$ | $R = 1$ | $(-1, 1]$ |
 | $\arctan(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots$ | $R = 1$ | $[-1, 1]$ |
 | $(1+x)^k$ | $\sum_{n=0}^\infty \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$ | $R = 1$ | $(-1, 1)$ |
-
----
-
-### **Convergence Testing Strategy**
-1. **$n$-th Term Test:** If $\lim_{n \to \infty} a_n \neq 0$, the series **diverges**.
-2. **Ratio Test:** Used for factorials and powers. $L = \lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|$.
-   * $L < 1$: Absolute Convergence
-   * $L > 1$: Divergence
-   * $L = 1$: Inconclusive (Try Integral or Comparison Test).
-3. **Alternating Series Test (AST):** If $b_n$ is decreasing and $\lim_{n \to \infty} b_n = 0$, the alternating series converges.
-
-
-
----
-
-## 🧊 Section 3: 3D Geometry & Vectors
-
-### **Vector Operations**
-
-* **Dot Product:** $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|\cos(\theta)$
-* **Cross Product Magnitude:** $|\vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin(\theta)$
-* **Work:** $W = \vec{F} \cdot \vec{D} = |\vec{F}||\vec{D}|\cos(\theta)$
-| Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | I.O.C. |
-| :--- | :--- | :--- |
-| $\sin(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots$ | $(-\infty, \infty)$ |
-| $\cos(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots$ | $(-\infty, \infty)$ |
-| $\ln(1+x)$ | $\sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots$ | $(-1, 1]$ |
-| $\arctan(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots$ | $[-1, 1]$ |
-| $(1+x)^k$ | $\sum_{n=0}^\infty \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots$ | $(-1, 1)$ |
 
 ---
 
