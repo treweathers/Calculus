@@ -58,6 +58,45 @@ If you are given the sum formula $s_n$:
     * **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
 
 ---
+ ## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
+
+### Step 1: The Divergence Test (The First Check)
+* **Goal:** To quickly determine if the series must diverge.
+* **Check:** Calculate $\lim_{n \to \infty} a_n$.
+* **Result:**
+    * If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), the series **diverges**. Stop here.
+    * If $\lim_{n \to \infty} a_n = 0$, the test is inconclusive. Proceed to Step 2.
+
+> **Note:** Skip the initial limit calculation and go straight to the Ratio/Root Test if $a_n$ contains factorials ($n!$) or exponents of $n$ (like $3^n$).
+
+---
+
+### Step 2: Test for Absolute Convergence
+Absolute convergence means $\sum |a_n|$ converges. If it does, the original series $\sum a_n$ is automatically convergent.
+
+1.  **Form the Absolute Series:** Consider the series of absolute values, $\sum |a_n|$.
+2.  **Apply Tests for Absolute Convergence:**
+
+#### A. Ratio Test or Root Test
+> **Use for:** Terms involving $n!$, products of functions, or $n$ in the exponent.
+
+* **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
+* **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$
+* **Result:**
+    * If $L < 1$, the series is **absolutely convergent**. Stop here.
+    * If $L > 1$ or $L = \infty$, the series **diverges**. Stop here.
+    * If $L = 1$, inconclusive. Try Comparison or Integral Test.
+
+#### B. Comparison Tests
+> **Use when:** $|a_n|$ looks similar to a known series (like a $p$-series or geometric series).
+
+* **Direct Comparison Test (DCT):** Use if the inequality is simple.
+    * *Example:* $n^2+5 > n^2 \implies \frac{1}{n^2+5} < \frac{1}{n^2}$.
+* **Limit Comparison Test (LCT):** Best for rational or algebraic functions.
+    * Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, both series behave the same.
+
+#### C. Integral Test
+>
 ## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
 
 ### Step 1: The Divergence Test (The First Check)
