@@ -1,4 +1,6 @@
-Here is your Calculus II Final Formula Sheet, with all mathematical expressions converted to LaTeX to match the Series section.
+It looks like the previous response didn't render the math symbols correctly because they weren't enclosed in the proper delimiters for this interface.
+
+To see the symbols properly (like \int or \sum), they need to be wrapped in dollar signs. Here is the corrected version that should display beautifully for you:
 
 #🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar###**Standard Antiderivatives*** \int \sec(x)\tan(x) \, dx = \sec(x) + C
 * \int \csc(x)\cot(x) \, dx = -\csc(x) + C
@@ -12,7 +14,7 @@ Here is your Calculus II Final Formula Sheet, with all mathematical expressions 
 | --- | --- | --- |
 | **Tangent Slope** | \frac{dy/dt}{dx/dt} | \frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta} |
 |  | **Operation:** Divide 1st degree derivative of y by 1st degree derivative of x. | **Operation:** Combine 1st degree derivative of r and original function r. |
-| **Arc Length** | \int \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \, dt | \int \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2} \, d\theta |
+| **Arc Length** | \int \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \, dt | \int \sqrt{r^2 + (\frac{dr}{d\theta})^2} \, d\theta |
 |  | **Operation:** Square 1st degree derivatives, sum them, and square root. | **Operation:** Sum the square of r and the square of its 1st degree derivative. |
 | **Area (A)** | *Varies by boundary* | \int \frac{1}{2} [r(\theta)]^2 \, d\theta |
 |  |  | **Operation:** Square the function r before integrating. |
@@ -21,10 +23,10 @@ Here is your Calculus II Final Formula Sheet, with all mathematical expressions 
 
 ##♾️ Section 2: Infinite Series###**Known Maclaurin Series**| Function f(x) | Maclaurin Series \sum_{n=0}^\infty c_n x^n | I.O.C. |
 | --- | --- | --- |
-| \sin(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots | (-\infty, \infty) |
-| \cos(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots | (-\infty, \infty) |
-| \ln(1+x) | \sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots | (-1, 1] |
-| \arctan(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots | [-1, 1] |
+| \sin(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \dots | (-\infty, \infty) |
+| \cos(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \dots | (-\infty, \infty) |
+| \ln(1+x) | \sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \dots | (-1, 1] |
+| \arctan(x) | \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \dots | [-1, 1] |
 | (1+x)^k | \sum_{n=0}^\infty \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!}x^2 + \dots | (-1, 1) |
 
 ---
@@ -34,4 +36,6 @@ Here is your Calculus II Final Formula Sheet, with all mathematical expressions 
 * **Dot Product:** \mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3
 * **Magnitude:** |\mathbf{u}| = \sqrt{u_1^2 + u_2^2 + u_3^2}
 
-Would you like me to add the common **Convergence Tests** (like Ratio or Root tests) to the Series section as well?
+---
+
+Would you like me to create a separate table for the **Integration by Parts** formula and **Trig Substitution** cases?
