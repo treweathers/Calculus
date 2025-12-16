@@ -38,20 +38,13 @@
 
 ## 🧊 Section 3: 3D Geometry & Vectors
 ### **Vector Operations**
-* **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
-* **Unit Vector:** v / |v|
-* **Dot Product:** u₁v₁ + u₂v₂ + u₃v₃
 * **Angle between Vectors:** cos(θ) = (u · v) / (|u||v|)
 * **Vector Projection:** proj_u(v) = [(u · v) / |u|²] * u
-* **Cross Product:** ⟨u₂v₃-u₃v₂, u₃v₁-u₁v₃, u₁v₂-u₂v₁⟩
 * **Area of Parallelogram:** Magnitude of the cross product: |u × v|
 * **Volume of Parallelepiped:** Absolute value of triple product: |u · (v × w)|
 
 ### **Lines and Planes**
 * **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
-* **Plane Equation:** a(x - x₀) + b(y - y₀) + c(z - z₀) = 0
-* *Note:* ⟨a, b, c⟩ is the Normal Vector.
-* **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
 
 ### **The Parallelogram Law**
 * **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
