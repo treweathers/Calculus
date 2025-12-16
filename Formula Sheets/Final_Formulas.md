@@ -44,5 +44,3 @@
 * **Angle between Vectors:** $$\cos(\theta) = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}||\vec{v}|}$$
 
 * **Vector Projection:** $$\text{proj}_{\vec{u}}(\vec{v}) = \left( \frac{\vec{u} \cdot \vec{v}}{|\vec{u}|^2} \right) \vec{u}$$
-
-* **Cross Product Magnitude:** $$|\vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin(\theta)$$
