@@ -58,6 +58,57 @@ If you are given the sum formula $s_n$:
     * **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
 
 ---
+## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
+
+### Step 1: The Divergence Test (The First Check)
+* **Goal:** To quickly determine if the series must diverge.
+* **Check:** Calculate $\lim_{n \to \infty} a_n$.
+* **Result:**
+    * If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), the series **diverges**. Stop here.
+    * If $\lim_{n \to \infty} a_n = 0$, the test is inconclusive. Proceed to Step 2.
+
+> **Note:** Skip the initial limit calculation and go straight to the Ratio/Root Test if $a_n$ contains factorials ($n!$) or exponents of $n$ (like $3^n$).
+
+---
+
+### Step 2: Test for Absolute Convergence
+Absolute convergence means $\sum |a_n|$ converges. If it does, the original series $\sum a_n$ is automatically convergent.
+
+1.  **Form the Absolute Series:** Consider the series of absolute values, $\sum |a_n|$.
+2.  **Apply Tests for Absolute Convergence:**
+
+#### A. Ratio Test or Root Test
+> **Use for:** Terms involving $n!$, products of functions, or $n$ in the exponent.
+
+* **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
+* **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$
+* **Result:**
+    * If $L < 1$, the series is **absolutely convergent**. Stop here.
+    * If $L > 1$ or $L = \infty$, the series **diverges**. Stop here.
+    * If $L = 1$, inconclusive. Try Comparison or Integral Test.
+
+#### B. Comparison Tests
+> **Use when:** $|a_n|$ looks similar to a known series (like a $p$-series or geometric series).
+
+* **Direct Comparison Test (DCT):** Use if the inequality is simple.
+    * *Example:* $n^2+5 > n^2 \implies \frac{1}{n^2+5} < \frac{1}{n^2}$.
+* **Limit Comparison Test (LCT):** Best for rational or algebraic functions.
+    * Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, both series behave the same.
+
+#### C. Integral Test
+> **Use when:** $f(x)$ is continuous, positive, decreasing, and easily integrable (e.g., involves $\ln x$ or $u$-substitution).
+
+* **Check:** $\sum |a_n|$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ is finite.
+
+---
+
+### Step 3: Test for Conditional Convergence (If Step 2 Fails)
+Apply this **only** if $\sum |a_n|$ diverged but the original series $\sum a_n$ is an **Alternating Series**.
+
+* **Apply Alternating Series Test (AST):** Check two conditions for $b_n = |a_n|$:
+    1.  $b_n$ is decreasing ($b_{n+1} \leq b_n$).
+    2.  $\lim_{n \to \infty} b_n = 0$.
+* **Result:** If both are met, the series converges **conditionally**. If either fails, the series **diverges**.
  ## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
 
 ### Step 1: The Divergence Test (The First Check)
@@ -150,45 +201,6 @@ This applies if $\sum |a_n|$ diverged but the original $\sum a_n$ is an **Altern
     2.  $\lim_{n \to \infty} b_n = 0$.
 * **Result:** If both met, the series converges **conditionally**. If the test fails, the series **diverges**.
 * 
-## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
-
-### Step 1: The Divergence Test (The First Check)
-**Goal:** To quickly determine if the series must diverge.  
-**Check:** Calculate $\lim_{n \to \infty} a_n$.  
-**Result:**
-* If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), then the series diverges. **Stop here.**
-* If $\lim_{n \to \infty} a_n = 0$, the test is inconclusive. Proceed to Step 2. *(Note: Skip this and go straight to Ratio/Root Test if $a_n$ contains factorials or exponents of $n$).*
-
-### Step 2: Test for Absolute Convergence
-Absolute convergence means the series $\sum |a_n|$ converges. If this converges, the original series $\sum a_n$ is absolutely convergent and therefore converges.
-
-1.  **Form the Absolute Series:** Consider the series of absolute values, $\sum |a_n|$.
-2.  **Apply Tests for Absolute Convergence:**
-
-#### A. Ratio Test or Root Test
-*(For terms involving $n!$, products of functions, or $n$ in the exponent)*
-* **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
-* **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$
-* **Result:**
-    * If $L < 1$, the series $\sum |a_n|$ converges, so $\sum a_n$ is absolutely convergent. **Stop here.**
-    * If $L > 1$ or $L = \infty$, the series diverges. **Stop here.**
-    * If $L = 1$, inconclusive. Try Comparison or Integral Test.
-
-#### B. Comparison Tests
-*(Useful when $|a_n|$ is similar to a known series)*
-* **Direct Comparison Test (DCT):** Use if the inequality is simple (e.g., $n^2+5 > n^2 \implies \frac{1}{n^2+5} < \frac{1}{n^2}$). Requires finding a convergent $b_n \geq |a_n|$ or divergent $d_n \leq |a_n|$.
-* **Limit Comparison Test (LCT):** Most common for rational/algebraic functions. Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, then $\sum |a_n|$ and $\sum b_n$ share behavior.
-
-#### C. Integral Test
-*(Used when $f(x)$ is continuous, positive, decreasing, and easily integrable)*
-* **Check:** Consider $f(x) = |a_x|$. The series $\sum |a_n|$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ is finite.
-
-### Step 3: Test for Conditional Convergence (If Step 2 Fails)
-This applies if $\sum |a_n|$ diverged but the original $\sum a_n$ is an **Alternating Series** (e.g., $\sum (-1)^n b_n$).
-* **Apply Alternating Series Test (AST):** Check two conditions for $b_n = |a_n|$:
-    1.  $b_n$ is decreasing ($b_{n+1} \leq b_n$).
-    2.  $\lim_{n \to \infty} b_n = 0$.
-* **Result:** If both met, the series converges **conditionally**. If the test fails, the series **diverges**.
 
 ---
 
