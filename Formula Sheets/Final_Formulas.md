@@ -17,7 +17,8 @@
 
 ---
 
-### **Parametric & Polar Operations****Parametric Equations** (x = f(t), y = g(t))
+### **Parametric & Polar Operations**
+**Parametric Equations** (x = f(t), y = g(t))
 
 * **Tangent Slope:** (dy/dt) / (dx/dt)
 * *Operation:* Divide the 1st degree derivative of y by the 1st degree derivative of x.
