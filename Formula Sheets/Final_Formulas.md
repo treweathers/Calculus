@@ -44,7 +44,9 @@
 
 ---
 
-## ♾️ Section 2: Infinite Series###**Convergence Tests*** **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
+## ♾️ Section 2: Infinite Series
+### **Convergence Tests**
+* **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
 * **p-Series:** Σ 1/nᵖ converges if p > 1, diverges if p ≤ 1.
 * **Geometric Series:** Σ arⁿ converges if |r| < 1. Sum = a/(1-r).
 * **Integral Test:** If f(x) is positive/decreasing, Σ aₙ and ∫ f(x)dx both converge or both diverge.
