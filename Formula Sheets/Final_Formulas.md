@@ -39,7 +39,6 @@
 * **Angle between Vectors:** cos(θ) = (u · v) / (|u||v|)
 * **Vector Projection:** proj_u(v) = [(u · v) / |u|²] * u
 * **Area of Parallelogram:** Magnitude of the cross product: |u × v|
-* **Volume of Parallelepiped:** Absolute value of triple product: |u · (v × w)|
 
 ### **The Parallelogram Law**
 * **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
