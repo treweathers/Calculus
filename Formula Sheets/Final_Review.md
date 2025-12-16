@@ -125,6 +125,14 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 | $\sin(x)$ | $\sum (-1)^n \frac{x^{2n+1}}{(2n+1)!}$ | $R = \infty$ |
 | $\cos(x)$ | $\sum (-1)^n \frac{x^{2n}}{(2n)!}$ | $R = \infty$ |
 
+**Known Maclaurin Series Details**
+| Function | Sigma Notation | First Few Terms | ROC |
+| :--- | :--- | :--- | :--- |
+| Geometric | $\sum x^n$ | $1 + x + x^2 + x^3 + \dots$ | $R = 1$ |
+| $e^x$ | $\sum \frac{x^n}{n!}$ | $1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ | $R = \infty$ |
+
+---
+
 ### **Known Maclaurin Series**
 | Function | Sigma Notation (Power Series) | First Few Terms | ROC |
 | --- | --- | --- | --- |
