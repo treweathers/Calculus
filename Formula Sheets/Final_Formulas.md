@@ -82,12 +82,9 @@
 * **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
 * **Plane Equation:** a(x - x₀) + b(y - y₀) + c(z - z₀) = 0
 * *Note:* ⟨a, b, c⟩ is the Normal Vector.
-
-
-* **Distance (Point to Plane):**
-* D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
+* **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
 
 ### **The Parallelogram Law*** **
-* Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
+* **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
 
 ---
