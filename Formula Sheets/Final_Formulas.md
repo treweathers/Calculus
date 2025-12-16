@@ -84,7 +84,7 @@
 * *Note:* ⟨a, b, c⟩ is the Normal Vector.
 * **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
 
-### **The Parallelogram Law***
+### **The Parallelogram Law**
 * **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
 
 ---
