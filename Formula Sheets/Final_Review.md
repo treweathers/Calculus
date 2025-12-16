@@ -1,6 +1,6 @@
 # 🧮 Calculus II Final Review Sheet
 
-## I. Series Basics & Convergence Tests (§11.2 – 11.6)
+## I. Series Basics & Convergence Tests
 
 ### 1. Partial Sums ($s_n$) vs. Terms ($a_n$)
 If you are given the sum formula $s_n$:
@@ -21,14 +21,14 @@ If you are given the sum formula $s_n$:
     * **Condition:** Terms cancel out via partial fraction decomposition or subtraction.
     * **Method:** Write out the first few partial sums ($s_n$) and calculate $\lim_{n \to \infty} s_n$.
 
-### 3. Integral Test & Remainder (§11.3)
+### 3. Integral Test & Remainder
 **Conditions:** Function must be positive, continuous, and decreasing.  
 **Rule:** $\sum a_n$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ converges.  
 **Error Bound:** $R_n \leq \int_{n}^{\infty} f(x) \, dx$.
 
 ## 4. Convergence Test Summarized Test Reference
 
-### Comparison, Ratio, and Root Tests (§11.4 – 11.6)
+### Comparison, Ratio, and Root Tests
 * **Comparison:** Compare "messy" series to $p$-series or geometric series.
 * **Ratio Test:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. $L < 1$ (Abs. Conv), $L > 1$ (Div), $L = 1$ (Inconclusive).
 * **Root Test:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$.
@@ -110,7 +110,7 @@ Apply this **only** if $\sum |a_n|$ diverged but the original series $\sum a_n$ 
     2.  $\lim_{n \to \infty} b_n = 0$.
 * **Result:** If both are met, the series converges **conditionally**. If either fails, the series **diverges**.
 
-## II. Power Series & Representations (§11.8 – 11.9)
+## II. Power Series & Representations
 
 ### 1. Radius ($R$) and Interval ($I$) of Convergence
 1.  Apply the **Ratio Test** to the whole term (including $x$).
@@ -125,7 +125,7 @@ $$\frac{1}{1-u} = \sum_{n=0}^{\infty} u^n, \quad |u| < 1$$
 $$\ln(n) \ll n^p \ll a^n \ll n! \ll n^n$$
 ---
 
-## III. Taylor and Maclaurin Series (§11.10 – 11.11)
+## III. Taylor and Maclaurin Series
 
 ### 1. General Formula
 * **Taylor (at $a$):** $\sum \frac{f^{(n)}(a)}{n!} (x-a)^n$
@@ -140,9 +140,6 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 | :--- | :--- | :--- | :--- |
 | Geometric | $\sum x^n$ | $1 + x + x^2 + x^3 + \dots$ | $R = 1$ |
 | $e^x$ | $\sum \frac{x^n}{n!}$ | $1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ | $R = \infty$ |
-
----
-
 
 ---
 
