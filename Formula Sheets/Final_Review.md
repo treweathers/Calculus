@@ -8,6 +8,13 @@ If you are given the sum formula $s_n$:
 * **Find the total sum:** $S = \lim_{n \to \infty} s_n$.
 
 ### 2. The Big Three Early Tests
+### 2. The Big Three Early Tests
+
+| Test | Condition | Conclusion |
+| :--- | :--- | :--- |
+| **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | Series **Diverges**. |
+| **Geometric Series** | $\sum ar^{n-1}$ | **Converges** if $|r| < 1$.<br>Sum: $S = \frac{a}{1-r}$ |
+| **Telescoping Series** | Terms cancel out | Write first few partial sums<br>and take the limit. |
  ### 2. The Big Three Early Tests
 | Test | Condition | Conclusion |
 | :--- | :--- | :--- |
