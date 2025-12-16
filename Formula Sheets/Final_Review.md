@@ -1,5 +1,4 @@
 # 🧮 Calculus II Final Review Sheet
-# Calculus II: Midterm II Review Guide
 
 ## I. Series Basics & Convergence Tests (§11.2 – 11.6)
 
