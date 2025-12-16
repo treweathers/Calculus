@@ -1,4 +1,4 @@
-#🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar
+# 🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar
 ###**Standard Antiderivatives*** **sin(x):** ∫ sin(x) dx = -cos(x) + C
 * **cos(x):** ∫ cos(x) dx = sin(x) + C
 * **sec^2(x):** ∫ sec²(x) dx = tan(x) + C
