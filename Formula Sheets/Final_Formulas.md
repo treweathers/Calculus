@@ -49,43 +49,6 @@ Certainly! Here is the standalone section for Parametric and Polar operations, f
 
 ---
 
-###**Quick Execution Guide*** **Parametric:** You are always hunting for **1st degree derivatives** (x' and y'). Once you have those, you are just plugging them into the ratios or the Pythagorean-style arc length formula.
-* **Polar:** You need the **original r** and the **1st degree derivative r'**. Remember that for Area, the function itself gets squared, but for Arc Length, both the function and its derivative get squared.
-
-Would you like me to re-output the **entire** formula sheet one last time with this specific table style integrated into Section 1?
-
----
-
-###**Operational Checklist**####**Parametric Logic*** **Derivatives Needed:** x'(t) and y'(t) (1st degree).
-* **For Slope:** Divide y'(t) by x'(t).
-* **For Arc Length:** Square both 1st derivatives \rightarrow Add them \rightarrow Root them \rightarrow Integrate.
-
-####**Polar Logic*** **Derivatives Needed:** r'(\theta) (1st degree).
-* **For Slope:** Use r'(\theta) in the product rule expansion (y' over x').
-* **For Area:** Square the original r function \rightarrow Multiply by 0.5 \rightarrow Integrate.
-* **For Arc Length:** Square original r \rightarrow Square r'(\theta) \rightarrow Add them \rightarrow Root them \rightarrow Integrate.
-
----
-
-Would you like me to rewrite the **Series** or **3D Geometry** sections in this same "wonky-free" table format?
-
----
-
-###**Operational Checklist****Parametric (x(t), y(t)):**
-
-* **Slope:** Calculate x'(t) and y'(t), then divide y'/x'.
-* **Arc Length:** Find x' and y', square them, add them, and integrate the root.
-
-**Polar (r(\theta)):**
-
-* **Slope:** Find r'. Use dy = r'\sin\theta + r\cos\theta and dx = r'\cos\theta - r\sin\theta.
-* **Area:** Square r, multiply by 0.5, and integrate.
-* **Arc Length:** Square r, square r', add them, and integrate the root.
-
-Would you like me to rewrite any other sections of the formula sheet to match this specific "clean table" style?
-
----
-
 ###**Operational Breakdown****For Parametric Equations:**
 
 * **To find the Slope:** Calculate x'(t) and y'(t) separately, then put y' over x'.
