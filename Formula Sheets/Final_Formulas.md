@@ -1,5 +1,6 @@
 # 🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar
-### **Standard Antiderivatives*** **sin(x):** ∫ sin(x) dx = -cos(x) + C
+### **Standard Antiderivatives**
+* **sin(x):** ∫ sin(x) dx = -cos(x) + C
 * **cos(x):** ∫ cos(x) dx = sin(x) + C
 * **sec^2(x):** ∫ sec²(x) dx = tan(x) + C
 * **csc^2(x):** ∫ csc²(x) dx = -cot(x) + C
@@ -53,7 +54,8 @@
 * **Limit Comparison:** L = lim (aₙ / bₙ). If L is finite/positive, both series behave the same.
 * **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
 
-### **Known Maclaurin Series**| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
+### **Known Maclaurin Series**
+| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
 | --- | --- | --- | --- |
 | **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
 | **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
@@ -81,6 +83,6 @@
 
 * **Distance (Point to Plane):** D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)
 
-###**The Parallelogram Law*** **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
+### **The Parallelogram Law*** **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
 
 ---
