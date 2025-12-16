@@ -183,34 +183,48 @@ Given $\vec{u} = \langle 3, 1, 0 \rangle$, $\vec{v} = \langle 0, 2, 4 \rangle$, 
 
 ---
 
-#### (8) Parallelogram Law (Identity).
-Show that for all nonzero vectors $\vec{a}$ and $\vec{b}$ one has the equality: $|\vec{a} + \vec{b}|^2 + |\vec{a} - \vec{b}|^2 = 2|\vec{a}|^2 + 2|\vec{b}|^2$. Interpret it geometrically.
+I hear you—problem #8 is definitely the most "abstract" one of the bunch, and the LaTeX can get messy when we try to show the expansion of those dot products. 
 
-**Steps for Solving (8)**
+The core of the issue is usually visualizing why $(\vec{u} + \vec{v})$ and $(\vec{u} - \vec{v})$ are diagonals, and how the algebra actually "cancels out" the middle terms. I’ve rewritten this section specifically to be cleaner for copy/pasting, using very clear line breaks and a visual aid description.
 
-1.  **Use $|\vec{v}|^2 = \vec{v} \cdot \vec{v}$** to expand the left-hand side (LHS).
-2.  **Simplify** the dot product terms using $\vec{a}\cdot\vec{b} = \vec{b}\cdot\vec{a}$.
-3.  **Group** the terms to match the right-hand side (RHS).
+---
+### **(8) The Parallelogram Law (Identity)**
 
-**Walk-Through for (8)**
+**The Problem:**
+Show that for any vectors $\vec{u}$ and $\vec{v}$:
+$|\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2$
+Then, interpret this result geometrically.
 
-* **Expand $|\vec{a} + \vec{b}|^2$:**
-    $$
-    |\vec{a} + \vec{b}|^2 = (\vec{a} + \vec{b}) \cdot (\vec{a} + \vec{b}) = |\vec{a}|^2 + 2(\vec{a}\cdot\vec{b}) + |\vec{b}|^2 \quad \text{(Eq. I)}
-    $$
-* **Expand $|\vec{a} - \vec{b}|^2$:**
-    $$
-    |\vec{a} - \vec{b}|^2 = (\vec{a} - \vec{b}) \cdot (\vec{a} - \vec{b}) = |\vec{a}|^2 - 2(\vec{a}\cdot\vec{b}) + |\vec{b}|^2 \quad \text{(Eq. II)}
-    $$
-* **Combine LHS (I + II):**
-    $$
-    |\vec{a} + \vec{b}|^2 + |\vec{a} - \vec{b}|^2 = (|\vec{a}|^2 + 2(\vec{a}\cdot\vec{b}) + |\vec{b}|^2) + (|\vec{a}|^2 - 2(\vec{a}\cdot\vec{b}) + |\vec{b}|^2)
-    $$
-    $$
-    = 2|\vec{a}|^2 + 2|\vec{b}|^2
-    $$
-* **Geometric Interpretation (Parallelogram Law):**
-    * The identity states that the **sum of the squares of the lengths of the diagonals** ($|\vec{a} + \vec{b}|^2 + |\vec{a} - \vec{b}|^2$) of a parallelogram is equal to the **sum of the squares of the lengths of its four sides** ($2|\vec{a}|^2 + 2|\vec{b}|^2$).
+**Steps for Solving:**
+1. **Definition of Magnitude:** Remember that $|\vec{x}|^2 = \vec{x} \cdot \vec{x}$.
+2. **Expand the Squares:** Treat $(\vec{u} + \vec{v}) \cdot (\vec{u} + \vec{v})$ like a polynomial expansion (FOIL).
+3. **Cancel Terms:** Adding the two expanded expressions will eliminate the "middle" dot product terms.
+4. **Geometric Mapping:** Identify $\vec{u}$ and $\vec{v}$ as sides, and the combined vectors as diagonals.
+
+**Walk-Through:**
+
+* **Step 1: Expand the first term**
+    $|\vec{u} + \vec{v}|^2 = (\vec{u} + \vec{v}) \cdot (\vec{u} + \vec{v})$
+    $= (\vec{u} \cdot \vec{u}) + (\vec{u} \cdot \vec{v}) + (\vec{v} \cdot \vec{u}) + (\vec{v} \cdot \vec{v})$
+    $= |\vec{u}|^2 + 2(\vec{u} \cdot \vec{v}) + |\vec{v}|^2$
+
+* **Step 2: Expand the second term**
+    $|\vec{u} - \vec{v}|^2 = (\vec{u} - \vec{v}) \cdot (\vec{u} - \vec{v})$
+    $= (\vec{u} \cdot \vec{u}) - (\vec{u} \cdot \vec{v}) - (\vec{v} \cdot \vec{u}) + (\vec{v} \cdot \vec{v})$
+    $= |\vec{u}|^2 - 2(\vec{u} \cdot \vec{v}) + |\vec{v}|^2$
+
+* **Step 3: Add them together**
+    $LHS = [|\vec{u}|^2 + 2(\vec{u} \cdot \vec{v}) + |\vec{v}|^2] + [|\vec{u}|^2 - 2(\vec{u} \cdot \vec{v}) + |\vec{v}|^2]$
+    Notice that $+2(\vec{u} \cdot \vec{v})$ and $-2(\vec{u} \cdot \vec{v})$ equal zero.
+    $LHS = 2|\vec{u}|^2 + 2|\vec{v}|^2$
+
+
+
+**Geometric Interpretation:**
+In a parallelogram where $\vec{u}$ and $\vec{v}$ are the lengths of the adjacent sides:
+* $|\vec{u} + \vec{v}|$ is the length of the **long diagonal**.
+* $|\vec{u} - \vec{v}|$ is the length of the **short diagonal**.
+* The law states: **The sum of the squares of the diagonals is equal to the sum of the squares of all four sides.**
 
 ---
 
@@ -340,19 +354,24 @@ Given $\vec{u} = \langle 1, 0, 2 \rangle$, $\vec{v} = \langle -1, 3, 1 \rangle$,
 
 ---
 
-### (8) Show that for all nonzero vectors $\vec{u}$ and $\vec{v}$ one has the equality: $|\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2$. Interpret it geometrically.
+### **🔑 Answer Key: Problem (8)**
 
-* **Step 1:** Expand the LHS using $|\vec{a}|^2 = \vec{a} \cdot \vec{a}$:
-    $$
-    |\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = (\vec{u}\cdot\vec{u} + 2\vec{u}\cdot\vec{v} + \vec{v}\cdot\vec{v}) + (\vec{u}\cdot\vec{u} - 2\vec{u}\cdot\vec{v} + \vec{v}\cdot\vec{v})
-    $$
-* **Step 2:** Simplify by cancelling the cross terms ($2\vec{u}\cdot\vec{v} - 2\vec{u}\cdot\vec{v}=0$):
-    $$
-    = 2(\vec{u}\cdot\vec{u}) + 2(\vec{v}\cdot\vec{v})
-    $$
-* **Step 3:** Convert back to magnitudes:
-    $$
-    = 2|\vec{u}|^2 + 2|\vec{v}|^2
-    $$
-* **Geometric Interpretation:** This is the **Parallelogram Law**, stating that the sum of the squares of the lengths of the diagonals of a parallelogram equals the sum of the squares of the lengths of its four sides.
-* **Answer:** $\text{LHS} = 2|\vec{u}|^2 + 2|\vec{v}|^2 = \text{RHS}$. Geometrically, it is the **Parallelogram Law**.
+**Proof:**
+Start with the Left Hand Side (LHS):
+$|\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2$
+
+By the property $|\vec{x}|^2 = \vec{x} \cdot \vec{x}$:
+$= (\vec{u} + \vec{v}) \cdot (\vec{u} + \vec{v}) + (\vec{u} - \vec{v}) \cdot (\vec{u} - \vec{v})$
+
+Distribute (FOIL) both parts:
+$= (\vec{u}\cdot\vec{u} + 2\vec{u}\cdot\vec{v} + \vec{v}\cdot\vec{v}) + (\vec{u}\cdot\vec{u} - 2\vec{u}\cdot\vec{v} + \vec{v}\cdot\vec{v})$
+
+Combine like terms:
+$= 2(\vec{u}\cdot\vec{u}) + 2(\vec{v}\cdot\vec{v})$
+$= 2|\vec{u}|^2 + 2|\vec{v}|^2$
+
+This matches the Right Hand Side (RHS).
+
+**Geometric Interpretation:**
+The sum of the squares of the lengths of the diagonals of a parallelogram is equal to the sum of the squares of the lengths of its sides.
+
