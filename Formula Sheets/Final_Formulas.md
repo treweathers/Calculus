@@ -1,4 +1,5 @@
 ---
+
 ##🧮 Section 1: Integration, Parametric, & Polar###**Standard Antiderivatives*** **\int \sin(x) \, dx = -\cos(x) + C**
 * **\int \cos(x) \, dx = \sin(x) + C**
 * **\int \sec^2(x) \, dx = \tan(x) + C**
