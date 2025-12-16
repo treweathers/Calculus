@@ -135,6 +135,25 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 ---
 
 ## 🧊 Section 3: 3D Geometry & Vectors
+## 🧊 Section 3: 3D Geometry & Vectors
+
+### Vector Operations
+* **Magnitude:** $|\mathbf{v}| = \sqrt{v_1^2 + v_2^2 + v_3^2}$
+* **Unit Vector:** $\mathbf{u} = \frac{\mathbf{v}}{|\mathbf{v}|}$
+* **Dot Product:** $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$
+* **Cross Product:** $\mathbf{u} \times \mathbf{v} = \langle u_2v_3 - u_3v_2, u_3v_1 - u_1v_3, u_1v_2 - u_2v_1 \rangle$
+* **Area of Parallelogram:** $|\mathbf{u} \times \mathbf{v}|$
+* **Volume of Parallelepiped:** $|\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w})|$
+
+### Lines and Planes
+* **Line Equation:** $\mathbf{r}(t) = P_0 + t\langle d_1, d_2, d_3 \rangle$
+* **Plane Equation:** $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$
+    * *Note: $\langle a, b, c \rangle$ is the Normal Vector.*
+* **Distance (Point to Plane):** $D = \frac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}$
+
+### The Parallelogram Law
+**Formula:** $|\mathbf{u} + \mathbf{v}|^2 + |\mathbf{u} - \mathbf{v}|^2 = 2|\mathbf{u}|^2 + 2|\mathbf{v}|^2$
+
 ### **Vector Operations**
 * **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
 * **Unit Vector:** v / |v|
