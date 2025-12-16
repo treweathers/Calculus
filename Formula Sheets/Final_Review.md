@@ -8,24 +8,18 @@ If you are given the sum formula $s_n$:
 * **Find the total sum:** $S = \lim_{n \to \infty} s_n$.
 
 ### 2. The Big Three Early Tests
-### 2. The Big Three Early Tests
+* **Divergence Test**
+    * **Condition:** $\lim_{n \to \infty} a_n \neq 0$
+    * **Conclusion:** Series **Diverges**.
 
-| Test | Condition | Conclusion |
-| :--- | :--- | :--- |
-| **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | Series **Diverges**. |
-| **Geometric Series** | $\sum ar^{n-1}$ | **Converges** if $|r| < 1$.<br>Sum: $S = \frac{a}{1-r}$ |
-| **Telescoping Series** | Terms cancel out | Write first few partial sums<br>and take the limit. |
- ### 2. The Big Three Early Tests
-| Test | Condition | Conclusion |
-| :--- | :--- | :--- |
-| **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | The series **Diverges**. (If limit is $0$, test is inconclusive). |
-| **Geometric Series** | $\sum_{n=1}^{\infty} ar^{n-1}$ | **Converges** if $|r| < 1$; Sum is $S = \frac{a}{1-r}$. <br> **Diverges** if $|r| \geq 1$. |
-| **Telescoping Series** | $\sum (b_n - b_{n+1})$ | **Converges** if $\lim_{n \to \infty} b_n$ exists. Sum is $b_1 - \lim_{n \to \infty} b_{n+1}$. |
-| Test | Condition | Conclusion |
-| :--- | :--- | :--- |
-| **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | Series Diverges. |
-| **Geometric Series** | $\sum ar^{n-1}$ | Converges if $|r| < 1$, Sum $S = \frac{a}{1-r}$. |
-| **Telescoping Series** | Terms cancel out | Write out first few partial sums and take the limit. |
+* **Geometric Series**
+    * **Form:** $\sum ar^{n-1}$
+    * **Condition:** Converges if $|r| < 1$.
+    * **Sum Formula:** $S = \frac{a}{1-r}$
+
+* **Telescoping Series**
+    * **Condition:** Terms cancel out via partial fraction decomposition or subtraction.
+    * **Method:** Write out the first few partial sums ($s_n$) and calculate $\lim_{n \to \infty} s_n$.
 
 ### 3. Integral Test & Remainder (§11.3)
 **Conditions:** Function must be positive, continuous, and decreasing.  
