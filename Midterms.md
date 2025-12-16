@@ -1,5 +1,4 @@
-# Calculus II Solutions and Practice
-
+# Calculus II Midterm I Practice
 ## Part 1: Solutions to Original Problems
 
 ---
@@ -187,8 +186,7 @@
 2. $A = \frac{1}{2} \int_{\pi/6}^{5\pi/6} (9\sin^2\theta - 2.25) d\theta$.
 3. Final Answer: $\mathbf{\frac{3\pi}{4} + \frac{9\sqrt{3}}{8}}$.
 
-# Calculus II: Infinite Series and Power Series Solutions
-
+# Calculus II Midterm II Practice
 ## Part 1: Solutions to Original Problems
 
 ---
