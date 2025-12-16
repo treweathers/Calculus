@@ -2,7 +2,8 @@
 ## Section 1: See Study Guide from Midterm I
 
 ## ♾️ Section 2: Infinite Series
-## 1. Sequences & Recursive Models (§11.1)A sequence is a list of numbers \{a_n\}. A sequence **converges** if \lim_{n \to \infty} a_n = L (a finite number).
+## 1. Sequences & Recursive Models (§11.1)
+A sequence is a list of numbers \{a_n\}. A sequence **converges** if \lim_{n \to \infty} a_n = L (a finite number).
 
 * **Recursive to Limit:** For P_n = rP_{n-1} + d, if the limit exists, then L = rL + d.
 * **How-to:** Solve for L. For example, if P_n = 0.8P_{n-1} + 200, then L = 0.8L + 200 \implies 0.2L = 200 \implies L = 1000.
