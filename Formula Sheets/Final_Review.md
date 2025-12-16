@@ -1,8 +1,8 @@
 # 🧮 Calculus II Final Review Sheet
 # 🧮 Calculus II Final Review Sheet
 
-## Section 1: Integration, Parametric, & Polar
-*(See Study Guide from Midterm I)*
+## Section 1: Midterm I Review (Integration Techniques)
+*Refer to previous study guide for Integration by Parts, Trig Sub, and Partial Fractions.*
 
 ---
 
@@ -19,53 +19,52 @@ If given the sum formula $s_n$:
 | Test | Condition | Conclusion |
 | :--- | :--- | :--- |
 | **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | Series **Diverges**. |
-| **Geometric Series** | $\sum ar^{n-1}$ | Converges if $|r| < 1$. Sum $S = \frac{a}{1-r}$. |
-| **Telescoping Series** | Terms cancel out | Write out first few partial sums and find the limit. |
+| **Geometric Series** | $\sum ar^{n-1}$ | Conv. if $|r| < 1$. Sum $S = \frac{a}{1-r}$. |
+| **Telescoping Series** | Terms cancel | $S = \lim_{N \to \infty} s_N$ (Identify survivors). |
 
 #### 3. Integral Test & Remainder (§11.3)
 * **Conditions:** $f(x)$ must be positive, continuous, and decreasing on $[1, \infty)$.
 * **Rule:** $\sum a_n$ converges if and only if $\int_1^{\infty} f(x) \, dx$ converges.
-* **Error Bound:** $R_n \leq \int_n^{\infty} f(x) \, dx$
+* **Error Bound:** $R_n \le \int_n^{\infty} f(x) \, dx$.
 
-
-
-#### 4. Comparison, Ratio, and Root Tests (§11.4 – 11.6)
-* **Ratio Test:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$.
-    * $L < 1$ (Abs. Conv), $L > 1$ (Div), $L = 1$ (Inconclusive).
-* **Root Test:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$.
-* **Limit Comparison (LCT):** $L = \lim_{n \to \infty} \frac{a_n}{b_n}$. If $0 < L < \infty$, both behave the same.
 
 ---
 
-### 🧐 Comprehensive Convergence Test Checklist
+### 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
 
-**Step 1: The Divergence Test**
-* Calculate $\lim_{n \to \infty} a_n$. If $\neq 0$, it **diverges**.
+#### Step 1: The Divergence Test (The First Check)
+Calculate $\lim_{n \to \infty} a_n$:
+* If $\lim_{n \to \infty} a_n \neq 0$, the series **diverges**.
+* If $\lim_{n \to \infty} a_n = 0$, the test is **inconclusive**.
 
-**Step 2: Test for Absolute Convergence ($\sum |a_n|$)**
-* Use **Ratio/Root Test** for factorials or $n$ in exponents.
-* Use **LCT** for rational/algebraic functions (comparing to $p$-series).
-* Use **Integral Test** for functions involving $\ln(n)$ or $u$-substitution.
+#### Step 2: Test for Absolute Convergence ($\sum |a_n|$)
+1. **Ratio/Root Test:** (Best for $n!$ or $a^n$)
+   * $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$ or $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$
+   * $L < 1 \implies$ **Abs. Convergent**; $L > 1 \implies$ **Divergent**.
+2. **Limit Comparison Test (LCT):** (Best for rational/algebraic functions)
+   * Pick $b_n$ (dominant terms). $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. 
+   * If $0 < L < \infty$, both behave the same.
+3. **Integral Test:** Use if $a_n$ is easily integrable (e.g., involves $\ln n$).
 
-**Step 3: Test for Conditional Convergence**
-* If $\sum |a_n|$ diverges, but the series is alternating ($\sum (-1)^n b_n$), use **AST**:
-    1. $\lim_{n \to \infty} b_n = 0$
-    2. $b_{n+1} \leq b_n$ (decreasing)
-* If both pass, it is **Conditionally Convergent**.
+#### Step 3: Conditional Convergence (If Step 2 Fails)
+If $\sum |a_n|$ diverges but the series is alternating ($\sum (-1)^n b_n$):
+1. **Alternating Series Test (AST):**
+   * If $b_{n+1} \le b_n$ and $\lim_{n \to \infty} b_n = 0$, the series **converges conditionally**.
+   * **AST Remainder:** $|R_N| \le b_{N+1}$.
 
 ---
 
 ### II. Power Series & Representations (§11.8 – 11.9)
 
 #### 1. Radius ($R$) and Interval ($I$) of Convergence
-1. Apply **Ratio Test**: $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| < 1$.
-2. Solve for $|x - a| < R$.
-3. **Check Endpoints:** Test $x = a-R$ and $x = a+R$ individually in the original series.
+1. Apply **Ratio Test** to the whole term: $L = \lim_{n \to \infty} | \frac{a_{n+1}}{a_n} |$.
+2. Solve $L < 1$ to find the inequality $|x - a| < R$.
+3. **Endpoint Check:** Test $x = a-R$ and $x = a+R$ individually in the original $\sum a_n$.
 
-#### 2. Geometric Power Series Template
+#### 2. Geometric Template
 $$\frac{1}{1-u} = \sum_{n=0}^{\infty} u^n, \quad |u| < 1$$
 
-#### 💡 Hierarchy of Growth
+#### 📈 Hierarchy of Growth
 $$\ln(n) \ll n^p \ll a^n \ll n! \ll n^n$$
 
 ---
@@ -77,16 +76,16 @@ $$\ln(n) \ll n^p \ll a^n \ll n! \ll n^n$$
 * **Maclaurin Series (at $0$):** $\sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} x^n$
 
 #### 2. Taylor’s Inequality (Accuracy)
-$$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
-*Where $M$ is the maximum value of $|f^{(n+1)}(t)|$ on the interval.*
+$$|R_n(x)| \le \frac{M}{(n+1)!} |x - a|^{n+1}$$
+* $M$ is the max value of $|f^{(n+1)}(t)|$ for $t$ between $x$ and $a$.
 
-#### 3. Common Maclaurin Series
-| Function | Sigma Notation | Expansion | ROC ($R$) |
+#### 3. Known Maclaurin Series
+| Function | Sigma Notation | Expansion | ROC |
 | :--- | :--- | :--- | :--- |
-| $e^x$ | $\sum \frac{x^n}{n!}$ | $1 + x + \frac{x^2}{2!} + \dots$ | $\infty$ |
-| $\sin(x)$ | $\sum \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $x - \frac{x^3}{3!} + \dots$ | $\infty$ |
-| $\cos(x)$ | $\sum \frac{(-1)^n x^{2n}}{(2n)!}$ | $1 - \frac{x^2}{2!} + \dots$ | $\infty$ |
-| $\arctan(x)$ | $\sum \frac{(-1)^n x^{2n+1}}{2n+1}$ | $x - \frac{x^3}{3} + \dots$ | $1$ |
+| $\frac{1}{1-x}$ | $\sum_{n=0}^{\infty} x^n$ | $1 + x + x^2 + \dots$ | $R=1$ |
+| $e^x$ | $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $1 + x + \frac{x^2}{2!} + \dots$ | $R=\infty$ |
+| $\sin(x)$ | $\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $x - \frac{x^3}{3!} + \dots$ | $R=\infty$ |
+| $\cos(x)$ | $\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$ | $1 - \frac{x^2}{2!} + \dots$ | $R=\infty$ |
 
 
 
@@ -94,23 +93,20 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 
 ## 🧊 Section 3: 3D Geometry & Vectors
 
-### **Vector Operations**
+### 1. Vector Operations
 * **Magnitude:** $|\vec{v}| = \sqrt{v_1^2 + v_2^2 + v_3^2}$
-* **Unit Vector:** $\mathbf{u} = \frac{\vec{v}}{|\vec{v}|}$
-* **Dot Product:** $\vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3 = |\vec{u}||\vec{v}|\cos\theta$
+* **Dot Product:** $\vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3 = |\vec{u}||\vec{v}|\cos(\theta)$
 * **Cross Product:** $\vec{u} \times \vec{v} = \langle u_2v_3-u_3v_2, u_3v_1-u_1v_3, u_1v_2-u_2v_1 \rangle$
-* **Parallelogram Area:** $A = |\vec{u} \times \vec{v}|$
-* **Parallelepiped Volume:** $V = |\vec{u} \cdot (\vec{v} \times \vec{w})|$
-* **Parallelogram Law:** $|\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2$
+* **Area of Parallelogram:** $A = |\vec{u} \times \vec{v}|$
+* **Volume of Parallelepiped:** $V = |\vec{u} \cdot (\vec{v} \times \vec{w})|$
 
-
-
-### **Lines and Planes**
-* **Line Equation:** $\vec{r}(t) = P_0 + t\vec{v} = \langle x_0, y_0, z_0 \rangle + t\langle a, b, c \rangle$
-* **Plane Equation:** $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$
-    * *Note: $\langle a, b, c \rangle$ is the Normal Vector $\vec{n}$.*
+### 2. Lines and Planes
+* **Line Equation:** $\vec{r}(t) = P_0 + t\vec{v}$
+* **Plane Equation:** $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$ (where $\vec{n} = \langle a,b,c \rangle$)
 * **Distance (Point to Plane):** $D = \frac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}$
-* 
+
+### 3. The Parallelogram Law
+$$|\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2$$
 ## Section 1: See Study Guide from Midterm I
 
 ## ♾️ Section 2: Infinite Series
