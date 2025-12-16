@@ -43,9 +43,6 @@
 * **Area of Parallelogram:** Magnitude of the cross product: |u × v|
 * **Volume of Parallelepiped:** Absolute value of triple product: |u · (v × w)|
 
-### **Lines and Planes**
-* **Line Equation:** r(t) = P₀ + t⟨d₁, d₂, d₃⟩
-
 ### **The Parallelogram Law**
 * **Formula:** |u + v|² + |u - v|² = 2|u|² + 2|v|²
 
