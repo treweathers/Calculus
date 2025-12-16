@@ -118,14 +118,7 @@ $$\ln(n) \ll n^p \ll a^n \ll n! \ll n^n$$
 $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 * **$M$** is the max value of $|f^{(n+1)}(t)|$ for $t$ between $x$ and $a$.
 
-### 3. Common Maclaurin Series
-| Function | Series | Convergence |
-| :--- | :--- | :--- |
-| $e^x$ | $\sum \frac{x^n}{n!}$ | $R = \infty$ |
-| $\sin(x)$ | $\sum (-1)^n \frac{x^{2n+1}}{(2n+1)!}$ | $R = \infty$ |
-| $\cos(x)$ | $\sum (-1)^n \frac{x^{2n}}{(2n)!}$ | $R = \infty$ |
-
-**Known Maclaurin Series Details**
+### 3. Common Maclaurin Series/ **Known Maclaurin Series Details**
 | Function | Sigma Notation | First Few Terms | ROC |
 | :--- | :--- | :--- | :--- |
 | Geometric | $\sum x^n$ | $1 + x + x^2 + x^3 + \dots$ | $R = 1$ |
@@ -133,11 +126,6 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 
 ---
 
-### **Known Maclaurin Series**
-| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
-| --- | --- | --- | --- |
-| **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
-| **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
 
 ---
 
