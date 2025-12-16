@@ -2,6 +2,94 @@
 ## Section 1: See Study Guide from Midterm I
 
 ## ♾️ Section 2: Infinite Series
+##1. Sequences & Recursive Models (§11.1)A sequence is a list of numbers \{a_n\}. A sequence **converges** if \lim_{n \to \infty} a_n = L (a finite number).
+
+* **Recursive to Limit:** For P_n = rP_{n-1} + d, if the limit exists, then L = rL + d.
+* **How-to:** Solve for L. For example, if P_n = 0.8P_{n-1} + 200, then L = 0.8L + 200 \implies 0.2L = 200 \implies L = 1000.
+
+
+* **Decimal to Rational:** * **Step 1:** Set x = 0.12\overline{34}.
+* **Step 2:** Multiply by 10^k to move to the start of the repeat: 100x = 12.3434...
+* **Step 3:** Multiply by 10^{k+m} to move one full period: 10000x = 1234.3434...
+* **Step 4:** Subtract (Eq 2 - Eq 1) to cancel the decimals and solve for x.
+
+
+
+---
+
+##2. Series Fundamentals (§11.2)A series \sum a_n is the sum of a sequence.
+
+* **Partial Sums (s_n):** The sum of the first n terms.
+* **To find a_n:** a_n = s_n - s_{n-1}.
+* **The Sum:** S = \lim_{n \to \infty} s_n.
+
+
+* **Geometric Series:** \sum_{n=1}^{\infty} ar^{n-1}
+* **Convergence:** Converges if |r| < 1.
+* **Sum formula:** S = \frac{a}{1-r} (where a is the **first term**).
+
+
+* **Divergence Test:** If \lim_{n \to \infty} a_n \neq 0, the series **diverges**. (Note: If it equals 0, the test is inconclusive!)
+
+---
+
+##3. The Integral Test & Estimation (§11.3)Use when a_n = f(n) and f(x) is **positive, continuous, and decreasing**.
+
+* **The Test:** \sum a_n converges if \int_{1}^{\infty} f(x) dx converges.
+* **Remainder Estimate (R_n):** To bound the error of a partial sum s_n:
+
+
+* **Sum Bounds:** s_n + \int_{n+1}^{\infty} f(x)dx \leq S \leq s_n + \int_{n}^{\infty} f(x)dx.
+
+
+
+---
+
+##4. Comparison, Ratio, & Root Tests (§11.4 - 11.6)| Test | Usage | Condition for Convergence |
+| --- | --- | --- |
+| **Comparison** | Compare a_n to p-series or geometric. | a_n \leq b_n and \sum b_n conv. |
+| **Limit Comp.** | Use when a_n "looks like" b_n. | \lim (a_n / b_n) = C > 0. |
+| **Ratio Test** | Best for **factorials (n!)** or a^n. | $L = \lim |
+| **Root Test** | Best for ( \text{expression} )^n. | $L = \lim \sqrt[n]{ |
+| **Alt. Series** | \sum (-1)^n b_n. | b_{n+1} \leq b_n and \lim b_n = 0. |
+
+* **Absolute vs. Conditional:** * **Absolute:** \sum |a_n| converges.
+* **Conditional:** \sum a_n converges, but \sum |a_n| diverges (e.g., Alternating Harmonic Series).
+
+
+
+---
+
+##5. Power Series & Radius (§11.8 - 11.9)A series of the form \sum c_n(x-a)^n.
+
+* **Finding Interval of Convergence (I):** 1.  Perform the **Ratio Test** on the whole term.
+2.  Set L < 1 and solve for |x-a| < R.
+3.  **Crucial:** You **must** test the endpoints individually by plugging them back into the original series for x.
+* **Geometric Representation:** \frac{1}{1-u} = \sum_{n=0}^{\infty} u^n for |u| < 1.
+* Use this to transform functions like \frac{x}{1+x^2} into series by substituting u = -x^2 and multiplying by x.
+
+
+
+---
+
+##6. Taylor & Maclaurin Series (§11.10 - 11.11)* **Formula:** f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n. (Maclaurin is just a=0).
+* **Taylor’s Inequality (Error Bound):** 
+
+
+where M is the maximum value of |f^{(n+1)}(x)| on the given interval.
+
+###Common Maclaurin Series to Memorize:* e^x = \sum \frac{x^n}{n!}
+* \sin(x) = \sum (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+* \cos(x) = \sum (-1)^n \frac{x^{2n}}{(2n)!}
+* \frac{1}{1-x} = \sum x^n
+
+---
+
+##💡 Pro-Tips for the Exam:1. **Check for Divergence First:** It takes 5 seconds to see if \lim a_n \neq 0. Do this before doing a complex Ratio Test.
+2. **Integration of Series:** If you need to integrate a function that doesn't have an easy antiderivative (like e^{-x^2}), convert it to a power series first, then integrate term-by-term.
+3. **Alternating Series Accuracy:** The error in an alternating series s_n is always less than the first neglected term: |R_n| \leq b_{n+1}. Use this to find how many terms you need for a specific decimal accuracy.
+
+**Would you like me to walk through a specific example of one of these tests, like the Ratio Test or finding a Taylor Error Bound?**
 ### **Convergence Tests**
 * **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
 * **p-Series:** Σ 1/nᵖ converges if p > 1, diverges if p ≤ 1.
@@ -12,6 +100,99 @@
 * **Direct Comparison:** If aₙ ≤ bₙ and Σbₙ converges, then Σaₙ converges.
 * **Limit Comparison:** L = lim (aₙ / bₙ). If L is finite/positive, both series behave the same.
 * **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
+
+This review sheet covers the core of Calculus II/III material regarding sequences and series. Use this as a checklist for your Midterm II preparation.
+
+---
+
+##1. Sequences & Recursive Models (§11.1)A sequence is a list of numbers \{a_n\}. A sequence **converges** if \lim_{n \to \infty} a_n = L (a finite number).
+
+* **Recursive to Limit:** For P_n = rP_{n-1} + d, if the limit exists, then L = rL + d.
+* **How-to:** Solve for L. For example, if P_n = 0.8P_{n-1} + 200, then L = 0.8L + 200 \implies 0.2L = 200 \implies L = 1000.
+
+
+* **Decimal to Rational:** * **Step 1:** Set x = 0.12\overline{34}.
+* **Step 2:** Multiply by 10^k to move to the start of the repeat: 100x = 12.3434...
+* **Step 3:** Multiply by 10^{k+m} to move one full period: 10000x = 1234.3434...
+* **Step 4:** Subtract (Eq 2 - Eq 1) to cancel the decimals and solve for x.
+
+
+
+---
+
+##2. Series Fundamentals (§11.2)A series \sum a_n is the sum of a sequence.
+
+* **Partial Sums (s_n):** The sum of the first n terms.
+* **To find a_n:** a_n = s_n - s_{n-1}.
+* **The Sum:** S = \lim_{n \to \infty} s_n.
+
+
+* **Geometric Series:** \sum_{n=1}^{\infty} ar^{n-1}
+* **Convergence:** Converges if |r| < 1.
+* **Sum formula:** S = \frac{a}{1-r} (where a is the **first term**).
+
+
+* **Divergence Test:** If \lim_{n \to \infty} a_n \neq 0, the series **diverges**. (Note: If it equals 0, the test is inconclusive!)
+
+---
+
+##3. The Integral Test & Estimation (§11.3)Use when a_n = f(n) and f(x) is **positive, continuous, and decreasing**.
+
+* **The Test:** \sum a_n converges if \int_{1}^{\infty} f(x) dx converges.
+* **Remainder Estimate (R_n):** To bound the error of a partial sum s_n:
+
+
+* **Sum Bounds:** s_n + \int_{n+1}^{\infty} f(x)dx \leq S \leq s_n + \int_{n}^{\infty} f(x)dx.
+
+
+
+---
+
+##4. Comparison, Ratio, & Root Tests (§11.4 - 11.6)| Test | Usage | Condition for Convergence |
+| --- | --- | --- |
+| **Comparison** | Compare a_n to p-series or geometric. | a_n \leq b_n and \sum b_n conv. |
+| **Limit Comp.** | Use when a_n "looks like" b_n. | \lim (a_n / b_n) = C > 0. |
+| **Ratio Test** | Best for **factorials (n!)** or a^n. | $L = \lim |
+| **Root Test** | Best for ( \text{expression} )^n. | $L = \lim \sqrt[n]{ |
+| **Alt. Series** | \sum (-1)^n b_n. | b_{n+1} \leq b_n and \lim b_n = 0. |
+
+* **Absolute vs. Conditional:** * **Absolute:** \sum |a_n| converges.
+* **Conditional:** \sum a_n converges, but \sum |a_n| diverges (e.g., Alternating Harmonic Series).
+
+
+
+---
+
+##5. Power Series & Radius (§11.8 - 11.9)A series of the form \sum c_n(x-a)^n.
+
+* **Finding Interval of Convergence (I):** 1.  Perform the **Ratio Test** on the whole term.
+2.  Set L < 1 and solve for |x-a| < R.
+3.  **Crucial:** You **must** test the endpoints individually by plugging them back into the original series for x.
+* **Geometric Representation:** \frac{1}{1-u} = \sum_{n=0}^{\infty} u^n for |u| < 1.
+* Use this to transform functions like \frac{x}{1+x^2} into series by substituting u = -x^2 and multiplying by x.
+
+
+
+---
+
+##6. Taylor & Maclaurin Series (§11.10 - 11.11)* **Formula:** f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n. (Maclaurin is just a=0).
+* **Taylor’s Inequality (Error Bound):** 
+
+
+where M is the maximum value of |f^{(n+1)}(x)| on the given interval.
+
+###Common Maclaurin Series to Memorize:* e^x = \sum \frac{x^n}{n!}
+* \sin(x) = \sum (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+* \cos(x) = \sum (-1)^n \frac{x^{2n}}{(2n)!}
+* \frac{1}{1-x} = \sum x^n
+
+---
+
+##💡 Pro-Tips for the Exam:1. **Check for Divergence First:** It takes 5 seconds to see if \lim a_n \neq 0. Do this before doing a complex Ratio Test.
+2. **Integration of Series:** If you need to integrate a function that doesn't have an easy antiderivative (like e^{-x^2}), convert it to a power series first, then integrate term-by-term.
+3. **Alternating Series Accuracy:** The error in an alternating series s_n is always less than the first neglected term: |R_n| \leq b_{n+1}. Use this to find how many terms you need for a specific decimal accuracy.
+
+**Would you like me to walk through a specific example of one of these tests, like the Ratio Test or finding a Taylor Error Bound?**
 
 ### III. Convergence Tests for $\sum a_n$
 
