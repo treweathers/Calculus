@@ -10,34 +10,6 @@
 ---
 
 ### **Parametric & Polar Operations**
-**Parametric Equations** (x = f(t), y = g(t))
-
-* **Tangent Slope:** (dy/dt) / (dx/dt)
-* *Operation:* Divide the 1st degree derivative of y by the 1st degree derivative of x.
-
-
-* **Arc Length:** ∫ √[(dx/dt)² + (dy/dt)²] dt
-* *Operation:* Square the 1st degree derivatives, sum them, and take the square root.
-
-
-
-**Polar Coordinates** (r = f(θ))
-
-* **Tangent Slope:** [(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]
-* *Operation:* Combine the 1st degree derivative of r and the original function r.
-
-
-* **Area of a Region:** ∫ 1/2 [r(θ)]² dθ
-* *Operation:* Square the function r before integrating.
-
-
-* **Arc Length:** ∫ √[r² + (dr/dθ)²] dθ
-* *Operation:* Sum of the square of r and the square of its 1st degree derivative.
-Certainly! Here is the standalone section for Parametric and Polar operations, formatted into a clean, GitHub-friendly chart and list for your study guide.
-
----
-
-### **Parametric & Polar Operations Reference**
 | Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
 | --- | --- | --- |
 | **Tangent Slope** | `(dy/dt) / (dx/dt)` | `[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]` |
@@ -47,29 +19,6 @@ Certainly! Here is the standalone section for Parametric and Polar operations, f
 | **Area (A)** | *Varies by boundary* | `∫ 1/2 [r(θ)]² dθ` |
 |  |  | **Operation:** Square the function **r** before integrating. |
 
----
-
-###**Operational Breakdown****For Parametric Equations:**
-
-* **To find the Slope:** Calculate x'(t) and y'(t) separately, then put y' over x'.
-* **To find the Arc Length:** 1. Find derivatives x'(t) and y'(t).
-2. Square both results.
-3. Add them together.
-4. Place the sum under a square root inside the integral.
-
-**For Polar Coordinates:**
-
-* **To find the Slope:** 1. Find r'(\theta).
-2. Follow the product rule-based formula: y' = r'\sin\theta + r\cos\theta and x' = r'\cos\theta - r\sin\theta.
-* **To find the Area:** Simply square your radius function r, multiply by 1/2, and integrate.
-* **To find the Arc Length:** 1. Find the derivative r'(\theta).
-2. Square the original function r.
-3. Square the derivative r'.
-4. Add them and take the square root inside the integral.
-
----
-
-Would you like me to generate a few practice problems specifically to test these Polar and Parametric formulas?
 
 ---
 
