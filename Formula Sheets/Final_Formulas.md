@@ -13,7 +13,7 @@
 
 ### **Parametric & Polar Operations**
 
-| Feature | Parametric ($x=f(t), y=g(t)$) | Polar ($r=f(\theta)$) |
+| Feature | Parametric | Polar |
 | :--- | :--- | :--- |
 | **Tangent Slope** | $\frac{dy/dt}{dx/dt}$ | $\frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta}$ |
 | | **Operation:** Divide $y'$ by $x'$. | **Operation:** Use product rule on $x=r\cos\theta, y=r\sin\theta$. |
