@@ -1,5 +1,7 @@
 # 🧮 Calculus II Final Review Sheet
-
+## ♾️ Section 1: Integration
+###### See Midterm 1 Formula Sheet)
+## ∑ Section 2: Series
 ## I. Series Basics & Convergence Tests
 
 ### 1. Partial Sums ($s_n$) vs. Terms ($a_n$)
