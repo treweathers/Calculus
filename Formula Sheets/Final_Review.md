@@ -14,10 +14,6 @@
 * **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
 
 ### **Known Maclaurin Series**
----
-
-## ♾️ Section 2: Infinite Series
-### **Known Maclaurin Series**
 | Function | Sigma Notation (Power Series) | First Few Terms | ROC |
 | --- | --- | --- | --- |
 | **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
