@@ -1,6 +1,7 @@
+
 ---
 
-##🧮Section 1: Integration, Parametric, & Polar###**Standard Antiderivatives*** **\int \sin(x) \, dx = -\cos(x) + C**
+##🧮 Section 1: Integration, Parametric, & Polar###**Standard Antiderivatives*** **\int \sin(x) \, dx = -\cos(x) + C**
 * **\int \cos(x) \, dx = \sin(x) + C**
 * **\int \sec^2(x) \, dx = \tan(x) + C**
 * **\int \csc^2(x) \, dx = -\cot(x) + C**
@@ -49,46 +50,6 @@
 * **Integral Test:** If f(x) is positive, continuous, and decreasing, \sum a_n and \int f(x)dx behave the same.
 * **Ratio Test:** Let L = \lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|. Converges if L < 1, diverges if L > 1.
 * **Alternating Series Test:** \sum (-1)^n b_n converges if b_{n+1} \leq b_n and \lim_{n \to \infty} b_n = 0.
-
----
-
-###**Extended Convergence Tests*** **Divergence Test (n^{th} term test):** If \lim_{n \to \infty} a_n \neq 0, the series diverges.
-* *Note:* If the limit is 0, the test is inconclusive.
-
-
-* **Integral Test:** If f(x) is positive, continuous, and decreasing for x \ge 1:
-* \sum a_n converges if \int_{1}^{\infty} f(x) dx converges.
-
-
-* **Direct Comparison Test (DCT):** Compare a_n to a known series b_n (usually a p-series or geometric):
-* If a_n \le b_n and \sum b_n converges, then \sum a_n converges.
-* If a_n \ge b_n and \sum b_n diverges, then \sum a_n diverges.
-
-
-* **Limit Comparison Test (LCT):** Solve L = \lim_{n \to \infty} \frac{a_n}{b_n}.
-* If L is a finite, positive number, both series do the same thing (both converge or both diverge).
-
-
-* **Ratio Test:** L = \lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|.
-* Converges if L < 1; Diverges if L > 1; Inconclusive if L = 1.
-
-
-* **Root Test:** L = \lim_{n \to \infty} \sqrt[n]{|a_n|}.
-* Useful when the entire general term is raised to the n^{th} power.
-* Converges if L < 1; Diverges if L > 1; Inconclusive if L = 1.
-
-
-* **Alternating Series Test (AST):** For \sum (-1)^n b_n:
-* Converges if \lim_{n \to \infty} b_n = 0 AND b_{n+1} \le b_n (terms are decreasing).
-
-
-
----
-
-###**Quick Tips for the Series Section*** **Absolute vs. Conditional Convergence:** A series is **absolutely convergent** if \sum |a_n| converges. It is **conditionally convergent** if \sum a_n converges but \sum |a_n| diverges (common with the Alternating Harmonic Series).
-* **The p-series Shortcut:** \sum \frac{1}{n^p} converges if p > 1 and diverges if p \le 1.
-
-Would you like me to add a "Strategy Guide" section that explains which test to pick based on what the formula looks like (e.g., when to use Ratio vs. LCT)?
 
 ###**Common Maclaurin Series*** **Geometric:** \frac{1}{1-x} = 1 + x + x^2 + x^3 + \dots
 * ROC: |x| < 1
@@ -156,3 +117,6 @@ Would you like me to add a "Strategy Guide" section that explains which test to 
 
 ###**The Parallelogram Law*** **Formula:** |\vec{u} + \vec{v}|^2 + |\vec{u} - \vec{v}|^2 = 2|\vec{u}|^2 + 2|\vec{v}|^2
 * **Interpretation:** The sum of the squares of the diagonals equals the sum of the squares of the four sides.
+
+---
+
