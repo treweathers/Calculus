@@ -8,6 +8,12 @@ If you are given the sum formula $s_n$:
 * **Find the total sum:** $S = \lim_{n \to \infty} s_n$.
 
 ### 2. The Big Three Early Tests
+ ### 2. The Big Three Early Tests
+| Test | Condition | Conclusion |
+| :--- | :--- | :--- |
+| **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | The series **Diverges**. (If limit is $0$, test is inconclusive). |
+| **Geometric Series** | $\sum_{n=1}^{\infty} ar^{n-1}$ | **Converges** if $|r| < 1$; Sum is $S = \frac{a}{1-r}$. <br> **Diverges** if $|r| \geq 1$. |
+| **Telescoping Series** | $\sum (b_n - b_{n+1})$ | **Converges** if $\lim_{n \to \infty} b_n$ exists. Sum is $b_1 - \lim_{n \to \infty} b_{n+1}$. |
 | Test | Condition | Conclusion |
 | :--- | :--- | :--- |
 | **Divergence Test** | $\lim_{n \to \infty} a_n \neq 0$ | Series Diverges. |
