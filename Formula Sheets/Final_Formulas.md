@@ -10,7 +10,8 @@
 * **sec(x):** ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
 * **csc(x):** ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
 
-### **Inverse Trig Antiderivatives*** **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
+### **Inverse Trig Antiderivatives**
+* **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
 * **arctan:** ∫ 1/(1+x²) dx = arctan(x) + C
 * **arcsec:** ∫ 1/(|x|√(x²-1)) dx = arcsec(x) + C
 
