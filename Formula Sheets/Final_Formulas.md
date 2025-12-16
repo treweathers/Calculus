@@ -45,6 +45,4 @@
 
 * **Vector Projection:** $$\text{proj}_{\vec{u}}(\vec{v}) = \left( \frac{\vec{u} \cdot \vec{v}}{|\vec{u}|^2} \right) \vec{u}$$
 
-* **Dot Product:** $$\vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3$$
-
 * **Cross Product Magnitude:** $$|\vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin(\theta)$$
