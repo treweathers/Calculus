@@ -5,45 +5,12 @@
 * **cos(x):** ∫ cos(x) dx = sin(x) + C
 * **sec^2(x):** ∫ sec²(x) dx = tan(x) + C
 * **csc^2(x):** ∫ csc²(x) dx = -cot(x) + C
-* **sec(x)tan(x):** ∫ sec(x)tan(x) dx = sec(x) + C
-* **csc(x)cot(x):** ∫ csc(x)cot(x) dx = -csc(x) + C
-* **tan(x):** ∫ tan(x) dx = ln|sec(x)| + C
-* **sec(x):** ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
-* **csc(x):** ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
+
 
 ### **Inverse Trig Antiderivatives**
 * **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
 * **arctan:** ∫ 1/(1+x²) dx = arctan(x) + C
 * **arcsec:** ∫ 1/(|x|√(x²-1)) dx = arcsec(x) + C
-
----
-
-### **Parametric & Polar Operations**
-**Parametric Equations** (x = f(t), y = g(t))
-
-* **Tangent Slope:** (dy/dt) / (dx/dt)
-* *Operation:* Divide the 1st degree derivative of y by the 1st degree derivative of x.
-
-
-* **Arc Length:** ∫ √[(dx/dt)² + (dy/dt)²] dt
-* *Operation:* Square the 1st degree derivatives, sum them, and take the square root.
-
-
-
-**Polar Coordinates** (r = f(θ))
-
-* **Tangent Slope:** [(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]
-* *Operation:* Combine the 1st degree derivative of r and the original function r.
-
-
-* **Area of a Region:** ∫ 1/2 [r(θ)]² dθ
-* *Operation:* Square the function r before integrating.
-
-
-* **Arc Length:** ∫ √[r² + (dr/dθ)²] dθ
-* *Operation:* Sum of the square of r and the square of its 1st degree derivative.
-
-
 
 ---
 
@@ -60,14 +27,6 @@
 * **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
 
 ### **Known Maclaurin Series**
-| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
-| --- | --- | --- | --- |
-| **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
-| **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
-| **sin(x)** | Σ (-1)ⁿ x²ⁿ⁺¹ / (2n+1)! | x - x³/3! + x⁵/5! - ... | R = ∞ |
-| **cos(x)** | Σ (-1)ⁿ x²ⁿ / (2n)! | 1 - x²/2! + x⁴/4! - ... | R = ∞ |
-| **ln(1+x)** | Σ (-1)ⁿ⁻¹ xⁿ / n | x - x²/2 + x³/3 - x⁴/4 + ... | R = 1 |
-| **arctan(x)** | Σ (-1)ⁿ x²ⁿ⁺¹ / (2n+1) | x - x³/3 + x⁵/5 - ... | R = 1 |
 | **(1+x)ᵏ** | Σ (k over n) xⁿ | 1 + kx + [k(k-1)/2!]x² + ... | R = 1 |
 
 ---
