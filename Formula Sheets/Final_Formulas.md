@@ -34,7 +34,8 @@
 * **Arc Length:** ∫ √[r² + (dr/dθ)²] dθ
 * *Operation:* Sum of the square of r and the square of its 1st degree derivative.
 
-### **Parametric & Polar Operations Chart**| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
+### **Parametric & Polar Operations Chart**
+| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
 | --- | --- | --- |
 | **Tangent Slope (dy/dx)** | `(dy/dt) / (dx/dt)` <br>
 
