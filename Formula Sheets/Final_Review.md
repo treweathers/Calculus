@@ -152,6 +152,7 @@ $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1}$$
 * **Unit Vector:** $\mathbf{u} = \frac{\mathbf{v}}{|\mathbf{v}|}$
 * **Dot Product:** $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$
 * **Cross Product:** $\mathbf{u} \times \mathbf{v} = \langle u_2v_3 - u_3v_2, u_3v_1 - u_1v_3, u_1v_2 - u_2v_1 \rangle$
+* **Cross Product Magnitude:** $$|\vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin(\theta)$$
 * **Area of Parallelogram:** $|\mathbf{u} \times \mathbf{v}|$
 * **Volume of Parallelepiped:** $|\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w})|$
 
