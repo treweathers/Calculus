@@ -19,6 +19,79 @@ If you are given the sum formula $s_n$:
 **Rule:** $\sum a_n$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ converges.  
 **Error Bound:** $R_n \leq \int_{n}^{\infty} f(x) \, dx$.
 
+## 4. Convergence Test Summarized Test Reference
+
+### Comparison, Ratio, and Root Tests (§11.4 – 11.6)
+* **Comparison:** Compare "messy" series to $p$-series or geometric series.
+* **Ratio Test:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$. $L < 1$ (Abs. Conv), $L > 1$ (Div), $L = 1$ (Inconclusive).
+* **Root Test:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$.
+
+---
+
+### Summarized Test Reference
+1.  **Divergence Test:** If $\lim_{n \to \infty} a_n \neq 0$, then $\sum a_n$ **Diverges**.
+2.  **Integral Test:** If $f(x)$ is positive, continuous, and decreasing, then $\sum_{n=k}^{\infty} a_n$ and $\int_{k}^{\infty} f(x) \, dx$ behave the same (both converge or both diverge).
+3.  **Direct Comparison Test:** If $0 < a_n \leq b_n$:
+    * $\sum b_n$ (larger series) converges $\implies \sum a_n$ converges.
+    * $\sum a_n$ (smaller series) diverges $\implies \sum b_n$ diverges.
+4.  **Limit Comparison Test (LCT):** * **Condition:** Let $L = \lim_{n \to \infty} \frac{a_n}{b_n}$. If $L$ is a finite, positive number ($L > 0$), then $\sum a_n$ and $\sum b_n$ either both converge or both diverge.
+    * **Note:** Requires $a_n > 0$ and $b_n > 0$.
+5.  **Ratio Test:** * **Condition:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$.
+    * If $L < 1$, the series converges absolutely.
+    * If $L > 1$, the series diverges.
+    * If $L = 1$, the test is inconclusive.
+6.  **Root Test:** * **Condition:** Calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$.
+    * If $L < 1$, the series converges absolutely.
+    * If $L > 1$, the series diverges.
+    * If $L = 1$, the test is inconclusive.
+7.  **Alternating Series Test (AST):** * **Applies to:** $\sum_{n=1}^{\infty} (-1)^n b_n$ or $\sum_{n=1}^{\infty} (-1)^{n-1} b_n$, where $b_n > 0$.
+    * **Conditions for Convergence:** The series converges if **both** conditions are met:
+        1.  $\lim_{n \to \infty} b_n = 0$
+        2.  $b_{n+1} \leq b_n$ (the terms are decreasing in magnitude)
+    * **Alternating Series Remainder:** The error $|R_N|$ in using $S_N$ to approximate the sum $S$ is bounded by the magnitude of the next term: $|R_N| = |S - S_N| \leq b_{N+1}$.
+
+---
+
+## 🧐 Comprehensive Convergence Test Checklist for $\sum a_n$
+
+### Step 1: The Divergence Test (The First Check)
+**Goal:** To quickly determine if the series must diverge.  
+**Check:** Calculate $\lim_{n \to \infty} a_n$.  
+**Result:**
+* If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), then the series diverges. **Stop here.**
+* If $\lim_{n \to \infty} a_n = 0$, the test is inconclusive. Proceed to Step 2. *(Note: Skip this and go straight to Ratio/Root Test if $a_n$ contains factorials or exponents of $n$).*
+
+### Step 2: Test for Absolute Convergence
+Absolute convergence means the series $\sum |a_n|$ converges. If this converges, the original series $\sum a_n$ is absolutely convergent and therefore converges.
+
+1.  **Form the Absolute Series:** Consider the series of absolute values, $\sum |a_n|$.
+2.  **Apply Tests for Absolute Convergence:**
+
+#### A. Ratio Test or Root Test
+*(For terms involving $n!$, products of functions, or $n$ in the exponent)*
+* **Ratio Test:** $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
+* **Root Test:** $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$
+* **Result:**
+    * If $L < 1$, the series $\sum |a_n|$ converges, so $\sum a_n$ is absolutely convergent. **Stop here.**
+    * If $L > 1$ or $L = \infty$, the series diverges. **Stop here.**
+    * If $L = 1$, inconclusive. Try Comparison or Integral Test.
+
+#### B. Comparison Tests
+*(Useful when $|a_n|$ is similar to a known series)*
+* **Direct Comparison Test (DCT):** Use if the inequality is simple (e.g., $n^2+5 > n^2 \implies \frac{1}{n^2+5} < \frac{1}{n^2}$). Requires finding a convergent $b_n \geq |a_n|$ or divergent $d_n \leq |a_n|$.
+* **Limit Comparison Test (LCT):** Most common for rational/algebraic functions. Calculate $L = \lim_{n \to \infty} \frac{|a_n|}{b_n}$. If $0 < L < \infty$, then $\sum |a_n|$ and $\sum b_n$ share behavior.
+
+#### C. Integral Test
+*(Used when $f(x)$ is continuous, positive, decreasing, and easily integrable)*
+* **Check:** Consider $f(x) = |a_x|$. The series $\sum |a_n|$ converges if and only if $\int_{1}^{\infty} f(x) \, dx$ is finite.
+
+### Step 3: Test for Conditional Convergence (If Step 2 Fails)
+This applies if $\sum |a_n|$ diverged but the original $\sum a_n$ is an **Alternating Series** (e.g., $\sum (-1)^n b_n$).
+* **Apply Alternating Series Test (AST):** Check two conditions for $b_n = |a_n|$:
+    1.  $b_n$ is decreasing ($b_{n+1} \leq b_n$).
+    2.  $\lim_{n \to \infty} b_n = 0$.
+* **Result:** If both met, the series converges **conditionally**. If the test fails, the series **diverges**.
+
 ### 4. Convergence Test Summarized Test Reference Comparison, Ratio, and Root Tests (§11.4 – 11.6)
 * **Comparison:** Compare "messy" series to $p$-series or geometric series.
 * **Ratio Test:** Calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$.
