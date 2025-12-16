@@ -26,8 +26,6 @@
 ### **Known Maclaurin Series**
 | Function | Sigma Notation (Power Series) | First Few Terms | ROC |
 | --- | --- | --- | --- |
-| **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
-| **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
 | **sin(x)** | Σ (-1)ⁿ x²ⁿ⁺¹ / (2n+1)! | x - x³/3! + x⁵/5! - ... | R = ∞ |
 | **cos(x)** | Σ (-1)ⁿ x²ⁿ / (2n)! | 1 - x²/2! + x⁴/4! - ... | R = ∞ |
 | **ln(1+x)** | Σ (-1)ⁿ⁻¹ xⁿ / n | x - x²/2 + x³/3 - x⁴/4 + ... | R = 1 |
