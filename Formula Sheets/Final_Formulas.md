@@ -1,5 +1,5 @@
 # 🧮 Calculus II Final Formula Sheet##Section 1: Integration, Parametric, & Polar
-###**Standard Antiderivatives*** **sin(x):** ∫ sin(x) dx = -cos(x) + C
+### **Standard Antiderivatives*** **sin(x):** ∫ sin(x) dx = -cos(x) + C
 * **cos(x):** ∫ cos(x) dx = sin(x) + C
 * **sec^2(x):** ∫ sec²(x) dx = tan(x) + C
 * **csc^2(x):** ∫ csc²(x) dx = -cot(x) + C
@@ -9,13 +9,13 @@
 * **sec(x):** ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
 * **csc(x):** ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
 
-###**Inverse Trig Antiderivatives*** **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
+### **Inverse Trig Antiderivatives*** **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
 * **arctan:** ∫ 1/(1+x²) dx = arctan(x) + C
 * **arcsec:** ∫ 1/(|x|√(x²-1)) dx = arcsec(x) + C
 
 ---
 
-###**Parametric & Polar Operations****Parametric Equations** (x = f(t), y = g(t))
+### **Parametric & Polar Operations****Parametric Equations** (x = f(t), y = g(t))
 
 * **Tangent Slope:** (dy/dt) / (dx/dt)
 * *Operation:* Divide the 1st degree derivative of y by the 1st degree derivative of x.
@@ -43,7 +43,7 @@
 
 ---
 
-##♾️ Section 2: Infinite Series###**Convergence Tests*** **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
+## ♾️ Section 2: Infinite Series###**Convergence Tests*** **Divergence Test:** If lim(aₙ) ≠ 0, then diverges.
 * **p-Series:** Σ 1/nᵖ converges if p > 1, diverges if p ≤ 1.
 * **Geometric Series:** Σ arⁿ converges if |r| < 1. Sum = a/(1-r).
 * **Integral Test:** If f(x) is positive/decreasing, Σ aₙ and ∫ f(x)dx both converge or both diverge.
@@ -53,7 +53,7 @@
 * **Limit Comparison:** L = lim (aₙ / bₙ). If L is finite/positive, both series behave the same.
 * **Alternating Series:** Σ (-1)ⁿ bₙ converges if bₙ is decreasing and lim(bₙ) = 0.
 
-###**Known Maclaurin Series**| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
+### **Known Maclaurin Series**| Function | Sigma Notation (Power Series) | First Few Terms | ROC |
 | --- | --- | --- | --- |
 | **Geometric** | Σ xⁿ | 1 + x + x² + x³ + ... | R = 1 |
 | **eˣ** | Σ xⁿ / n! | 1 + x + x²/2! + x³/3! + ... | R = ∞ |
@@ -65,7 +65,7 @@
 
 ---
 
-##🧊 Section 3: 3D Geometry & Vectors###**Vector Operations*** **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
+## 🧊 Section 3: 3D Geometry & Vectors###**Vector Operations*** **Magnitude:** |v| = √(v₁² + v₂² + v₃²)
 * **Unit Vector:** v / |v|
 * **Dot Product:** u₁v₁ + u₂v₂ + u₃v₃
 * **Angle between Vectors:** cos(θ) = (u · v) / (|u||v|)
