@@ -1,11 +1,11 @@
 # 🧮 Calculus II Final Formula Sheet
 ## Section 1: Integration, Parametric, & Polar
 ### **Standard Antiderivatives**
-* **sec(x)tan(x):** ∫ sec(x)tan(x) dx = sec(x) + C
-* **csc(x)cot(x):** ∫ csc(x)cot(x) dx = -csc(x) + C
-* **tan(x):** ∫ tan(x) dx = ln|sec(x)| + C
-* **sec(x):** ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
-* **csc(x):** ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
+* ∫ sec(x)tan(x) dx = sec(x) + C
+* ∫ csc(x)cot(x) dx = -csc(x) + C
+* ∫ tan(x) dx = ln|sec(x)| + C
+* ∫ sec(x) dx = ln|sec(x) + tan(x)| + C
+* ∫ csc(x) dx = -ln|csc(x) + cot(x)| + C
 
 ---
 
