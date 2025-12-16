@@ -1,18 +1,5 @@
-# 🧮 Calculus II Final Formula Sheet
-## Section 1: Integration, Parametric, & Polar
-### **Standard Antiderivatives**
-* **∫ sin(x) dx** = -cos(x) + C
-* **∫ cos(x) dx** = sin(x) + C
-* **∫ sec²(x) dx** = tan(x) + C
-* **∫ csc²(x) dx** = -cot(x) + C
-
-
-### **Inverse Trig Antiderivatives**
-* **arcsin:** ∫ 1/√(1-x²) dx = arcsin(x) + C
-* **arctan:** ∫ 1/(1+x²) dx = arctan(x) + C
-* **arcsec:** ∫ 1/(|x|√(x²-1)) dx = arcsec(x) + C
-
----
+# 🧮 Calculus II Final Review Sheet
+## Section 1: See Study Guide from Midterm I
 
 ## ♾️ Section 2: Infinite Series
 ### **Convergence Tests**
