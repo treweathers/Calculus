@@ -38,21 +38,44 @@ Certainly! Here is the standalone section for Parametric and Polar operations, f
 ---
 
 ### **Parametric & Polar Operations Reference**
-| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(\theta)) |
+| Feature | Parametric (x=f(t), y=g(t)) | Polar (r=f(θ)) |
 | --- | --- | --- |
-| **Tangent Slope (dy/dx)** | `(dy/dt) / (dx/dt)` <br>
+| **Tangent Slope** | `(dy/dt) / (dx/dt)` | `[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]` |
+| **Slope Operation** | Divide 1st degree derivative of **y** by 1st degree derivative of **x**. | Combine 1st degree derivative of **r** with original function **r**. |
+| **Arc Length** | `∫ √[(dx/dt)² + (dy/dt)²] dt` | `∫ √[r² + (dr/dθ)²] dθ` |
+| **Length Operation** | Square 1st degree derivatives, sum them, and square root. | Sum the square of **r** and the square of its 1st degree derivative. |
+| **Area (A)** | *Varies by boundary* | `∫ 1/2 [r(θ)]² dθ` |
+| **Area Operation** | *N/A* | Square the function **r** before integrating. |
 
-<br> **Operation:** Divide the 1st degree derivative of y by the 1st degree derivative of x. | `[(dr/dθ)sinθ + rcosθ] / [(dr/dθ)cosθ - rsinθ]` <br>
+---
 
-<br> **Operation:** Combine the 1st degree derivative of r and the original function r. |
-| **Arc Length (S)** | `∫ √[(dx/dt)² + (dy/dt)²] dt` <br>
+###**Operational Checklist**####**Parametric Logic*** **Derivatives Needed:** x'(t) and y'(t) (1st degree).
+* **For Slope:** Divide y'(t) by x'(t).
+* **For Arc Length:** Square both 1st derivatives \rightarrow Add them \rightarrow Root them \rightarrow Integrate.
 
-<br> **Operation:** Square the 1st degree derivatives, sum them, and take the square root. | `∫ √[r² + (dr/dθ)²] dθ` <br>
+####**Polar Logic*** **Derivatives Needed:** r'(\theta) (1st degree).
+* **For Slope:** Use r'(\theta) in the product rule expansion (y' over x').
+* **For Area:** Square the original r function \rightarrow Multiply by 0.5 \rightarrow Integrate.
+* **For Arc Length:** Square original r \rightarrow Square r'(\theta) \rightarrow Add them \rightarrow Root them \rightarrow Integrate.
 
-<br> **Operation:** Sum of the square of r and the square of its 1st degree derivative. |
-| **Area (A)** | *Varies by boundary* | `∫ 1/2 [r(θ)]² dθ` <br>
+---
 
-<br> **Operation:** Square the function r before integrating. |
+Would you like me to rewrite the **Series** or **3D Geometry** sections in this same "wonky-free" table format?
+
+---
+
+###**Operational Checklist****Parametric (x(t), y(t)):**
+
+* **Slope:** Calculate x'(t) and y'(t), then divide y'/x'.
+* **Arc Length:** Find x' and y', square them, add them, and integrate the root.
+
+**Polar (r(\theta)):**
+
+* **Slope:** Find r'. Use dy = r'\sin\theta + r\cos\theta and dx = r'\cos\theta - r\sin\theta.
+* **Area:** Square r, multiply by 0.5, and integrate.
+* **Arc Length:** Square r, square r', add them, and integrate the root.
+
+Would you like me to rewrite any other sections of the formula sheet to match this specific "clean table" style?
 
 ---
 
