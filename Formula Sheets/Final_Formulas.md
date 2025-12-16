@@ -29,8 +29,6 @@
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | ROC ($R$) | I.O.C. |
 | :--- | :--- | :--- | :--- |
-| $\frac{1}{1-x}$ | $\sum_{n=0}^\infty x^n = 1 + x + x^2 + \dots$ | $R = 1$ | $(-1, 1)$ |
-| $e^x$ | $\sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \dots$ | $R = \infty$ | $(-\infty, \infty)$ |
 | $\sin(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots$ | $R = \infty$ | $(-\infty, \infty)$ |
 | $\cos(x)$ | $\sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots$ | $R = \infty$ | $(-\infty, \infty)$ |
 | $\ln(1+x)$ | $\sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots$ | $R = 1$ | $(-1, 1]$ |
