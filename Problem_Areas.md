@@ -1,3 +1,6 @@
+# Calc II Problem Area Review
+## Integration
+### Trig-Sub (3rd Step, converting back to x)
 Spot on! You’ve nailed the two different paths for getting back to x.
 
 To make it crystal clear, think of it as **two different tools** in your toolbox. You choose the tool based on what "shape" your antiderivative is in.
