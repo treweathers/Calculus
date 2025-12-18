@@ -440,3 +440,30 @@
    $$(\frac{2}{3} - 2) - (0 - 0) = -\frac{4}{3}$$
 **Final Answer:** $-4/3$
 
+## Solutions for Problem 4: Area and Volume
+
+### (i) Find the area between the curve $y = \ln x$ and the $x$-axis over the interval $(0,1]$.
+1. **Set up the integral:** Since $\ln x$ is negative on $(0,1)$, the area is given by $\int_{0}^{1} | \ln x | dx = -\int_{0}^{1} \ln x dx$. 
+2. **Identify as Improper:** There is a vertical asymptote at $x = 0$.
+   $$\text{Area} = \lim_{t \to 0^+} \left( -\int_{t}^{1} \ln x dx \right)$$
+3. **Integrate by Parts:** Using $\int \ln x dx = x \ln x - x$:
+   $$\lim_{t \to 0^+} \left[ -(x \ln x - x) \right]_{t}^{1} = \lim_{t \to 0^+} \left[ x - x \ln x \right]_{t}^{1}$$
+4. **Evaluate at the upper bound:** At $x=1$, we get $1 - 1 \ln(1) = 1 - 0 = 1$.
+5. **Evaluate the limit at the lower bound:** We need $\lim_{t \to 0^+} (t - t \ln t)$.
+   - $\lim_{t \to 0^+} t = 0$.
+   - $\lim_{t \to 0^+} t \ln t$ is a $0 \cdot (-\infty)$ form. Rewrite as $\frac{\ln t}{1/t}$ and use L'Hôpital:
+     $$\lim_{t \to 0^+} \frac{1/t}{-1/t^2} = \lim_{t \to 0^+} (-t) = 0$$
+6. **Final Answer:** $1 - (0 - 0) = 1$.
+**Final Answer:** The area is $1$.
+
+---
+
+### (ii) Find the volume of Gabriel’s Horn, obtained by rotating $y = 1/x, x \geq 1$ around the $x$-axis.
+1. **Use the Disk Method:** The formula for volume rotated around the $x$-axis is $V = \pi \int_{a}^{b} [f(x)]^2 dx$.
+2. **Set up the improper integral:**
+   $$V = \pi \int_{1}^{\infty} \left( \frac{1}{x} \right)^2 dx = \pi \int_{1}^{\infty} x^{-2} dx$$
+3. **Apply the limit:**
+   $$\lim_{t \to \infty} \pi \int_{1}^{t} x^{-2} dx = \lim_{t \to \infty} \pi \left[ -\frac{1}{x} \right]_{1}^{t}$$
+4. **Evaluate:**
+   $$\pi \left( \lim_{t \to \infty} \left( -\frac{1}{t} \right) - \left( -\frac{1}{1} \right) \right) = \pi (0 + 1) = \pi$$
+**Final Answer:** The volume is $\pi$.
