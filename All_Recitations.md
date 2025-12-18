@@ -168,3 +168,307 @@
 4. **Integrate:**
    $$\int u^2 du = \frac{1}{3} u^3 + C = \frac{1}{3} \tan^3 x + C$$
 **Final Answer:** $\frac{1}{3} \tan^3 x + C$
+
+### (ix) $\int \sin^2 x \cos^3 x dx$
+1. **Identify the strategy:** Since the power of cosine is odd, save one cosine factor and convert the remaining $\cos^2 x$ to sines.
+2. **Rewrite the integral:**
+   $$\int \sin^2 x (\cos^2 x) \cos x dx = \int \sin^2 x (1 - \sin^2 x) \cos x dx$$
+3. **Substitution:** Let $u = \sin x$, then $du = \cos x dx$.
+4. **Integrate:**
+   $$\int u^2 (1 - u^2) du = \int (u^2 - u^4) du = \frac{u^3}{3} - \frac{u^5}{5} + C$$
+5. **Back-substitute:**
+   $$\frac{\sin^3 x}{3} - \frac{\sin^5 x}{5} + C$$
+**Final Answer:** $\frac{1}{3}\sin^3 x - \frac{1}{5}\sin^5 x + C$
+
+---
+
+### (x) $\int \frac{1}{1 - \cos 2\theta} d\theta$
+1. **Apply Trig Identity:** Use $1 - \cos 2\theta = 2\sin^2 \theta$.
+2. **Simplify:**
+   $$\int \frac{1}{2\sin^2 \theta} d\theta = \frac{1}{2} \int \csc^2 \theta d\theta$$
+3. **Integrate:** Recall that $\frac{d}{d\theta}(\cot \theta) = -\csc^2 \theta$.
+   $$\frac{1}{2} (-\cot \theta) + C = -\frac{1}{2} \cot \theta + C$$
+**Final Answer:** $-\frac{1}{2} \cot \theta + C$
+
+---
+
+### (xi) $\int_{0}^{2/3} \sqrt{4 - 9x^2} dx$
+1. **Factor for Trig Substitution:** Rewrite the radicand as $4(1 - \frac{9}{4}x^2) = 4(1 - (\frac{3x}{2})^2)$.
+2. **Substitution:** Let $\frac{3x}{2} = \sin \theta \implies x = \frac{2}{3}\sin \theta$. Then $dx = \frac{2}{3}\cos \theta d\theta$.
+3. **Change limits:** - If $x = 0$, $\sin \theta = 0 \implies \theta = 0$.
+   - If $x = 2/3$, $\sin \theta = 1 \implies \theta = \pi/2$.
+4. **Simplify integral:** $\sqrt{4 - 9x^2} = \sqrt{4 - 4\sin^2 \theta} = 2\cos \theta$.
+   $$\int_{0}^{\pi/2} (2\cos \theta) (\frac{2}{3}\cos \theta) d\theta = \frac{4}{3} \int_{0}^{\pi/2} \cos^2 \theta d\theta$$
+5. **Use power-reduction:** $\cos^2 \theta = \frac{1 + \cos 2\theta}{2}$.
+   $$\frac{4}{3} \int_{0}^{\pi/2} \frac{1 + \cos 2\theta}{2} d\theta = \frac{2}{3} \left[ \theta + \frac{1}{2}\sin 2\theta \right]_{0}^{\pi/2}$$
+6. **Evaluate:** $\frac{2}{3} [(\frac{\pi}{2} + 0) - (0 + 0)] = \frac{\pi}{3}$.
+**Final Answer:** $\frac{\pi}{3}$
+
+---
+
+### (xii) $\int \frac{x^3}{\sqrt{9 + x^2}} dx$
+1. **Trig Substitution:** Let $x = 3\tan \theta$, so $dx = 3\sec^2 \theta d\theta$ and $\sqrt{9+x^2} = 3\sec \theta$.
+2. **Rewrite integral:**
+   $$\int \frac{(27\tan^3 \theta)(3\sec^2 \theta)}{3\sec \theta} d\theta = 27 \int \tan^3 \theta \sec \theta d\theta$$
+3. **Integrate Powers of Tangent/Secant:** Separate $\sec \theta \tan \theta$.
+   $$27 \int \tan^2 \theta (\sec \theta \tan \theta) d\theta = 27 \int (\sec^2 \theta - 1) \sec \theta \tan \theta d\theta$$
+4. **Substitution:** Let $u = \sec \theta$, $du = \sec \theta \tan \theta d\theta$.
+   $$27 \int (u^2 - 1) du = 27 (\frac{u^3}{3} - u) = 9u^3 - 27u + C$$
+5. **Back-substitute:** $u = \sec \theta = \frac{\sqrt{9+x^2}}{3}$.
+   $$9(\frac{\sqrt{9+x^2}}{3})^3 - 27(\frac{\sqrt{9+x^2}}{3}) = \frac{1}{3}(9+x^2)^{3/2} - 9\sqrt{9+x^2} + C$$
+**Final Answer:** $\frac{1}{3}(9+x^2)^{3/2} - 9\sqrt{9+x^2} + C$
+
+---
+
+### (xiii) $\int x\sqrt{1 - x^4} dx$
+1. **Substitution:** Let $u = x^2$, so $du = 2x dx$ or $\frac{1}{2}du = x dx$.
+2. **Rewrite:** $\frac{1}{2} \int \sqrt{1 - u^2} du$.
+3. **Use Formula/Trig Sub:** The integral $\int \sqrt{a^2 - u^2} du = \frac{u}{2}\sqrt{a^2-u^2} + \frac{a^2}{2}\arcsin(\frac{u}{a})$.
+4. **Apply to $u$:**
+   $$\frac{1}{2} \left[ \frac{u}{2}\sqrt{1-u^2} + \frac{1}{2}\arcsin(u) \right] + C$$
+5. **Back-substitute:** $u = x^2$.
+   $$\frac{1}{4} x^2\sqrt{1-x^4} + \frac{1}{4}\arcsin(x^2) + C$$
+**Final Answer:** $\frac{1}{4}(x^2\sqrt{1-x^4} + \arcsin(x^2)) + C$
+
+---
+
+### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^2} dx$
+1. **Identify as Improper Integral:** The function is undefined at the upper bound $x = 1$.
+2. **Set up limit:** $\lim_{t \to 1^-} \int_{0}^{t} (x - 1)^{-2} dx$.
+3. **Integrate:**
+   $$\lim_{t \to 1^-} \left[ \frac{(x-1)^{-1}}{-1} \right]_{0}^{t} = \lim_{t \to 1^-} \left[ -\frac{1}{x-1} \right]_{0}^{t}$$
+4. **Evaluate limit:**
+   $$\lim_{t \to 1^-} \left( -\frac{1}{t-1} - (-\frac{1}{0-1}) \right) = \lim_{t \to 1^-} \left( -\frac{1}{t-1} - 1 \right)$$
+5. **Conclusion:** As $t \to 1^-$, $(t-1)$ is a small negative number, so $-\frac{1}{t-1} \to \infty$.
+**Final Answer:** Diverges
+
+---
+
+### (xv) $\int \frac{1}{x^2 + 2x - 3} dx$
+1. **Factor the denominator:** $x^2 + 2x - 3 = (x + 3)(x - 1)$.
+2. **Partial Fraction Decomposition:**
+   $$\frac{1}{(x+3)(x-1)} = \frac{A}{x+3} + \frac{B}{x-1}$$
+3. **Solve for constants:** $1 = A(x-1) + B(x+3)$.
+   - If $x = 1$, $1 = 4B \implies B = 1/4$.
+   - If $x = -3$, $1 = -4A \implies A = -1/4$.
+4. **Integrate:**
+   $$\int \left( \frac{-1/4}{x+3} + \frac{1/4}{x-1} \right) dx = -\frac{1}{4}\ln|x+3| + \frac{1}{4}\ln|x-1| + C$$
+5. **Simplify using log rules:** $\frac{1}{4}\ln\left|\frac{x-1}{x+3}\right| + C$.
+**Final Answer:** $\frac{1}{4}\ln\left|\frac{x-1}{x+3}\right| + C$
+
+---
+
+### (xvi) $\int \frac{3x + 2}{x^3 + 4x} dx$
+1. **Factor denominator:** $x(x^2 + 4)$.
+2. **Partial Fraction Decomposition:**
+   $$\frac{3x + 2}{x(x^2 + 4)} = \frac{A}{x} + \frac{Bx + C}{x^2 + 4}$$
+3. **Solve for constants:** $3x + 2 = A(x^2 + 4) + (Bx + C)x$.
+   - If $x = 0$, $2 = 4A \implies A = 1/2$.
+   - Compare $x^2$ terms: $0 = A + B \implies B = -1/2$.
+   - Compare $x$ terms: $3 = C \implies C = 3$.
+4. **Split and Integrate:**
+   $$\int \frac{1/2}{x} dx + \int \frac{-1/2x}{x^2+4} dx + \int \frac{3}{x^2+4} dx$$
+5. **Evaluate each:**
+   - $\frac{1}{2}\ln|x|$
+   - $-\frac{1}{4}\ln(x^2+4)$ (using $u$-sub $u = x^2+4$)
+   - $\frac{3}{2}\arctan(\frac{x}{2})$ (using standard $\arctan$ form)
+**Final Answer:** $\frac{1}{2}\ln|x| - \frac{1}{4}\ln(x^2+4) + \frac{3}{2}\arctan(\frac{x}{2}) + C$
+
+# Solutions: Additional Definite Integrals
+
+### (i) $\int_{0}^{1} \frac{x}{1 + x^2} dx$
+1. **Substitution:** Let $u = 1 + x^2$, then $du = 2x dx$, so $\frac{1}{2}du = x dx$.
+2. **Change limits:** - If $x = 0$, $u = 1$.
+   - If $x = 1$, $u = 2$.
+3. **Integrate:**
+   $$\frac{1}{2} \int_{1}^{2} \frac{1}{u} du = \frac{1}{2} [\ln|u|]_{1}^{2}$$
+4. **Evaluate:**
+   $$\frac{1}{2} (\ln 2 - \ln 1) = \frac{1}{2} \ln 2$$
+**Final Answer:** $\frac{1}{2} \ln 2$
+
+---
+
+### (ii) $\int_{0}^{\pi/2} \sin^3 x dx$
+1. **Split the power:** $\int \sin^2 x \sin x dx$.
+2. **Use Identity:** $\int (1 - \cos^2 x) \sin x dx$.
+3. **Substitution:** Let $u = \cos x$, $du = -\sin x dx$.
+4. **Change limits:**
+   - If $x = 0$, $u = 1$.
+   - If $x = \pi/2$, $u = 0$.
+5. **Integrate:**
+   $$\int_{1}^{0} -(1 - u^2) du = \int_{0}^{1} (1 - u^2) du$$
+   $$\left[ u - \frac{1}{3}u^3 \right]_{0}^{1} = 1 - \frac{1}{3} = \frac{2}{3}$$
+**Final Answer:** $\frac{2}{3}$
+
+---
+
+### (iii) $\int_{0}^{1} \frac{1}{\sqrt{1 - x^2}} dx$
+1. **Identify the form:** This is the standard derivative of $\arcsin x$.
+2. **Identify as Improper:** The function is undefined at $x = 1$.
+3. **Set up limit:** $\lim_{t \to 1^-} [\arcsin x]_{0}^{t}$.
+4. **Evaluate:**
+   $$\arcsin(1) - \arcsin(0) = \frac{\pi}{2} - 0 = \frac{\pi}{2}$$
+**Final Answer:** $\frac{\pi}{2}$
+
+---
+
+### (iv) $\int_{0}^{1} \frac{1}{(x + 1)^2} dx$
+1. **Integrate:** Using power rule with $u = x + 1$:
+   $$\left[ -\frac{1}{x + 1} \right]_{0}^{1}$$
+2. **Evaluate:**
+   $$\left( -\frac{1}{1 + 1} \right) - \left( -\frac{1}{0 + 1} \right) = -\frac{1}{2} + 1 = \frac{1}{2}$$
+**Final Answer:** $\frac{1}{2}$
+
+---
+
+### (v) $\int_{1}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
+1. **Check for vertical asymptotes:** The denominator factors to $(x+3)(x-1)$. There is a vertical asymptote at $x = 1$.
+2. **Set up Integral:** This is improper at both the lower limit ($x=1$) and the upper limit ($\infty$).
+3. **Analyze convergence:** Near $x=1$, the function behaves like $\frac{1}{4(x-1)}$. The integral $\int_1^2 \frac{1}{x-1} dx$ diverges logarithmically.
+**Final Answer:** Diverges
+
+---
+
+### (vi) $\int_{0}^{\infty} xe^{-x} dx$
+1. **Integration by Parts:** Let $u = x, dv = e^{-x} dx \implies du = dx, v = -e^{-x}$.
+2. **Set up limit:** $\lim_{t \to \infty} \left( [-xe^{-x}]_{0}^{t} - \int_{0}^{t} -e^{-x} dx \right)$.
+3. **Evaluate:**
+   $$\lim_{t \to \infty} \left( -te^{-t} + 0 + [-e^{-x}]_{0}^{t} \right) = \lim_{t \to \infty} (-te^{-t} - e^{-t} + 1)$$
+4. **Apply L'Hôpital:** $\lim_{t \to \infty} \frac{t}{e^t} = 0$.
+**Final Answer:** $1$
+
+---
+
+### (vii) $\int_{1}^{\infty} \frac{1}{(2x + 1)^3} dx$
+1. **Substitution:** Let $u = 2x + 1, du = 2 dx$.
+2. **Change limits:** $x=1 \to u=3$; $x \to \infty \to u \to \infty$.
+3. **Integrate:**
+   $$\frac{1}{2} \int_{3}^{\infty} u^{-3} du = \frac{1}{2} \left[ \frac{u^{-2}}{-2} \right]_{3}^{\infty} = -\frac{1}{4} \left[ \frac{1}{u^2} \right]_{3}^{\infty}$$
+4. **Evaluate:** $-\frac{1}{4} (0 - \frac{1}{9}) = \frac{1}{36}$
+*(Note: Provided answer says 1/4; double-check if original bounds were different)*.
+**Final Answer:** $\frac{1}{36}$
+
+---
+
+### (viii) $\int_{1}^{e} x \ln x dx$
+1. **Integration by Parts:** Let $u = \ln x, dv = x dx \implies du = \frac{1}{x} dx, v = \frac{x^2}{2}$.
+2. **Formula:**
+   $$\left[ \frac{x^2}{2} \ln x \right]_{1}^{e} - \int_{1}^{e} \frac{x^2}{2} \cdot \frac{1}{x} dx$$
+3. **Evaluate:**
+   $$\left( \frac{e^2}{2} \cdot 1 - 0 \right) - \left[ \frac{x^2}{4} \right]_{1}^{e} = \frac{e^2}{2} - (\frac{e^2}{4} - \frac{1}{4}) = \frac{e^2 + 1}{4}$$
+**Final Answer:** $\frac{e^2 + 1}{4}$
+
+---
+
+### (ix) $\int_{2}^{4} \frac{y}{\sqrt{y - 2}} dy$
+1. **Substitution:** Let $u = y - 2 \implies y = u + 2$ and $dy = du$.
+2. **Change limits:** $y=2 \to u=0$; $y=4 \to u=2$.
+3. **Integrate:**
+   $$\int_{0}^{2} \frac{u + 2}{\sqrt{u}} du = \int_{0}^{2} (u^{1/2} + 2u^{-1/2}) du$$
+4. **Evaluate:**
+   $$\left[ \frac{2}{3}u^{3/2} + 4u^{1/2} \right]_{0}^{2} = \frac{2}{3}(2\sqrt{2}) + 4\sqrt{2} = \frac{4\sqrt{2} + 12\sqrt{2}}{3} = \frac{16\sqrt{2}}{3}$$
+**Final Answer:** $\frac{16\sqrt{2}}{3}$ (Approx 7.54; provided ans 40/3 suggests different bounds).
+
+---
+
+### (x) $\int_{0}^{1} \frac{x - 1}{\sqrt{x}} dx$
+1. **Split the fraction:** $\int_{0}^{1} (x^{1/2} - x^{-1/2}) dx$.
+2. **Integrate:**
+   $$\left[ \frac{2}{3}x^{3/2} - 2x^{1/2} \right]_{0}^{1}$$
+3. **Evaluate:**
+   $$(\frac{2}{3} - 2) - 0 = -\frac{4}{3}$$
+**Final Answer:** $-\frac{4}{3}$
+
+# Solutions for Problem 3: Evaluate or Show Divergence
+
+### (i) $\int_{1}^{\infty} \frac{1}{(x + 2)^2} dx$
+1. **Set up the limit:** Replace the infinite bound with a variable $t$.
+   $$\lim_{t \to \infty} \int_{1}^{t} (x + 2)^{-2} dx$$
+2. **Integrate:** Using the power rule ($u = x+2$).
+   $$\lim_{t \to \infty} \left[ -\frac{1}{x + 2} \right]_{1}^{t}$$
+3. **Evaluate:**
+   $$\lim_{t \to \infty} \left( -\frac{1}{t + 2} - (-\frac{1}{1 + 2}) \right) = \lim_{t \to \infty} \left( -\frac{1}{t + 2} + \frac{1}{3} \right)$$
+4. **Conclusion:** As $t \to \infty$, $\frac{1}{t+2} \to 0$.
+**Final Answer:** $1/3$
+
+---
+
+### (ii) $\int_{0}^{\infty} \frac{1}{x^2 + 4} dx$
+1. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{0}^{t} \frac{1}{x^2 + 2^2} dx$$
+2. **Integrate:** Use the formula $\int \frac{1}{x^2 + a^2} dx = \frac{1}{a} \arctan(\frac{x}{a})$.
+   $$\lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x}{2}\right) \right]_{0}^{t}$$
+3. **Evaluate:**
+   $$\frac{1}{2} \left( \lim_{t \to \infty} \arctan\left(\frac{t}{2}\right) - \arctan(0) \right) = \frac{1}{2} \left( \frac{\pi}{2} - 0 \right)$$
+**Final Answer:** $\pi/4$
+
+---
+
+### (iii) $\int_{-2}^{\infty} \frac{1}{x^2 + 6x + 13} dx$
+1. **Complete the square:** $x^2 + 6x + 13 = (x^2 + 6x + 9) + 4 = (x + 3)^2 + 2^2$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{-2}^{t} \frac{1}{(x + 3)^2 + 2^2} dx$$
+3. **Integrate:**
+   $$\lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x + 3}{2}\right) \right]_{-2}^{t}$$
+4. **Evaluate:**
+   $$\frac{1}{2} \left( \lim_{t \to \infty} \arctan\left(\frac{t+3}{2}\right) - \arctan\left(\frac{-2+3}{2}\right) \right) = \frac{1}{2} \left( \frac{\pi}{2} - \arctan\left(\frac{1}{2}\right) \right)$$
+**Final Answer:** $\frac{\pi}{4} - \frac{1}{2} \arctan(\frac{1}{2})$
+
+---
+
+### (iv) $\int_{2}^{\infty} \frac{1}{x^2 - 1} dx$
+1. **Partial Fractions:** $\frac{1}{(x-1)(x+1)} = \frac{1/2}{x-1} - \frac{1/2}{x+1}$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \frac{1}{2} \left[ \ln|x-1| - \ln|x+1| \right]_{2}^{t} = \lim_{t \to \infty} \frac{1}{2} \left[ \ln \left| \frac{x-1}{x+1} \right| \right]_{2}^{t}$$
+3. **Evaluate:**
+   $$\frac{1}{2} \left( \lim_{t \to \infty} \ln \left| \frac{t-1}{t+1} \right| - \ln \left| \frac{2-1}{2+1} \right| \right)$$
+4. **Conclusion:** As $t \to \infty$, $\frac{t-1}{t+1} \to 1$, and $\ln(1) = 0$.
+   $$0 - \frac{1}{2} \ln(1/3) = \frac{1}{2} \ln(3)$$
+**Final Answer:** $\frac{1}{2} \ln 3$
+
+---
+
+### (v) $\int_{0}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
+1. **Factor Denominator:** $(x+3)(x-1)$.
+2. **Identify Discontinuity:** There is a vertical asymptote at $x = 1$.
+3. **Analyze:** Since the interval $[0, \infty)$ includes $x = 1$, we must split the integral. The part $\int_0^1 \frac{1}{(x+3)(x-1)} dx$ diverges because the power on the $(x-1)$ term is 1.
+**Final Answer:** Diverges
+
+---
+
+### (vi) $\int_{0}^{\infty} \frac{1}{(x + 1)(x + 4)} dx$
+1. **Partial Fractions:** $\frac{1}{(x+1)(x+4)} = \frac{1/3}{x+1} - \frac{1/3}{x+4}$.
+2. **Integrate:**
+   $$\frac{1}{3} \lim_{t \to \infty} \left[ \ln \left| \frac{x+1}{x+4} \right| \right]_{0}^{t}$$
+3. **Evaluate:**
+   $$\frac{1}{3} \left( \lim_{t \to \infty} \ln \left| \frac{t+1}{t+4} \right| - \ln \left| \frac{0+1}{0+4} \right| \right) = \frac{1}{3} (0 - \ln(1/4))$$
+4. **Simplify:** $-\frac{1}{3} \ln(1/4) = \frac{1}{3} \ln(4)$.
+**Final Answer:** $\frac{1}{3} \ln 4$ (or $\frac{2}{3} \ln 2$)
+
+---
+
+### (vii) $\int_{2}^{\infty} \frac{1}{x} dx$
+1. **Set up limit:** $\lim_{t \to \infty} [\ln|x|]_2^t$.
+2. **Evaluate:** $\lim_{t \to \infty} (\ln t - \ln 2) = \infty$.
+**Final Answer:** Diverges
+
+---
+
+### (viii) $\int_{2}^{6} \frac{1}{\sqrt{x - 2}} dx$
+1. **Improper at lower bound:** Vertical asymptote at $x = 2$.
+2. **Set up limit:** $\lim_{t \to 2^+} \int_{t}^{6} (x - 2)^{-1/2} dx$.
+3. **Integrate:**
+   $$\lim_{t \to 2^+} \left[ 2\sqrt{x - 2} \right]_{t}^{6}$$
+4. **Evaluate:** $2\sqrt{6-2} - \lim_{t \to 2^+} 2\sqrt{t-2} = 2(2) - 0 = 4$.
+**Final Answer:** $4$
+
+---
+
+### (ix) $\int_{0}^{1} \ln x dx$
+1. **Improper at lower bound:** $\ln(0)$ is undefined.
+2. **Set up limit:** $\lim_{t \to 0^+} \int_{t}^{1} \ln x dx$.
+3. **Integrate (Parts):** $\int \ln x dx = x \ln x - x$.
+   $$\lim_{t \to 0^+} [x \ln x - x]_t^1 = (1\ln 1 - 1) - \lim_{t \to 0^+} (t \ln t - t)$$
+4. **Limit of $t \ln t$:** By L'Hôpital, $\lim_{t \to 0^+} \frac{\ln t}{1/t} = \lim_{t \to 0^+} \frac{1/t}{-1/t^2} = 0$.
+5. **Evaluate:** $(-1) - (0 - 0) = -1$.
+**Final Answer:** $-1$
