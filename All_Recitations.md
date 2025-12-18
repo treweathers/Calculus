@@ -467,3 +467,159 @@
 4. **Evaluate:**
    $$\pi \left( \lim_{t \to \infty} \left( -\frac{1}{t} \right) - \left( -\frac{1}{1} \right) \right) = \pi (0 + 1) = \pi$$
 **Final Answer:** The volume is $\pi$.
+
+## Solutions for Problem 5: Length of the Curve
+
+### (i) $y = \sqrt{4 - x^2}, 0 \le x \le 2$
+1. **Identify the curve:** The equation $y^2 = 4 - x^2 \implies x^2 + y^2 = 4$ represents a circle with radius $r = 2$. For $0 \le x \le 2$, this is a quarter-circle in the first quadrant.
+2. **Geometric approach:** The circumference of a full circle is $2\pi r$. A quarter circle is:
+   $$L = \frac{1}{4}(2\pi r) = \frac{1}{2}\pi(2) = \pi$$
+3. **Calculus approach:** Find $y' = \frac{1}{2}(4-x^2)^{-1/2}(-2x) = \frac{-x}{\sqrt{4-x^2}}$.
+4. **Set up the integral:**
+   $$L = \int_{0}^{2} \sqrt{1 + \left(\frac{-x}{\sqrt{4-x^2}}\right)^2} dx = \int_{0}^{2} \sqrt{1 + \frac{x^2}{4-x^2}} dx$$
+5. **Simplify:** $\sqrt{\frac{4-x^2+x^2}{4-x^2}} = \sqrt{\frac{4}{4-x^2}} = \frac{2}{\sqrt{4-x^2}}$.
+6. **Integrate:** $\int_{0}^{2} \frac{2}{\sqrt{4-x^2}} dx = \left[ 2\arcsin\left(\frac{x}{2}\right) \right]_{0}^{2} = 2(\frac{\pi}{2} - 0) = \pi$.
+**Final Answer:** $\pi$
+
+---
+
+### (ii) $y = \frac{2}{3}x^{3/2}, 0 \le x \le 2$
+1. **Find the derivative:** $y' = \frac{2}{3} \cdot \frac{3}{2}x^{1/2} = x^{1/2} = \sqrt{x}$.
+2. **Set up the arc length integral:**
+   $$L = \int_{0}^{2} \sqrt{1 + (\sqrt{x})^2} dx = \int_{0}^{2} \sqrt{1 + x} dx$$
+3. **Integrate:** Use $u$-substitution $u = 1+x$:
+   $$\int_{0}^{2} (1+x)^{1/2} dx = \left[ \frac{2}{3}(1+x)^{3/2} \right]_{0}^{2}$$
+4. **Evaluate:**
+   $$\frac{2}{3}(1+2)^{3/2} - \frac{2}{3}(1+0)^{3/2} = \frac{2}{3}(3\sqrt{3} - 1)$$
+**Final Answer:** $\frac{2}{3}(3\sqrt{3} - 1)$
+
+---
+
+### (iii) $y = \frac{x^3}{3} + \frac{1}{4x}$
+1. **Find the derivative:** $y' = x^2 - \frac{1}{4x^2}$.
+2. **Simplify the term $1 + (y')^2$:**
+   $$1 + (x^2 - \frac{1}{4x^2})^2 = 1 + x^4 - 2(x^2)(\frac{1}{4x^2}) + \frac{1}{16x^4} = 1 + x^4 - \frac{1}{2} + \frac{1}{16x^4}$$
+   $$= x^4 + \frac{1}{2} + \frac{1}{16x^4} = (x^2 + \frac{1}{4x^2})^2$$
+3. **Set up the integral:**
+   $$L = \int \sqrt{(x^2 + \frac{1}{4x^2})^2} dx = \int (x^2 + \frac{1}{4x^2}) dx$$
+4. **Integrate:**
+   $$\frac{x^3}{3} - \frac{1}{4x} + C$$
+**Final Answer:** $\frac{x^3}{3} - \frac{1}{4x} + C$ (Note: Bounds were not provided in the prompt for this sub-problem).
+
+---
+
+### (iv) $r = 2 + \theta$
+1. **Identify the formula:** For polar curves, $L = \int \sqrt{r^2 + (\frac{dr}{d\theta})^2} d\theta$.
+2. **Find the derivative:** $\frac{dr}{d\theta} = 1$.
+3. **Simplify the radicand:**
+   $$r^2 + (\frac{dr}{d\theta})^2 = (2 + \theta)^2 + 1^2 = \theta^2 + 4\theta + 5$$
+4. **Set up the integral:**
+   $$L = \int \sqrt{\theta^2 + 4\theta + 5} d\theta$$
+**Final Answer:** $\int \sqrt{\theta^2 + 4\theta + 5} d\theta$ (This usually requires trigonometric substitution to solve fully).
+
+## Solutions for Problem 6: Parametric Equations
+
+Let the curve $C$ be given by: $x = 2\sin t$, $y = 2\cos^2 t$, where $-\pi/2 < t < \pi/2$.
+
+### (i) Find $dy/dx$, the slope at $t = \pi/4$, and the tangent line equation.
+1. **Find derivatives with respect to $t$:**
+   - $\frac{dx}{dt} = 2\cos t$
+   - $\frac{dy}{dt} = 4\cos t (-\sin t) = -4\sin t \cos t$
+2. **Find $dy/dx$:**
+   $$\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{-4\sin t \cos t}{2\cos t} = -2\sin t$$
+3. **Calculate slope at $t = \pi/4$:**
+   $$m = -2\sin(\pi/4) = -2\left(\frac{\sqrt{2}}{2}\right) = -\sqrt{2}$$
+4. **Find the point $(x, y)$ at $t = \pi/4$:**
+   - $x = 2\sin(\pi/4) = \sqrt{2}$
+   - $y = 2\cos^2(\pi/4) = 2(1/2) = 1$
+5. **Tangent Line Equation:** Using $y - y_1 = m(x - x_1)$:
+   $$y - 1 = -\sqrt{2}(x - \sqrt{2}) \implies y = -\sqrt{2}x + 2 + 1 \implies y = -\sqrt{2}x + 3$$
+
+---
+
+### (ii) Find $d^2y/dx^2$ at any $t$.
+1. **Use the formula for the second derivative of parametric equations:**
+   $$\frac{d^2y}{dx^2} = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{\frac{dx}{dt}}$$
+2. **Differentiate $dy/dx$ with respect to $t$:**
+   $$\frac{d}{dt}(-2\sin t) = -2\cos t$$
+3. **Divide by $dx/dt$:**
+   $$\frac{-2\cos t}{2\cos t} = -1$$
+**Final Answer:** $-1$
+
+---
+
+### (iii) Find the Cartesian equation of the curve.
+1. **Express trig functions in terms of $x$:**
+   From $x = 2\sin t$, we get $\sin t = \frac{x}{2}$.
+2. **Use the Pythagorean Identity:** $\cos^2 t = 1 - \sin^2 t$.
+3. **Substitute into the $y$ equation:**
+   $$y = 2(1 - \sin^2 t) = 2\left(1 - \left(\frac{x}{2}\right)^2\right)$$
+   $$y = 2\left(1 - \frac{x^2}{4}\right) = 2 - \frac{x^2}{2}$$
+**Final Answer:** $y = 2 - \frac{1}{2}x^2$ (This is a parabola opening downward).
+
+---
+
+### (iv) Find the area between the curve $C$ and the $x$-axis.
+1. **Identify the limits for $x$:**
+   As $t$ goes from $-\pi/2$ to $\pi/2$, $x$ goes from $2\sin(-\pi/2) = -2$ to $2\sin(\pi/2) = 2$.
+2. **Set up the parametric area integral:** $A = \int_{t_1}^{t_2} y(t) \cdot x'(t) dt$.
+   $$A = \int_{-\pi/2}^{\pi/2} (2\cos^2 t)(2\cos t) dt = 4 \int_{-\pi/2}^{\pi/2} \cos^3 t dt$$
+3. **Integrate $\cos^3 t$:** Use $\cos^2 t = 1 - \sin^2 t$.
+   $$4 \int_{-\pi/2}^{\pi/2} (1 - \sin^2 t)\cos t dt$$
+4. **Use $u$-substitution:** $u = \sin t, du = \cos t dt$. Limits become $-1$ to $1$.
+   $$4 \left[ u - \frac{u^3}{3} \right]_{-1}^{1} = 4 \left[ (1 - \frac{1}{3}) - (-1 + \frac{1}{3}) \right] = 4 \left[ \frac{2}{3} + \frac{2}{3} \right] = \frac{16}{3}$$
+**Final Answer:** $16/3$
+
+---
+
+### (v) Find the length of the curve $C$.
+1. **Set up the arc length integral:** $L = \int_{-\pi/2}^{\pi/2} \sqrt{(x')^2 + (y')^2} dt$.
+2. **Calculate $(x')^2 + (y')^2$:**
+   $$(2\cos t)^2 + (-4\sin t \cos t)^2 = 4\cos^2 t + 16\sin^2 t \cos^2 t = 4\cos^2 t(1 + 4\sin^2 t)$$
+3. **Simplify the integral:**
+   $$L = \int_{-\pi/2}^{\pi/2} 2\cos t \sqrt{1 + 4\sin^2 t} dt$$
+4. **Substitution:** $u = 2\sin t, du = 2\cos t dt$. Limits: $t=-\pi/2 \to u=-2$, $t=\pi/2 \to u=2$.
+   $$L = \int_{-2}^{2} \sqrt{1 + u^2} du$$
+5. **Evaluate using the formula for $\int \sqrt{a^2+u^2}du$:**
+   $$\left[ \frac{u}{2}\sqrt{1+u^2} + \frac{1}{2}\ln|u + \sqrt{1+u^2}| \right]_{-2}^{2}$$
+   $$= \left( \sqrt{5} + \frac{1}{2}\ln(2+\sqrt{5}) \right) - \left( -\sqrt{5} + \frac{1}{2}\ln(-2+\sqrt{5}) \right)$$
+   $$= 2\sqrt{5} + \ln(2+\sqrt{5})$$
+**Final Answer:** $2\sqrt{5} + \ln(2+\sqrt{5})$
+
+## Solutions for Problem 7: Area of Parametric Curves
+
+The area $A$ under a parametric curve is given by $A = \int_{t_1}^{t_2} y(t) \cdot x'(t) \, dt$.
+
+---
+
+### (i) $x = t^3 + 1, \quad y = 2t - t^2$
+1. **Find $x'(t)$:**
+   $$\frac{dx}{dt} = 3t^2$$
+2. **Identify the limits for $t$:**
+   The curve intersects the $x$-axis when $y = 0$.
+   $$2t - t^2 = 0 \implies t(2 - t) = 0 \implies t = 0 \text{ and } t = 2$$
+3. **Set up the integral:**
+   $$A = \int_{0}^{2} (2t - t^2)(3t^2) \, dt$$
+4. **Distribute and Integrate:**
+   $$A = \int_{0}^{2} (6t^3 - 3t^4) \, dt = \left[ \frac{6t^4}{4} - \frac{3t^5}{5} \right]_{0}^{2}$$
+5. **Evaluate:**
+   $$\left( \frac{3(2^4)}{2} - \frac{3(2^5)}{5} \right) = \left( 24 - \frac{96}{5} \right) = \frac{120 - 96}{5} = \frac{24}{5}$$
+**Final Answer:** $24/5$
+
+---
+
+### (ii) $x = \sin t, \quad y = \sin t \cos t, \quad 0 \le t \le \pi/2$
+1. **Find $x'(t)$:**
+   $$\frac{dx}{dt} = \cos t$$
+2. **Set up the integral:**
+   $$A = \int_{0}^{\pi/2} (\sin t \cos t)(\cos t) \, dt = \int_{0}^{\pi/2} \sin t \cos^2 t \, dt$$
+3. **Use $u$-substitution:**
+   Let $u = \cos t$, then $du = -\sin t \, dt$, so $-du = \sin t \, dt$.
+4. **Change limits:**
+   - When $t = 0, u = \cos(0) = 1$.
+   - When $t = \pi/2, u = \cos(\pi/2) = 0$.
+5. **Integrate:**
+   $$\int_{1}^{0} u^2 (-du) = \int_{0}^{1} u^2 \, du$$
+6. **Evaluate:**
+   $$\left[ \frac{u^3}{3} \right]_{0}^{1} = \frac{1}{3} - 0 = \frac{1}{3}$$
+**Final Answer:** $1/3$
