@@ -65,226 +65,98 @@ $$\lim_{x \to 0} \frac{2e^{2x} - (-2e^{-2x})}{\frac{1}{1+x}} = \lim_{x \to 0} (2
 **Final Answer:** $4$
 
 ## Solutions for Problem 2: Integrals
-# Solutions for Problem 2: Integrals (Part 1)
+# Solutions for Problem 2: Integrals
 
-1. **Evaluate $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$**
-   * **Identify the form:** The denominator $1 + (4x)^2$ suggests the $\arctan$ rule: $\int \frac{1}{1+u^2} du = \arctan(u)$.
-   * **Substitution:** Let $u = 4x$. Then $du = 4 dx$, which means $dx = \frac{1}{4} du$.
-   * **Adjust Limits:** * Lower: If $x = 0$, then $u = 4(0) = 0$.
-       * Upper: If $x = \frac{\sqrt{3}}{4}$, then $u = 4(\frac{\sqrt{3}}{4}) = \sqrt{3}$.
-   * **Integrate:**
-       $$\frac{1}{4} \int_{0}^{\sqrt{3}} \frac{1}{1+u^2} du = \frac{1}{4} \left[ \arctan(u) \right]_{0}^{\sqrt{3}}$$
-   * **Evaluate:** $\frac{1}{4} (\arctan(\sqrt{3}) - \arctan(0)) = \frac{1}{4} (\frac{\pi}{3} - 0) = \frac{\pi}{12}$.
-   * **Final Answer:** $\frac{\pi}{12}$
-
-2. **Evaluate $\int_{0}^{\pi/2} \frac{\sin x}{1 + \cos^2 x} dx$**
-   * **Substitution:** Let $u = \cos x$. Then $du = -\sin x dx$.
-   * **Adjust Limits:** * Lower: If $x = 0$, $u = \cos(0) = 1$.
-       * Upper: If $x = \pi/2$, $u = \cos(\pi/2) = 0$.
-   * **Integrate:**
-       $$\int_{1}^{0} \frac{-1}{1+u^2} du = \int_{0}^{1} \frac{1}{1+u^2} du = \left[ \arctan(u) \right]_{0}^{1}$$
-   * **Evaluate:** $\arctan(1) - \arctan(0) = \frac{\pi}{4} - 0 = \frac{\pi}{4}$.
-   * **Final Answer:** $\frac{\pi}{4}$
-
-3. **Evaluate $\int \frac{1 + x}{1 + x^2} dx$**
-   * **Split the integral:** $\int \frac{1}{1+x^2} dx + \int \frac{x}{1+x^2} dx$.
-   * **Term 1:** $\int \frac{1}{1+x^2} dx = \arctan(x)$.
-   * **Term 2:** Use $u = 1+x^2$, $du = 2x dx$. Then $\int \frac{x}{u} \cdot \frac{du}{2x} = \frac{1}{2} \ln|u|$.
-   * **Final Answer:** $\arctan(x) + \frac{1}{2} \ln(1 + x^2) + C$
-
-4. **Evaluate $\int \frac{t^2}{\sqrt{1 - t^6}} dt$**
-   * **Rewrite denominator:** $\sqrt{1 - (t^3)^2}$.
-   * **Substitution:** Let $u = t^3$. Then $du = 3t^2 dt$.
-   * **Integrate:** $\frac{1}{3} \int \frac{1}{\sqrt{1 - u^2}} du = \frac{1}{3} \arcsin(u) + C$.
-   * **Final Answer:** $\frac{1}{3} \arcsin(t^3) + C$
-
-5. **Evaluate $\int \frac{d\theta}{1 + \cos 2\theta}$**
-   * **Trig Identity:** Use $1 + \cos 2\theta = 2\cos^2 \theta$.
-   * **Simplify:** $\int \frac{1}{2\cos^2 \theta} d\theta = \frac{1}{2} \int \sec^2 \theta d\theta$.
-   * **Integrate:** $\frac{1}{2} \tan \theta + C$.
-   * **Final Answer:** $\frac{1}{2} \tan \theta + C$
-
-6. **Evaluate $\int \tan^{-1} x dx$**
-   * **Integration by Parts:** Let $u = \arctan x$ and $dv = dx$. 
-       * $du = \frac{1}{1+x^2} dx$
-       * $v = x$
-   * **Apply $uv - \int v du$:** $x \arctan x - \int \frac{x}{1+x^2} dx$.
-   * **Substitution for second part:** Let $w = 1+x^2$, $dw = 2x dx$.
-   * **Final Answer:** $x \arctan x - \frac{1}{2} \ln(1 + x^2) + C$
-
-7. **Evaluate $\int x^2 e^x dx$**
-   * **Integration by Parts (Tabular):**
-       * Sign: (+) | $u = x^2$ | $dv = e^x$
-       * Sign: (-) | $u' = 2x$ | $v = e^x$
-       * Sign: (+) | $u'' = 2$ | $\int v = e^x$
-       * Sign: (-) | $u''' = 0$ | $\iint v = e^x$
-   * **Sum results:** $x^2 e^x - 2x e^x + 2e^x + C$.
-   * **Final Answer:** $e^x(x^2 - 2x + 2) + C$
-
-8. **Evaluate $\int (\tan^2 x + \tan^4 x) dx$**
-   * **Factor:** $\int \tan^2 x (1 + \tan^2 x) dx$.
-   * **Trig Identity:** Use $1 + \tan^2 x = \sec^2 x$.
-   * **Integrate:** $\int \tan^2 x \sec^2 x dx$. Let $u = \tan x$, $du = \sec^2 x dx$.
-   * **Evaluate:** $\int u^2 du = \frac{1}{3} u^3 + C$.
-   * **Final Answer:** $\frac{1}{3} \tan^3 x + C$
-  
-
-### (i) $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$ [Corrected]
-**1. Rewrite the denominator:** $1 + (4x)^2$.
-**2. Substitution:** Let $u = 4x$, then $du = 4 dx \implies dx = \frac{1}{4} du$.
-**3. Change limits:**
-- If $x = 0$, $u = 4(0) = 0$.
-- If $x = \frac{\sqrt{3}}{4}$, $u = 4(\frac{\sqrt{3}}{4}) = \sqrt{3}$.
-**4. Integrate:**
-$$\frac{1}{4} \int_{0}^{\sqrt{3}} \frac{1}{1 + u^2} du = \frac{1}{4} \left[ \arctan(u) \right]_{0}^{\sqrt{3}}$$
-**5. Evaluate:** $\frac{1}{4} (\arctan(\sqrt{3}) - \arctan(0)) = \frac{1}{4} (\frac{\pi}{3} - 0) = \frac{\pi}{12}$.
+### (i) $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$
+1. **Identify the form:** The denominator $1 + (4x)^2$ suggests the $\arctan$ form $\int \frac{1}{1+u^2} du = \arctan(u) + C$.
+2. **Substitution:** Let $u = 4x$, then $du = 4 dx$, which means $dx = \frac{1}{4} du$.
+3. **Change the limits of integration:**
+   - When $x = 0$, $u = 4(0) = 0$.
+   - When $x = \frac{\sqrt{3}}{4}$, $u = 4(\frac{\sqrt{3}}{4}) = \sqrt{3}$.
+4. **Integrate:**
+   $$\frac{1}{4} \int_{0}^{\sqrt{3}} \frac{1}{1 + u^2} du = \frac{1}{4} \left[ \arctan(u) \right]_{0}^{\sqrt{3}}$$
+5. **Evaluate:**
+   $$\frac{1}{4} (\arctan(\sqrt{3}) - \arctan(0)) = \frac{1}{4} \left( \frac{\pi}{3} - 0 \right) = \frac{\pi}{12}$$
 **Final Answer:** $\frac{\pi}{12}$
 
 ---
 
 ### (ii) $\int_{0}^{\pi/2} \frac{\sin x}{1 + \cos^2 x} dx$
-**1. Substitution:** Let $u = \cos x$, then $du = -\sin x dx$, so $-du = \sin x dx$.
-**2. Change limits:** - If $x = 0$, $u = \cos(0) = 1$.
-- If $x = \pi/2$, $u = \cos(\pi/2) = 0$.
-**3. Integrate:**
-$$\int_{1}^{0} \frac{-1}{1 + u^2} du = \int_{0}^{1} \frac{1}{1 + u^2} du$$
-$$[\arctan u]_{0}^{1} = \arctan(1) - \arctan(0) = \frac{\pi}{4} - 0 = \frac{\pi}{4}$$
-**Final Answer:** $\pi/4$
+1. **Substitution:** Let $u = \cos x$. Then $du = -\sin x dx$, or $-du = \sin x dx$.
+2. **Change the limits:**
+   - When $x = 0$, $u = \cos(0) = 1$.
+   - When $x = \pi/2$, $u = \cos(\pi/2) = 0$.
+3. **Rewrite the integral:** Swap the limits to remove the negative sign:
+   $$\int_{1}^{0} \frac{-du}{1 + u^2} = \int_{0}^{1} \frac{du}{1 + u^2}$$
+4. **Evaluate:**
+   $$\left[ \arctan(u) \right]_{0}^{1} = \arctan(1) - \arctan(0) = \frac{\pi}{4} - 0 = \frac{\pi}{4}$$
+**Final Answer:** $\frac{\pi}{4}$
 
 ---
 
 ### (iii) $\int \frac{1 + x}{1 + x^2} dx$
-**1. Split the integral:**
-$$\int \frac{1}{1 + x^2} dx + \int \frac{x}{1 + x^2} dx$$
-**2. Solve first part:** This is the standard $\arctan x$.
-**3. Solve second part:** Use $u = 1 + x^2$, $du = 2x dx \implies \frac{1}{2}du = x dx$:
-$$\frac{1}{2} \int \frac{1}{u} du = \frac{1}{2} \ln|1 + x^2|$$
-**Final Answer:** $\arctan x + \frac{1}{2} \ln(1 + x^2) + C$
+1. **Split the fraction:** Rewrite as two separate integrals:
+   $$\int \frac{1}{1 + x^2} dx + \int \frac{x}{1 + x^2} dx$$
+2. **Solve the first part:** This is the standard derivative of $\arctan x$.
+3. **Solve the second part:** Use substitution $u = 1 + x^2$, so $du = 2x dx$ and $\frac{1}{2}du = x dx$:
+   $$\frac{1}{2} \int \frac{1}{u} du = \frac{1}{2} \ln|u| = \frac{1}{2} \ln(1 + x^2)$$
+4. **Combine:**
+   $$\arctan x + \frac{1}{2} \ln(1 + x^2) + C$$
+**Final Answer:** $\frac{1}{2} \ln(1 + x^2) + \arctan x + C$
 
 ---
 
 ### (iv) $\int \frac{t^2}{\sqrt{1 - t^6}} dt$
-**1. Rewrite the denominator:** $\sqrt{1 - (t^3)^2}$.
-**2. Substitution:** Let $u = t^3$, then $du = 3t^2 dt \implies \frac{1}{3}du = t^2 dt$.
-**3. Integrate:**
-$$\frac{1}{3} \int \frac{1}{\sqrt{1 - u^2}} du = \frac{1}{3} \arcsin(u) + C$$
+1. **Rewrite for substitution:** Express the denominator as $\sqrt{1 - (t^3)^2}$.
+2. **Substitution:** Let $u = t^3$, then $du = 3t^2 dt$, so $\frac{1}{3} du = t^2 dt$.
+3. **Integrate:**
+   $$\frac{1}{3} \int \frac{1}{\sqrt{1 - u^2}} du = \frac{1}{3} \arcsin(u) + C$$
+4. **Back-substitute:**
+   $$\frac{1}{3} \arcsin(t^3) + C$$
 **Final Answer:** $\frac{1}{3} \arcsin(t^3) + C$
 
 ---
 
 ### (v) $\int \frac{1}{1 + \cos 2\theta} d\theta$
-**1. Use Trig Identity:** $1 + \cos 2\theta = 2\cos^2 \theta$.
-**2. Simplify:**
-$$\int \frac{1}{2\cos^2 \theta} d\theta = \frac{1}{2} \int \sec^2 \theta d\theta$$
-**3. Integrate:** $\int \sec^2 \theta d\theta = \tan \theta$.
+1. **Apply Trig Identity:** Use $1 + \cos 2\theta = 2\cos^2 \theta$.
+2. **Simplify:**
+   $$\int \frac{1}{2\cos^2 \theta} d\theta = \frac{1}{2} \int \sec^2 \theta d\theta$$
+3. **Integrate:** Since $\frac{d}{d\theta}(\tan \theta) = \sec^2 \theta$:
+   $$\frac{1}{2} \tan \theta + C$$
 **Final Answer:** $\frac{1}{2} \tan \theta + C$
 
 ---
 
 ### (vi) $\int \tan^{-1} x dx$
-**1. Integration by Parts:** Let $u = \tan^{-1} x$ and $dv = dx$.
-- $du = \frac{1}{1+x^2} dx$
-- $v = x$
-**2. Apply formula $\int u dv = uv - \int v du$:**
-$$x \tan^{-1} x - \int \frac{x}{1+x^2} dx$$
-**3. Solve remaining integral:** Use substitution $w = 1+x^2, dw = 2x dx$:
-$$x \tan^{-1} x - \frac{1}{2} \ln(1+x^2) + C$$
+1. **Integration by Parts:** Let $u = \arctan x$ and $dv = dx$.
+   - $du = \frac{1}{1+x^2} dx$
+   - $v = x$
+2. **Apply formula $\int u dv = uv - \int v du$:**
+   $$x \arctan x - \int \frac{x}{1+x^2} dx$$
+3. **Solve the remaining integral:** Use $w = 1+x^2$, $dw = 2x dx$:
+   $$x \arctan x - \frac{1}{2} \ln(1+x^2) + C$$
 **Final Answer:** $x \arctan x - \frac{1}{2} \ln(1 + x^2) + C$
 
 ---
 
 ### (vii) $\int x^2 e^x dx$
-**1. Integration by Parts (Tabular Method):**
-- Differentiate $x^2$: $x^2 \to 2x \to 2 \to 0$
-- Integrate $e^x$: $e^x \to e^x \to e^x \to e^x$
-**2. Combine with alternating signs:**
-$$(x^2)(e^x) - (2x)(e^x) + (2)(e^x) + C$$
-**3. Factor:** $e^x(x^2 - 2x + 2) + C$.
+1. **Integration by Parts:** Let $u = x^2$ and $dv = e^x dx$.
+   - $du = 2x dx$, $v = e^x$.
+   - Result: $x^2 e^x - \int 2x e^x dx$.
+2. **Repeat Parts for the integral $\int 2x e^x dx$:** Let $u = 2x$ and $dv = e^x dx$.
+   - $du = 2 dx$, $v = e^x$.
+   - Result: $2x e^x - \int 2 e^x dx = 2x e^x - 2e^x$.
+3. **Combine and simplify:**
+   $$x^2 e^x - (2x e^x - 2e^x) + C = e^x(x^2 - 2x + 2) + C$$
 **Final Answer:** $e^x(x^2 - 2x + 2) + C$
 
 ---
 
 ### (viii) $\int (\tan^2 x + \tan^4 x) dx$
-**1. Factor out $\tan^2 x$:**
-$$\int \tan^2 x (1 + \tan^2 x) dx$$
-**2. Use Identity:** $1 + \tan^2 x = \sec^2 x$.
-$$\int \tan^2 x \sec^2 x dx$$
-**3. Substitution:** Let $u = \tan x$, $du = \sec^2 x dx$.
-$$\int u^2 du = \frac{1}{3} u^3 + C$$
+1. **Factor:** $\int \tan^2 x (1 + \tan^2 x) dx$.
+2. **Apply Identity:** Use $1 + \tan^2 x = \sec^2 x$:
+   $$\int \tan^2 x \sec^2 x dx$$
+3. **Substitution:** Let $u = \tan x$, then $du = \sec^2 x dx$.
+4. **Integrate:**
+   $$\int u^2 du = \frac{1}{3} u^3 + C = \frac{1}{3} \tan^3 x + C$$
 **Final Answer:** $\frac{1}{3} \tan^3 x + C$
-
----
-
-### (ix) $\int \sin^2 x \cos^3 x dx$
-**1. Use Identity:** Save one $\cos x$ and convert the rest to sine: $\cos^3 x = \cos^2 x \cos x = (1 - \sin^2 x) \cos x$.
-**2. Substitute:** $\int \sin^2 x (1 - \sin^2 x) \cos x dx$. Let $u = \sin x$, $du = \cos x dx$.
-**3. Expand and Integrate:**
-$$\int u^2(1 - u^2) du = \int (u^2 - u^4) du = \frac{u^3}{3} - \frac{u^5}{5} + C$$
-**Final Answer:** $\frac{\sin^3 x}{3} - \frac{\sin^5 x}{5} + C$
-
----
-
-### (x) $\int \frac{1}{1 - \cos 2\theta} d\theta$
-**1. Use Trig Identity:** $1 - \cos 2\theta = 2\sin^2 \theta$.
-**2. Simplify:** $\int \frac{1}{2\sin^2 \theta} d\theta = \frac{1}{2} \int \csc^2 \theta d\theta$.
-**3. Integrate:** Since $\frac{d}{d\theta}(-\cot \theta) = \csc^2 \theta$.
-**Final Answer:** $-\frac{1}{2} \cot \theta + C$
-
----
-
-### (xi) $\int_{0}^{2/3} \sqrt{4 - 9x^2} dx$
-**1. Factor out a 4:** $\int_{0}^{2/3} \sqrt{4(1 - \frac{9}{4}x^2)} dx = 2 \int_{0}^{2/3} \sqrt{1 - (\frac{3}{2}x)^2} dx$.
-**2. Trig Substitution:** Let $\frac{3}{2}x = \sin \theta$, then $\frac{3}{2} dx = \cos \theta d\theta \implies dx = \frac{2}{3} \cos \theta d\theta$.
-**3. Limits:** If $x=0, \theta=0$. If $x=2/3, \sin \theta = 1 \implies \theta = \pi/2$.
-**4. Solve:**
-$$2 \int_{0}^{\pi/2} \sqrt{1 - \sin^2 \theta} \cdot \frac{2}{3} \cos \theta d\theta = \frac{4}{3} \int_{0}^{\pi/2} \cos^2 \theta d\theta = \frac{4}{3} \int_{0}^{\pi/2} \frac{1 + \cos 2\theta}{2} d\theta$$
-$$\frac{2}{3} [\theta + \frac{1}{2}\sin 2\theta]_{0}^{\pi/2} = \frac{2}{3} [(\frac{\pi}{2} + 0) - (0 + 0)] = \frac{\pi}{3}$$
-**Final Answer:** $\frac{\pi}{3}$
-
----
-
-### (xii) $\int \frac{x^3}{\sqrt{9 + x^2}} dx$
-**1. Substitution:** Let $u = 9 + x^2$, then $du = 2x dx$ and $x^2 = u - 9$.
-**2. Rewrite Integral:** $\int \frac{x^2 \cdot x}{\sqrt{9 + x^2}} dx = \int \frac{(u - 9) \cdot \frac{1}{2} du}{\sqrt{u}}$.
-**3. Expand:** $\frac{1}{2} \int (u^{1/2} - 9u^{-1/2}) du = \frac{1}{2} [\frac{2}{3}u^{3/2} - 18u^{1/2}] + C$.
-**4. Simplify:** $\frac{1}{3}(9+x^2)^{3/2} - 9\sqrt{9+x^2} + C$.
-**Final Answer:** $\frac{1}{3}(9+x^2)^{3/2} - 9\sqrt{9+x^2} + C$
-
----
-
-### (xiii) $\int x \sqrt{1 - x^4} dx$
-**1. Substitution:** Let $u = x^2$, $du = 2x dx \implies \frac{1}{2} du = x dx$.
-**2. New Integral:** $\frac{1}{2} \int \sqrt{1 - u^2} du$. This is the area of a sector or requires $u = \sin \theta$.
-**3. Solve:** $\frac{1}{2} [\frac{1}{2}u\sqrt{1-u^2} + \frac{1}{2}\arcsin u] + C$.
-**Final Answer:** $\frac{1}{4}x^2\sqrt{1-x^4} + \frac{1}{4}\arcsin(x^2) + C$
-
----
-
-### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^2} dx$
-**1. Identify Improper Integral:** Vertical asymptote at $x = 1$.
-**2. Limit Process:** $\lim_{t \to 1^-} \int_{0}^{t} (x - 1)^{-2} dx$.
-**3. Integrate:** $[-(x - 1)^{-1}]_{0}^{t} = \frac{-1}{t-1} - (\frac{-1}{0-1}) = \frac{-1}{t-1} - 1$.
-**4. Evaluate Limit:** As $t \to 1^-$, $\frac{-1}{t-1} \to \infty$.
-**Final Answer:** Diverges
-
----
-
-### (xv) $\int \frac{1}{x^2 + 2x - 3} dx$
-**1. Factor Denominator:** $(x+3)(x-1)$.
-**2. Partial Fractions:** $\frac{1}{(x+3)(x-1)} = \frac{A}{x+3} + \frac{B}{x-1}$.
-- $1 = A(x-1) + B(x+3)$.
-- If $x=1, B=1/4$. If $x=-3, A=-1/4$.
-**3. Integrate:** $\int (\frac{-1/4}{x+3} + \frac{1/4}{x-1}) dx = \frac{1}{4} \ln|x-1| - \frac{1}{4} \ln|x+3| + C$.
-**Final Answer:** $\frac{1}{4} \ln \left| \frac{x-1}{x+3} \right| + C$
-
----
-
-### (xvi) $\int \frac{3x + 2}{x^3 + 4x} dx$
-**1. Partial Fractions:** $\frac{3x + 2}{x(x^2 + 4)} = \frac{A}{x} + \frac{Bx + C}{x^2 + 4}$.
-- $3x + 2 = A(x^2 + 4) + (Bx + C)x$.
-- $x=0 \implies 2 = 4A \implies A = 1/2$.
-- $x^2$ coeffs: $0 = A + B \implies B = -1/2$.
-- $x$ coeffs: $3 = C$.
-**2. Integrate:** $\int \frac{1/2}{x} dx + \int \frac{-1/2x + 3}{x^2 + 4} dx$.
-- $\frac{1}{2} \ln|x| - \frac{1}{4} \ln(x^2 + 4) + \frac{3}{2} \arctan(\frac{x}{2}) + C$.
-**Final Answer:** $\frac{1}{2} \ln|x| - \frac{1}{4} \ln(x^2 + 4) + \frac{3}{2} \arctan(\frac{x}{2}) + C$
