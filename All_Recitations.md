@@ -275,6 +275,55 @@
 **Final Answer:** $\frac{1}{2}\ln|x| - \frac{1}{4}\ln(x^2+4) + \frac{3}{2}\arctan(\frac{x}{2}) + C$
 
 # Solutions: Additional Definite Integrals
+# Solutions: Additional Definite Integrals
+
+### (i) $\int_{0}^{1} \frac{x}{1 + x^2} dx$
+1. **Substitution:** Let $u = 1 + x^2$. Then $du = 2x dx$, which means $\frac{1}{2}du = x dx$.
+2. **Change limits:** - When $x = 0$, $u = 1 + 0^2 = 1$.
+   - When $x = 1$, $u = 1 + 1^2 = 2$.
+3. **Integrate:**
+   $$\frac{1}{2} \int_{1}^{2} \frac{1}{u} du = \frac{1}{2} \left[ \ln|u| \right]_{1}^{2}$$
+4. **Evaluate:**
+   $$\frac{1}{2} (\ln 2 - \ln 1) = \frac{1}{2} (\ln 2 - 0) = \frac{1}{2} \ln 2$$
+**Final Answer:** $\frac{1}{2} \ln 2$
+
+---
+
+### (ii) $\int_{0}^{\pi/2} \sin^3 x dx$
+1. **Identify the strategy:** Use the identity $\sin^2 x = 1 - \cos^2 x$ to rewrite the integral.
+   $$\int_{0}^{\pi/2} \sin^2 x \cdot \sin x dx = \int_{0}^{\pi/2} (1 - \cos^2 x) \sin x dx$$
+2. **Substitution:** Let $u = \cos x$, then $du = -\sin x dx$, or $-du = \sin x dx$.
+3. **Change limits:** - When $x = 0$, $u = \cos(0) = 1$.
+   - When $x = \pi/2$, $u = \cos(\pi/2) = 0$.
+4. **Integrate:** (Reverse limits to remove the negative sign)
+   $$\int_{1}^{0} -(1 - u^2) du = \int_{0}^{1} (1 - u^2) du = \left[ u - \frac{1}{3}u^3 \right]_{0}^{1}$$
+5. **Evaluate:**
+   $$(1 - \frac{1}{3}) - (0 - 0) = \frac{2}{3}$$
+**Final Answer:** $\frac{2}{3}$
+
+---
+
+### (iii) $\int_{0}^{1} \frac{1}{\sqrt{1 - x^2}} dx$
+1. **Identify the form:** This is the standard derivative of $\arcsin x$.
+2. **Note on improper integration:** The function is undefined at $x = 1$, so we treat it as a limit:
+   $$\lim_{t \to 1^-} \int_{0}^{t} \frac{1}{\sqrt{1 - x^2}} dx$$
+3. **Integrate:**
+   $$\lim_{t \to 1^-} \left[ \arcsin x \right]_{0}^{t} = \arcsin(1) - \arcsin(0)$$
+4. **Evaluate:**
+   $$\frac{\pi}{2} - 0 = \frac{\pi}{2}$$
+**Final Answer:** $\frac{\pi}{2}$
+
+---
+
+### (iv) $\int_{0}^{1} \frac{1}{(x + 1)^2} dx$
+1. **Rewrite for power rule:** $\int_{0}^{1} (x + 1)^{-2} dx$.
+2. **Integrate:** Using $u = x + 1$ (where $du = dx$):
+   $$\left[ \frac{(x + 1)^{-1}}{-1} \right]_{0}^{1} = \left[ -\frac{1}{x + 1} \right]_{0}^{1}$$
+3. **Evaluate:**
+   $$\left( -\frac{1}{1 + 1} \right) - \left( -\frac{1}{0 + 1} \right) = -\frac{1}{2} - (-1)$$
+4. **Simplify:**
+   $$-\frac{1}{2} + 1 = \frac{1}{2}$$
+**Final Answer:** $\frac{1}{2}$
 
 ### (i) $\int_{0}^{1} \frac{x}{1 + x^2} dx$
 1. **Substitution:** Let $u = 1 + x^2$, then $du = 2x dx$, so $\frac{1}{2}du = x dx$.
@@ -379,96 +428,3 @@
    $$(\frac{2}{3} - 2) - 0 = -\frac{4}{3}$$
 **Final Answer:** $-\frac{4}{3}$
 
-# Solutions for Problem 3: Evaluate or Show Divergence
-
-### (i) $\int_{1}^{\infty} \frac{1}{(x + 2)^2} dx$
-1. **Set up the limit:** Replace the infinite bound with a variable $t$.
-   $$\lim_{t \to \infty} \int_{1}^{t} (x + 2)^{-2} dx$$
-2. **Integrate:** Using the power rule ($u = x+2$).
-   $$\lim_{t \to \infty} \left[ -\frac{1}{x + 2} \right]_{1}^{t}$$
-3. **Evaluate:**
-   $$\lim_{t \to \infty} \left( -\frac{1}{t + 2} - (-\frac{1}{1 + 2}) \right) = \lim_{t \to \infty} \left( -\frac{1}{t + 2} + \frac{1}{3} \right)$$
-4. **Conclusion:** As $t \to \infty$, $\frac{1}{t+2} \to 0$.
-**Final Answer:** $1/3$
-
----
-
-### (ii) $\int_{0}^{\infty} \frac{1}{x^2 + 4} dx$
-1. **Set up the limit:**
-   $$\lim_{t \to \infty} \int_{0}^{t} \frac{1}{x^2 + 2^2} dx$$
-2. **Integrate:** Use the formula $\int \frac{1}{x^2 + a^2} dx = \frac{1}{a} \arctan(\frac{x}{a})$.
-   $$\lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x}{2}\right) \right]_{0}^{t}$$
-3. **Evaluate:**
-   $$\frac{1}{2} \left( \lim_{t \to \infty} \arctan\left(\frac{t}{2}\right) - \arctan(0) \right) = \frac{1}{2} \left( \frac{\pi}{2} - 0 \right)$$
-**Final Answer:** $\pi/4$
-
----
-
-### (iii) $\int_{-2}^{\infty} \frac{1}{x^2 + 6x + 13} dx$
-1. **Complete the square:** $x^2 + 6x + 13 = (x^2 + 6x + 9) + 4 = (x + 3)^2 + 2^2$.
-2. **Set up the limit:**
-   $$\lim_{t \to \infty} \int_{-2}^{t} \frac{1}{(x + 3)^2 + 2^2} dx$$
-3. **Integrate:**
-   $$\lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x + 3}{2}\right) \right]_{-2}^{t}$$
-4. **Evaluate:**
-   $$\frac{1}{2} \left( \lim_{t \to \infty} \arctan\left(\frac{t+3}{2}\right) - \arctan\left(\frac{-2+3}{2}\right) \right) = \frac{1}{2} \left( \frac{\pi}{2} - \arctan\left(\frac{1}{2}\right) \right)$$
-**Final Answer:** $\frac{\pi}{4} - \frac{1}{2} \arctan(\frac{1}{2})$
-
----
-
-### (iv) $\int_{2}^{\infty} \frac{1}{x^2 - 1} dx$
-1. **Partial Fractions:** $\frac{1}{(x-1)(x+1)} = \frac{1/2}{x-1} - \frac{1/2}{x+1}$.
-2. **Set up the limit:**
-   $$\lim_{t \to \infty} \frac{1}{2} \left[ \ln|x-1| - \ln|x+1| \right]_{2}^{t} = \lim_{t \to \infty} \frac{1}{2} \left[ \ln \left| \frac{x-1}{x+1} \right| \right]_{2}^{t}$$
-3. **Evaluate:**
-   $$\frac{1}{2} \left( \lim_{t \to \infty} \ln \left| \frac{t-1}{t+1} \right| - \ln \left| \frac{2-1}{2+1} \right| \right)$$
-4. **Conclusion:** As $t \to \infty$, $\frac{t-1}{t+1} \to 1$, and $\ln(1) = 0$.
-   $$0 - \frac{1}{2} \ln(1/3) = \frac{1}{2} \ln(3)$$
-**Final Answer:** $\frac{1}{2} \ln 3$
-
----
-
-### (v) $\int_{0}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
-1. **Factor Denominator:** $(x+3)(x-1)$.
-2. **Identify Discontinuity:** There is a vertical asymptote at $x = 1$.
-3. **Analyze:** Since the interval $[0, \infty)$ includes $x = 1$, we must split the integral. The part $\int_0^1 \frac{1}{(x+3)(x-1)} dx$ diverges because the power on the $(x-1)$ term is 1.
-**Final Answer:** Diverges
-
----
-
-### (vi) $\int_{0}^{\infty} \frac{1}{(x + 1)(x + 4)} dx$
-1. **Partial Fractions:** $\frac{1}{(x+1)(x+4)} = \frac{1/3}{x+1} - \frac{1/3}{x+4}$.
-2. **Integrate:**
-   $$\frac{1}{3} \lim_{t \to \infty} \left[ \ln \left| \frac{x+1}{x+4} \right| \right]_{0}^{t}$$
-3. **Evaluate:**
-   $$\frac{1}{3} \left( \lim_{t \to \infty} \ln \left| \frac{t+1}{t+4} \right| - \ln \left| \frac{0+1}{0+4} \right| \right) = \frac{1}{3} (0 - \ln(1/4))$$
-4. **Simplify:** $-\frac{1}{3} \ln(1/4) = \frac{1}{3} \ln(4)$.
-**Final Answer:** $\frac{1}{3} \ln 4$ (or $\frac{2}{3} \ln 2$)
-
----
-
-### (vii) $\int_{2}^{\infty} \frac{1}{x} dx$
-1. **Set up limit:** $\lim_{t \to \infty} [\ln|x|]_2^t$.
-2. **Evaluate:** $\lim_{t \to \infty} (\ln t - \ln 2) = \infty$.
-**Final Answer:** Diverges
-
----
-
-### (viii) $\int_{2}^{6} \frac{1}{\sqrt{x - 2}} dx$
-1. **Improper at lower bound:** Vertical asymptote at $x = 2$.
-2. **Set up limit:** $\lim_{t \to 2^+} \int_{t}^{6} (x - 2)^{-1/2} dx$.
-3. **Integrate:**
-   $$\lim_{t \to 2^+} \left[ 2\sqrt{x - 2} \right]_{t}^{6}$$
-4. **Evaluate:** $2\sqrt{6-2} - \lim_{t \to 2^+} 2\sqrt{t-2} = 2(2) - 0 = 4$.
-**Final Answer:** $4$
-
----
-
-### (ix) $\int_{0}^{1} \ln x dx$
-1. **Improper at lower bound:** $\ln(0)$ is undefined.
-2. **Set up limit:** $\lim_{t \to 0^+} \int_{t}^{1} \ln x dx$.
-3. **Integrate (Parts):** $\int \ln x dx = x \ln x - x$.
-   $$\lim_{t \to 0^+} [x \ln x - x]_t^1 = (1\ln 1 - 1) - \lim_{t \to 0^+} (t \ln t - t)$$
-4. **Limit of $t \ln t$:** By L'Hôpital, $\lim_{t \to 0^+} \frac{\ln t}{1/t} = \lim_{t \to 0^+} \frac{1/t}{-1/t^2} = 0$.
-5. **Evaluate:** $(-1) - (0 - 0) = -1$.
-**Final Answer:** $-1$
