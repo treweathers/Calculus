@@ -392,11 +392,21 @@
 
 ---
 
-### (vii) $\int_{2}^{\infty} \frac{dx}{x^2 + 2x - 3}$
-*Note: This is identical to (iv) but with different bounds if interpreted as starting at the asymptote. However, if the integral is $\int_{1}^{\infty}$, it diverges.*
-1. **Check for Asymptotes:** The denominator is 0 at $x=1$ and $x=-3$. Since the interval is $[2, \infty)$, there are no vertical asymptotes.
-2. **Result:** Following the same steps as (iv):
-**Final Answer:** $\frac{1}{4} \ln 5$
+### (vii) $\int_{2}^{\infty} \frac{dx}{x \ln x}$
+1. **Identify the form:** This is an improper integral due to the infinite upper limit.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{2}^{t} \frac{1}{x \ln x} dx$$
+3. **Substitution:** Let $u = \ln x$. Then $du = \frac{1}{x} dx$.
+4. **Change limits:**
+   - When $x = 2$, $u = \ln 2$.
+   - As $x \to \infty$, $u \to \infty$.
+5. **Integrate:**
+   $$\lim_{t \to \infty} \int_{\ln 2}^{\ln t} \frac{1}{u} du = \lim_{t \to \infty} \left[ \ln|u| \right]_{\ln 2}^{\ln t}$$
+6. **Evaluate the limit:**
+   $$\lim_{t \to \infty} \left( \ln(\ln t) - \ln(\ln 2) \right)$$
+7. **Conclusion:** As $t \to \infty$, $\ln t \to \infty$, and $\ln(\ln t)$ also approaches $\infty$. Since the limit does not result in a finite number, the integral diverges.
+**Final Answer:** Diverges
+
 
 ---
 
