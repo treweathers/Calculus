@@ -429,3 +429,52 @@
 3. **Evaluate:**
    $$(\frac{2}{3} - 2) - (0 - 0) = -\frac{4}{3}$$
 **Final Answer:** $-4/3$
+
+### (i) $\int_{1}^{\infty} \frac{dx}{(x + 2)^2}$
+1. **Set up the limit:** Rewrite the improper integral:
+   $$\lim_{t \to \infty} \int_{1}^{t} (x + 2)^{-2} dx$$
+2. **Integrate:**
+   $$\lim_{t \to \infty} \left[ -\frac{1}{x + 2} \right]_{1}^{t}$$
+3. **Evaluate the limit:**
+   $$\lim_{t \to \infty} \left( -\frac{1}{t + 2} - \left( -\frac{1}{1 + 2} \right) \right) = 0 + \frac{1}{3} = \frac{1}{3}$$
+**Final Answer:** $1/3$
+
+---
+
+### (iv) $\int_{2}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
+1. **Partial Fractions:** From previous steps, we know the integrand is $\frac{1}{4(x-1)} - \frac{1}{4(x+3)}$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{2}^{t} \left( \frac{1}{4(x-1)} - \frac{1}{4(x+3)} \right) dx$$
+3. **Integrate and combine logs:**
+   $$\lim_{t \to \infty} \left[ \frac{1}{4} \ln \left| \frac{x-1}{x+3} \right| \right]_{2}^{t}$$
+4. **Evaluate the limit:**
+   - As $t \to \infty$, the fraction $\frac{t-1}{t+3} \to 1$, and $\ln(1) = 0$.
+   - At $x = 2$, we have $\frac{1}{4} \ln \left| \frac{2-1}{2+3} \right| = \frac{1}{4} \ln(1/5)$.
+5. **Final Step:**
+   $$0 - \frac{1}{4} \ln(1/5) = \frac{1}{4} \ln(5)$$
+**Final Answer:** $\frac{1}{4} \ln 5$
+
+---
+
+### (v) $\int_{0}^{\infty} xe^{-x} dx$
+1. **Integration by Parts:** Let $u = x$ and $dv = e^{-x} dx$, which gives $du = dx$ and $v = -e^{-x}$.
+2. **Apply the formula:**
+   $$\lim_{t \to \infty} \left( \left[ -xe^{-x} \right]_{0}^{t} + \int_{0}^{t} e^{-x} dx \right)$$
+3. **Integrate the second term:**
+   $$\lim_{t \to \infty} \left( \left[ -xe^{-x} \right]_{0}^{t} + \left[ -e^{-x} \right]_{0}^{t} \right)$$
+4. **Evaluate the limit:** - $\lim_{t \to \infty} \frac{-t}{e^t} = 0$ (by L'Hôpital's Rule).
+   - $\lim_{t \to \infty} -e^{-t} = 0$.
+   - Evaluation at $0$: $(0) + (-e^0) = -1$.
+5. **Combine:** $(0 - 0) - (0 - 1) = 1$.
+**Final Answer:** $1$
+
+---
+
+### (vi) $\int_{0}^{\infty} \frac{dx}{(2x + 1)^3}$
+1. **Substitution:** Let $u = 2x + 1$, then $du = 2 dx$ (or $dx = \frac{1}{2} du$).
+2. **Change limits:** When $x=0, u=1$. When $x \to \infty, u \to \infty$.
+3. **Integrate:**
+   $$\frac{1}{2} \int_{1}^{\infty} u^{-3} du = \frac{1}{2} \left[ \frac{u^{-2}}{-2} \right]_{1}^{\infty}$$
+4. **Evaluate:**
+   $$\lim_{t \to \infty} -\frac{1}{4} \left( \frac{1}{t^2} - \frac{1}{1^2} \right) = -\frac{1}{4} (0 - 1) = \frac{1}{4}$$
+**Final Answer:** $1/4$
