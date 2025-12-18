@@ -16,11 +16,8 @@
 | Feature | Parametric | Polar |
 | :--- | :--- | :--- |
 | **Tangent Slope** | $\frac{dy/dt}{dx/dt}$ | $\frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta}$ |
-| | **Operation:** Divide $y'$ by $x'$. | **Operation:** Use product rule on $x=r\cos\theta, y=r\sin\theta$. |
 | **Arc Length** | $\int \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \, dt$ | $\int \sqrt{r^2 + (\frac{dr}{d\theta})^2} \, d\theta$ |
-| | **Operation:** Square 1st derivatives, sum, and root. | **Operation:** Sum $r^2$ and $(r')^2$, then root. |
 | **Area ($A$)** | $\int \sqrt{1 + (\frac{dy}{dx})^2} \, dx$ *Arc Length, Regular*| $\int \frac{1}{2} [r(\theta)]^2 \, d\theta$ |
-| | | **Operation:** Square the function $r$ before integrating. |
 
 ---
 
