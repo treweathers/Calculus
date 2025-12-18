@@ -16,7 +16,7 @@
 | Feature | Parametric | Polar | Non-Parametric/Polar |
 | :--- | :--- | :--- | :--- |
 | **Tangent Slope** | $\frac{dy/dt}{dx/dt}$ | $\frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta}$ | --- |
-| **Arc Length** | $\int \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \, dt$ | $\int \sqrt{r^2 + (\frac{dr}{d\theta})^2} \, d\theta$ | $\int \sqrt{1 + (\[f'(x)]^2 frac{dy}{dx})^2} \, dx$ |
+| **Arc Length** | $\int \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \, dt$ | $\int \sqrt{r^2 + (\frac{dr}{d\theta})^2} \, d\theta$ | $\int \sqrt{1 + (\[f'(x)]^2} \, dx$ |
 | **Area ($A$)** | ---| $\int \frac{1}{2} [r(\theta)]^2 \, d\theta$ | --- |
 
 ---
