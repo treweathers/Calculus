@@ -771,15 +771,6 @@ To convert from Cartesian $(x, y)$ to Polar $(r, \theta)$, we use:
 4. **Evaluate:** $-\frac{1}{4} (-1 - 1) = \frac{2}{4} = \frac{1}{2}$.
 **Final Answer:** $1/2$
 
-# Midterm Recitation 2
-It seems like your Markdown viewer is specifically rejecting the `$$` block notation or the `\lim` command. This happens sometimes with certain GitHub flavors or mobile viewers that use stricter security settings on scripts.
-
-To fix this once and for all, I will **stop using LaTeX blocks entirely**. I will use standard **Markdown bolding, plain text, and Unicode symbols** (like ∞ and →) so that the math is perfectly readable without needing a rendering engine.
-
-Here is **Worksheet 2: Problems 1 through 10** in "Clean Text" format:
-
----
-
 # Midterm 2 Recitations Review: Sequences and Series (Clean Text Version)
 
 ### Problem 1: Sequences
