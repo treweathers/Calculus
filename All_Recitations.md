@@ -773,91 +773,117 @@ To convert from Cartesian $(x, y)$ to Polar $(r, \theta)$, we use:
 **Final Answer:** $1/2$
 
 # Midterm Recitation 2
-# Midterm 2 Review: Sequences and Series (Part 1)
-
 # Midterm 2 Review: Sequences and Series
 
 ### Problem 1: Sequences
-**Rule:** A sequence $a_n$ converges if $\lim_{n \to \infty} a_n = L$ (a finite number).
+A sequence converges if the limit is a finite number.
 
-**(i) $a_n = n$ from $n=1$ to $\infty$**
-* **Terms:** 1, 2, 3, 4, ...
-* **Limit:** $\lim_{n \to \infty} n = \infty$
-**Final Answer:** Diverges.
+**(i) a(n) = n**
+* Terms: 1, 2, 3, 4
+* Limit:
+$$\lim_{n \to \infty} n = \infty$$
+**Final Answer:** Divergent
 
-**(ii) $a_n = \frac{(-1)^n}{n}$**
-* **Terms:** -1, 1/2, -1/3, 1/4
-* **Limit:** $\lim_{n \to \infty} \frac{1}{n} = 0$
-**Final Answer:** Limit = 0.
+**(ii) a(n) = (-1)^n / n**
+* Terms: -1, 1/2, -1/3, 1/4
+* Limit:
+$$\lim_{n \to \infty} \frac{(-1)^n}{n} = 0$$
+**Final Answer:** Limit = 0
 
-**(iii) $a_n = \frac{n}{n^2}$ for $n \ge 4$**
-* **Simplify:** $a_n = \frac{1}{n}$
-* **Terms:** 1/4, 1/5, 1/6, 1/7
-* **Limit:** $\lim_{n \to \infty} \frac{1}{n} = 0$
-**Final Answer:** Limit = 0.
+**(iii) a(n) = n / n^2**
+* Terms: 1/4, 1/5, 1/6, 1/7
+* Limit:
+$$\lim_{n \to \infty} \frac{1}{n} = 0$$
+**Final Answer:** Limit = 0
 
 ---
 
-### Problem 2: Rational Number from Decimal
-**Problem:** Find the fraction for $0.91\bar{6}$.
-1. **Split:** $0.91 + (0.006 + 0.0006 + 0.00006 + \dots)$
-2. **Series:** The repeating part is geometric with $a = \frac{6}{1000}$ and $r = \frac{1}{10}$.
-3. **Sum:** $$S = \frac{6/1000}{1 - 1/10} = \frac{6/1000}{9/10} = \frac{6}{900} = \frac{1}{150}$$
-4. **Combine:** $\frac{91}{100} + \frac{1}{150} = \frac{273 + 2}{300} = \frac{275}{300} = \frac{11}{12}$.
+### Problem 2: Rational Number
+**Problem:** Find the fraction for 0.91666...
+1. Repeating part is a geometric series:
+$$a = \frac{6}{1000}$$
+$$r = \frac{1}{10}$$
+2. Sum of repeating part:
+$$S = \frac{6/1000}{1 - 1/10} = \frac{1}{150}$$
+3. Combine with non-repeating part (0.91):
+$$\frac{91}{100} + \frac{1}{150} = \frac{275}{300}$$
 **Final Answer:** 11/12
 
 ---
 
-### Problem 3: Catfish Population (Recursive)
-1. **Recursive Formula:** $P_n = 0.9 P_{n-1} + 260$ with $P_0 = 2000$.
-2. **Months:**
-   * $P_1 = 0.9(2000) + 260 = 2060$
-   * $P_2 = 0.9(2060) + 260 = 2114$
-   * $P_3 = 0.9(2114) + 260 = 2162.6$
-3. **Limit:** Set $L = 0.9L + 260 \implies 0.1L = 260 \implies L = 2600$.
-**Final Answer:** Limit = 2600.
+### Problem 3: Catfish Population
+1. Recursive Formula:
+$$P(n) = 0.9 P(n-1) + 260$$
+2. Monthly totals:
+* P(1) = 2060
+* P(2) = 2114
+* P(3) = 2162.6
+3. Limit calculation:
+$$L = 0.9L + 260$$
+$$0.1L = 260$$
+**Final Answer:** Limit = 2600
 
 ---
 
 ### Problem 4: Partial Sums
-Given $s_n = \frac{n}{n+3}$.
-1. **$a_1$:** $s_1 = 1/4$.
-2. **$a_n$ formula:** $s_n - s_{n-1} = \frac{n}{n+3} - \frac{n-1}{n+2} = \frac{3}{(n+2)(n+3)}$.
-3. **Sum of series:** $\lim_{n \to \infty} s_n = 1$.
-**Final Answer:** Sum = 1.
+Given s(n) = n / (n + 3).
+1. The first term a(1):
+$$a(1) = s(1) = 1/4$$
+2. The nth term a(n):
+$$a(n) = s(n) - s(n-1) = \frac{3}{(n+2)(n+3)}$$
+3. Sum of the series:
+$$\lim_{n \to \infty} \frac{n}{n+3} = 1$$
+**Final Answer:** Sum = 1
 
 ---
 
-### Problem 5: Divergence & Geometric Tests
-1. **$\sum \frac{n^2}{2n^2 + 1}$**: $\lim a_n = 1/2 \neq 0$. **Divergent**.
-2. **$\sum 2^n 3^{-2n+1}$**: $\sum 3(2/9)^n$. Geometric with $r = 2/9 < 1$. **Convergent**.
-   * **Sum:** $\frac{3}{1 - 2/9} = 27/7$.
-3. **$\sum (\frac{1}{3^n} - \frac{3}{n+1})$**: Convergent minus Divergent. **Divergent**.
+### Problem 5: Divergence and Geometric Tests
+1. **Series (i):**
+$$\lim_{n \to \infty} \frac{n^2}{2n^2 + 1} = \frac{1}{2}$$
+**Final Answer:** Divergent (Limit is not 0)
+
+2. **Series (ii):**
+$$a = 3, r = 2/9$$
+$$Sum = \frac{3}{1 - 2/9} = \frac{27}{7}$$
+**Final Answer:** Convergent
+
+3. **Series (iii):**
+The term 3/(n+1) makes it behave like a harmonic series.
+**Final Answer:** Divergent
 
 ---
 
 ### Problem 6: Integral Test
-1. **$\sum \frac{1}{n^2 + 2n + 2}$**: $\int_{1}^{\infty} \frac{1}{(x+1)^2 + 1} dx = [\arctan(x+1)]_{1}^{\infty} = \frac{\pi}{2} - \arctan(2)$. **Convergent**.
-2. **$\sum \frac{\ln n}{n^2}$**: $\int_{1}^{\infty} \frac{\ln x}{x^2} dx = 1$. **Convergent**.
+1. **Series (i):**
+$$\int_{1}^{\infty} \frac{1}{x^2 + 2x + 2} dx = \frac{\pi}{2} - \arctan(2)$$
+**Final Answer:** Convergent
+
+2. **Series (ii):**
+$$\int_{1}^{\infty} \frac{\ln(x)}{x^2} dx = 1$$
+**Final Answer:** Convergent
 
 ---
 
-### Problem 7: Error Estimate
-**Series:** $\sum n e^{-2n}$.
-1. **Integral:** $\int_{N}^{\infty} x e^{-2x} dx = \frac{2N+1}{4e^{2N}}$.
-2. **Accuracy:** For error $< 0.0005$, testing $N=4$ gives $\approx 0.0007$, testing $N=5$ gives $\approx 0.0001$. 
-**Final Answer:** $N=4$ (or 5 depending on step-accuracy).
+### Problem 7: Error Bound
+Using the integral of x * e^(-2x) from N to infinity.
+1. Error formula:
+$$R(N) \le \frac{2N + 1}{4e^{2N}}$$
+2. Testing N = 4:
+$$Error \approx 0.0007$$
+3. Testing N = 5:
+$$Error \approx 0.0001$$
+**Final Answer:** N = 4 (or 5)
 
 ---
 
-### Problem 8: Absolute/Conditional Convergence
-1. **$\sum \frac{(-1)^n}{(n+2)^2}$**: $\sum \frac{1}{n^2}$ converges ($p=2$). **Absolutely Convergent**.
-2. **$\sum \frac{(-1)^n n}{n^2 + 1}$**: $\sum \frac{n}{n^2+1}$ diverges, but alternating part converges. **Conditionally Convergent**.
-3. **$\sum \frac{(-1)^n}{2^{1/n}}$**: $\lim a_n = (-1)^n \cdot 1 \neq 0$. **Divergent**.
+### Problem 8: Absolute vs Conditional
+1. **(i):** Absolute value converges (p-series, p=2). **Absolutely Convergent**
+2. **(ii):** Absolute value diverges, but alternating part passes AST. **Conditionally Convergent**
+3. **(iii):** Limit is not 0. **Divergent**
 
 ---
 
-### Problem 9: Ratio/Root/Comparison
-1. **$\sum \frac{n!}{(n+2)!}$**: $\sum \frac{1}{(n+2)(n+1)}$. **Convergent** (Limit Comparison to $1/n^2$).
-2. **$\sum \frac{(2n)!}{(n!)^2}$**: Ratio Test $\lim \frac{a_{n+1}}{a_n} = 4 > 1$. **Divergent**.
-3. **$\sum \frac{n!}{n^n}$**: Ratio Test $\lim \frac{a_{n+1}}{a_n} = 1/e < 1$. **Convergent**.
+### Problem 9: Mixed Tests
+1. **(v):** Simplifies to 1 / (n+1)(n+2). **Convergent**
+2. **(vi):** Ratio test limit is 4. **Divergent**
+3. **(ix):** Ratio test limit is 1/e. **Convergent**
