@@ -1,5 +1,5 @@
 # Midterm Recitation 1
-# Solutions for Problem 1: Limits
+## Solutions for Problem 1: Limits
 ### (i) $\lim_{x \to \infty} \frac{(\ln x)^2}{x}$
 1. **Identify the form:** As $x \to \infty$, $(\ln x)^2 \to \infty$ and $x \to \infty$. This is an indeterminate form of type $\frac{\infty}{\infty}$.
 2. **Apply L'Hôpital's Rule (First time):**
@@ -71,8 +71,9 @@
    $$\lim_{x \to 0} (2e^{2x} + 2e^{-2x})(1 + x) = (2(1) + 2(1))(1 + 0) = 4$$
 **Final Answer:** $4$
 
+---
+
 ## Solutions for Problem 2: Integrals
-# Solutions for Problem 2: Integrals
 
 ### (i) $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$
 1. **Identify the form:** The denominator $1 + (4x)^2$ suggests the $\arctan$ form $\int \frac{1}{1+u^2} du = \arctan(u) + C$.
