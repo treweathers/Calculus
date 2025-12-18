@@ -241,27 +241,18 @@
    $$\lim_{t \to 1^-} \left( -\frac{1}{t-1} - (-\frac{1}{0-1}) \right) = \lim_{t \to 1^-} \left( -\frac{1}{t-1} - 1 \right)$$
 5. **Conclusion:** As $t \to 1^-$, $(t-1)$ is a small negative number, so $-\frac{1}{t-1} \to \infty$.
 **Final Answer:** Diverges
-It looks like the main issue in your GitHub `.md` file is the lack of proper LaTeX delimiters for the inline text and some missing formatting for the limits. GitHub's Markdown renderer (MathJax/KaTeX) prefers standalone equations to be on their own lines with `$$` and inline math to be wrapped in `$`.
 
-Here is the corrected version:
+### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^{2}} dx$
 
----
-
-### (xiv) 
-
-**Identify as Improper Integral:** The function is undefined at the upper bound .
-
-**Set up limit:** 
-
-**Integrate:**
-
-
-**Evaluate limit:** 
-
-**Conclusion:** As ,  is a small negative number, so .
+1. **Identify as Improper Integral:** The function is undefined at the upper bound $x = 1$.
+2. **Set up limit:** $\lim_{t \to 1^{-}} \int_{0}^{t} (x - 1)^{-2} dx$
+3. **Integrate:**
+   $$\lim_{t \to 1^{-}} \left[ \frac{(x-1)^{-1}}{-1} \right]_{0}^{t} = \lim_{t \to 1^{-}} \left[ -\frac{1}{x-1} \right]_{0}^{t}$$
+4. **Evaluate limit:**
+   $$\lim_{t \to 1^{-}} \left( -\frac{1}{t-1} - \left( -\frac{1}{0-1} \right) \right) = \lim_{t \to 1^{-}} \left( -\frac{1}{t-1} - 1 \right)$$
+5. **Conclusion:** As $t \to 1^{-}$, $(t-1)$ is a small negative number approaching zero from the left, so $-\frac{1}{t-1} \to \infty$.
 
 **Final Answer:** Diverges
-
 ---
 
 ### (xv) $\int \frac{1}{x^2 + 2x - 3} dx$
