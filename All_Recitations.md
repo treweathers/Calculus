@@ -773,117 +773,129 @@ To convert from Cartesian $(x, y)$ to Polar $(r, \theta)$, we use:
 **Final Answer:** $1/2$
 
 # Midterm Recitation 2
-# Midterm 2 Review: Sequences and Series
+It seems like your Markdown viewer is specifically rejecting the `$$` block notation or the `\lim` command. This happens sometimes with certain GitHub flavors or mobile viewers that use stricter security settings on scripts.
+
+To fix this once and for all, I will **stop using LaTeX blocks entirely**. I will use standard **Markdown bolding, plain text, and Unicode symbols** (like ∞ and →) so that the math is perfectly readable without needing a rendering engine.
+
+Here is **Worksheet 2: Problems 1 through 10** in "Clean Text" format:
+
+---
+
+# Midterm 2 Review: Sequences and Series (Clean Text Version)
 
 ### Problem 1: Sequences
+
 A sequence converges if the limit is a finite number.
 
-**(i) a(n) = n**
-* Terms: 1, 2, 3, 4
-* Limit:
-$$\lim_{n \to \infty} n = \infty$$
-**Final Answer:** Divergent
+** (i) a(n) = n**
 
-**(ii) a(n) = (-1)^n / n**
-* Terms: -1, 1/2, -1/3, 1/4
-* Limit:
-$$\lim_{n \to \infty} \frac{(-1)^n}{n} = 0$$
-**Final Answer:** Limit = 0
+* Terms: 1, 2, 3, 4, ...
+* Limit: n → ∞ = **∞**
+* **Result: Divergent**
 
-**(iii) a(n) = n / n^2**
-* Terms: 1/4, 1/5, 1/6, 1/7
-* Limit:
-$$\lim_{n \to \infty} \frac{1}{n} = 0$$
-**Final Answer:** Limit = 0
+** (ii) a(n) = (-1)^n / n**
+
+* Terms: -1, 1/2, -1/3, 1/4, ...
+* Limit: 1/n → **0**
+* **Result: Limit exists (0)**
+
+** (iii) a(n) = n / n^2**
+
+* Terms: 1/4, 1/5, 1/6, 1/7, ... (starts at n=4)
+* Limit: 1/n → **0**
+* **Result: Limit exists (0)**
 
 ---
 
-### Problem 2: Rational Number
+### Problem 2: Decimal to Fraction
+
 **Problem:** Find the fraction for 0.91666...
-1. Repeating part is a geometric series:
-$$a = \frac{6}{1000}$$
-$$r = \frac{1}{10}$$
-2. Sum of repeating part:
-$$S = \frac{6/1000}{1 - 1/10} = \frac{1}{150}$$
-3. Combine with non-repeating part (0.91):
-$$\frac{91}{100} + \frac{1}{150} = \frac{275}{300}$$
-**Final Answer:** 11/12
+
+1. **Repeating part:** 0.006 + 0.0006 + ... is a geometric series.
+2. **First term (a):** 6/1000
+3. **Ratio (r):** 1/10
+4. **Sum of series:** (6/1000) / (1 - 1/10) = (6/1000) / (9/10) = 6/900 = **1/150**
+5. **Add non-repeating part:** 91/100 + 1/150 = 273/300 + 2/300 = **275/300**
+6. **Simplify:** 275/300 = **11/12**
 
 ---
 
-### Problem 3: Catfish Population
-1. Recursive Formula:
-$$P(n) = 0.9 P(n-1) + 260$$
-2. Monthly totals:
-* P(1) = 2060
-* P(2) = 2114
-* P(3) = 2162.6
-3. Limit calculation:
-$$L = 0.9L + 260$$
-$$0.1L = 260$$
-**Final Answer:** Limit = 2600
+### Problem 3: Catfish Pond
+
+* **Initial (P0):** 2000
+* **Formula:** P(n) = 0.9 * P(n-1) + 260
+* **Month 1:** 0.9(2000) + 260 = **2060**
+* **Month 2:** 0.9(2060) + 260 = **2114**
+* **Month 3:** 0.9(2114) + 260 = **2162.6**
+* **Long-term Limit (L):** Solve L = 0.9L + 260 → 0.1L = 260 → **L = 2600**
 
 ---
 
 ### Problem 4: Partial Sums
+
 Given s(n) = n / (n + 3).
-1. The first term a(1):
-$$a(1) = s(1) = 1/4$$
-2. The nth term a(n):
-$$a(n) = s(n) - s(n-1) = \frac{3}{(n+2)(n+3)}$$
-3. Sum of the series:
-$$\lim_{n \to \infty} \frac{n}{n+3} = 1$$
-**Final Answer:** Sum = 1
+
+1. **a(1):** s(1) = 1 / (1+3) = **1/4**
+2. **a(2):** s(2) - s(1) = 2/5 - 1/4 = **3/20**
+3. **General a(n):** s(n) - s(n-1) = **3 / [(n+2)(n+3)]**
+4. **Sum of series:** Limit as n → ∞ of n/(n+3) = **1**
 
 ---
 
-### Problem 5: Divergence and Geometric Tests
-1. **Series (i):**
-$$\lim_{n \to \infty} \frac{n^2}{2n^2 + 1} = \frac{1}{2}$$
-**Final Answer:** Divergent (Limit is not 0)
+### Problem 5: Convergence Tests
 
-2. **Series (ii):**
-$$a = 3, r = 2/9$$
-$$Sum = \frac{3}{1 - 2/9} = \frac{27}{7}$$
-**Final Answer:** Convergent
-
-3. **Series (iii):**
-The term 3/(n+1) makes it behave like a harmonic series.
-**Final Answer:** Divergent
+* **(i) n^2 / (2n^2 + 1):** The limit is 1/2. Since the limit is not 0, it **Diverges**.
+* **(ii) 2^n * 3^(-2n+1):** This is 3 * (2/9)^n. Since r = 2/9 is less than 1, it **Converges**. Sum = **27/7**.
+* **(iii) 1/3^n - 3/(n+1):** 1/3^n converges, but 3/(n+1) diverges (like the harmonic series). **Diverges**.
 
 ---
 
 ### Problem 6: Integral Test
-1. **Series (i):**
-$$\int_{1}^{\infty} \frac{1}{x^2 + 2x + 2} dx = \frac{\pi}{2} - \arctan(2)$$
-**Final Answer:** Convergent
 
-2. **Series (ii):**
-$$\int_{1}^{\infty} \frac{\ln(x)}{x^2} dx = 1$$
-**Final Answer:** Convergent
+* **(i) 1 / (n^2 + 2n + 2):** Integrate 1 / ((x+1)^2 + 1). Result is arctan(x+1). From 1 to ∞, this is pi/2 - arctan(2). **Convergent**.
+* **(ii) ln(n) / n^2:** Integrate ln(x)/x^2. Using parts, the integral equals 1. **Convergent**.
 
 ---
 
-### Problem 7: Error Bound
-Using the integral of x * e^(-2x) from N to infinity.
-1. Error formula:
-$$R(N) \le \frac{2N + 1}{4e^{2N}}$$
-2. Testing N = 4:
-$$Error \approx 0.0007$$
-3. Testing N = 5:
-$$Error \approx 0.0001$$
-**Final Answer:** N = 4 (or 5)
+### Problem 7: n / e^(2n)
+
+* **Test:** Integral Test. Integral of x * e^(-2x) from 1 to ∞ converges to 3 / (4e^2).
+* **Error Estimate:** We need the integral from N to ∞ to be < 0.0005.
+* **Result:** Checking N = 4 gives an error of 0.0007. Checking **N = 5** gives 0.0001.
+* **Answer:** N = 4 or 5 is sufficient.
 
 ---
 
-### Problem 8: Absolute vs Conditional
-1. **(i):** Absolute value converges (p-series, p=2). **Absolutely Convergent**
-2. **(ii):** Absolute value diverges, but alternating part passes AST. **Conditionally Convergent**
-3. **(iii):** Limit is not 0. **Divergent**
+### Problem 8: Absolute/Conditional
+
+* **(i) (-1)^n / (n+2)^2:** Absolute value 1/n^2 converges (p-series, p=2). **Absolutely Convergent**.
+* **(ii) (-1)^n * n / (n^2 + 1):** Absolute value n/(n^2+1) diverges, but alternating series converges. **Conditionally Convergent**.
+* **(iii) (-1)^n / 2^(1/n):** Limit of the terms is 1, not 0. **Divergent**.
+* **(v) (-1)^(n-1) / n:** This is the alternating harmonic series. **Conditionally Convergent**.
 
 ---
 
 ### Problem 9: Mixed Tests
-1. **(v):** Simplifies to 1 / (n+1)(n+2). **Convergent**
-2. **(vi):** Ratio test limit is 4. **Divergent**
-3. **(ix):** Ratio test limit is 1/e. **Convergent**
+
+* **(ii) ln(n) / n:** Compare to 1/n. Since ln(n)/n > 1/n for n > 3, it **Diverges**.
+* **(iv) (2 + cos n) / 3^n:** Compare to 3 / 3^n = 1/3^(n-1). **Convergent**.
+* **(v) n! / (n+2)!:** Simplifies to 1 / (n+1)(n+2). Behaves like 1/n^2. **Convergent**.
+* **(vi) (2n)! / (n!)^2:** Ratio Test gives limit = 4. Since 4 > 1, it **Diverges**.
+
+---
+
+### Problem 10: Alternating Series Estimation
+
+**Series:** sum of (-1)^n / (n * 3^n)
+
+1. **Convergent:** Passes Alternating Series Test.
+2. **Error:** For an alternating series, Error < |a(N+1)|.
+3. **Target:** We want 1 / [(N+1) * 3^(N+1)] < 0.0005.
+4. **Test:** If N = 4, 1 / (5 * 243) = 1/1215 ≈ 0.0008.
+5. **Test:** If N = 5, 1 / (6 * 729) = 1/4374 ≈ 0.0002.
+
+* **Answer:** **N = 5** gives the required accuracy.
+
+---
+
+**Does this text format look better on your screen?** If it's all readable now, would you like me to continue with **Problem 11 through 15**?
