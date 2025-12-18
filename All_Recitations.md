@@ -231,29 +231,7 @@
 **Final Answer:** $\frac{1}{4}(x^2\sqrt{1-x^4} + \arcsin(x^2)) + C$
 
 ---
-### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^2} dx$
-
-1.  **Identify as Improper Integral:** The function is undefined at the upper bound $x = 1$.
-2.  **Set up limit:** $\lim_{t \to 1^-} \int_{0}^{t} (x - 1)^{-2} dx$
-3.  **Integrate:**
-    $$\lim_{t \to 1^-} \left[ \frac{(x-1)^{-1}}{-1} \right]_{0}^{t} = \lim_{t \to 1^-} \left[ -\frac{1}{x-1} \right]_{0}^{t}$$
-4.  **Evaluate limit:**
-    $$\lim_{t \to 1^-} \left( -\frac{1}{t-1} - \left(-\frac{1}{0-1}\right) \right) = \lim_{t \to 1^-} \left( -\frac{1}{t-1} - 1 \right)$$
-5.  **Conclusion:** As $t \to 1^-$, $(t-1)$ is a small negative number approaching zero from the left, so $-\frac{1}{t-1} \to \infty$.
-
-**Final Answer:** Diverges
-### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^2} dx$
-1. **Identify as Improper Integral:** The function is undefined at the upper bound $x = 1$.
-2. **Set up limit:** $\lim_{t \to 1^-} \int_{0}^{t} (x - 1)^{-2} dx$.
-3. **Integrate:**
-   $$\lim_{t \to 1^-} \left[ \frac{(x-1)^{-1}}{-1} \right]_{0}^{t} = \lim_{t \to 1^-} \left[ -\frac{1}{x-1} \right]_{0}^{t}$$
-4. **Evaluate limit:**
-   $$\lim_{t \to 1^-} \left( -\frac{1}{t-1} - (-\frac{1}{0-1}) \right) = \lim_{t \to 1^-} \left( -\frac{1}{t-1} - 1 \right)$$
-5. **Conclusion:** As $t \to 1^-$, $(t-1)$ is a small negative number, so $-\frac{1}{t-1} \to \infty$.
-**Final Answer:** Diverges
-
 ### (xiv) $\int_{0}^{1} \frac{1}{(x - 1)^{2}} dx$
-
 1. **Identify as Improper Integral:** The function is undefined at the upper bound $x = 1$.
 2. **Set up limit:** $\lim_{t \to 1^{-}} \int_{0}^{t} (x - 1)^{-2} dx$
 3. **Integrate:**
