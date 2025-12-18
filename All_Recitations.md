@@ -623,3 +623,42 @@ The area $A$ under a parametric curve is given by $A = \int_{t_1}^{t_2} y(t) \cd
 6. **Evaluate:**
    $$\left[ \frac{u^3}{3} \right]_{0}^{1} = \frac{1}{3} - 0 = \frac{1}{3}$$
 **Final Answer:** $1/3$
+
+## Solutions for Problem 8: Polar Coordinates
+
+Let the curve $C$ be defined by $r = 1 + \cos\theta$.
+
+### (i) Find an equation of the tangent line to $C$ at $\theta = \pi/4$.
+1. **Find $r$ and $dr/d\theta$ at $\theta = \pi/4$:**
+   - $r = 1 + \cos(\pi/4) = 1 + \frac{\sqrt{2}}{2}$
+   - $\frac{dr}{d\theta} = -\sin\theta \implies \frac{dr}{d\theta}\Big|_{\pi/4} = -\frac{\sqrt{2}}{2}$
+2. **Use the parametric slope formula for polar curves:**
+   $$\frac{dy}{dx} = \frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta}$$
+3. **Substitute values:**
+   $$\frac{dy}{dx} = \frac{(-\frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2}) + (1 + \frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2})}{(-\frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2}) - (1 + \frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2})}$$
+   - Numerator: $-\frac{1}{2} + \frac{\sqrt{2}}{2} + \frac{1}{2} = \frac{\sqrt{2}}{2}$
+   - Denominator: $-\frac{1}{2} - \frac{\sqrt{2}}{2} - \frac{1}{2} = -1 - \frac{\sqrt{2}}{2}$
+4. **Simplify the slope ($m$):**
+   $$m = \frac{\frac{\sqrt{2}}{2}}{-\frac{2+\sqrt{2}}{2}} = -\frac{\sqrt{2}}{2+\sqrt{2}}$$
+   Rationalizing gives $m = 1 - \sqrt{2}$.
+5. **Find Cartesian coordinates $(x, y)$:**
+   - $x = r\cos\theta = (1 + \frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2}) = \frac{\sqrt{2}}{2} + \frac{1}{2}$
+   - $y = r\sin\theta = (1 + \frac{\sqrt{2}}{2})(\frac{\sqrt{2}}{2}) = \frac{\sqrt{2}}{2} + \frac{1}{2}$
+6. **Tangent Line Equation:**
+   $$y - (\frac{\sqrt{2}+1}{2}) = (1 - \sqrt{2})(x - \frac{\sqrt{2}+1}{2})$$
+
+---
+
+### (ii) Find the area inside the curve.
+1. **Use the Polar Area formula:** $A = \int_{\alpha}^{\beta} \frac{1}{2}r^2 d\theta$.
+2. **Identify limits:** To trace the full cardioid, $\theta$ goes from $0$ to $2\pi$.
+   $$A = \frac{1}{2} \int_{0}^{2\pi} (1 + \cos\theta)^2 d\theta$$
+3. **Expand the integrand:**
+   $$A = \frac{1}{2} \int_{0}^{2\pi} (1 + 2\cos\theta + \cos^2\theta) d\theta$$
+4. **Use Power-Reduction Identity:** $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
+   $$A = \frac{1}{2} \int_{0}^{2\pi} (1 + 2\cos\theta + \frac{1}{2} + \frac{1}{2}\cos 2\theta) d\theta = \frac{1}{2} \int_{0}^{2\pi} (\frac{3}{2} + 2\cos\theta + \frac{1}{2}\cos 2\theta) d\theta$$
+5. **Integrate:**
+   $$A = \frac{1}{2} \left[ \frac{3}{2}\theta + 2\sin\theta + \frac{1}{4}\sin 2\theta \right]_{0}^{2\pi}$$
+6. **Evaluate:**
+   $$A = \frac{1}{2} \left( (\frac{3}{2}(2\pi) + 0 + 0) - (0) \right) = \frac{1}{2}(3\pi) = \frac{3\pi}{2}$$
+**Final Answer:** $3\pi/2$
