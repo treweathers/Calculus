@@ -369,17 +369,6 @@
    $$0 - \frac{1}{4} \ln(1/5) = \frac{1}{4} \ln(5)$$
 **Final Answer:** $\frac{1}{4} \ln 5$
 
-### (iv) $\int_{2}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
-1. **Partial Fractions:** From Problem 2(xv), we know $\frac{1}{x^2 + 2x - 3} = \frac{1}{4(x-1)} - \frac{1}{4(x+3)}$.
-2. **Set up the limit:**
-   $$\lim_{t \to \infty} \left[ \frac{1}{4} \ln|x - 1| - \frac{1}{4} \ln|x + 3| \right]_{2}^{t} = \lim_{t \to \infty} \left[ \frac{1}{4} \ln\left| \frac{x - 1}{x + 3} \right| \right]_{2}^{t}$$
-3. **Evaluate the limit:**
-   - As $t \to \infty$, $\frac{t-1}{t+3} \to 1$, and $\ln(1) = 0$.
-   - At $x = 2$, $\frac{1}{4} \ln\left| \frac{2-1}{2+3} \right| = \frac{1}{4} \ln(1/5)$.
-4. **Final Calculation:**
-   $$0 - \frac{1}{4} \ln(1/5) = - \frac{1}{4} (-\ln 5) = \frac{1}{4} \ln 5$$
-**Final Answer:** $\frac{1}{4} \ln 5$
-
 ---
 ### (v) $\int_{0}^{\infty} xe^{-x} dx$
 1. **Integration by Parts:** Let $u = x$ and $dv = e^{-x} dx$, which gives $du = dx$ and $v = -e^{-x}$.
@@ -409,14 +398,6 @@
    $$\frac{1}{2} \int_{1}^{\infty} u^{-3} du = \frac{1}{2} \left[ \frac{u^{-2}}{-2} \right]_{1}^{\infty}$$
 4. **Evaluate:**
    $$\lim_{t \to \infty} -\frac{1}{4} \left( \frac{1}{t^2} - \frac{1}{1^2} \right) = -\frac{1}{4} (0 - 1) = \frac{1}{4}$$
-**Final Answer:** $1/4$
-
-### (vi) $\int_{0}^{\infty} \frac{dx}{(2x + 1)^3}$
-1. **Substitution:** Let $u = 2x + 1, du = 2 dx$.
-2. **Change limits:** $x=0 \to u=1$; $x \to \infty \to u \to \infty$.
-3. **Integrate:**
-   $$\frac{1}{2} \int_{1}^{\infty} u^{-3} du = \frac{1}{2} \left[ \frac{u^{-2}}{-2} \right]_{1}^{\infty} = -\frac{1}{4} \left[ \frac{1}{u^2} \right]_{1}^{\infty}$$
-4. **Evaluate:** $-\frac{1}{4} (0 - 1) = \frac{1}{4}$.
 **Final Answer:** $1/4$
 
 ---
