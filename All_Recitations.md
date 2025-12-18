@@ -323,3 +323,99 @@
 4. **Simplify:**
    $$-\frac{1}{2} + 1 = \frac{1}{2}$$
 **Final Answer:** $\frac{1}{2}$
+
+## Solutions for Problem 3: Improper Integrals
+
+### (i) $\int_{1}^{\infty} \frac{dx}{(x + 2)^2}$
+1. **Set up the limit:** Rewrite the improper integral using a limit:
+   $$\lim_{t \to \infty} \int_{1}^{t} (x + 2)^{-2} dx$$
+2. **Integrate:**
+   $$\lim_{t \to \infty} \left[ \frac{(x + 2)^{-1}}{-1} \right]_{1}^{t} = \lim_{t \to \infty} \left[ -\frac{1}{x + 2} \right]_{1}^{t}$$
+3. **Evaluate the limit:**
+   $$\lim_{t \to \infty} \left( -\frac{1}{t + 2} - (-\frac{1}{1 + 2}) \right) = 0 + \frac{1}{3} = \frac{1}{3}$$
+**Final Answer:** $1/3$
+
+---
+
+### (ii) $\int_{0}^{\infty} \frac{dx}{x^2 + 4}$
+1. **Identify the form:** This matches $\int \frac{1}{x^2 + a^2} dx = \frac{1}{a} \arctan(\frac{x}{a})$. Here $a=2$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{0}^{t} \frac{1}{x^2 + 2^2} dx = \lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x}{2}\right) \right]_{0}^{t}$$
+3. **Evaluate the limit:**
+   $$\frac{1}{2} \left( \lim_{t \to \infty} \arctan\left(\frac{t}{2}\right) - \arctan(0) \right) = \frac{1}{2} \left( \frac{\pi}{2} - 0 \right) = \frac{\pi}{4}$$
+**Final Answer:** $\pi/4$
+
+---
+
+### (iii) $\int_{-2}^{\infty} \frac{dx}{x^2 + 6x + 13}$
+1. **Complete the square:** $x^2 + 6x + 13 = (x^2 + 6x + 9) + 4 = (x + 3)^2 + 2^2$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \int_{-2}^{t} \frac{1}{(x + 3)^2 + 2^2} dx$$
+3. **Integrate:** Use the $\arctan$ formula with $u = x+3$:
+   $$\lim_{t \to \infty} \left[ \frac{1}{2} \arctan\left(\frac{x+3}{2}\right) \right]_{-2}^{t}$$
+4. **Evaluate:**
+   $$\frac{1}{2} \left( \frac{\pi}{2} - \arctan\left(\frac{-2+3}{2}\right) \right) = \frac{1}{2} \left( \frac{\pi}{2} - \arctan\left(\frac{1}{2}\right) \right) = \frac{\pi}{4} - \frac{1}{2}\arctan\left(\frac{1}{2}\right)$$
+**Final Answer:** $\frac{\pi}{4} - \frac{1}{2}\arctan(1/2)$
+
+---
+
+### (iv) $\int_{2}^{\infty} \frac{1}{x^2 + 2x - 3} dx$
+1. **Partial Fractions:** From Problem 2(xv), we know $\frac{1}{x^2 + 2x - 3} = \frac{1}{4(x-1)} - \frac{1}{4(x+3)}$.
+2. **Set up the limit:**
+   $$\lim_{t \to \infty} \left[ \frac{1}{4} \ln|x - 1| - \frac{1}{4} \ln|x + 3| \right]_{2}^{t} = \lim_{t \to \infty} \left[ \frac{1}{4} \ln\left| \frac{x - 1}{x + 3} \right| \right]_{2}^{t}$$
+3. **Evaluate the limit:**
+   - As $t \to \infty$, $\frac{t-1}{t+3} \to 1$, and $\ln(1) = 0$.
+   - At $x = 2$, $\frac{1}{4} \ln\left| \frac{2-1}{2+3} \right| = \frac{1}{4} \ln(1/5)$.
+4. **Final Calculation:**
+   $$0 - \frac{1}{4} \ln(1/5) = - \frac{1}{4} (-\ln 5) = \frac{1}{4} \ln 5$$
+**Final Answer:** $\frac{1}{4} \ln 5$
+
+---
+
+### (v) $\int_{0}^{\infty} xe^{-x} dx$
+1. **Integration by Parts:** Let $u = x, dv = e^{-x} dx$. Then $du = dx, v = -e^{-x}$.
+2. **Evaluate limit:**
+   $$\lim_{t \to \infty} \left( [-xe^{-x}]_{0}^{t} + \int_{0}^{t} e^{-x} dx \right) = \lim_{t \to \infty} \left( -te^{-t} + 0 + [-e^{-x}]_{0}^{t} \right)$$
+3. **Solve:** Since $\lim_{t \to \infty} \frac{t}{e^t} = 0$ (by L'Hôpital) and $e^{-\infty} = 0$:
+   $$(0) + (0 - (-e^0)) = 1$$
+**Final Answer:** $1$
+
+---
+
+### (vi) $\int_{0}^{\infty} \frac{dx}{(2x + 1)^3}$
+1. **Substitution:** Let $u = 2x + 1, du = 2 dx$.
+2. **Change limits:** $x=0 \to u=1$; $x \to \infty \to u \to \infty$.
+3. **Integrate:**
+   $$\frac{1}{2} \int_{1}^{\infty} u^{-3} du = \frac{1}{2} \left[ \frac{u^{-2}}{-2} \right]_{1}^{\infty} = -\frac{1}{4} \left[ \frac{1}{u^2} \right]_{1}^{\infty}$$
+4. **Evaluate:** $-\frac{1}{4} (0 - 1) = \frac{1}{4}$.
+**Final Answer:** $1/4$
+
+---
+
+### (vii) $\int_{2}^{\infty} \frac{dx}{x^2 + 2x - 3}$
+*Note: This is identical to (iv) but with different bounds if interpreted as starting at the asymptote. However, if the integral is $\int_{1}^{\infty}$, it diverges.*
+1. **Check for Asymptotes:** The denominator is 0 at $x=1$ and $x=-3$. Since the interval is $[2, \infty)$, there are no vertical asymptotes.
+2. **Result:** Following the same steps as (iv):
+**Final Answer:** $\frac{1}{4} \ln 5$
+
+---
+
+### (viii) $\int_{2}^{6} \frac{y}{\sqrt{y - 2}} dy$
+1. **Identify as Improper:** Function is undefined at $y = 2$.
+2. **Substitution:** Let $u = y - 2 \implies y = u + 2, dy = du$.
+3. **Change limits:** $y=2 \to u=0$; $y=6 \to u=4$.
+4. **Integrate:**
+   $$\int_{0}^{4} \frac{u + 2}{\sqrt{u}} du = \int_{0}^{4} (u^{1/2} + 2u^{-1/2}) du = \left[ \frac{2}{3}u^{3/2} + 4u^{1/2} \right]_{0}^{4}$$
+5. **Evaluate:**
+   $$\left( \frac{2}{3}(4)^{3/2} + 4(4)^{1/2} \right) - 0 = \frac{2}{3}(8) + 4(2) = \frac{16}{3} + 8 = \frac{40}{3}$$
+**Final Answer:** $40/3$
+
+---
+
+### (ix) $\int_{0}^{1} \frac{x - 1}{\sqrt{x}} dx$
+1. **Identify as Improper:** Undefined at $x = 0$.
+2. **Simplify:**
+   $$\int_{0}^{1} (x^{1/2} - x^{-1/2}) dx = \left[ \frac{2}{3}x^{3/2} - 2x^{1/2} \right]_{0}^{1}$$
+3. **Evaluate:**
+   $$(\frac{2}{3} - 2) - (0 - 0) = -\frac{4}{3}$$
+**Final Answer:** $-4/3$
