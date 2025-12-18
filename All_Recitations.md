@@ -897,5 +897,117 @@ Given s(n) = n / (n + 3).
 * **Answer:** **N = 5** gives the required accuracy.
 
 ---
+I am so sorry for the technical headache! It sounds like your Markdown viewer is specifically rejecting the double-dollar sign `$$` or the `\lim` command within those blocks.
 
-**Does this text format look better on your screen?** If it's all readable now, would you like me to continue with **Problem 11 through 15**?
+Let's try a different approach: **Plain Text Math**. I will avoid the `$` symbol entirely and use standard keyboard characters (like `/`, `^`, and `*`) and bold text to represent the math. This is the most reliable way to ensure you can see the steps perfectly without any "Unable to render" errors.
+
+Here is **Worksheet 2 (Problems 10 - 15)** in high-compatibility plain text:
+
+---
+
+### Problem 10: Alternating Series Estimation
+
+**Series:** Sum of (-1)^n / (n * 3^n)
+
+1. **Convergence:** This is an alternating series where the terms b(n) = 1 / (n * 3^n) decrease to 0. It is **Convergent**.
+2. **Error Rule:** For alternating series, the error of the N-th partial sum is less than the next term: **Error <= b(N+1)**.
+3. **Finding N:** We need b(N+1) < 0.0005.
+* If N = 4: b(5) = 1 / (5 * 3^5) = 1 / (5 * 243) = 1 / 1215 approx 0.00082.
+* If N = 5: b(6) = 1 / (6 * 3^6) = 1 / (6 * 729) = 1 / 4374 approx 0.00022.
+**Final Answer:** N = 5 gives an accuracy within 0.0005.
+
+
+
+---
+
+### Problem 11: Integral Test Estimation (Sum of 1/n^2)
+
+**Rule:** The true sum S is bounded by: s(N) + Integral(N+1 to infinity) <= S <= s(N) + Integral(N to infinity).
+
+1. **The Integral:** Integral of 1/x^2 dx = 1/x.
+* From N to infinity: 1/N.
+* From N+1 to infinity: 1/(N+1).
+
+
+2. **For N = 10:**
+* Lower bound: s(10) + 1/11
+* Upper bound: s(10) + 1/10
+
+
+3. **Calculation:** s(10) is approx 1.54976.
+* 1.54976 + 0.0909 = 1.64066
+* 1.54976 + 0.1000 = 1.64976
+**Final Answer:** The sum is between 1.6406 and 1.6497.
+
+
+
+---
+
+### Problem 12: Absolute vs. Conditional Convergence
+
+**(i) Sum of (-1)^n / (2n - 1)**
+
+1. **Absolute check:** Sum of 1 / (2n - 1). This behaves like 1/n (Harmonic), so it **diverges**.
+2. **Alternating check:** terms 1/(2n-1) decrease to 0. It **converges** by Alternating Series Test.
+**Final Answer:** Conditionally Convergent.
+
+**(ii) Sum of (-1)^n / n^3**
+
+1. **Absolute check:** Sum of 1 / n^3. This is a p-series with p=3 (> 1), so it **converges**.
+**Final Answer:** Absolutely Convergent.
+
+---
+
+### Problem 13: Radius and Interval of Convergence
+
+**(i) Sum of (-1)^n * (x - 1)^n / [2^n * (2n - 1)]**
+
+1. **Ratio Test:** Limit of |a(n+1) / a(n)| = |x - 1| / 2.
+2. **Set < 1:** |x - 1| / 2 < 1  =>  |x - 1| < 2.
+3. **Radius:** R = 2.
+4. **Endpoints:**
+* x = 3: Sum becomes (-1)^n / (2n-1) (Converges by AST).
+* x = -1: Sum becomes 1 / (2n-1) (Diverges).
+**Final Answer:** R = 2; Interval = (-1, 3]
+
+
+
+---
+
+### Problem 14: Power Series Representation
+
+**Function:** f(x) = x / (1 + 4x)^2
+
+1. **Base Series:** 1 / (1 - u) = Sum of u^n.
+2. **Derivative Rule:** 1 / (1 - u)^2 = d/du [ Sum of u^n ] = Sum of n * u^(n-1).
+3. **Substitute u = -4x:**
+* 1 / (1 + 4x)^2 = Sum of n * (-4x)^(n-1).
+
+
+4. **Multiply by x:**
+* x / (1 + 4x)^2 = Sum of n * (-4)^n-1 * x^n.
+
+
+5. **Radius:** |4x| < 1  =>  |x| < 1/4.
+**Final Answer:** R = 1/4.
+
+---
+
+### Problem 15: Approximate Integral using Series
+
+**Integral:** x^2 / (1 + x^4) from 0 to 0.3.
+
+1. **Series for 1 / (1 + x^4):** Sum of (-1)^n * x^(4n).
+2. **Multiply by x^2:** Sum of (-1)^n * x^(4n + 2).
+3. **Integrate:** Sum of (-1)^n * x^(4n + 3) / (4n + 3).
+4. **Evaluate at 0.3:**
+* n=0: (0.3)^3 / 3 = 0.027 / 3 = 0.009
+* n=1: -(0.3)^7 / 7 = -0.0002187 / 7 approx -0.000031
+
+
+5. **Combine:** 0.009 - 0.000031 = 0.008969.
+**Final Answer:** 0.008969
+
+---
+
+How does this plain-text format look on your end? If this works, I'll finish up the last few problems (16-21) for you right now!
