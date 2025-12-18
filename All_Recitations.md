@@ -1084,7 +1084,7 @@ Here are the final solutions for **Worksheet 2 (Problems 16 - 21)**.
 
 ---
 
-# Recitation Worksheet 13: Vectors, Lines, and Planes
+# Recitation Worksheet 13: Vectors, Lines, and Planes (Clean Text Version)
 
 ### 1. Vectors in Space
 
