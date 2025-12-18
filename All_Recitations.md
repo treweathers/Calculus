@@ -2,10 +2,10 @@
 ## Solutions for Problem 1: Limits
 
 ### (i) $\lim_{x \to \infty} \frac{(\ln x)^2}{x}$
-**1. Identify the form:** As $x \to \infty$, $(\ln x)^2 \to \infty$ and $x \to \infty$. This is an indeterminate form of type $\frac{\infty}{\infty}$.  
-**2. First L'Hôpital's Rule application:**
+1. Identify the form:** As $x \to \infty$, $(\ln x)^2 \to \infty$ and $x \to \infty$. This is an indeterminate form of type $\frac{\infty}{\infty}$.  
+2. First L'Hôpital's Rule application:**
 $$\lim_{x \to \infty} \frac{\frac{d}{dx}(\ln x)^2}{\frac{d}{dx}x} = \lim_{x \to \infty} \frac{2(\ln x) \cdot \frac{1}{x}}{1} = \lim_{x \to \infty} \frac{2\ln x}{x}$$
-**3. Second L'Hôpital's Rule application:** This is still $\frac{\infty}{\infty}$.
+3. Second L'Hôpital's Rule application:** This is still $\frac{\infty}{\infty}$.
 $$\lim_{x \to \infty} \frac{\frac{d}{dx}(2\ln x)}{\frac{d}{dx}x} = \lim_{x \to \infty} \frac{\frac{2}{x}}{1} = 0$$
 **Final Answer:** $0$
 
