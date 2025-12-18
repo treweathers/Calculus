@@ -1,6 +1,6 @@
-# 🧮 Calculus II Final Formula Sheet
+# Calculus II Final Formula Sheet
 
-## Section 1: Integration, Parametric, & Polar
+## Section 1: Limits, Integration, Parametric, & Polar Calculus
 
 ### **Standard Antiderivatives**
 * $\int \sec(x)\tan(x) \, dx = \sec(x) + C$
@@ -21,7 +21,7 @@
 
 ---
 
-## ♾️ Section 2: Infinite Series
+## Section 2: Sequences and Series
 ### **Known Maclaurin Series**
 
 | Function $f(x)$ | Maclaurin Series $\sum_{n=0}^\infty c_n x^n$ | ROC ($R$) | I.O.C. |
@@ -34,7 +34,7 @@
 
 ---
 
-## 🧊 Section 3: 3D Geometry & Vectors
+## Section 3: 3D Geometry & Vectors
 
 ### **Vector Operations**
 
