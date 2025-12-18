@@ -46,7 +46,7 @@ If your original substitution was **$x = 2\sin(\theta)$**, here is how you would
 **Combined Final Answer:**
 $$2\arcsin\left(\frac{x}{2}\right) + \frac{5x}{\sqrt{4-x^2}} + C$$
 
-### Polar Arclength (Bounds - intersection/symmetry)
+# Polar Arclength (Bounds - intersection/symmetry)
 Moving from Trig Sub to Polar Area is a natural step! Both rely heavily on understanding how angles and radii interact.
 
 When you are finding the area between two polar curves (like a cardioid and a circle), the "setup" is the most important part. If your limits of integration are wrong, the whole area will be wrong.
