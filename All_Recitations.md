@@ -662,3 +662,112 @@ Let the curve $C$ be defined by $r = 1 + \cos\theta$.
 6. **Evaluate:**
    $$A = \frac{1}{2} \left( (\frac{3}{2}(2\pi) + 0 + 0) - (0) \right) = \frac{1}{2}(3\pi) = \frac{3\pi}{2}$$
 **Final Answer:** $3\pi/2$
+
+## Solutions for Problem 9: Converting Polar to Cartesian
+
+### Problem: Show that the Cartesian equation for the curve $r = \cos\theta$ is an equation of a circle and find its radius.
+
+1. **Multiply by $r$:** To easily use our conversion formulas, multiply both sides of the polar equation by $r$:
+   $$r^2 = r\cos\theta$$
+2. **Substitute Cartesian coordinates:**
+   - Replace $r^2$ with $x^2 + y^2$.
+   - Replace $r\cos\theta$ with $x$.
+   $$x^2 + y^2 = x$$
+3. **Rearrange into standard form:** Bring $x$ to the left side:
+   $$x^2 - x + y^2 = 0$$
+4. **Complete the square for $x$:**
+   Take half of the coefficient of $x$ (which is $-1/2$), square it ($1/4$), and add it to both sides:
+   $$(x^2 - x + \frac{1}{4}) + y^2 = \frac{1}{4}$$
+5. **Write in standard circle form $(x-h)^2 + (y-k)^2 = R^2$:**
+   $$(x - \frac{1}{2})^2 + y^2 = \left(\frac{1}{2}\right)^2$$
+6. **Identify the properties:**
+   - The equation represents a circle centered at $(\frac{1}{2}, 0)$.
+   - The radius $R$ is $\sqrt{1/4} = 1/2$.
+
+**Final Answer:** This is a circle with radius $1/2$.
+
+## Solutions for Problem 10: Converting Cartesian to Polar
+
+To convert from Cartesian $(x, y)$ to Polar $(r, \theta)$, we use:
+- $x = r\cos\theta$
+- $y = r\sin\theta$
+- $x^2 + y^2 = r^2$
+
+---
+
+### (i) $y = 3x$
+1. **Substitute:** Replace $x$ and $y$ with their polar equivalents:
+   $$r\sin\theta = 3(r\cos\theta)$$
+2. **Simplify:** Divide both sides by $r\cos\theta$ (assuming $r \neq 0$):
+   $$\frac{\sin\theta}{\cos\theta} = 3$$
+3. **Use Identity:** Since $\frac{\sin\theta}{\cos\theta} = \tan\theta$:
+   $$\tan\theta = 3$$
+**Final Answer:** $\theta = \arctan(3)$
+
+---
+
+### (ii) $y = -2x^2$
+1. **Substitute:** Replace $x$ and $y$:
+   $$r\sin\theta = -2(r\cos\theta)^2$$
+2. **Expand:**
+   $$r\sin\theta = -2r^2\cos^2\theta$$
+3. **Solve for $r$:** Divide both sides by $r\cos^2\theta$ (assuming $r \neq 0$):
+   $$\frac{\sin\theta}{\cos^2\theta} = -2r$$
+4. **Isolate $r$:**
+   $$r = -\frac{1}{2} \cdot \frac{\sin\theta}{\cos\theta} \cdot \frac{1}{\cos\theta}$$
+**Final Answer:** $r = -\frac{1}{2} \tan\theta \sec\theta$
+
+---
+
+### (iii) $x^2 - y^2 = 4$
+1. **Substitute:** Replace $x$ and $y$:
+   $$(r\cos\theta)^2 - (r\sin\theta)^2 = 4$$
+2. **Factor out $r^2$:**
+   $$r^2(\cos^2\theta - \sin^2\theta) = 4$$
+3. **Use Double-Angle Identity:** Recall that $\cos^2\theta - \sin^2\theta = \cos 2\theta$:
+   $$r^2\cos 2\theta = 4$$
+4. **Solve for $r^2$:**
+   $$r^2 = \frac{4}{\cos 2\theta}$$
+**Final Answer:** $r^2 = 4\sec 2\theta$
+
+## Solutions for Problem 11: Polar Graphs and Area
+
+### (i) $r = 3\sin\theta, \quad 0 \le \theta \le \pi$
+1. **Identify the curve:** This is a circle centered at $(0, 1.5)$ with a radius of $1.5$.
+2. **Set up the Area integral:**
+   $$A = \int_{0}^{\pi} \frac{1}{2} (3\sin\theta)^2 d\theta = \frac{9}{2} \int_{0}^{\pi} \sin^2\theta d\theta$$
+3. **Use Power-Reduction Identity:** $\sin^2\theta = \frac{1 - \cos 2\theta}{2}$.
+   $$A = \frac{9}{4} \int_{0}^{\pi} (1 - \cos 2\theta) d\theta = \frac{9}{4} \left[ \theta - \frac{1}{2}\sin 2\theta \right]_{0}^{\pi}$$
+4. **Evaluate:** $\frac{9}{4} (\pi - 0) = \frac{9\pi}{4}$.
+**Final Answer:** $9\pi/4$
+
+---
+
+### (ii) $r = 1 + \cos\theta, \quad -\pi \le \theta \le \pi$
+1. **Identify the curve:** This is a cardioid symmetric about the $x$-axis.
+2. **Set up the Area integral:**
+   $$A = \frac{1}{2} \int_{-\pi}^{\pi} (1 + \cos\theta)^2 d\theta$$
+3. **Evaluate (Using symmetry):** As calculated in Problem 8(ii), the area of this cardioid over a full rotation ($2\pi$ radians) is:
+**Final Answer:** $3\pi/2$
+
+---
+
+### (iii) $r = \cos 2\theta, \quad 0 < \theta < \pi$
+1. **Identify the curve:** This is a 4-petaled rose. The interval $0 < \theta < \pi$ covers exactly two of the four petals.
+2. **Set up the Area integral:**
+   $$A = \frac{1}{2} \int_{0}^{\pi} \cos^2(2\theta) d\theta$$
+3. **Use Power-Reduction Identity:** $\cos^2(2\theta) = \frac{1 + \cos 4\theta}{2}$.
+   $$A = \frac{1}{4} \int_{0}^{\pi} (1 + \cos 4\theta) d\theta = \frac{1}{4} \left[ \theta + \frac{1}{4}\sin 4\theta \right]_{0}^{\pi}$$
+4. **Evaluate:** $\frac{1}{4} (\pi + 0) = \frac{\pi}{4}$.
+**Final Answer:** $\pi/4$
+
+---
+
+### (iv) $r^2 = \sin 2\theta, \quad 0 < \theta < \pi/2$
+1. **Identify the curve:** This is one loop of a lemniscate (infinity symbol shape).
+2. **Set up the Area integral:** Note the formula is $\int \frac{1}{2} r^2 d\theta$, and we are given $r^2$ directly.
+   $$A = \frac{1}{2} \int_{0}^{\pi/2} \sin 2\theta d\theta$$
+3. **Integrate:**
+   $$A = \frac{1}{2} \left[ -\frac{1}{2}\cos 2\theta \right]_{0}^{\pi/2} = -\frac{1}{4} [\cos(\pi) - \cos(0)]$$
+4. **Evaluate:** $-\frac{1}{4} (-1 - 1) = \frac{2}{4} = \frac{1}{2}$.
+**Final Answer:** $1/2$
