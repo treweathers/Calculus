@@ -886,27 +886,6 @@ Given s(n) = n / (n + 3).
 
 ### Problem 10: Alternating Series Estimation
 
-**Series:** sum of (-1)^n / (n * 3^n)
-
-1. **Convergent:** Passes Alternating Series Test.
-2. **Error:** For an alternating series, Error < |a(N+1)|.
-3. **Target:** We want 1 / [(N+1) * 3^(N+1)] < 0.0005.
-4. **Test:** If N = 4, 1 / (5 * 243) = 1/1215 ≈ 0.0008.
-5. **Test:** If N = 5, 1 / (6 * 729) = 1/4374 ≈ 0.0002.
-
-* **Answer:** **N = 5** gives the required accuracy.
-
----
-I am so sorry for the technical headache! It sounds like your Markdown viewer is specifically rejecting the double-dollar sign `$$` or the `\lim` command within those blocks.
-
-Let's try a different approach: **Plain Text Math**. I will avoid the `$` symbol entirely and use standard keyboard characters (like `/`, `^`, and `*`) and bold text to represent the math. This is the most reliable way to ensure you can see the steps perfectly without any "Unable to render" errors.
-
-Here is **Worksheet 2 (Problems 10 - 15)** in high-compatibility plain text:
-
----
-
-### Problem 10: Alternating Series Estimation
-
 **Series:** Sum of (-1)^n / (n * 3^n)
 
 1. **Convergence:** This is an alternating series where the terms b(n) = 1 / (n * 3^n) decrease to 0. It is **Convergent**.
