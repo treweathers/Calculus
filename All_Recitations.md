@@ -1,4 +1,4 @@
-# Midterm Recitation 1
+# Midterm 1 Recitations Review: Limits and Integration
 ## Solutions for Problem 1: Limits
 ### (i) $\lim_{x \to \infty} \frac{(\ln x)^2}{x}$
 1. **Identify the form:** As $x \to \infty$, $(\ln x)^2 \to \infty$ and $x \to \infty$. This is an indeterminate form of type $\frac{\infty}{\infty}$.
@@ -781,7 +781,7 @@ Here is **Worksheet 2: Problems 1 through 10** in "Clean Text" format:
 
 ---
 
-# Midterm 2 Review: Sequences and Series (Clean Text Version)
+# Midterm 2 Recitations Review: Sequences and Series (Clean Text Version)
 
 ### Problem 1: Sequences
 
@@ -1094,6 +1094,148 @@ Here are the final solutions for **Worksheet 2 (Problems 16 - 21)**.
 
 ---
 
+# Recitation Worksheet 13: Vectors, Lines, and Planes
+
+### 1. Vectors in Space
+
+Given: **u = <3, -1, 2>** and **v = <-2, 4, 1>**
+
+* **(a) Addition and Subtraction:**
+* u + v = <3 + (-2), -1 + 4, 2 + 1> = **<1, 3, 3>**
+* u - v = <3 - (-2), -1 - 4, 2 - 1> = **<5, -5, 1>**
+
+
+* **(b) Magnitude of u:**
+* |u| = sqrt(3^2 + (-1)^2 + 2^2) = sqrt(9 + 1 + 4) = **sqrt(14)**
+
+
+* **(c) Unit Vector in direction of u:**
+* u_unit = (1/|u|) * u = **(1/sqrt(14)) * <3, -1, 2>**
+
+
+
 ---
 
-How does this plain-text format look on your end? If this works, I'll finish up the last few problems (16-21) for you right now!
+### 2. Dot Product and Projections
+
+Given: **u = <1, 2, 3>** and **v = <-2, 0, 5>**
+
+* **(a) Dot Product (u · v):**
+* u · v = (1 * -2) + (2 * 0) + (3 * 5) = -2 + 0 + 15 = **13**
+
+
+* **(b) Angle between u and v:**
+* cos(theta) = (u · v) / (|u| * |v|)
+* |u| = sqrt(14), |v| = sqrt((-2)^2 + 0^2 + 5^2) = sqrt(29)
+* **theta = arccos( 13 / (sqrt(14) * sqrt(29)) )**
+
+
+* **(c) Projection of v onto u:**
+* proj_u(v) = [ (u · v) / |u|^2 ] * u
+* proj_u(v) = [ 13 / 14 ] * <1, 2, 3> = **<13/14, 26/14, 39/14>**
+
+
+
+---
+
+### 3. Cross Product and Area
+
+Given: **a = <2, 1, -3>** and **b = <-1, 4, 2>**
+
+* **(a) Cross Product (a x b):**
+* i-component: (1 * 2) - (-3 * 4) = 2 + 12 = 14
+* j-component: -[(2 * 2) - (-3 * -1)] = -[4 - 3] = -1
+* k-component: (2 * 4) - (1 * -1) = 8 + 1 = 9
+* **a x b = <14, -1, 9>**
+
+
+* **(b) Area of Parallelogram:**
+* Area = |a x b| = sqrt(14^2 + (-1)^2 + 9^2) = sqrt(196 + 1 + 81) = **sqrt(278)**
+
+
+
+---
+
+### 4. Lines in Space
+
+Point **P(1, -2, 3)**, Direction **d = <4, 0, -1>**
+
+* **(a) Vector Equation:** r(t) = <1, -2, 3> + t <4, 0, -1>
+* **(b) Parametric Equations:**
+* **x = 1 + 4t**
+* **y = -2**
+* **z = 3 - t**
+
+
+* **(c) Intersection with plane z = 0:**
+* Set z = 0 in parametric: 3 - t = 0  =>  t = 3.
+* Plug t = 3 into x and y: x = 1 + 4(3) = 13, y = -2.
+* **Point: (13, -2, 0)**
+
+
+
+---
+
+### 5. Planes in Space
+
+Points: **P(1, 1, 0), Q(3, -2, 1), R(0, 1, 4)**
+
+* **(a) Direction Vectors:**
+* PQ = <3-1, -2-1, 1-0> = **<2, -3, 1>**
+* PR = <0-1, 1-1, 4-0> = **<-1, 0, 4>**
+
+
+* **(b) Normal Vector (n = PQ x PR):**
+* i: (-3 * 4) - (1 * 0) = -12
+* j: -[(2 * 4) - (1 * -1)] = -9
+* k: (2 * 0) - (-3 * -1) = -3
+* **n = <-12, -9, -3>** (or simplified to **<4, 3, 1>** by dividing by -3)
+
+
+* **(c) Equation of Plane:**
+* 4(x - 1) + 3(y - 1) + 1(z - 0) = 0
+* 4x - 4 + 3y - 3 + z = 0  =>  **4x + 3y + z = 7**
+
+
+
+---
+
+### 6. Distance to a Plane
+
+Point **A(2, 1, 2)**, Plane **2x - y + 2z - 5 = 0**
+
+* Formula: Dist = |ax0 + by0 + cz0 + d| / sqrt(a^2 + b^2 + c^2)
+* Dist = |2(2) + (-1)(1) + 2(2) - 5| / sqrt(2^2 + (-1)^2 + 2^2)
+* Dist = |4 - 1 + 4 - 5| / sqrt(9) = 2 / 3
+* **Distance = 2/3**
+
+---
+
+### 7. Triple Product and Volume
+
+Vectors: **u = <1, 0, 2>, v = <-1, 3, 1>, w = <2, 1, 0>**
+
+* **(a) Triple Product u · (v x w):**
+* v x w = < (3*0 - 1*1), -( (-1*0 - 1*2) ), (-1*1 - 3*2) > = <-1, -2, -7>
+* u · <-1, -2, -7> = (1 * -1) + (0 * -2) + (2 * -7) = -1 + 0 - 14 = **-15**
+
+
+* **(b) Geometric Interpretation:**
+* The absolute value represents the **Volume of the parallelepiped** spanned by the three vectors.
+* **Volume = 15**
+
+
+
+---
+
+### 8. Parallelogram Law
+
+**Identity:** |u + v|^2 + |u - v|^2 = 2|u|^2 + 2|v|^2
+
+* **Proof Sketch:**
+* |u + v|^2 = (u + v) · (u + v) = |u|^2 + 2(u · v) + |v|^2
+* |u - v|^2 = (u - v) · (u - v) = |u|^2 - 2(u · v) + |v|^2
+* Adding them: The middle terms 2(u · v) cancel out, leaving **2|u|^2 + 2|v|^2**.
+
+
+* **Geometric Meaning:** In any parallelogram, the sum of the squares of the lengths of the diagonals is equal to the sum of the squares of the lengths of the four sides.
