@@ -1,6 +1,6 @@
 # Calculus II Final Formula Sheet
 
-## Section 1: Limits, Integration, Parametric, & Polar Calculus
+## Section 1: Limits and Integration
 
 ### **Standard Antiderivatives**
 * $\int \sec(x)\tan(x) \, dx = \sec(x) + C$
