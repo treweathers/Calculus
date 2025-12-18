@@ -771,3 +771,159 @@ To convert from Cartesian $(x, y)$ to Polar $(r, \theta)$, we use:
    $$A = \frac{1}{2} \left[ -\frac{1}{2}\cos 2\theta \right]_{0}^{\pi/2} = -\frac{1}{4} [\cos(\pi) - \cos(0)]$$
 4. **Evaluate:** $-\frac{1}{4} (-1 - 1) = \frac{2}{4} = \frac{1}{2}$.
 **Final Answer:** $1/2$
+
+# Midterm Recitation 2
+# Midterm 2 Review: Sequences and Series (Part 1)
+
+### Problem 1: Sequences
+**Rule:** A sequence $\{a_n\}$ converges if $\lim_{n \to \infty} a_n = L$ (a finite number).
+
+**(i) $\{n\}_{n=1}^{\infty}$**
+1. **Terms:** $1, 2, 3, 4, \dots$
+2. **Limit:** $\lim_{n \to \infty} n = \infty$.
+**Final Answer:** $1, 2, 3, 4$; Diverges.
+
+**(ii) $a_n = \frac{(-1)^n}{n}$**
+1. **Terms:** $-1, \frac{1}{2}, -\frac{1}{3}, \frac{1}{4}$.
+2. **Limit:** $\lim_{n \to \infty} |\frac{(-1)^n}{n}| = \lim_{n \to \infty} \frac{1}{n} = 0$.
+**Final Answer:** $-1, \frac{1}{2}, -\frac{1}{3}, \frac{1}{4}$; Limit = $0$.
+
+**(iii) $a_n = \frac{n}{n^2}$ (for $n \ge 4$)**
+1. **Simplify:** $a_n = \frac{1}{n}$.
+2. **Terms:** $\frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}$.
+3. **Limit:** $\lim_{n \to \infty} \frac{1}{n} = 0$.
+**Final Answer:** $\frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}$; Limit = $0$.
+
+---
+
+### Problem 2: Geometric Series Application
+**Problem:** Find the rational number for $0.91\overline{6}$.
+1. **Split the decimal:** $0.91666... = 0.91 + 0.006 + 0.0006 + \dots$
+2. **Identify the series:** The repeating part is $0.006 + 0.0006 + \dots$ which is a geometric series with $a = \frac{6}{1000}$ and $r = \frac{1}{10}$.
+3. **Sum the series:** $$S = \frac{a}{1 - r} = \frac{6/1000}{1 - 1/10} = \frac{6/1000}{9/10} = \frac{6}{900} = \frac{1}{150}$$
+4. **Add non-repeating part:** $0.91 = \frac{91}{100}$.
+   $$\frac{91}{100} + \frac{1}{150} = \frac{273 + 2}{300} = \frac{275}{300}$$
+5. **Simplify:** $\frac{275}{300} = \frac{11}{12}$.
+**Final Answer:** $11/12$
+
+---
+
+### Problem 3: Recursive Sequences (Catfish Pond)
+1. **Initial Condition:** $P_0 = 2000$.
+2. **Recursive Formula:** $P_n = 0.9P_{n-1} + 260$.
+3. **Calculate first 3 months:**
+   - $P_1 = 0.9(2000) + 260 = 1800 + 260 = 2060$.
+   - $P_2 = 0.9(2060) + 260 = 1854 + 260 = 2114$.
+   - $P_3 = 0.9(2114) + 260 = 1902.6 + 260 = 2162.6$.
+4. **Find the limit ($L$):** Set $L = 0.9L + 260$.
+   $$0.1L = 260 \implies L = 2600$$
+**Final Answer:** $P_n = 0.9P_{n-1} + 260$; Limit = $2600$ fish.
+
+---
+
+### Problem 4: Partial Sums
+Given $s_n = \frac{n}{n+3}$.
+1. **Find $a_1$:** $s_1 = \frac{1}{1+3} = 1/4$.
+2. **Find $a_2$:** $s_2 - s_1 = \frac{2}{5} - \frac{1}{4} = \frac{8-5}{20} = 3/20$.
+3. **Find $a_n$:** $s_n - s_{n-1} = \frac{n}{n+3} - \frac{n-1}{n+2}$.
+   $$a_n = \frac{n(n+2) - (n-1)(n+3)}{(n+3)(n+2)} = \frac{(n^2+2n) - (n^2+2n-3)}{(n+3)(n+2)} = \frac{3}{(n+3)(n+2)}$$
+4. **Find the sum of the series:** $S = \lim_{n \to \infty} s_n = \lim_{n \to \infty} \frac{n}{n+3} = 1$.
+**Final Answer:** $a_n = \frac{3}{(n+2)(n+3)}$; Sum = $1$.
+
+---
+
+### Problem 5: Divergence & Geometric Series Tests
+**(i) $\sum \frac{n^2}{2n^2 + 1}$**
+1. **Test for Divergence:** $\lim_{n \to \infty} \frac{n^2}{2n^2 + 1} = \frac{1}{2}$.
+2. **Conclusion:** Since the limit is not $0$, the series diverges.
+**Final Answer:** Diverges.
+
+**(ii) $\sum_{n=0}^{\infty} 2^n 3^{-2n+1}$**
+1. **Rewrite:** $\sum 2^n \cdot \frac{3^1}{3^{2n}} = \sum 3 \cdot \left(\frac{2}{9}\right)^n$.
+2. **Geometric Series:** $a = 3(2/9)^0 = 3$, $r = 2/9$.
+3. **Convergence:** $|r| < 1$, so it converges.
+4. **Sum:** $S = \frac{3}{1 - 2/9} = \frac{3}{7/9} = \frac{27}{7}$.
+**Final Answer:** Converges; Sum = $27/7$.
+
+**(iii) $\sum_{n=8}^{\infty} (\frac{1}{3^n} - \frac{3}{n+1})$**
+1. **Analyze parts:** $\sum \frac{1}{3^n}$ is a convergent geometric series.
+2. **Analyze parts:** $\sum \frac{3}{n+1}$ is a divergent harmonic-type series.
+3. **Conclusion:** Convergent - Divergent = Divergent.
+**Final Answer:** Divergent.
+
+# Midterm 2 Review: Convergence Tests (Part 2)
+
+### Problem 6: Integral Test
+**Rule:** $\sum a_n$ converges if $\int_{1}^{\infty} f(x)dx$ converges.
+
+**(i) $\sum_{n=1}^{\infty} \frac{1}{n^2 + 2n + 2}$**
+1. **Function:** $f(x) = \frac{1}{(x+1)^2 + 1}$.
+2. **Integrate:** $\int_{1}^{\infty} \frac{1}{(x+1)^2 + 1} dx$.
+3. **Evaluate:** $[\arctan(x+1)]_{1}^{\infty} = \frac{\pi}{2} - \arctan(2)$.
+4. **Conclusion:** The integral is finite.
+**Final Answer:** Convergent.
+
+**(ii) $\sum_{n=1}^{\infty} \frac{\ln n}{n^2}$**
+1. **Integrate:** $\int_{1}^{\infty} \frac{\ln x}{x^2} dx$ using integration by parts ($u=\ln x, dv=x^{-2}dx$).
+2. **Evaluate:** $\left[ -\frac{\ln x}{x} - \frac{1}{x} \right]_{1}^{\infty} = (0 - 0) - (0 - 1) = 1$.
+**Final Answer:** Convergent.
+
+---
+
+### Problem 7: Integral Test & Remainder Estimate
+**Problem:** Show $\sum_{n=1}^{\infty} ne^{-2n}$ converges and find $N$ such that Error $< 0.0005$.
+1. **Integrate:** $\int_{1}^{\infty} xe^{-2x} dx$. Using parts: $\left[ -\frac{1}{2}xe^{-2x} - \frac{1}{4}e^{-2x} \right]_{1}^{\infty} = \frac{3}{4e^2}$. Convergent.
+2. **Error Bound ($R_N$):** $R_N \le \int_{N}^{\infty} xe^{-2x} dx = \frac{2N+1}{4e^{2N}}$.
+3. **Solve for $N$:** Plug in $N=4$: $\frac{9}{4e^8} \approx \frac{9}{4(2980)} \approx 0.0007$. Plug in $N=5$ (or $N=4$ depending on rounding):
+**Final Answer:** $N=4$ (or 5) ensures error $< 0.0005$.
+
+---
+
+### Problem 8: Absolute vs. Conditional Convergence
+**Definitions:** - **Absolute:** $\sum |a_n|$ converges. 
+- **Conditional:** $\sum a_n$ converges, but $\sum |a_n|$ diverges.
+
+**(i) $\sum \frac{(-1)^n}{(n+2)^2}$**
+1. **Absolute value:** $\sum \frac{1}{(n+2)^2}$ is a $p$-series ($p=2 > 1$). Converges.
+**Final Answer:** Absolutely Convergent.
+
+**(ii) $\sum \frac{(-1)^n n}{n^2 + 1}$**
+1. **Absolute value:** $\sum \frac{n}{n^2 + 1} \approx \sum \frac{1}{n}$ (Diverges by Comparison).
+2. **Alternating Series Test:** $b_n = \frac{n}{n^2+1}$ decreases to $0$. Converges.
+**Final Answer:** Conditionally Convergent.
+
+**(iii) $\sum \frac{(-1)^n}{2^{1/n}}$**
+1. **Divergence Test:** $\lim_{n \to \infty} \frac{1}{2^{1/n}} = \frac{1}{2^0} = 1 \neq 0$.
+**Final Answer:** Divergent.
+
+---
+
+### Problem 9: Mixed Tests
+**(i) $-\frac{2}{5} + \frac{4}{6} - \frac{6}{7} + \frac{8}{8} \dots$**
+1. **General Term:** $a_n = (-1)^n \frac{2n}{n+4}$.
+2. **Limit:** $\lim_{n \to \infty} |a_n| = 2 \neq 0$.
+**Final Answer:** Divergent.
+
+**(ii) $\sum \frac{\ln n}{n}$**
+1. **Comparison:** $\frac{\ln n}{n} > \frac{1}{n}$ for $n \ge 3$.
+**Final Answer:** Divergent.
+
+**(iii) $\sum \frac{n}{n^2 + 3}$**
+1. **Limit Comparison:** Compare with $\sum \frac{1}{n}$.
+**Final Answer:** Divergent.
+
+**(iv) $\sum \frac{2 + \cos n}{3^n}$**
+1. **Comparison:** $0 \le \frac{2 + \cos n}{3^n} \le \frac{3}{3^n} = \frac{1}{3^{n-1}}$.
+**Final Answer:** Convergent.
+
+**(v) $\sum \frac{n!}{(n+2)!}$**
+1. **Simplify:** $\frac{n!}{(n+2)(n+1)n!} = \frac{1}{(n+2)(n+1)} \approx \frac{1}{n^2}$.
+**Final Answer:** Convergent ($p$-series, $p=2$).
+
+**(vi) $\sum \frac{(2n)!}{(n!)^2}$**
+1. **Ratio Test:** $\lim_{n \to \infty} \frac{(2n+2)!}{((n+1)!)^2} \cdot \frac{(n!)^2}{(2n)!} = \lim \frac{(2n+2)(2n+1)}{(n+1)^2} = 4 > 1$.
+**Final Answer:** Divergent.
+
+**(ix) $\sum \frac{n!}{n^n}$**
+1. **Ratio Test:** $\lim_{n \to \infty} \frac{(n+1)!}{(n+1)^{n+1}} \cdot \frac{n^n}{n!} = \lim (\frac{n}{n+1})^n = \frac{1}{e} < 1$.
+**Final Answer:** Convergent.
