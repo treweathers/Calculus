@@ -65,6 +65,69 @@ $$\lim_{x \to 0} \frac{2e^{2x} - (-2e^{-2x})}{\frac{1}{1+x}} = \lim_{x \to 0} (2
 **Final Answer:** $4$
 
 ## Solutions for Problem 2: Integrals
+# Solutions for Problem 2: Integrals (Part 1)
+
+1. **Evaluate $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$**
+   * **Identify the form:** The denominator $1 + (4x)^2$ suggests the $\arctan$ rule: $\int \frac{1}{1+u^2} du = \arctan(u)$.
+   * **Substitution:** Let $u = 4x$. Then $du = 4 dx$, which means $dx = \frac{1}{4} du$.
+   * **Adjust Limits:** * Lower: If $x = 0$, then $u = 4(0) = 0$.
+       * Upper: If $x = \frac{\sqrt{3}}{4}$, then $u = 4(\frac{\sqrt{3}}{4}) = \sqrt{3}$.
+   * **Integrate:**
+       $$\frac{1}{4} \int_{0}^{\sqrt{3}} \frac{1}{1+u^2} du = \frac{1}{4} \left[ \arctan(u) \right]_{0}^{\sqrt{3}}$$
+   * **Evaluate:** $\frac{1}{4} (\arctan(\sqrt{3}) - \arctan(0)) = \frac{1}{4} (\frac{\pi}{3} - 0) = \frac{\pi}{12}$.
+   * **Final Answer:** $\frac{\pi}{12}$
+
+2. **Evaluate $\int_{0}^{\pi/2} \frac{\sin x}{1 + \cos^2 x} dx$**
+   * **Substitution:** Let $u = \cos x$. Then $du = -\sin x dx$.
+   * **Adjust Limits:** * Lower: If $x = 0$, $u = \cos(0) = 1$.
+       * Upper: If $x = \pi/2$, $u = \cos(\pi/2) = 0$.
+   * **Integrate:**
+       $$\int_{1}^{0} \frac{-1}{1+u^2} du = \int_{0}^{1} \frac{1}{1+u^2} du = \left[ \arctan(u) \right]_{0}^{1}$$
+   * **Evaluate:** $\arctan(1) - \arctan(0) = \frac{\pi}{4} - 0 = \frac{\pi}{4}$.
+   * **Final Answer:** $\frac{\pi}{4}$
+
+3. **Evaluate $\int \frac{1 + x}{1 + x^2} dx$**
+   * **Split the integral:** $\int \frac{1}{1+x^2} dx + \int \frac{x}{1+x^2} dx$.
+   * **Term 1:** $\int \frac{1}{1+x^2} dx = \arctan(x)$.
+   * **Term 2:** Use $u = 1+x^2$, $du = 2x dx$. Then $\int \frac{x}{u} \cdot \frac{du}{2x} = \frac{1}{2} \ln|u|$.
+   * **Final Answer:** $\arctan(x) + \frac{1}{2} \ln(1 + x^2) + C$
+
+4. **Evaluate $\int \frac{t^2}{\sqrt{1 - t^6}} dt$**
+   * **Rewrite denominator:** $\sqrt{1 - (t^3)^2}$.
+   * **Substitution:** Let $u = t^3$. Then $du = 3t^2 dt$.
+   * **Integrate:** $\frac{1}{3} \int \frac{1}{\sqrt{1 - u^2}} du = \frac{1}{3} \arcsin(u) + C$.
+   * **Final Answer:** $\frac{1}{3} \arcsin(t^3) + C$
+
+5. **Evaluate $\int \frac{d\theta}{1 + \cos 2\theta}$**
+   * **Trig Identity:** Use $1 + \cos 2\theta = 2\cos^2 \theta$.
+   * **Simplify:** $\int \frac{1}{2\cos^2 \theta} d\theta = \frac{1}{2} \int \sec^2 \theta d\theta$.
+   * **Integrate:** $\frac{1}{2} \tan \theta + C$.
+   * **Final Answer:** $\frac{1}{2} \tan \theta + C$
+
+6. **Evaluate $\int \tan^{-1} x dx$**
+   * **Integration by Parts:** Let $u = \arctan x$ and $dv = dx$. 
+       * $du = \frac{1}{1+x^2} dx$
+       * $v = x$
+   * **Apply $uv - \int v du$:** $x \arctan x - \int \frac{x}{1+x^2} dx$.
+   * **Substitution for second part:** Let $w = 1+x^2$, $dw = 2x dx$.
+   * **Final Answer:** $x \arctan x - \frac{1}{2} \ln(1 + x^2) + C$
+
+7. **Evaluate $\int x^2 e^x dx$**
+   * **Integration by Parts (Tabular):**
+       * Sign: (+) | $u = x^2$ | $dv = e^x$
+       * Sign: (-) | $u' = 2x$ | $v = e^x$
+       * Sign: (+) | $u'' = 2$ | $\int v = e^x$
+       * Sign: (-) | $u''' = 0$ | $\iint v = e^x$
+   * **Sum results:** $x^2 e^x - 2x e^x + 2e^x + C$.
+   * **Final Answer:** $e^x(x^2 - 2x + 2) + C$
+
+8. **Evaluate $\int (\tan^2 x + \tan^4 x) dx$**
+   * **Factor:** $\int \tan^2 x (1 + \tan^2 x) dx$.
+   * **Trig Identity:** Use $1 + \tan^2 x = \sec^2 x$.
+   * **Integrate:** $\int \tan^2 x \sec^2 x dx$. Let $u = \tan x$, $du = \sec^2 x dx$.
+   * **Evaluate:** $\int u^2 du = \frac{1}{3} u^3 + C$.
+   * **Final Answer:** $\frac{1}{3} \tan^3 x + C$
+  
 
 ### (i) $\int_{0}^{\sqrt{3}/4} \frac{1}{1 + 16x^2} dx$ [Corrected]
 **1. Rewrite the denominator:** $1 + (4x)^2$.
