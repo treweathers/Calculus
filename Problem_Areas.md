@@ -47,6 +47,40 @@ If your original substitution was **$x = 2\sin(\theta)$**, here is how you would
 $$2\arcsin\left(\frac{x}{2}\right) + \frac{5x}{\sqrt{4-x^2}} + C$$
 
 # Polar Arclength (Bounds - intersection/symmetry)
+To help you refine these calculus topics, I'll first explain how to determine the radius function for polar area when dealing with two curves, and then provide the practice problems for you to work through.
+
+### Determining  for Area Between Two Curves
+
+When you are asked to find the area between two polar curves, say  and , the formula for the area within a specific interval  is:
+
+To determine which  is which:
+
+1. **Distance from the Pole:** For any given angle  within your interval, the "outer" radius  is the one further from the origin (the pole), and the "inner" radius  is the one closer to the origin.
+2. **Intersection Points:** You must set  to find the angles where the curves meet. This determines your limits of integration ( and ).
+3. **Test Points:** If you aren't sure which curve is "outer," pick a value for  between your intersection points and plug it into both equations. The one that yields a larger absolute value for  is your .
+
+---
+
+### Practice Problems
+
+Here are two problems designed for you to either solve fully or outline the setup.
+
+#### 1. Trigonometric Integral (Secant/Tangent)
+
+Evaluate the following indefinite integral using trigonometric identities:
+
+
+* **Goal:** Identify whether to save a  factor for  or a  factor, then use the identity  to convert the remaining terms.
+
+#### 2. Polar Area
+
+Find the area of the region that lies **inside** the circle  and **outside** the cardioid .
+
+* **Goal:** 1. Find the intersection points to determine the interval for .
+2. Set up the integral using the "Outer minus Inner" logic explained above.
+3. Use power-reduction identities if you choose to execute the integration.
+
+How do these look? If you'd like to check your outlines or the final numerical answers, feel free to share them! Once you're ready, we can move on to the Series review.
 Moving from Trig Sub to Polar Area is a natural step! Both rely heavily on understanding how angles and radii interact.
 
 When you are finding the area between two polar curves (like a cardioid and a circle), the "setup" is the most important part. If your limits of integration are wrong, the whole area will be wrong.
