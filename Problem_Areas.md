@@ -46,6 +46,14 @@ If your original substitution was **$x = 2\sin(\theta)$**, here is how you would
 **Combined Final Answer:**
 $$2\arcsin\left(\frac{x}{2}\right) + \frac{5x}{\sqrt{4-x^2}} + C$$
 
+### Summary Checklist
+
+| Result Type | Conversion Method | Example Logic |
+| :--- | :--- | :--- |
+| **Trig Function** (e.g., $\sin\theta$) | Use the **Triangle** | $\text{SOH-CAH-TOA}$ ratios |
+| **Lone $\theta$** | Use **Inverse Trig** | $\theta = \arcsin(x/a)$ |
+| **Coefficients** | Multiplication | Multiply the constant by your result |
+
 # Polar Area (Bounds - intersection/symmetry)
 To help you refine these calculus topics, I'll first explain how to determine the radius function for polar area when dealing with two curves, and then provide the practice problems for you to work through.
 
@@ -158,11 +166,3 @@ Would you like me to walk through the actual integration of a specific shape, li
 
 
 ---
-
-### Summary Checklist
-
-| Result Type | Conversion Method | Example Logic |
-| :--- | :--- | :--- |
-| **Trig Function** (e.g., $\sin\theta$) | Use the **Triangle** | $\text{SOH-CAH-TOA}$ ratios |
-| **Lone $\theta$** | Use **Inverse Trig** | $\theta = \arcsin(x/a)$ |
-| **Coefficients** | Multiplication | Multiply the constant by your result |
